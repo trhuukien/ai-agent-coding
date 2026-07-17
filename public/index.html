@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Support Theme — Figma Project Builder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    textarea, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    ::-webkit-scrollbar { height: 10px; width: 10px; }
+    ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 6px; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900 min-h-screen">
+  <header class="bg-slate-900 text-white px-6 py-4">
+    <h1 class="text-lg font-semibold">AI Support Theme — Figma Project Builder</h1>
+    <p class="text-slate-400 text-sm">Nhập theme + link Figma cho từng phần, hệ thống tự đọc Figma và cấu hình theme, rồi cho review trước khi apply.</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- New project form -->
+    <section class="lg:col-span-1 bg-white rounded-xl shadow-sm border border-slate-200 p-5 h-fit">
+      <h2 class="font-semibold text-slate-800 mb-4">Project mới</h2>
+      <form id="project-form" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-slate-600 mb-1">Tên project</label>
+          <input name="name" type="text" placeholder="VD: Kizchann - Eurus theme"
+                 class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-slate-600 mb-1">Theme (link Shopify admin editor)</label>
+          <input name="themeEditorUrl" type="text" required
+                 placeholder="https://admin.shopify.com/store/kizchann/themes/189290250604/editor"
+                 class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+        </div>
+
+        <div id="sections-fields" class="space-y-4"></div>
+
+        <button type="submit"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg px-4 py-2.5 transition">
+          Lưu project
+        </button>
+        <p id="form-error" class="text-sm text-red-600 hidden"></p>
+      </form>
+    </section>
+
+    <!-- Projects + build/review -->
+    <section class="lg:col-span-2 space-y-4">
+      <div class="flex items-center justify-between">
+        <h2 class="font-semibold text-slate-800">Projects</h2>
+        <button id="refresh-projects" class="text-xs text-slate-500 hover:text-slate-800">↻ Làm mới</button>
+      </div>
+      <div id="projects-list" class="space-y-4"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

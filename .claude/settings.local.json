@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": ["/tmp"],
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(python *)",
+      "Bash(python3 *)"
+    ]
+  }
+}
