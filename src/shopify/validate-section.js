@@ -19,8 +19,9 @@ const BOOL_TYPES = new Set(['checkbox']);
 // Every other value-holding type in this theme's schemas (text/richtext/html/url/color/
 // font_picker/image_picker/video/product/collection/blog/page/article/metaobject/link_list/
 // select/radio/textarea/inline_richtext/...) stores a plain string (or null when unset) —
-// "select"/"radio" get their own option-membership check below, everything else just needs
-// to not be an array/object/boolean/number that slipped in by mistake.
+// "select"/"radio" get their own option-membership check below, "range"/"number" get their own
+// numeric handling (see snapValue), everything else just needs to not be an array/object/boolean
+// that slipped in by mistake.
 
 function extractSchema(store, themeId, sectionType, dir = 'sections') {
   const filePath = path.join(getThemeDir(store, themeId), dir, `${sectionType}.liquid`);
@@ -101,6 +102,23 @@ function snapValue(def, value, where) {
     v = Number(v.toFixed(decimals));
     if (v !== original) {
       return { value: v, note: `${where}: ${original} is not a valid step (min=${min}, step=${step}) — snapped to ${v}` };
+    }
+    return { value: v, note: null };
+  }
+
+  // "number" is a real, distinct Shopify schema type (unconstrained numeric input — no
+  // min/max/step, unlike "range") — it must be handled separately from "range" and BEFORE the
+  // generic string catch-all below, or a genuine number gets wrongly treated as "a number that
+  // slipped into a string-only field" and reset to "" (which Shopify's own push then rejects
+  // with "must be a valid number").
+  if (def.type === 'number') {
+    const v = typeof value === 'number' ? value : Number(value);
+    if (Number.isNaN(v)) {
+      const fallback = typeof def.default === 'number' ? def.default : 0;
+      return { value: fallback, note: `${where}: "${value}" isn't a number — reset to ${fallback}` };
+    }
+    if (typeof value !== 'number') {
+      return { value: v, note: `${where}: type "number" got a non-number (${JSON.stringify(value)}) — converted to ${v}` };
     }
     return { value: v, note: null };
   }

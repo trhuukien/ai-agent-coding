@@ -34,7 +34,10 @@ if (!listFile || !outDir) {
     fs.mkdirSync(outDir, { recursive: true });
     entries.forEach((e, i) => {
       const outPath = path.join(outDir, `${e.key}.json`);
-      fs.writeFileSync(outPath, JSON.stringify(results[i], null, 2));
+      // Minified — this file is Read by an agent, not scanned by a human; 2-space indentation on
+      // a deeply-nested Figma tree is pure whitespace overhead (measured ~63% of file size on a
+      // real section) with zero information value once parsed back.
+      fs.writeFileSync(outPath, JSON.stringify(results[i]));
       console.log(`${e.key} -> ${outPath} (${results[i] ? 'ok' : 'NULL'})`);
     });
   } catch (err) {

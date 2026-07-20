@@ -34,14 +34,55 @@ don't guess a store or theme id.
 
 ## The scripts you have (all in `scripts/`, all read `.env` themselves)
 
+- All `figma-fetch-*`/`read-section-schema.js` output is **minified JSON, never pretty-printed**.
+  This is read by Claude (directly or via a file an agent Reads), never scanned line-by-line by a
+  human in a terminal — 2-space indentation on a deeply-nested Figma tree is pure whitespace with
+  zero information value, measured at ~63-72% of a real fetched section's file size. If you need to
+  eyeball one yourself for debugging, pipe it through `node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(0,'utf8')),null,2))"`
+  or `python3 -m json.tool` rather than asking the fetch scripts themselves to pretty-print by
+  default. (This does NOT apply to the actual theme files under `theme/<store>/<themeId>/` —
+  `templates/*.json`, `config/settings_data.json`, etc. stay pretty-printed, matching Shopify CLI's
+  own convention and staying readable for a human opening them in an IDE or reviewing a git diff.)
 - `figma-fetch-node.js "<url>" [depth]` — fetch one Figma node's full design JSON to stdout.
   Omit depth for a single small section; pass 2-8 for a whole-file/whole-page shallow scan.
+  **Reading the result when `depth` was passed:** any container node that comes back with
+  `"needsDeeperFetch": true` means the API's own depth cutoff stopped before reaching that node's
+  real content — it is NOT confirmed empty, just not-yet-resolved. Never skip a node on the strength
+  of this flag; re-fetch that specific node (deeper `depth`, or omit `depth` entirely if it's small)
+  before deciding it has nothing worth configuring. Only `"decorative": true` (which the tool only
+  ever sets on an unlimited-depth fetch, where the whole subtree was actually walked) means "real
+  vector/icon artwork, genuinely nothing else in here, safe to leave as a flat stub." See the
+  `figma-decorative-pruning-bug` note below for why this distinction exists.
 - `figma-fetch-multi.js <list-file> <out-dir> [depth]` — batch-fetch several sibling nodes from
   the SAME file in one Figma API call (list-file: lines of `key|url`). Always prefer this over N
   separate `figma-fetch-node.js` calls when you already know you need several sections' data.
 - `figma-fetch-icon.js "<url>"` — export ONE icon/vector node as real, normalized SVG (for any
   schema field labeled "Custom icon (SVG code)"). **Never** substitute a guessed built-in preset
   icon name when a schema has this field — always export the real vector.
+- `figma-fetch-image.js <list-file> <out-dir> [scale]` — batch-render one or more Figma nodes as
+  real PNG screenshots (same list-file format as `figma-fetch-multi.js`; a single-line file renders
+  just one node). Use this to actually SEE a section, not just read its JSON tree — column count,
+  whether a pagination-dot strip means a real carousel, true center/left/right alignment, are all
+  things the JSON-only pipeline can only infer indirectly (box-gap math, layer names) and gets wrong
+  often enough that this project's own past-mistakes list is full of alignment/carousel misses. This
+  does NOT replace `figma-fetch-node.js`/`figma-fetch-multi.js` — exact text, hex colors, and every
+  written setting still has to come from the JSON data, never guessed off pixels. Use images as a
+  visual cross-check alongside the JSON, at two points in the workflow:
+  1. **Step 1 (discover file structure):** render each page's own top-level children (the same
+     nodes you're about to list from JSON) and count how many distinct visual blocks you actually
+     see. If the image shows more blocks than the JSON's top-level children list, something is
+     missing from the JSON side (a `MAX_CHILDREN` truncation, a node visibility quirk, etc.) —
+     investigate before finalizing the section list, don't just trust the JSON count.
+  2. **Step 5 (fetch full data, configure):** render each confirmed section's own node ALONGSIDE
+     its Figma JSON, and hand both files to whichever subagent (or yourself) configures it. Read the
+     image first for layout facts (columns, carousel yes/no, alignment), then use the JSON for exact
+     content/values — never the reverse, and never skip the JSON in favor of eyeballing the image for
+     text/colors.
+  A single very tall page frame (e.g. a long mobile homepage) renders as one extremely tall/narrow
+  image that gets downscaled illegibly by the viewer — don't render an entire page as one image.
+  Render each already-identified top-level child/section node as its own separate image instead
+  (one call, many node ids, same batching this script already does) — every section's own frame is a
+  reasonable, legible aspect ratio on its own.
 - `read-theme-file.js <store> <themeId> <file-key>` — read a local theme file with every `t:...`
   translation key already resolved to real English text. Use this for markup/logic (`.liquid`
   render code above `{% schema %}`), `locales/*.json`, `config/settings_schema.json` — anything
@@ -79,6 +120,17 @@ don't guess a store or theme id.
      something visible in the Figma frame.
   On a small section (few block types total) this two-phase split still costs almost nothing extra
   and is never worse than a one-shot read — always use it, not just for the obviously huge files.
+  **Icon-picker `select` fields (the ~80-value preset icon list) come back pre-compressed** to just
+  `{ type, id, label, default, iconPickerNote }` — the options array itself is never repeated (it's
+  identical across every icon field in this theme; measured 26% of one real section's entire
+  phase-2 payload, all from this one static list copy-pasted per field). This loses NO information
+  you actually need: per §5's own rule, a real exported `custom_icon` SVG always overrides whichever
+  preset this field holds at render time, so the field's value only ever needs to be non-`"none"`
+  (e.g. `"another_icon"`) — you never need the full option list to decide that. Only pick a real
+  preset name from it (truck, gift, heart, star, leaf, award, ...) in the rare case where no Figma
+  vector exists for that icon at all. `header`/`paragraph` schema entries (no `id` — pure Theme
+  Editor UI text, never a writable field) are dropped from the output for the same reason: zero
+  configuration information, never worth the tokens.
 - `apply-section.js <store> <themeId> <template> <sectionKey> <sectionJsonFile> [positionAfter] [figmaDataFile] [merge]`
   — the ONLY way to write a section into a `templates/*.json` file. Runs the real
   `sanitizeSection` (type/range/select auto-correction) + `auditSectionAgainstFigma` (Figma
@@ -160,6 +212,14 @@ treat them as two data sources for the SAME section (shared content fields — t
 from either, once; layout fields — columns, spacing, alignment — set separately per viewport's own
 `_mobile` vs plain field ids). Never reuse desktop absolute px thresholds/measurements on mobile data
 or vice versa — always convert to a percentage of that frame's own width before comparing.
+
+**Cross-check the section count visually before finalizing this list.** Render each page's own
+top-level children as PNGs via `figma-fetch-image.js` (one batched call, all children of a page at
+once) and count the distinct visual blocks you actually see. If the image shows more blocks than
+the JSON's top-level children list, something is missing from the JSON side (truncation, a
+visibility quirk, a node the fetch never surfaced) — go find it before finalizing, don't trust the
+JSON child count alone. This is the single cheapest place to catch a missed section, before any
+deep-fetch or subagent work has been spent on an incomplete list.
 
 Tell the user this file/page breakdown (including which viewport(s) you found per page) and get a
 quick confirmation before fetching everything in full depth — cheap to correct a wrong page mapping
@@ -374,20 +434,27 @@ split one section's slides across multiple subagents) and tell it plainly: "thes
 slides of the SAME section, in this exact numeric order — build one `block_order` covering all of
 them," rather than letting it discover the relationship itself.
 
+Also render each confirmed section's own node as a PNG via `figma-fetch-image.js` (batch these in
+the same pass, one call, many node ids — never N separate calls) alongside the JSON fetch.
+
 For each section, either configure it yourself or dispatch one Agent-tool subagent per section to
 run in parallel — give each subagent: the theme dir path, its own pre-fetched Figma JSON file
-path(s) (tell it to Read the file(s) directly, not call any Figma tool itself), and the section's
-confirmed file/type. Ask each subagent to return ONLY a fenced JSON section object as its final
-message (`{ "type", "settings", "blocks", "block_order" }`) plus a short prose summary — never have
-subagents call `apply-section.js` themselves, since concurrent writes to the same template file
-race. YOU write all of them sequentially and in the page's real top-to-bottom order once every
-subagent has returned.
+path(s) AND the matching pre-rendered PNG file path (tell it to Read the files directly, not call
+any Figma tool itself), and the section's confirmed file/type. Ask each subagent to return ONLY a
+fenced JSON section object as its final message (`{ "type", "settings", "blocks", "block_order" }`)
+plus a short prose summary — never have subagents call `apply-section.js` themselves, since
+concurrent writes to the same template file race. YOU write all of them sequentially and in the
+page's real top-to-bottom order once every subagent has returned.
 
 Rules every subagent (or you, doing it directly) must follow:
-- **Analyze the Figma data FIRST, then read schema — never the other way round.** Walk the
-  section's pre-fetched Figma JSON and list, in plain words, every visually distinct piece it shows
-  (title, price, a 3-item icon row, an accordion group, a CTA button, etc.) BEFORE reading any
-  schema. Only then call `read-section-schema.js <store> <themeId> <sectionType>` with NO block-type
+- **Look at the section's rendered PNG first for layout facts** (column count, whether a
+  pagination-dot strip means a real carousel, true center/left/right alignment) — this is what the
+  image is for; never guess these from box-gap math when a real screenshot is sitting right there.
+  Then **analyze the Figma JSON for every visually distinct piece, then read schema — never the
+  other way round.** Walk the section's pre-fetched Figma JSON and list, in plain words, every
+  visually distinct piece it shows (title, price, a 3-item icon row, an accordion group, a CTA
+  button, etc.) BEFORE reading any schema. Only then call `read-section-schema.js <store> <themeId>
+  <sectionType>` with NO block-type
   args (phase 1 — the cheap index) and match each piece you listed against the returned block-type
   names. Call it a SECOND time passing only the block type(s) you actually matched (phase 2 — full
   field detail for just those) — never request a block type "just in case", and never fall back to
@@ -481,3 +548,53 @@ items for whoever reviews the build.
   `read-section-schema.js` now exists specifically to avoid this: always do the Figma-analysis-first,
   index-then-detail flow in §5, never `read-theme-file.js` a `sections/*.liquid` file just to see its
   schema.
+- (Fixed 2026-07-20) `src/shopify/validate-section.js`'s `snapValue()` had no case for schema
+  `"type": "number"` (a real, distinct Shopify type — free numeric input, no min/max/step, used e.g.
+  by `announcement`'s `end_year`) — it fell through to the generic string catch-all, which treats
+  any non-string as "a number that slipped into a string-only field" and resets it to `""`. Writing
+  a real number (e.g. `end_year: 2026`) into a `number` field via `apply-section.js` silently
+  corrupted it to an empty string, which passed `validate-template-types.js` too (that script had
+  the identical gap — only `range` was checked for being numeric) and only surfaced as a real
+  `shopify theme push` failure ("Setting 'end_year' must be a valid number") — reported 3 times
+  before being root-caused. Both files now handle `number` explicitly (clamped/coerced like `range`,
+  minus the min/max/step). → whenever a section schema has a field typed `"number"` (grep the raw
+  `.liquid` file for `"type": "number"` — don't assume "range" is the only numeric type), verify
+  after writing that `validate-template-types.js` actually still reports the real value type by
+  spot-checking the written JSON directly — a clean validator run is not proof if the validator
+  itself has a blind spot for that type.
+- (Fixed 2026-07-20, `figma-decorative-pruning-bug`) `src/figma/fetch-figma.js`'s decorative-prune
+  heuristic used to fire on ANY container node with no TEXT/IMAGE found in `out.children` — but at a
+  capped `depth`, `out.children` is only a partial view, so real content sitting deeper than the
+  requested depth looked identical to a genuinely empty icon and got silently deleted. This is what
+  caused whole real pages/sections/blocks/icons (confirmed on a live file: three full mobile page
+  frames, a popup's own heading/body/CTA copy, an entire header hamburger-menu flyout) to vanish
+  during ordinary depth-2-to-4 discovery scans. Fixed by only applying the prune on unlimited-depth
+  fetches; a capped-depth fetch now sets `needsDeeperFetch: true` instead and keeps whatever partial
+  children it has. → never trust a `decorative: true` you see in an OLD cached JSON file fetched
+  before this fix landed; re-fetch it. Going forward, always re-fetch any `needsDeeperFetch`-flagged
+  node before concluding it has nothing to configure (see the `figma-fetch-node.js` bullet above).
+- Mobile header/menu icon (hamburger) is not a real Figma-driven config target — it renders by
+  default on mobile regardless of settings; any header-group "icon style" field only affects
+  desktop. Don't go looking for a "show hamburger on mobile" field to set from a mobile mockup — the
+  only real content inside a mobile menu flyout is the actual link labels (→ Shopify navigation
+  linklist, not a section setting) and anything unrelated to icon/open-close behavior.
+
+## Making sure both viewports and all block/icon detail actually get read
+
+Two failure modes to guard against explicitly, now that the pruning bug above is fixed:
+
+1. **Missing a whole viewport.** At step 1, once `Template` is found, explicitly enumerate ALL of
+   its direct children (a depth-2/3 scan is enough — real content will now correctly surface via
+   `needsDeeperFetch` rather than vanishing) and look for both a `Desktop Layout`-shaped group/frame
+   set AND a `Mobile Layout`-shaped one, independently — don't stop looking the moment you find one.
+   If a file only ever contains one (as confirmed by fully expanding every top-level child, not by a
+   shallow scan going quiet), that's a legitimate single-viewport file — say so explicitly per the
+   existing viewport rule in §1, but only after actually confirming absence, not just an
+   un-re-fetched `needsDeeperFetch` stub.
+2. **Missing block/icon detail on an otherwise-found section.** Any `needsDeeperFetch: true` (or,
+   on pre-fix cached JSON, `decorative: true`) on a node whose box size is clearly bigger than an
+   icon (rule of thumb: bigger than roughly 60×60px) is almost certainly real content, not
+   decoration — always re-fetch that exact node with `figma-fetch-node.js "<url-with-that-node-id>"`
+   and NO depth argument (full depth; per-section full-depth reads are cheap) before finalizing a
+   section's fields or its custom-icon export. Only trust a `decorative: true` produced by an
+   unlimited-depth fetch of the section itself (step 5's normal flow already does this).

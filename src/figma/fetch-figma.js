@@ -116,7 +116,12 @@ function hasRealContent(out) {
 
 const CONTAINER_TYPES = new Set(['FRAME', 'GROUP', 'INSTANCE', 'COMPONENT', 'COMPONENT_SET']);
 
-function summarizeNode(node, depth = 0) {
+// apiDepthLimit is the `depth` value the CALLER passed to the Figma REST API for this whole
+// request (null when unlimited). It never changes across recursion levels — it's carried through
+// purely to distinguish "this subtree was fully resolved and genuinely has no text/image inside"
+// (safe to prune as decorative) from "the API stopped returning children before reaching this
+// subtree's real content, so absence of text here proves nothing" (must not be pruned).
+function summarizeNode(node, depth = 0, apiDepthLimit = null) {
   if (!node || depth > MAX_DEPTH) return null;
   if (depth > 0 && node.visible === false) return null;
 
@@ -169,7 +174,7 @@ function summarizeNode(node, depth = 0) {
     const visibleChildren = node.children.filter((child) => child.visible !== false);
     const children = visibleChildren
       .slice(0, MAX_CHILDREN)
-      .map((child) => summarizeNode(child, depth + 1))
+      .map((child) => summarizeNode(child, depth + 1, apiDepthLimit))
       .filter(Boolean);
     if (children.length) out.children = children;
     if (visibleChildren.length > MAX_CHILDREN) {
@@ -180,10 +185,23 @@ function summarizeNode(node, depth = 0) {
   // Prune purely-decorative icon/vector subtrees (no TEXT, no real photo
   // anywhere inside) down to a flat stub — the nested vector path geometry is
   // never actionable (no section schema exposes raw icon paths).
+  //
+  // This is only safe to decide when apiDepthLimit is null (an unlimited-depth fetch): only then
+  // does `out.children` reflect the ENTIRE real subtree, so "no text/image found" genuinely means
+  // decorative. When a numeric depth was requested, Figma's own API may have stopped returning
+  // children before reaching this node's real content — `out.children` here is a truncated partial
+  // view, and "no text found within it" proves nothing. Flag it as needsDeeperFetch instead (keep
+  // whatever partial children we do have) so a caller knows to re-fetch this specific node at full
+  // depth before ever treating it as empty. Mislabeling these as `decorative` was the root cause of
+  // whole real sections/blocks/icons silently vanishing during shallow discovery-depth scans.
   if (depth > 0 && CONTAINER_TYPES.has(out.type) && out.children && !hasRealContent(out)) {
-    delete out.children;
-    delete out.truncatedChildren;
-    out.decorative = true;
+    if (apiDepthLimit != null) {
+      out.needsDeeperFetch = true;
+    } else {
+      delete out.children;
+      delete out.truncatedChildren;
+      out.decorative = true;
+    }
   }
 
   // Unwrap pure pass-through wrappers bottom-up so a whole chain of them
@@ -228,7 +246,7 @@ async function fetchFigmaNodes(urls, accessToken, depth = null) {
   // order, since Figma echoes ids back in its own colon form regardless of input dash form.
   return nodeIds.map((id) => {
     const entry = nodesObj[id];
-    return entry && entry.document ? summarizeNode(entry.document) : null;
+    return entry && entry.document ? summarizeNode(entry.document, 0, depth) : null;
   });
 }
 
@@ -253,7 +271,7 @@ async function fetchFigmaNode(url, accessToken, depth = null) {
   });
 
   const rootNodes = resp.data.document ? [resp.data.document] : [];
-  return rootNodes.map((n) => summarizeNode(n));
+  return rootNodes.map((n) => summarizeNode(n, 0, depth));
 }
 
 // Figma exports an icon's own fixed pixel box (e.g. width="40" height="40") and often bakes in
@@ -308,4 +326,52 @@ async function fetchFigmaIconSvg(url, accessToken) {
   return normalizeIconSvg(svgResp.data);
 }
 
-module.exports = { fetchFigmaNode, fetchFigmaNodes, fetchFigmaIconSvg, parseFigmaUrl };
+// Renders one or more nodes as real PNG screenshots via the same Images API `fetchFigmaIconSvg`
+// uses (just `format: png` instead of `svg`, and no icon-specific SVG normalization) — for a
+// visual sanity-check a JSON tree can't give: how many columns a row actually has, whether a
+// pagination-dot strip means a real carousel, what's actually center- vs left-aligned. Batches
+// multiple node ids into ONE Figma API call (same rate-limit rationale as fetchFigmaNodes) and
+// downloads each image's binary in parallel. `scale` (Figma's own 0.01-4 range) defaults to
+// Figma's own default (1) when omitted — pass a smaller scale for a very tall/large frame to keep
+// the output at a legible-but-not-huge pixel size rather than relying on the viewer to downsample.
+// Returns Buffer[] in the same order as the input urls (or null for any node Figma couldn't render
+// — e.g. a node with zero visible area), for the caller to write to disk however it wants.
+async function fetchFigmaImages(urls, accessToken, scale = null) {
+  if (!accessToken) {
+    const err = new Error('FIGMA_TOKEN_REQUIRED');
+    throw err;
+  }
+  if (!urls || !urls.length) return [];
+
+  const parsed = urls.map(parseFigmaUrl);
+  const fileKey = parsed[0].fileKey;
+  if (parsed.some((p) => p.fileKey !== fileKey)) {
+    throw new Error('All urls passed to fetchFigmaImages must belong to the same Figma file');
+  }
+  const nodeIds = parsed.map((p) => p.nodeId);
+  if (nodeIds.some((id) => !id)) {
+    throw new Error('Every url passed to fetchFigmaImages must include a node-id');
+  }
+
+  const params = { ids: nodeIds.join(','), format: 'png' };
+  if (scale != null) params.scale = scale;
+
+  const renderResp = await axios.get(`https://api.figma.com/v1/images/${fileKey}`, {
+    headers: { 'X-Figma-Token': accessToken },
+    params,
+    timeout: 30000,
+  });
+  if (renderResp.data.err) throw new Error(`Figma image render error: ${renderResp.data.err}`);
+  const images = renderResp.data.images || {};
+
+  return Promise.all(
+    nodeIds.map(async (id) => {
+      const imgUrl = images[id];
+      if (!imgUrl) return null;
+      const imgResp = await axios.get(imgUrl, { responseType: 'arraybuffer', timeout: 30000 });
+      return Buffer.from(imgResp.data);
+    })
+  );
+}
+
+module.exports = { fetchFigmaNode, fetchFigmaNodes, fetchFigmaIconSvg, fetchFigmaImages, parseFigmaUrl };

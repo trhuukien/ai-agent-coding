@@ -35,8 +35,8 @@ function checkValue(def, value, where, issues) {
     if (!Array.isArray(value)) issues.push(`${where}: type "${t}" requires an array, got ${JSON.stringify(value)}`);
   } else if (BOOL_TYPES.has(t)) {
     if (typeof value !== 'boolean') issues.push(`${where}: type "${t}" requires a boolean, got ${JSON.stringify(value)}`);
-  } else if (t === 'range') {
-    if (typeof value !== 'number') issues.push(`${where}: type "range" requires a number, got ${JSON.stringify(value)}`);
+  } else if (t === 'range' || t === 'number') {
+    if (typeof value !== 'number') issues.push(`${where}: type "${t}" requires a number, got ${JSON.stringify(value)}`);
   } else if (t === 'select' || t === 'radio') {
     const allowed = (def.options || []).map((o) => (typeof o === 'string' ? o : o.value));
     if (allowed.length && !allowed.includes(value)) {

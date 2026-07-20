@@ -295,7 +295,11 @@ JSON) still have a real Figma node id and are just as exportable — that collap
 model wasn't shown the child path geometry, not that the icon is unavailable. Only fall back to
 picking the closest built-in preset icon by name when the design's icon truly has no matching Figma
 vector node to export (a generic/decorative icon with no source, or when fetch_figma_node never
-surfaced its node id).`;
+surfaced its node id). \`{needsDeeperFetch: true}\` is a DIFFERENT flag and means the opposite of
+decorative: it only appears when fetch_figma_node was called with a capped depth, and means this
+node's real content (text, blocks, icons — anything) sits deeper than that depth reached. Never
+treat it like decorative or skip the node — re-call fetch_figma_node on that exact node id with a
+higher (or no) depth before deciding what it contains.`;
 
 // Specific to sections that can hold a repeating grid/carousel of items (a generic page section, or
 // a collection's product grid) — not applicable to the PDP main block-order list or a single popup

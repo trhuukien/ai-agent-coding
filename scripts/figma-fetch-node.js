@@ -20,7 +20,11 @@ if (!url) {
 (async () => {
   try {
     const result = await fetchFigmaNode(url, process.env.FIGMA_ACCESS_TOKEN, depth);
-    console.log(JSON.stringify(result, null, 2));
+    // Minified, not pretty-printed: this output is read by Claude (directly or via a file an
+    // agent Reads), never scanned line-by-line by a human in a terminal — 2-space indentation on
+    // a deeply-nested Figma tree adds pure whitespace with zero information value, measured at
+    // ~63% of a real section's file size. JSON.parse gives back byte-identical data either way.
+    console.log(JSON.stringify(result));
   } catch (err) {
     console.error('ERROR:', err.message);
     if (err.response) console.error('status:', err.response.status, JSON.stringify(err.response.data));

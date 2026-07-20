@@ -29,4 +29,4 @@ const data = JSON.parse(raw);
 
 const current = typeof data.current === 'string' ? data.presets?.[data.current] || {} : data.current || {};
 
-console.log(JSON.stringify(current, null, 2));
+console.log(JSON.stringify(current));
