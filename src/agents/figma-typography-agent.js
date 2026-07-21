@@ -1,10 +1,10 @@
 /**
- * Figma typography sync — the typography counterpart to workflow-figma-colors.js. Makes the
+ * Figma typography sync — the typography counterpart to figma-colors-agent.js. Makes the
  * theme's global font settings match a Figma "Typography" specimen frame, by reading the theme's
  * own settings schema at runtime (never memorized/guessed setting ids).
  */
 const Anthropic = require('@anthropic-ai/sdk');
-const { runAgentLoop } = require('./shared');
+const { runAgentLoop } = require('./agent-runtime');
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 

@@ -6,7 +6,7 @@ const DB_PATH = path.join(process.cwd(), 'projects.json');
 const SECTION_KEYS = ['general', 'home', 'product', 'collection'];
 
 // Section → the template file it configures. "general" has no template file —
-// it drives config/settings_data.json instead (see workflow-figma-colors.js).
+// it drives config/settings_data.json instead (see figma-colors-agent.js).
 const SECTION_FILES = {
   home: 'templates/index.json',
   product: 'templates/product.json',

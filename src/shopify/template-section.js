@@ -1,6 +1,6 @@
 // Splices ONE section into a template JSON file (e.g. templates/index.json) without the caller
 // ever needing to read or hold the rest of the file in its own context. This is what lets
-// workflow-e.js run each page section as its own short-lived agent conversation — each section's
+// figma-page-agent.js run each page section as its own short-lived agent conversation — each section's
 // agent only ever knows about its own section object, never the other 13 on the same page.
 const fs = require('fs');
 const path = require('path');

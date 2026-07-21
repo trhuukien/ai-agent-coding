@@ -1,21 +1,38 @@
 # AI Support Theme — Figma → Shopify page build playbook
 
-This file tells Claude Code exactly what to do when the user hands over a Figma link + store to
-build/reconfigure a theme's pages from. Follow it top to bottom in a fresh session — don't ask the
-user to re-explain the process each time.
+This project builds/reconfigures a Shopify theme's pages from a Figma design, in exactly one of
+two independent modes — pick one per run, they don't mix:
+
+- **Mode 1 — API key.** `ANTHROPIC_API_KEY` is set. `npm start` runs `src/server.js`, which drives
+  `src/agents/figma-page-agent.js` (+ `figma-colors-agent.js`/`figma-typography-agent.js`) fully
+  automated via the Projects API/UI (`public/`) — no Claude Code session involved at all.
+- **Mode 2 — Claude session.** No `ANTHROPIC_API_KEY` (or you're choosing not to use Mode 1's
+  server). A Claude Code session performs every step itself, using the CLI tools in `scripts/`.
+  **This entire file is Mode 2's playbook** — everything below assumes you (Claude Code) are the
+  one doing the work, not `figma-page-agent.js`. Follow it top to bottom in a fresh session — don't
+  ask the user to re-explain the process each time.
 
 ## Trigger
 
-The user will send something shaped like:
+The user will send something shaped like EITHER of these:
 
 ```
 setup theme <store>.myshopify.com theme <themeId>
 figma: https://www.figma.com/design/<fileKey>/<name>?node-id=...
 ```
 
+```
+Setup: https://admin.shopify.com/store/<handle>/themes/<themeId>/editor
+Figma: https://www.figma.com/design/<fileKey>/<name>?node-id=...
+```
+
 (exact wording varies — recognize it whenever a message combines a `figma.com/design/...` URL with
-a store domain and/or numeric theme id). If either piece is missing, ask for it before starting —
-don't guess a store or theme id.
+a store domain, an `admin.shopify.com/store/<handle>/themes/<themeId>` editor URL, and/or a bare
+numeric theme id). The admin editor URL form already has a parser —
+`parseThemeEditorUrl(url)` in `src/projects/store.js` — turning `.../store/<handle>/themes/<id>/editor`
+into `{ store: "<handle>.myshopify.com", themeId }`; use that instead of hand-parsing the URL
+yourself. If store+theme genuinely can't be determined from the message at all, ask before
+starting — don't guess.
 
 ## Prerequisites (check once, at the very start)
 
@@ -23,14 +40,30 @@ don't guess a store or theme id.
    `node -e "require('dotenv').config({quiet:true}); console.log(!!process.env.FIGMA_ACCESS_TOKEN)"`
    If missing, tell the user and stop (Figma → Settings → Personal access tokens, "File content:
    Read-only" scope is enough).
-2. `ANTHROPIC_API_KEY` in `.env` is usually EMPTY on this machine — do not rely on it. This means
-   `src/ai/agents/workflow-e.js` (the "real" automated agent) cannot run standalone. Instead, YOU
-   (the calling Claude Code session) perform every step below directly, using the scripts in
-   `scripts/` and your own Agent tool for parallelism — you ARE the substitute for workflow-e's
-   inner Anthropic-SDK agent loop, just orchestrated through Claude Code instead.
-3. Confirm the theme is already pulled locally at `theme/<store>/<themeId>/`. If not, that's a
-   separate pull step outside this playbook's scope — ask the user how the theme should be pulled
-   (this project's own `pullTheme()` in `src/shopify/cli.js` uses the Shopify CLI).
+2. Confirm you're in Mode 2 (see the top of this file) — i.e. don't assume `ANTHROPIC_API_KEY` is
+   set, and don't ever start/rely on `src/server.js` for this work. You (the calling Claude Code
+   session) perform every step below directly, using the scripts in `scripts/` and your own Agent
+   tool for parallelism — you are not a fallback for a broken Mode 1, the two modes are just
+   separate ways to run this project and you're doing Mode 2's job end to end.
+3. **Local path convention:** a theme always lives at `theme/<store-handle>/<themeId>/` — the bare
+   store handle (e.g. `kizchann`), never the full `<handle>.myshopify.com` domain. This is enforced
+   in code, not just convention: `getThemeDir()` in `src/shopify/cli.js` strips any `.myshopify.com`
+   suffix before building the local path, no matter which form of `store` you pass to any script —
+   so it's safe to pass either `kizchann` or `kizchann.myshopify.com` to any `scripts/*.js` call,
+   both resolve to the same `theme/kizchann/<themeId>/` folder. The real `shopify theme pull/push`
+   CLI calls still always use the full `<handle>.myshopify.com` domain internally (required by the
+   Shopify CLI itself) — this only affects where files sit on disk.
+4. **Auto-pull, don't ask.** Once store+themeId are known (from either trigger form above), check
+   whether `theme/<store-handle>/<themeId>/` already exists locally. If not, pull it yourself —
+   don't ask the user how, this is no longer a manual/out-of-scope step:
+   ```
+   node scripts/pull-theme.js <store> <themeId>
+   ```
+   (`<store>` can be the bare handle or the full domain, see #3). If this throws an auth prompt
+   (`AuthRequiredError` — a `userCode`/`authUrl` pair), surface that link+code to the user verbatim
+   and wait for them to authenticate before retrying; that one step genuinely needs a human. Once
+   pulled, proceed straight into the rest of this playbook — pulling is now part of the normal flow,
+   not a separate confirmation point.
 
 ## The scripts you have (all in `scripts/`, all read `.env` themselves)
 
@@ -39,8 +72,9 @@ don't guess a store or theme id.
   human in a terminal — 2-space indentation on a deeply-nested Figma tree is pure whitespace with
   zero information value, measured at ~63-72% of a real fetched section's file size. If you need to
   eyeball one yourself for debugging, pipe it through `node -e "console.log(JSON.stringify(JSON.parse(require('fs').readFileSync(0,'utf8')),null,2))"`
-  or `python3 -m json.tool` rather than asking the fetch scripts themselves to pretty-print by
-  default. (This does NOT apply to the actual theme files under `theme/<store>/<themeId>/` —
+  rather than asking the fetch scripts themselves to pretty-print by default (Node is the only
+  runtime this project depends on — don't reach for python/python3, it's not guaranteed to be
+  installed). (This does NOT apply to the actual theme files under `theme/<store>/<themeId>/` —
   `templates/*.json`, `config/settings_data.json`, etc. stay pretty-printed, matching Shopify CLI's
   own convention and staying readable for a human opening them in an IDE or reviewing a git diff.)
 - `figma-fetch-node.js "<url>" [depth]` — fetch one Figma node's full design JSON to stdout.
@@ -139,6 +173,12 @@ don't guess a store or theme id.
 - `validate-template-types.js <store> <themeId> [template ...]` — read-only, full type audit of
   every field in one or more templates against their real schema. Run this after EVERY batch of
   `apply-section.js` calls, no exceptions. Exit code 1 if anything's wrong.
+- `pull-theme.js <store> <themeId>` — pulls the theme into `theme/<store-handle>/<themeId>/` (see
+  the local path convention prerequisite above). Auto-run whenever the theme isn't pulled yet.
+- `push-theme.js <store> <themeId> <fileKey> [fileKey ...]` — pushes exactly the file keys you list
+  (relative to the theme root, e.g. `templates/index.json sections/header-group.json`) back to
+  Shopify. Never push the whole theme — only the specific files a phase actually touched. See the
+  auto-push rule under step 2 and step 6 for when to call this.
 
 Put scratch files (fetched Figma JSON, section JSON payloads) in your scratchpad dir, never in
 `scripts/` or the repo.
@@ -193,8 +233,9 @@ identifier:
   found in this group, not just popups.)
 - **Anything else at the top level that doesn't match 'General Config', 'Template', or a
   Header/Footer/Overlay shape** (e.g. a leftover legacy color-reference section from before this
-  file adopted the standardized structure) — don't force-fit it into one of the categories above;
-  ask the user whether it's safe to ignore before proceeding, the same as any other unclear frame.
+  file adopted the standardized structure) — don't force-fit it into one of the categories above.
+  Don't stop to ask — skip it and continue, but call it out plainly in the final report (step 7)
+  so it's a visible, reviewable decision rather than a silent omission.
 
 `figma-fetch-node.js` the root/canvas URL at depth 1, then depth 2 (deeper as needed to look inside
 'Template' for Header/Footer/Overlay), to locate all of the above and confirm exactly which
@@ -221,9 +262,10 @@ visibility quirk, a node the fetch never surfaced) — go find it before finaliz
 JSON child count alone. This is the single cheapest place to catch a missed section, before any
 deep-fetch or subagent work has been spent on an incomplete list.
 
-Tell the user this file/page breakdown (including which viewport(s) you found per page) and get a
-quick confirmation before fetching everything in full depth — cheap to correct a wrong page mapping
-now, expensive after.
+Tell the user this file/page breakdown (including which viewport(s) you found per page), then
+proceed straight into full-depth fetching — don't stop and wait for a go-ahead. This report is
+informational, not a checkpoint; if something in it turns out wrong, it gets caught and fixed
+during step 5/6's own validation rather than by pausing here.
 
 ### 2. General config ('Colors' + 'Typography' + 'Product card') — do this FIRST, before any page
 
@@ -312,7 +354,16 @@ hover/slide image transition (these only matter when `product_image_type` isn't 
 them just because they exist in the schema.
 
 Report the diff (`update-settings-current.js`'s own printed output already gives you old → new per
-changed id) and get a quick confirmation before moving to pages.
+changed id).
+
+**Auto-push this phase before moving on.** Once general config is written, push it immediately —
+don't batch it together with page work, and don't wait for a manual go-ahead:
+```
+node scripts/push-theme.js <store> <themeId> config/settings_data.json
+```
+If the push itself errors (CLI/auth failure) or `update-settings-current.js` had already flagged
+something on write, fix it right now and re-push before starting step 3 — never carry a known-bad
+general config forward into page work. Only once this push succeeds do you move on to pages.
 
 ### 3. Per page: discover sections
 
@@ -377,9 +428,10 @@ from an unclear name. (They may rename mid-session; re-fetch depth 3 once more b
 so — renamed layers routinely resolve real ambiguity, e.g. "Frame 2147225582" → "Product
 specifications" told us exactly which real section file to use.)
 
-Present the full section list (with your best-guess section-file mapping per item) and get
-confirmation before fetching full data / dispatching work — this is the single highest-leverage
-place to catch a wrong plan cheaply.
+Present the full section list (with your best-guess section-file mapping per item), then move
+straight into fetching full data / dispatching work — don't stop for a go-ahead here. (The generic
+frame name case just above is the one real exception: that's missing information, not a plan to
+approve, so it still needs an actual answer before you can name that one section.)
 
 **Multi-slide/multi-state sections (slideshows, scrollable carousels/rows).** A single static Figma
 frame can only ever show ONE state of anything that changes over time or scroll position — a
@@ -491,15 +543,12 @@ node scripts/apply-section.js <store> <themeId> templates/<page>.json <sectionKe
 produces the right final order). Read each call's printed `notes` — an "Auto-applied" note is
 informational, a "Flagged" note needs your own judgement call, don't just ignore it.
 
-**Before writing to a template that already has section content**: check whether it's real merchant
-configuration or generic demo/starter content that shipped with the theme install (`git log`/the
-section keys' own naming convention — auto-generated keys like `slideshow_GAeAAc` are a strong
-demo-content signal). If it looks like demo content, ask the user explicitly (replace entirely vs.
-append) before resetting the file — this is a destructive action the permission layer will (and
-should) block without an explicit per-file confirmation, even if the user approved the same
-replace-vs-append choice for a different template earlier in the same session.
+**Before writing to a template that already has section content**: don't stop to ask, don't weigh
+demo-content vs. merchant-content signals — always replace. Reset the file and rebuild it from
+scratch every time, no exceptions, no "does this look real" judgement call. State plainly in the
+final report (step 7) which templates were reset — visible for review, not a gate on progress.
 
-To reset a template to empty before a from-scratch rebuild (only after the user confirms):
+To reset a template to empty before a from-scratch rebuild:
 ```js
 const fs = require('fs'), path = require('path');
 const filePath = path.join('theme/<store>/<themeId>', 'templates/<page>.json');
@@ -515,6 +564,16 @@ node scripts/validate-template-types.js <store> <themeId> templates/<page>.json
 Zero issues before you report anything as done. If it finds something, fix it with another
 `apply-section.js` call (or a small direct patch + re-run the validator) — never leave a known type
 mismatch for the user to discover via a Shopify-side error later.
+
+**Auto-push each page as soon as it validates clean** — don't wait until every page in the whole
+build is done:
+```
+node scripts/push-theme.js <store> <themeId> templates/<page>.json
+```
+(pass every file that page's work actually touched, e.g. also `sections/header-group.json` if that
+page's pass configured it too). If the push errors, or the merchant-visible result is wrong, fix it
+immediately — re-run `apply-section.js`/re-patch, re-validate, re-push — before starting the next
+page. Never move on with a page left in a known-broken state "to fix later."
 
 ### 7. Report
 

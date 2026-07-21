@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Helper for manually driving the same write path workflow-e.js's write_template_section
+// Helper for manually driving the same write path figma-page-agent.js's write_template_section
 // tool uses (upsertTemplateSection -> sanitizeSection -> auditSectionAgainstFigma), so
 // hand-authored section objects get the identical schema validation/auto-correction AND
 // Figma cross-check the real agent tool would apply.

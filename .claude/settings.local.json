@@ -1,11 +1,12 @@
 {
   "permissions": {
-    "defaultMode": "bypassPermissions",
+    "defaultMode": "default",
     "additionalDirectories": ["/tmp"],
     "allow": [
       "Bash(npm run *)",
-      "Bash(python *)",
-      "Bash(python3 *)"
+      "Bash(node scripts/*.js *)",
+      "Edit(theme/**/*.json)",
+      "Write(theme/**/*.json)"
     ]
   }
 }

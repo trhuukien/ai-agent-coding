@@ -1,7 +1,7 @@
 const { pullTheme, getThemeDir, readLocalFile } = require('../shopify/cli');
 const { ensureRepo, commitAll, stageAll, diffCached } = require('../shopify/git');
-const { runFigmaColorSync } = require('../ai/agents/workflow-figma-colors');
-const { runWorkflowE } = require('../ai/agents/workflow-e');
+const { runFigmaColorSync } = require('../agents/figma-colors-agent');
+const { runFigmaPageAgent } = require('../agents/figma-page-agent');
 const { SECTION_FILES } = require('./store');
 
 const GENERAL_CONFIG_FILE = 'config/settings_data.json';
@@ -36,7 +36,7 @@ async function runSection(store, themeId, sectionKey, section, correction, store
   const file = SECTION_FILES[sectionKey];
   log(`[${file}] Configuring from Figma...`);
   const task = buildTemplateTask(file, section.figmaUrl, section.prompt, correction);
-  return runWorkflowE(store, themeId, task, storePassword, [], onProgress);
+  return runFigmaPageAgent(store, themeId, task, storePassword, [], onProgress);
 }
 
 async function buildProject(project, storePassword = null, onProgress = null) {

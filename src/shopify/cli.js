@@ -2,8 +2,15 @@ const { spawn } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
+// Local folder name always uses the bare store handle (e.g. "kizchann"), never the full
+// "<handle>.myshopify.com" domain — the domain is still what's passed to the real `shopify`
+// CLI's --store flag (pullTheme/pushFiles below), this only affects where files live on disk.
+function toHandle(store) {
+  return store.replace(/\.myshopify\.com$/, '');
+}
+
 function getThemeDir(store, themeId) {
-  return path.join(process.cwd(), 'theme', store, themeId);
+  return path.join(process.cwd(), 'theme', toHandle(store), themeId);
 }
 
 class AuthRequiredError extends Error {
@@ -81,7 +88,7 @@ async function pullTheme(store, themeId) {
 
   await runCLI(args);
 
-  console.log(`Pulled → theme/${store}/${themeId}/`);
+  console.log(`Pulled → theme/${toHandle(store)}/${themeId}/`);
   return themeDir;
 }
 

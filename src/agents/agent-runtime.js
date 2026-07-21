@@ -1,8 +1,8 @@
-const { listLocalFiles, readLocalFile, writeLocalFile, searchInTheme } = require('../../shopify/cli');
-const { fetchPageElements } = require('../../shopify/fetch-html');
-const { fetchFigmaNode, fetchFigmaNodes, fetchFigmaIconSvg } = require('../../figma/fetch-figma');
-const { resolveSchemaTranslations } = require('../../shopify/locale-resolve');
-const { upsertTemplateSection, readTemplateSection } = require('../../shopify/template-section');
+const { listLocalFiles, readLocalFile, writeLocalFile, searchInTheme } = require('../shopify/cli');
+const { fetchPageElements } = require('../shopify/fetch-html');
+const { fetchFigmaNode, fetchFigmaNodes, fetchFigmaIconSvg } = require('../figma/fetch-figma');
+const { resolveSchemaTranslations } = require('../shopify/locale-resolve');
+const { upsertTemplateSection, readTemplateSection } = require('../shopify/template-section');
 
 // Files whose {% schema %} / settings JSON contains "t:..." translation keys —
 // resolve them against locales/en.default.schema.json before handing the

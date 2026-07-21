@@ -1,5 +1,5 @@
 /**
- * Workflow E — Page/Section Configuration from a Design Image
+ * Figma page agent — Page/Section Configuration from a Design Image
  * Analyzes a design image and configures matching section(s) by reading each
  * section's own schema. The merchant may optionally name which section type
  * to use for each visual block; otherwise the agent infers it.
@@ -14,12 +14,12 @@
  * conversation that reads/writes the whole template file itself.
  */
 const Anthropic = require('@anthropic-ai/sdk');
-const { runAgentLoop } = require('./shared');
-const { runFigmaColorSync } = require('./workflow-figma-colors');
-const { runFigmaTypographySync } = require('./workflow-figma-typography');
-const { fetchFigmaNode } = require('../../figma/fetch-figma');
-const { listLocalFiles } = require('../../shopify/cli');
-const { getSectionDisplayNames } = require('../../shopify/audit-section');
+const { runAgentLoop } = require('./agent-runtime');
+const { runFigmaColorSync } = require('./figma-colors-agent');
+const { runFigmaTypographySync } = require('./figma-typography-agent');
+const { fetchFigmaNode } = require('../figma/fetch-figma');
+const { listLocalFiles } = require('../shopify/cli');
+const { getSectionDisplayNames } = require('../shopify/audit-section');
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -807,7 +807,7 @@ function dedupeChangedFiles(changedFiles) {
   return [...byKey.values()];
 }
 
-async function runWorkflowE(store, themeId, task, storePassword = null, images = [], onProgress = null) {
+async function runFigmaPageAgent(store, themeId, task, storePassword = null, images = [], onProgress = null) {
   const changedFiles = [];
   const summaries = [];
 
@@ -922,4 +922,4 @@ async function runWorkflowE(store, themeId, task, storePassword = null, images =
   return { changedFiles: dedupeChangedFiles(changedFiles), summary: summaries.join('\n\n') };
 }
 
-module.exports = { runWorkflowE, discoverSitePlan, buildNodeUrl };
+module.exports = { runFigmaPageAgent, discoverSitePlan, buildNodeUrl };

@@ -1,9 +1,8 @@
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
-const { pullTheme, pushFiles, listLocalFiles, writeLocalFile, getThemeDir, AuthRequiredError } = require('./shopify/cli');
+const { pushFiles, writeLocalFile, getThemeDir, AuthRequiredError } = require('./shopify/cli');
 const { commitAll } = require('./shopify/git');
-const { runAgent } = require('./ai/agent');
 const { listProjects, getProject, createProject, updateProject, deleteProject, SECTION_KEYS } = require('./projects/store');
 const { buildProject, reviseSection } = require('./projects/build');
 
@@ -13,110 +12,15 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 const jobs = new Map();
 
-function requireParams(body, ...fields) {
-  const missing = fields.filter((f) => !body[f]);
-  if (missing.length) throw new Error(`Missing required fields: ${missing.join(', ')}`);
-}
-
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-// Pull theme → 202 async
-app.post('/api/pull', (req, res) => {
-  try {
-    requireParams(req.body, 'store', 'themeId');
-  } catch (err) {
-    return res.status(400).json({ error: err.message });
-  }
-
-  const { store, themeId } = req.body;
-  const jobId = `pull-${store}-${themeId}-${Date.now()}`;
-  jobs.set(jobId, { type: 'pull', store, themeId, status: 'running', startedAt: new Date() });
-
-  pullTheme(store, themeId)
-    .then(() => {
-      const fileCount = listLocalFiles(store, themeId).length;
-      jobs.set(jobId, { ...jobs.get(jobId), status: 'done', result: { fileCount } });
-    })
-    .catch((err) => {
-      if (err instanceof AuthRequiredError) {
-        jobs.set(jobId, {
-          ...jobs.get(jobId),
-          status: 'needs_auth',
-          auth: { userCode: err.userCode, authUrl: err.authUrl },
-          message: `Open the link to authenticate this store once, then retry.`,
-        });
-      } else {
-        jobs.set(jobId, { ...jobs.get(jobId), status: 'error', error: err.message });
-      }
-    });
-
-  res.status(202).json({ jobId, status: 'running', pollUrl: `/api/jobs/${jobId}` });
-});
-
-// List local files (after pull)
-app.get('/api/files', (req, res) => {
-  const { store, themeId } = req.query;
-  if (!store || !themeId) return res.status(400).json({ error: 'store and themeId query params required' });
-  const files = listLocalFiles(store, themeId);
-  res.json({ count: files.length, files });
-});
-
-// Main: pull → AI → push → 202 async
-app.post('/api/request', (req, res) => {
-  try {
-    requireParams(req.body, 'store', 'themeId', 'task');
-  } catch (err) {
-    return res.status(400).json({ error: err.message });
-  }
-
-  const { store, themeId, task, storePassword } = req.body;
-  const jobId = `req-${store}-${themeId}-${Date.now()}`;
-  const log = [];
-
-  jobs.set(jobId, { type: 'request', store, themeId, task, status: 'running', log, startedAt: new Date() });
-
-  (async () => {
-    try {
-      log.push('[1/3] Pulling theme...');
-      await pullTheme(store, themeId).catch((err) => {
-        if (err instanceof AuthRequiredError) {
-          jobs.set(jobId, {
-            ...jobs.get(jobId),
-            status: 'needs_auth',
-            auth: { userCode: err.userCode, authUrl: err.authUrl },
-            message: `Open the link to authenticate this store once, then retry.`,
-          });
-          throw err;
-        }
-        throw err;
-      });
-
-      log.push('[2/3] AI processing...');
-      const { changedFiles, summary } = await runAgent(store, themeId, task, storePassword || null, [], (msg) => log.push(msg));
-
-      if (changedFiles.length === 0) {
-        jobs.set(jobId, { ...jobs.get(jobId), status: 'done', result: { changedFiles: [], summary, pushed: [] } });
-        return;
-      }
-
-      const keys = changedFiles.map((f) => f.key);
-      log.push(`[3/3] Pushing ${keys.length} file(s)...`);
-      await pushFiles(store, themeId, keys);
-
-      jobs.set(jobId, { ...jobs.get(jobId), status: 'done', result: { changedFiles, summary, pushed: keys } });
-      console.log(`[${jobId}] Done ✓`);
-    } catch (err) {
-      jobs.set(jobId, { ...jobs.get(jobId), status: 'error', error: err.message });
-      console.error(`[${jobId}] Error:`, err.message);
-    }
-  })();
-
-  res.status(202).json({ jobId, status: 'running', pollUrl: `/api/jobs/${jobId}` });
-});
-
 // ─── Projects (Figma-driven build) ─────────────────────────────────────────
+// This is the ONLY build path this server exposes: create a project (store + themeId + a Figma
+// link per page/general-config), then /build it. There is no generic free-text "do X to this
+// theme" endpoint — see CLAUDE.md for the alternative (Claude Code session) mode, which has no
+// server/API-key dependency at all.
 
 app.get('/api/projects', (req, res) => {
   res.json(listProjects());
@@ -300,4 +204,12 @@ app.get('/api/jobs', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`\nAI Support Theme → http://localhost:${PORT}\n`);
+  if (!process.env.ANTHROPIC_API_KEY) {
+    console.log(
+      'Warning: ANTHROPIC_API_KEY is not set — this server (API key mode) can\'t run a project\n' +
+      'build/revise, those calls will fail. Either set ANTHROPIC_API_KEY in .env, or skip this\n' +
+      'server entirely and use Claude session mode instead: open this repo in a Claude Code\n' +
+      'session and follow CLAUDE.md, no API key or server required.\n'
+    );
+  }
 });

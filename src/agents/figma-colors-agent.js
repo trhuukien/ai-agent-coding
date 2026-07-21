@@ -1,14 +1,14 @@
 /**
  * Figma color sync — makes the theme's global (light-mode) color settings match a Figma design,
  * by reading the theme's own settings schema at runtime (never memorized ids). Only ever invoked
- * from workflow-e.js's multi-page (whole-file) branch, when discoverSitePlan finds a "Colors"
+ * from figma-page-agent.js's multi-page (whole-file) branch, when discoverSitePlan finds a "Colors"
  * frame inside the SAME Figma file the task's own link already points at — there is no separate
  * per-store config that syncs colors from an unrelated, hardcoded URL regardless of what the task
- * is actually about (that mechanism was removed: a Figma link is already mandatory to reach
- * workflow E at all, so a second, disconnected "which URL has the colors" mapping was redundant).
+ * is actually about (that mechanism was removed: a Figma link is already mandatory to reach the
+ * page agent at all, so a second, disconnected "which URL has the colors" mapping was redundant).
  */
 const Anthropic = require('@anthropic-ai/sdk');
-const { runAgentLoop } = require('./shared');
+const { runAgentLoop } = require('./agent-runtime');
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
