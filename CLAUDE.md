@@ -85,8 +85,10 @@ starting — don't guess.
   of this flag; re-fetch that specific node (deeper `depth`, or omit `depth` entirely if it's small)
   before deciding it has nothing worth configuring. Only `"decorative": true` (which the tool only
   ever sets on an unlimited-depth fetch, where the whole subtree was actually walked) means "real
-  vector/icon artwork, genuinely nothing else in here, safe to leave as a flat stub." See the
-  `figma-decorative-pruning-bug` note below for why this distinction exists.
+  vector/icon artwork, genuinely nothing else in here, safe to leave as a flat stub." Rule of thumb:
+  a flagged node whose box is clearly bigger than an icon (bigger than ~60×60px) is almost certainly
+  real content, not decoration. Never trust a `decorative: true` in an OLD cached JSON file fetched
+  before this behavior existed — re-fetch it. See `CHANGELOG.md` for the full bug history.
 - `figma-fetch-multi.js <list-file> <out-dir> [depth]` — batch-fetch several sibling nodes from
   the SAME file in one Figma API call (list-file: lines of `key|url`). Always prefer this over N
   separate `figma-fetch-node.js` calls when you already know you need several sections' data.
@@ -117,6 +119,21 @@ starting — don't guess.
   Render each already-identified top-level child/section node as its own separate image instead
   (one call, many node ids, same batching this script already does) — every section's own frame is a
   reasonable, legible aspect ratio on its own.
+- `fetch-shopify-collections.js <shop-domain> [password]` — fetch a store's REAL collection list
+  (id, title, handle) via the storefront's public `/collections.json` endpoint. No Admin API token
+  needed, no app install — genuinely public, unauthenticated data. If the storefront is
+  password-protected, pass the password as the second argument (read fresh from the chat each time,
+  never stored anywhere — this project sets up many different stores, so a single `.env` entry
+  doesn't fit). **The password only ever unlocks the SAME store it belongs to** — don't reuse
+  collection data fetched from one store's domain when configuring a DIFFERENT store's theme; a
+  `collection` field's handle only resolves against whatever store the theme is actually pushed to,
+  so mismatched store data silently resolves to nothing at push time. This script does NOT do any
+  matching itself — it only returns the real list; matching a Figma/existing block's title (e.g.
+  "Baby Swaddle") to the closest real collection title (e.g. "Baby Swaddle / Muslin Blanket") is a
+  judgment call to make afterward. Only assign a collection when confident (exact or near-exact
+  title match); if multiple real collections could plausibly match (e.g. "Teething" matching 5 real
+  teething-related collections) or none match at all, leave the field at schema default (blank) and
+  flag it as a merchant follow-up — same never-guess rule as every other real resource reference.
 - `read-theme-file.js <store> <themeId> <file-key>` — read a local theme file with every `t:...`
   translation key already resolved to real English text. Use this for markup/logic (`.liquid`
   render code above `{% schema %}`), `locales/*.json`, `config/settings_schema.json` — anything
@@ -218,7 +235,9 @@ identifier:
   2. Nested as direct children INSIDE a page frame itself (e.g. a page's own "Announcement bar" +
      "Logo above, menu center" children for Header, a "Footer" child for Footer) — if no standalone
      group exists, this is where to look instead, same as earlier sessions handled it.
-  Map to `sections/header-group.json` / `sections/footer-group.json` either way.
+  Map to `sections/header-group.json` / `sections/footer-group.json` either way. **Always set the
+  `header` section's own `enable_sidebar` setting to `false`** regardless of what the Figma design
+  shows — this is a standing project rule, not a per-design judgment call.
 - **'Overlay'** — 1 Figma section/group (found nested under 'Template') containing whichever
   overlay-type sections this specific design actually uses — confirmed real examples so far:
   `'Popup'`, `'Product labels and badges'` (multiple individual badge variants get merged into ONE
@@ -245,7 +264,11 @@ pages/groups exist.
 project's Figma files are usually desktop-only (as this session's was), but don't assume that by
 default — some files provide a SEPARATE mobile frame per page (e.g. sibling frames "Homepage
 Desktop" / "Homepage Mobile", or a whole separate page-frame set under a "Mobile" canvas/section).
-If only one viewport exists for a page, that's a completely normal, sufficient input — configure
+Once `Template` is found, explicitly enumerate ALL of its direct children and look for both a
+`Desktop Layout`-shaped group/frame set AND a `Mobile Layout`-shaped one, independently — don't stop
+looking the moment you find one; only conclude a file is single-viewport after fully expanding every
+top-level child, not from a shallow scan going quiet. If only one viewport exists for a page, that's
+a completely normal, sufficient input — configure
 every field you have real data for and leave the OTHER viewport's `_mobile`-suffixed (or plain,
 if the data you have is mobile) fields at schema default; state plainly in your final report which
 viewport was actually configured from real data, so it's obvious what's still open. If BOTH exist,
@@ -268,6 +291,12 @@ informational, not a checkpoint; if something in it turns out wrong, it gets cau
 during step 5/6's own validation rather than by pausing here.
 
 ### 2. General config ('Colors' + 'Typography' + 'Product card') — do this FIRST, before any page
+
+**Always set `theme_mode_enabled` to `false`** as part of this step, regardless of what the Figma
+design shows — this is a standing project rule (this site-wide "Theme mode"/dark-light-switcher
+toggle lives at the very top of `config/settings_schema.json`, default `true` on a fresh theme;
+patch it via `update-settings-current.js` in the same patch file as the Colors/Typography/Product
+card changes below, not a per-design judgment call).
 
 **Never read `config/settings_data.json` directly for this step** (via `read-theme-file.js` or any
 other means) — it also carries N full preset objects (each nearly as large as the live settings
@@ -527,9 +556,38 @@ Rules every subagent (or you, doing it directly) must follow:
   icon (SVG code)" and the design shows a specific icon, `figma-fetch-icon.js` the real vector node
   and paste the real SVG in. Do not pick a built-in preset icon name as a substitute when this field
   exists — that was the second most common real mistake.
-- Product/collection/video/image references that don't exist in Figma (they never do — Figma has no
+- Product/collection/video references that don't exist in Figma (they never do — Figma has no
   concept of a real Shopify resource) get left blank/empty-array for the merchant, explicitly noted
-  in the summary, never invented.
+  in the summary, never invented — UNLESS real collection data has been fetched for this store (see
+  `fetch-shopify-collections.js` below) and a confident title match exists, in which case use the
+  real handle instead of leaving it blank.
+- **`image_picker`/`image` fields ARE pre-filled, unlike product/collection/video** — Shopify
+  resolves an `image_picker` value (`shopify://shop_images/<filename>`, confirmed format — grep any
+  real theme's `config/settings_data.json`/`templates/*.json` for `shopify://shop_images/` to see
+  live examples) purely by filename match against whatever the merchant has uploaded to their Files
+  library, whenever that happens — so a filename set NOW will start resolving correctly the moment a
+  matching-named file is uploaded later, with no need to touch the section config again. So: never
+  leave an `image_picker` field truly blank when Figma shows a real photo. Set it to
+  `shopify://shop_images/<filename>` using **the Figma layer's own `name`, verbatim** (plus the real
+  file extension — `.png` if unknown) — do NOT invent a nicer/descriptive name, and do NOT
+  slugify/lowercase/hyphenate it. The point of this field is to match whatever file the merchant
+  actually gets when they right-click that exact layer in Figma and choose Export — Figma's own
+  export names the downloaded file after the layer's name as-is, so using anything else just forces
+  the merchant to manually rename the file before upload, the opposite of the goal. Only touch
+  characters that are genuinely illegal in a filename (e.g. `/`). A generic layer name (`"img"`,
+  `"Rectangle 408"`) is fine functionally — the reference still resolves correctly on a plain name
+  match — just describe the image's real purpose in the merchant follow-up report (§7) next to that
+  filename, so a human reviewing it knows what `img.png` is actually for even though the filename
+  itself stays generic. This has not been verified end-to-end against a real store yet (confirm the
+  resolve behavior once, on the first real use, rather than assuming it's flawless).
+- **Collection reference confidently matched → any CTA/button link tied to that same block must
+  also point at it.** When a block's `collection` field gets a real handle (matched via
+  `fetch-shopify-collections.js`), also set that same block's own button/CTA link field (e.g.
+  `button_link` on a `featured-collection` block) to `/collections/<handle>` — don't leave one set
+  and the other blank. If no confident collection match exists for that block, set the link field
+  to `#` (a safe placeholder) rather than leaving it truly empty. This does NOT apply to block types
+  with no separate link field of their own (e.g. a `collection-list` block's card is auto-linked via
+  its own `collection` setting in the section's Liquid, nothing extra to set).
 - A section whose content doesn't map to any real field in its own schema: skip that piece, note it
   — never invent a field id.
 
@@ -578,82 +636,34 @@ page. Never move on with a page left in a known-broken state "to fix later."
 ### 7. Report
 
 For each page: a short table of section → real file used, then a clearly separated "needs merchant
-follow-up" list (missing images/products/collections/videos, placeholder copy the design didn't
-show, anything flagged-not-auto-resolved). Don't bury these in prose — they're the actual action
-items for whoever reviews the build.
+follow-up" list (missing products/collections/videos, placeholder copy the design didn't show,
+anything flagged-not-auto-resolved). Don't bury these in prose — they're the actual action items for
+whoever reviews the build. For every pre-filled `image_picker` filename (see §5), list the Figma
+node it came from, its real purpose, and the exact expected filename (e.g. "Homepage hero image
+(Figma layer `img`) — export that layer from Figma and upload as-is, filename must stay `img.png`")
+— since the filename itself is often a generic Figma layer name, the merchant needs this context to
+know what it's actually for, even though they shouldn't rename the file itself.
 
 ## Known real mistakes from past sessions (why the rules above exist)
 
-- Picked `email-signup-banner.liquid` for a homepage newsletter section without checking
-  `enabled_on`/`disabled_on` — it's password-page-only, broke on push. → always check §4.2.
-- Guessed built-in preset icon names (`award`, `check-mark`, ...) instead of exporting the real
-  Figma vector for a `custom_icon` (SVG) field, even though the export tool was available the whole
-  time. → always check §5's icon rule.
-- Set a heading/breadcrumb alignment to "left" because the individual TEXT node's `font.align` said
-  "LEFT", when the actual centered block (measured via parent-box gaps) was dead-center. → always do
-  the box-gap math in §5, never trust `font.align` alone for block-level alignment.
-- Wrote `""` into `product_list`/`collection_list`-type fields (Shopify requires an array) — passed
-  local checks silently because `sanitizeSection` only checked range/richtext/select at the time;
-  this has since been fixed in `src/shopify/validate-section.js` to check every real schema type,
-  but always run `validate-template-types.js` anyway — it catches anything the write-time
-  auto-correct still can't infer a safe fix for.
-- Picked `product-attribute-table.liquid` for a static ingredient name/description table — the real
-  schema needs actual Shopify product/metafield references per block, not free text; the design
-  needed `product-specifications.liquid` instead, whose blocks are real free-text rows. → always
-  read the CANDIDATE file's actual block settings (§4.3) before assuming a plausible-sounding file
-  fits.
-- Read the ENTIRE `main-product.liquid` file (15,000+ lines, ~200K tokens in one subagent call) just
-  to configure a handful of blocks a design actually used out of its ~35 available types. →
-  `read-section-schema.js` now exists specifically to avoid this: always do the Figma-analysis-first,
-  index-then-detail flow in §5, never `read-theme-file.js` a `sections/*.liquid` file just to see its
-  schema.
-- (Fixed 2026-07-20) `src/shopify/validate-section.js`'s `snapValue()` had no case for schema
-  `"type": "number"` (a real, distinct Shopify type — free numeric input, no min/max/step, used e.g.
-  by `announcement`'s `end_year`) — it fell through to the generic string catch-all, which treats
-  any non-string as "a number that slipped into a string-only field" and resets it to `""`. Writing
-  a real number (e.g. `end_year: 2026`) into a `number` field via `apply-section.js` silently
-  corrupted it to an empty string, which passed `validate-template-types.js` too (that script had
-  the identical gap — only `range` was checked for being numeric) and only surfaced as a real
-  `shopify theme push` failure ("Setting 'end_year' must be a valid number") — reported 3 times
-  before being root-caused. Both files now handle `number` explicitly (clamped/coerced like `range`,
-  minus the min/max/step). → whenever a section schema has a field typed `"number"` (grep the raw
-  `.liquid` file for `"type": "number"` — don't assume "range" is the only numeric type), verify
-  after writing that `validate-template-types.js` actually still reports the real value type by
-  spot-checking the written JSON directly — a clean validator run is not proof if the validator
-  itself has a blind spot for that type.
-- (Fixed 2026-07-20, `figma-decorative-pruning-bug`) `src/figma/fetch-figma.js`'s decorative-prune
-  heuristic used to fire on ANY container node with no TEXT/IMAGE found in `out.children` — but at a
-  capped `depth`, `out.children` is only a partial view, so real content sitting deeper than the
-  requested depth looked identical to a genuinely empty icon and got silently deleted. This is what
-  caused whole real pages/sections/blocks/icons (confirmed on a live file: three full mobile page
-  frames, a popup's own heading/body/CTA copy, an entire header hamburger-menu flyout) to vanish
-  during ordinary depth-2-to-4 discovery scans. Fixed by only applying the prune on unlimited-depth
-  fetches; a capped-depth fetch now sets `needsDeeperFetch: true` instead and keeps whatever partial
-  children it has. → never trust a `decorative: true` you see in an OLD cached JSON file fetched
-  before this fix landed; re-fetch it. Going forward, always re-fetch any `needsDeeperFetch`-flagged
-  node before concluding it has nothing to configure (see the `figma-fetch-node.js` bullet above).
+Full history/root-cause detail for each of these lives in `CHANGELOG.md` — read that on demand, not
+by default. Terse rules only, here:
+
+- Check `enabled_on`/`disabled_on` before picking a section file (§4.2) — a plausible-sounding file
+  can be restricted to a completely different template.
+- Never guess a built-in preset icon name when a `custom_icon` SVG field exists — always export the
+  real vector (§5).
+- Compute alignment from box-gap math, never from a single TEXT node's own `font.align` (§5) — the
+  single most common real mistake this project has produced.
+- Read a CANDIDATE section file's actual block settings before committing to it (§4.3) — a
+  plausible-sounding file's blocks may need real product/metafield references, not free text.
+- Always use `read-section-schema.js`'s two-phase index-then-detail flow (§5) — never
+  `read-theme-file.js` a `sections/*.liquid` file just to see its schema.
+- `number`-type schema fields need explicit numeric handling — both `validate-section.js` and
+  `validate-template-types.js` now check this; still spot-check a written `number` field's real
+  value after writing, a clean validator run alone isn't proof.
+- Never trust `decorative: true` in an old cached Figma JSON file — see the `figma-fetch-node.js`
+  bullet above for the current, correct behavior.
 - Mobile header/menu icon (hamburger) is not a real Figma-driven config target — it renders by
   default on mobile regardless of settings; any header-group "icon style" field only affects
-  desktop. Don't go looking for a "show hamburger on mobile" field to set from a mobile mockup — the
-  only real content inside a mobile menu flyout is the actual link labels (→ Shopify navigation
-  linklist, not a section setting) and anything unrelated to icon/open-close behavior.
-
-## Making sure both viewports and all block/icon detail actually get read
-
-Two failure modes to guard against explicitly, now that the pruning bug above is fixed:
-
-1. **Missing a whole viewport.** At step 1, once `Template` is found, explicitly enumerate ALL of
-   its direct children (a depth-2/3 scan is enough — real content will now correctly surface via
-   `needsDeeperFetch` rather than vanishing) and look for both a `Desktop Layout`-shaped group/frame
-   set AND a `Mobile Layout`-shaped one, independently — don't stop looking the moment you find one.
-   If a file only ever contains one (as confirmed by fully expanding every top-level child, not by a
-   shallow scan going quiet), that's a legitimate single-viewport file — say so explicitly per the
-   existing viewport rule in §1, but only after actually confirming absence, not just an
-   un-re-fetched `needsDeeperFetch` stub.
-2. **Missing block/icon detail on an otherwise-found section.** Any `needsDeeperFetch: true` (or,
-   on pre-fix cached JSON, `decorative: true`) on a node whose box size is clearly bigger than an
-   icon (rule of thumb: bigger than roughly 60×60px) is almost certainly real content, not
-   decoration — always re-fetch that exact node with `figma-fetch-node.js "<url-with-that-node-id>"`
-   and NO depth argument (full depth; per-section full-depth reads are cheap) before finalizing a
-   section's fields or its custom-icon export. Only trust a `decorative: true` produced by an
-   unlimited-depth fetch of the section itself (step 5's normal flow already does this).
+  desktop.
