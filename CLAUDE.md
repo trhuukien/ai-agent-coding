@@ -527,6 +527,18 @@ plus a short prose summary — never have subagents call `apply-section.js` them
 concurrent writes to the same template file race. YOU write all of them sequentially and in the
 page's real top-to-bottom order once every subagent has returned.
 
+**Before dispatching, YOU (not the subagent) must handle every icon in that section's Figma JSON —
+this is not optional and not the subagent's judgment call to skip.** Walk the section's JSON
+yourself for icon-shaped nodes (small `decorative: true` instances, or anything sitting behind an
+`icon`/`custom_icon` schema field pair) and, for each one, either (a) already export its real SVG
+via `figma-fetch-icon.js` yourself before dispatch and paste the SVG content straight into that
+subagent's prompt, or (b) at minimum hand the subagent the exact `node-id` URL so it can run
+`figma-fetch-icon.js` itself. De-dupe identical reused icon instances (e.g. 4 blocks sharing one
+icon only need one export). "The subagent wasn't given a direct Figma URL" is never a valid reason
+for a preset guess to reach the final section JSON — if that happens, it means YOU skipped this
+step before dispatch, not that a preset was an acceptable fallback. Only fall back to a built-in
+preset name when a real vector genuinely doesn't exist for that node (confirmed, not assumed).
+
 Rules every subagent (or you, doing it directly) must follow:
 - **Look at the section's rendered PNG first for layout facts** (column count, whether a
   pagination-dot strip means a real carousel, true center/left/right alignment) — this is what the
@@ -552,10 +564,41 @@ Rules every subagent (or you, doing it directly) must follow:
   right-gap), never from a single TEXT node's own `font.align`.** `font.align` only describes how
   text wraps within one run — a centered block routinely contains a TEXT node whose own align is
   "LEFT". This was the single most common real mistake this project has produced — check it twice.
+- **Color fields defaulting to `rgba(0,0,0,0)` ("inherit the global theme color") may ONLY be left
+  blank when the Figma value ACTUALLY, CONFIRMED equals that global token — never as a default
+  low-effort choice, and never just because "no color override evidence" was found without actually
+  checking.** Many theme fields (`color_text`, `color_button`, `color_heading_highlight_light`, etc.)
+  fall back to a sitewide token (`settings.colors_text`, `settings.colors_button`, ...) when left
+  transparent — leaving them blank is only equivalent to the real Figma color when that Figma color
+  and the token are genuinely the same value. **This equivalence breaks down completely for any
+  section whose own visual context differs from the general page background** — a hero image, a
+  photo overlay, a dark-background card, a colored banner. Figma routinely specifies WHITE text/
+  button colors for legibility on a photo or dark backdrop, which is a deliberate, local design
+  choice completely different from the sitewide default (dark body text, purple buttons meant for
+  the light page background) — leaving those fields blank in that case inherits the WRONG color and
+  silently renders illegible/mismatched text. The check every time: read the actual TEXT node's own
+  `color` (and any button fill/stroke) directly from the Figma JSON for THAT section, and only treat
+  it as "matches the token, leave blank" when the hex values genuinely agree — if they differ (e.g.
+  Figma says `#ffffff`, the token is `#4a403a` or a brand purple), hardcode the real color explicitly,
+  every time, no matter how many other sections in the same build correctly inherited theirs. Any
+  section with its own image/photo background, overlay, or non-default color block is a standing
+  flag to verify every text/heading/button color field against Figma's real per-node color before
+  assuming inheritance applies.
+- **`icon_size` is a single shared field (no separate mobile variant), but some themes apply a
+  render-time multiplier to it in their own snippet/section code** (e.g. a `{{ icon_size | times:
+  <factor> }}px`-style line) — so the raw config value doesn't always render at 1:1. **Desktop
+  measurements are always safe to write as-is.** Only when the Figma measurement you're configuring
+  FROM is itself a mobile-viewport measurement: find that render multiplier and write the INVERSE
+  into `icon_size` — `config_value = figma_measured_px / multiplier` — so the actual rendered size
+  matches the design instead of coming out smaller/larger. Don't hardcode any specific factor here;
+  it's theme-specific and must be read from that theme's own code when this case applies.
 - **Custom SVG icon fields**: if the schema has a `"type": "html"` field literally labeled "Custom
   icon (SVG code)" and the design shows a specific icon, `figma-fetch-icon.js` the real vector node
   and paste the real SVG in. Do not pick a built-in preset icon name as a substitute when this field
-  exists — that was the second most common real mistake.
+  exists — that was the second most common real mistake. This is MANDATORY, not a per-subagent
+  judgment call or something to skip "because no URL was provided this time" — see the dispatch note
+  above: getting the real SVG in front of whoever configures the block (yourself or a subagent) is
+  the orchestrator's own responsibility, done BEFORE dispatch, every time a schema has this field.
 - Product/collection/video references that don't exist in Figma (they never do — Figma has no
   concept of a real Shopify resource) get left blank/empty-array for the merchant, explicitly noted
   in the summary, never invented — UNLESS real collection data has been fetched for this store (see
@@ -652,9 +695,17 @@ by default. Terse rules only, here:
 - Check `enabled_on`/`disabled_on` before picking a section file (§4.2) — a plausible-sounding file
   can be restricted to a completely different template.
 - Never guess a built-in preset icon name when a `custom_icon` SVG field exists — always export the
-  real vector (§5).
+  real vector (§5). This applies even (especially) when dispatching subagents: extract every icon
+  node's real `node-id` from the Figma JSON YOU already fetched and either export it yourself before
+  dispatch or hand the subagent the exact URL — "the subagent had no direct URL" is a dispatch bug on
+  your part, never an acceptable excuse for a preset guess reaching the final section JSON.
 - Compute alignment from box-gap math, never from a single TEXT node's own `font.align` (§5) — the
   single most common real mistake this project has produced.
+- Never leave a color field blank ("inherit global token") without actually confirming the Figma
+  node's own color matches that token (§5) — a hero/overlay/dark-background section routinely uses
+  WHITE text/button colors that are nothing like the sitewide default, and leaving those blank
+  silently renders the wrong (illegible) color. Read the real per-node hex from Figma every time,
+  don't assume inheritance is safe just because other sections' colors happened to match.
 - Read a CANDIDATE section file's actual block settings before committing to it (§4.3) — a
   plausible-sounding file's blocks may need real product/metafield references, not free text.
 - Always use `read-section-schema.js`'s two-phase index-then-detail flow (§5) — never
@@ -667,3 +718,18 @@ by default. Terse rules only, here:
 - Mobile header/menu icon (hamburger) is not a real Figma-driven config target — it renders by
   default on mobile regardless of settings; any header-group "icon style" field only affects
   desktop.
+- **`flexible-area`'s `item-group` block: never use `container_type: "flex"` for a uniform N-column
+  grid.** `"flex"` mode lays out children with raw CSS (`max-width: N%` + gap) that mathematically
+  overflows and silently collapses to single-column UNLESS a client-side JS helper
+  (`flexible-area.js`'s `adjustFlexWidths`, wired through Alpine.js's `alpine:init` event) runs to
+  correct it at render time — that JS is timing-fragile and does not reliably fire inside the theme
+  editor's preview iframe (and its behavior on the live storefront should still be verified, not
+  assumed). `"flex"` is only appropriate for genuinely mixed/uneven per-item width percentages that
+  don't reduce to a clean grid. For any uniform grid (all items the same width, e.g. a 2-column or
+  4-column badge/feature grid), use `container_type: "carousel"` instead with `swiper_on_mobile:
+  false` and `enable_desktop_slider: false` — this renders via plain CSS Grid
+  (`grid grid-cols-{{ columns_mobile }}` / `md:grid md:grid-cols-{{ columns_desktop }}`), needs no
+  JS, and is the robust choice whenever the Figma design shows a static, non-swipeable grid (no
+  pagination dots/arrows). Confirm this by reading `blocks/item-group.liquid` directly — don't guess
+  which container_type to use from the field's confusing name ("carousel" here really means
+  "CSS-grid-with-optional-slider", not "must have a visible carousel").
