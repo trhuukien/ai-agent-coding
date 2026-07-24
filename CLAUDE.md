@@ -592,6 +592,15 @@ Rules every subagent (or you, doing it directly) must follow:
   into `icon_size` — `config_value = figma_measured_px / multiplier` — so the actual rendered size
   matches the design instead of coming out smaller/larger. Don't hardcode any specific factor here;
   it's theme-specific and must be read from that theme's own code when this case applies.
+- **Section top/bottom padding (desktop & mobile): default to `60` desktop / `28` mobile unless the
+  Figma design shows this section sitting flush against its neighbor with no visible gap.** Verify
+  the actual field ids on that section's own schema first (commonly `padding_top`/`padding_bottom`
+  plus `_mobile` variants, but ids can vary — never assume without checking phase 2). Auto-set
+  desktop values to `60` and mobile values to `28` as the standard baseline for every section, top
+  and bottom, UNLESS measuring the box-gap between this section's own box and its immediate
+  neighbor's box (above and/or below) in the Figma frame shows them touching with ~0 gap — in that
+  specific case, reduce/zero out only the touching side's padding (top, bottom, or both) to match,
+  rather than applying the `60`/`28` default blindly on that side.
 - **Custom SVG icon fields**: if the schema has a `"type": "html"` field literally labeled "Custom
   icon (SVG code)" and the design shows a specific icon, `figma-fetch-icon.js` the real vector node
   and paste the real SVG in. Do not pick a built-in preset icon name as a substitute when this field
