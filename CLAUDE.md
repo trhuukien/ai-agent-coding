@@ -277,6 +277,24 @@ from either, once; layout fields — columns, spacing, alignment — set separat
 `_mobile` vs plain field ids). Never reuse desktop absolute px thresholds/measurements on mobile data
 or vice versa — always convert to a percentage of that frame's own width before comparing.
 
+**Light/Dark twin templates.** Some files provide a whole SEPARATE top-level template pair for the
+same page — confirmed real pattern: sibling frames/sections named like `Template - Light mode` /
+`Template - Dark mode` (can appear standalone at the top level, not nested under the standard
+'General Config'/'Template' structure above), structurally identical (same blocks, same layout, same
+text/images) but with different color fills. Detect this the same way as the Desktop/Mobile
+viewport case above — don't assume it from a name alone, confirm the two frames genuinely mirror
+each other's structure. When confirmed:
+- Do full structural analysis (schema, blocks, block_order, every non-color field) from the LIGHT
+  template ONLY, exactly as any normal page — this is the one real source of truth for content/
+  layout.
+- Do NOT run a second full schema-driven analysis pass over the Dark template — same content
+  decisions would just be repeated for zero new information, wasted schema-read + subagent dispatch.
+  Instead walk the Dark template's Figma JSON only to pull the corresponding real color values
+  (matched by the same structural position as the Light template) and write those into each field's
+  `_dark` counterpart.
+- This is what should drive `theme_mode_enabled: true` in step 2's General Config — see that step's
+  rule for the full detail.
+
 **Cross-check the section count visually before finalizing this list.** Render each page's own
 top-level children as PNGs via `figma-fetch-image.js` (one batched call, all children of a page at
 once) and count the distinct visual blocks you actually see. If the image shows more blocks than
@@ -292,11 +310,17 @@ during step 5/6's own validation rather than by pausing here.
 
 ### 2. General config ('Colors' + 'Typography' + 'Product card') — do this FIRST, before any page
 
-**Always set `theme_mode_enabled` to `false`** as part of this step, regardless of what the Figma
-design shows — this is a standing project rule (this site-wide "Theme mode"/dark-light-switcher
-toggle lives at the very top of `config/settings_schema.json`, default `true` on a fresh theme;
-patch it via `update-settings-current.js` in the same patch file as the Colors/Typography/Product
-card changes below, not a per-design judgment call).
+**`theme_mode_enabled` default depends on whether the Figma file actually has a real dark-mode
+design.** Default to `false` (this site-wide "Theme mode"/dark-light-switcher toggle lives at the
+very top of `config/settings_schema.json`, default `true` on a fresh theme) UNLESS the file provides
+a genuine dedicated dark-mode design — confirmed real pattern: a sibling pair of frames/sections
+named like `Template - Light mode` / `Template - Dark mode` (can appear at the top level alongside
+or instead of the standard 'General Config'/'Template' structure — see step 1's file-structure rules
+for where this can show up), structurally identical to each other but with real dark color fills,
+not just a name. When that pair exists: set `theme_mode_enabled: true` instead and configure real
+`_dark` fields from the dark-mode template's actual colors (see step 1's Light/Dark twin-template
+rule for how to read it without redundant work). Patch via `update-settings-current.js` in the same
+patch file as the Colors/Typography/Product card changes below either way.
 
 **Never read `config/settings_data.json` directly for this step** (via `read-theme-file.js` or any
 other means) — it also carries N full preset objects (each nearly as large as the live settings
@@ -314,8 +338,9 @@ needs to see. Use the two dedicated scripts instead:
   theme editor does the moment anything is changed — this happens on every call, even one whose
   patch turns out to match already, so only call this once you're sure at least one value genuinely
   needs to change (compare against `read-settings-current.js`'s output yourself first). Never touch
-  `_dark` keys unless explicitly asked. Prints only the changed keys (old → new), never the whole
-  file.
+  `_dark` keys unless a real dark-mode design was confirmed (see the `theme_mode_enabled` rule
+  above) — inventing `_dark` values with no real Figma dark design to read them from is still off
+  limits. Prints only the changed keys (old → new), never the whole file.
 
 **Colors**: `figma-fetch-node.js` the Colors frame at depth ~9 (yes, this deep — the real swatch
 color lives in a nested `_colorbox-thumb` instance one level past where it first becomes visible;
@@ -462,6 +487,25 @@ straight into fetching full data / dispatching work — don't stop for a go-ahea
 frame name case just above is the one real exception: that's missing information, not a plan to
 approve, so it still needs an actual answer before you can name that one section.)
 
+**Cross-page duplicate detection (compare across ALL pages' section lists together, not per-page in
+isolation).** The same Figma component/instance is sometimes reused verbatim across multiple pages
+(e.g. the same "Newsletter" or "Trust badges" section appearing on both Homepage and Collection
+page) — configuring it fresh per page wastes a full schema-read + subagent dispatch on content
+that's already been analyzed once. After listing every page's sections (this step), before moving to
+step 5:
+- Same Figma node name + same child count/structure + matching first few characters of visible text
+  → flag as a likely duplicate candidate. Same discipline as the multi-slide `_N` rule below:
+  structural evidence, not a bare naming coincidence, is what confirms it.
+- Confirm once the Figma JSON is actually fetched: byte-identical (or near-identical) content across
+  the flagged instances is a confirmed duplicate.
+Once confirmed: fetch full data and dispatch exactly ONE subagent for that section (§5), not one per
+page it appears on. Once that subagent returns its section JSON, YOU apply the SAME resulting JSON
+to every template that needs it via separate `apply-section.js` calls (different `template`/
+`sectionKey` args, identical `settings`/`blocks` payload) — never re-analyze or re-dispatch a second
+subagent for content already configured once. If a duplicate is near- but not byte-identical (e.g.
+same layout, one button link differs), still reuse the first result as a base and hand a follow-up
+pass only the specific fields that differ, rather than a full fresh analysis.
+
 **Multi-slide/multi-state sections (slideshows, scrollable carousels/rows).** A single static Figma
 frame can only ever show ONE state of anything that changes over time or scroll position — a
 slideshow's page frame shows just its first slide, a horizontally-scrolling category row shows just
@@ -506,6 +550,9 @@ Slideshow_2, Slideshow_3)").
 ### 5. Fetch full data, then configure
 
 Batch-fetch every confirmed section's Figma node via `figma-fetch-multi.js` (one API call, not N).
+**For a section flagged as a cross-page duplicate (§3)**: batch-fetch it once, dispatch exactly one
+subagent for it, and re-apply that one result to every page's template that needs it — never
+re-fetch or re-dispatch per page it appears on.
 **For a section with numbered `_N` slide children (§3)**: fetch each numbered child (`Slideshow_1`,
 `Slideshow_2`, `Slideshow_3`, ...) as its own entry in the SAME batched fetch, using keys that
 preserve the number (e.g. `slideshow_1`, `slideshow_2`, `slideshow_3`) — never fetch just the parent
@@ -567,8 +614,9 @@ Rules every subagent (or you, doing it directly) must follow:
   reading ~700-800 lines and reading 15,000+.
 - Never memorize/guess a field id — every id you write must come from what phase 2 actually
   returned for that block type.
-- Write EVERY field explicitly (except `_dark`/"(dark)" fields) — an omitted field falls back to
-  its schema default, which is very often non-blank placeholder content.
+- Write EVERY field explicitly (except `_dark`/"(dark)" fields — see the dedicated `_dark` bullet
+  below for when those DO need a real value) — an omitted field falls back to its schema default,
+  which is very often non-blank placeholder content.
 - `richtext` fields need a `<p>/<ul>/<ol>/<h1-6>` root — wrap bare strings; plain `text` fields take
   bare strings as-is.
 - **Alignment/position fields: compute from box-gap math (child box vs. parent box, left-gap vs.
@@ -595,6 +643,20 @@ Rules every subagent (or you, doing it directly) must follow:
   section with its own image/photo background, overlay, or non-default color block is a standing
   flag to verify every text/heading/button color field against Figma's real per-node color before
   assuming inheritance applies.
+- **`_dark` color fields at the section level: skip by default, EXCEPT on a section that already
+  needed a hardcoded light-mode color override.** When `theme_mode_enabled` is `true` (a real
+  Light/Dark twin-template design exists — see step 1), most sections need no `_dark` work at all:
+  if a section's light-mode color field was left blank (safely inheriting the sitewide light token,
+  per the rule above), the matching dark token almost always covers it too — leave `_dark` blank,
+  same as normal, no Dark-tree fetch needed. The exception is any color field THIS section already
+  had to hardcode in light mode (hero image, photo overlay, dark-background card, colored banner —
+  the same "standing flag" cases above): the real reason for that override (a fixed photo/background,
+  not the sitewide page background) doesn't go away in dark mode, so leaving `_dark` blank there
+  would silently inherit the wrong token and render illegible/mismatched text, same failure as the
+  light-mode mistake. For exactly those already-flagged nodes only, fetch that specific node's
+  counterpart in the Dark twin template (by matching structural position — same group/order, not the
+  same Figma id) — a handful of targeted node lookups or one small crop via `figma-fetch-image.js`,
+  never a full re-fetch of the Dark template's whole section tree just to pull a couple of colors.
 - **`icon_size` is a single shared field (no separate mobile variant), but some themes apply a
   render-time multiplier to it in their own snippet/section code** (e.g. a `{{ icon_size | times:
   <factor> }}px`-style line) — so the raw config value doesn't always render at 1:1. **Desktop
