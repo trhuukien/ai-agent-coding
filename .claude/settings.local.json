@@ -1,12 +1,15 @@
 {
   "permissions": {
-    "defaultMode": "default",
-    "additionalDirectories": ["/tmp"],
     "allow": [
       "Bash(npm run *)",
       "Bash(node scripts/*.js *)",
       "Edit(theme/**/*.json)",
-      "Write(theme/**/*.json)"
+      "Write(theme/**/*.json)",
+      "Bash(node -e \"require\\('dotenv'\\).config\\({quiet:true}\\); console.log\\('FIGMA_ACCESS_TOKEN:', !!process.env.FIGMA_ACCESS_TOKEN\\); console.log\\('ANTHROPIC_API_KEY:', !!process.env.ANTHROPIC_API_KEY\\)\")"
+    ],
+    "defaultMode": "default",
+    "additionalDirectories": [
+      "/tmp"
     ]
   }
 }

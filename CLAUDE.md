@@ -539,6 +539,17 @@ for a preset guess to reach the final section JSON — if that happens, it means
 step before dispatch, not that a preset was an acceptable fallback. Only fall back to a built-in
 preset name when a real vector genuinely doesn't exist for that node (confirmed, not assumed).
 
+**This list keeps growing as new field-specific gotchas get discovered — don't dump it wholesale
+into every subagent's prompt.** When dispatching, YOU (the orchestrator) select only the bullets
+below that actually apply to that section's real field types (e.g. only pass the `icon_size` bullet
+if that section has an `icon_size` field, only pass the `main-product` title-duplication bullet when
+dispatching `main-product` itself) — a subagent configuring "Newsletter" doesn't need the
+`popup_position` or PDP-title-duplication rules. CLAUDE.md itself stays the complete reference for
+you to pick from; only the relevant subset should ride along in each subagent's own prompt. The
+handful of rules with no section-specific gate (box-gap alignment, color-token inheritance, "write
+every field explicitly", schema two-phase reading) still apply universally — include those in every
+dispatch.
+
 Rules every subagent (or you, doing it directly) must follow:
 - **Look at the section's rendered PNG first for layout facts** (column count, whether a
   pagination-dot strip means a real carousel, true center/left/right alignment) — this is what the
@@ -601,6 +612,14 @@ Rules every subagent (or you, doing it directly) must follow:
   neighbor's box (above and/or below) in the Figma frame shows them touching with ~0 gap — in that
   specific case, reduce/zero out only the touching side's padding (top, bottom, or both) to match,
   rather than applying the `60`/`28` default blindly on that side.
+- **`main-product`-style PDP sections can render the product title twice.** Confirmed real bug:
+  this section renders the title via a section-level checkbox (e.g. `show_product_name`, default
+  `true`) completely UNCONDITIONALLY in the render code — independent of `block_order` — so if the
+  Figma design's content column also needs a title block (a block type like `product_name`) added
+  to `block_order`, the title renders once from that always-on section setting and once again from
+  the block, stacked on top of each other. Whenever adding a title block to this section, set that
+  section-level "show title" checkbox to `false` in the SAME write (verify the exact setting id via
+  phase-1 schema — don't assume `show_product_name` is the universal id across every theme).
 - **Custom SVG icon fields**: if the schema has a `"type": "html"` field literally labeled "Custom
   icon (SVG code)" and the design shows a specific icon, `figma-fetch-icon.js` the real vector node
   and paste the real SVG in. Do not pick a built-in preset icon name as a substitute when this field
@@ -727,6 +746,9 @@ by default. Terse rules only, here:
 - Mobile header/menu icon (hamburger) is not a real Figma-driven config target — it renders by
   default on mobile regardless of settings; any header-group "icon style" field only affects
   desktop.
+- Adding a `product_name`-style title block to `main-product`'s `block_order` without also turning
+  off that section's own always-on "show title" checkbox (§5) — rendered the product title twice on
+  the live PDP.
 - **`flexible-area`'s `item-group` block: never use `container_type: "flex"` for a uniform N-column
   grid.** `"flex"` mode lays out children with raw CSS (`max-width: N%` + gap) that mathematically
   overflows and silently collapses to single-column UNLESS a client-side JS helper
