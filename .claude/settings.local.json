@@ -5,7 +5,12 @@
       "Bash(node scripts/*.js *)",
       "Edit(theme/**/*.json)",
       "Write(theme/**/*.json)",
-      "Bash(node -e \"require\\('dotenv'\\).config\\({quiet:true}\\); console.log\\('FIGMA_ACCESS_TOKEN:', !!process.env.FIGMA_ACCESS_TOKEN\\); console.log\\('ANTHROPIC_API_KEY:', !!process.env.ANTHROPIC_API_KEY\\)\")"
+      "Bash(node -e \"require\\('dotenv'\\).config\\({quiet:true}\\); console.log\\('FIGMA_ACCESS_TOKEN:', !!process.env.FIGMA_ACCESS_TOKEN\\); console.log\\('ANTHROPIC_API_KEY:', !!process.env.ANTHROPIC_API_KEY\\)\")",
+      "Read(**/*.png)",
+      "Read(**/*.jpg)",
+      "Read(**/*.jpeg)",
+      "Read(**/*.svg)",
+      "Read(/tmp/**)"
     ],
     "defaultMode": "default",
     "additionalDirectories": [
