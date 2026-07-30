@@ -1,8 +1,15 @@
 # AI Support Theme — Hướng dẫn sử dụng cho team
 
-Project này dùng Claude Code để tự động build/reconfigure 1 theme Shopify dựa trên thiết kế Figma.
-File này là bản tóm tắt đơn giản để bất kỳ ai trong team cũng dùng được ngay — chi tiết đầy đủ từng
-rule/edge-case nằm ở `CLAUDE.md` (Claude tự đọc file đó, người dùng không cần đọc để dùng).
+Project này dùng Claude Code để tự động build/reconfigure 1 theme Shopify dựa trên thiết kế Figma,
+và để tự động kiểm tra 1 theme đã có sẵn so với Figma. Đây là **2 việc tách biệt hoàn toàn**:
+
+- **Auto-setup** (build/reconfigure từ Figma) — trigger bằng `Setup: ...`, chi tiết ở `CLAUDE.md`.
+- **Auto-test** (kiểm tra theme đã có sẵn, log kết quả vào Google Sheet) — trigger bằng `Test: ...`,
+  chi tiết ở `AUTOTEST.md`. Không config gì cả, chỉ chụp ảnh/so sánh/báo cáo.
+
+File này là bản tóm tắt đơn giản cho **Auto-setup** (phần việc chính) để bất kỳ ai trong team cũng
+dùng được ngay — chi tiết đầy đủ từng rule/edge-case nằm ở `CLAUDE.md` (Claude tự đọc file đó,
+người dùng không cần đọc để dùng). Xem mục 7 bên dưới để biết thêm về `AUTOTEST.md`.
 
 ## 1. Kiến trúc / luồng xử lý
 
@@ -102,3 +109,19 @@ nghĩa), nó sẽ dừng và hỏi trực tiếp — chỉ cần trả lời là
 - `CLAUDE.md` — playbook đầy đủ từng bước, rule chi tiết (Claude tự đọc, dùng để tham khảo khi cần
   hiểu sâu hơn 1 quyết định cụ thể Claude đã đưa ra).
 - `CHANGELOG.md` — lịch sử bug đã gặp và đã sửa, lý do đằng sau các rule trong CLAUDE.md.
+
+## 7. Auto-test — kiểm tra theme đã có sẵn (việc tách riêng)
+
+Nếu muốn kiểm tra 1 theme ĐÃ ĐƯỢC BUILD (bởi project này hay không cũng được) so với thiết kế Figma
+— không setup/config gì cả, chỉ chụp ảnh site thật, so layout + màu/font-size/font-weight/khoảng
+cách với Figma, rồi log kết quả vào 1 tab Google Sheet mới — gõ:
+
+```
+Test: https://admin.shopify.com/store/<handle>/themes/<themeId>/editor
+Figma: https://www.figma.com/design/...
+```
+
+Claude sẽ tự đọc `AUTOTEST.md` (playbook riêng, tách hẳn khỏi `CLAUDE.md`) và làm toàn bộ: khám phá
+cấu trúc Figma, chụp ảnh site thật, so sánh, tạo/format tab sheet mới đúng theo mẫu team đang dùng
+(cột No/Page/Status/Test note/Reopen note), kèm 1 trang gallery ảnh Figma-vs-thực-tế để xem trực
+quan. Không cần chuẩn bị gì thêm ngoài phần đã nêu ở mục 4 (Playwright đã cài sẵn từ bước cài đặt).

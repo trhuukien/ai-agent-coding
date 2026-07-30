@@ -30,7 +30,10 @@ if (!shopArg) {
   process.exit(1);
 }
 
-const domain = shopArg.includes('.myshopify.com') ? shopArg : `${shopArg}.myshopify.com`;
+// A bare handle ("kizchann") gets ".myshopify.com" appended; anything that already looks like a
+// real domain (contains a dot — ".myshopify.com" OR a custom domain like "littlebearnie.com") is
+// used exactly as given, never suffixed.
+const domain = shopArg.includes('.') ? shopArg : `${shopArg}.myshopify.com`;
 const base = `https://${domain}`;
 
 // Set-Cookie headers carry attributes (Path=, HttpOnly, Expires=, etc.) that only make sense in a

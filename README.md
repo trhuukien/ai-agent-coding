@@ -5,7 +5,11 @@ Code app) hoặc chạy server tự động bằng API key.
 
 Xem thêm:
 - [`ONBOARDING.md`](ONBOARDING.md) — bản tóm tắt kiến trúc + cách dùng nhanh cho team.
-- [`CLAUDE.md`](CLAUDE.md) — playbook chi tiết từng bước (Claude tự đọc, không cần đọc để dùng).
+- [`CLAUDE.md`](CLAUDE.md) — playbook Auto-**setup** (build/reconfigure theme từ Figma), chi tiết
+  từng bước (Claude tự đọc, không cần đọc để dùng).
+- [`AUTOTEST.md`](AUTOTEST.md) — playbook Auto-**test** riêng biệt (kiểm tra 1 theme đã có sẵn so
+  với Figma, log kết quả vào Google Sheet) — tách hẳn khỏi Auto-setup, kích hoạt bằng từ khóa
+  `Test:` thay vì `Setup:`.
 - [`CHANGELOG.md`](CHANGELOG.md) — lịch sử bug đã sửa và lý do các rule tồn tại.
 
 ## Yêu cầu hệ thống
@@ -24,8 +28,12 @@ Xem thêm:
 git clone <repo-url>
 cd "AI Support Theme"
 npm install
+npx playwright install chromium
 cp .env.example .env
 ```
+
+(`playwright install chromium` tải trình duyệt headless dùng cho Auto-test —
+`scripts/screenshot-theme-page.js`/`check-computed-style.js` — chỉ cần chạy 1 lần.)
 
 Mở `.env` và điền:
 
@@ -62,23 +70,32 @@ claude
 
 (hoặc mở thư mục này trong Claude Code app / IDE extension tương ứng)
 
-**Bước 3.** Gõ yêu cầu setup theo 1 trong 2 dạng sau, ngay trong khung chat Claude Code:
+**Bước 3.** Gõ yêu cầu ngay trong khung chat Claude Code — có 2 loại việc RIÊNG BIỆT, không trộn:
 
+**Auto-setup** (build/reconfigure theme từ Figma — Claude đọc `CLAUDE.md`):
 ```
 setup theme <ten-store>.myshopify.com theme <themeId>
 figma: https://www.figma.com/design/<fileKey>/<ten-file>?node-id=...
 ```
-
 hoặc dùng link editor admin có sẵn:
-
 ```
 Setup: https://admin.shopify.com/store/<handle>/themes/<themeId>/editor
 Figma: https://www.figma.com/design/...
 ```
 
-**Bước 4.** Không cần làm gì thêm — Claude Code sẽ tự đọc `CLAUDE.md` và thực hiện toàn bộ:
-pull theme, phân tích Figma, config Colors/Typography/Product card, config từng page, validate,
-push lên Shopify, rồi báo cáo kết quả (section nào dùng file nào, việc gì merchant cần làm thêm).
+**Auto-test** (kiểm tra 1 theme ĐÃ CÓ SẴN so với Figma, log kết quả vào Google Sheet — Claude đọc
+`AUTOTEST.md`, không config gì cả):
+```
+Test: https://admin.shopify.com/store/<handle>/themes/<themeId>/editor
+Figma: https://www.figma.com/design/...
+```
+
+**Bước 4.** Không cần làm gì thêm:
+- Với **Setup**: Claude Code tự pull theme, phân tích Figma, config Colors/Typography/Product card,
+  config từng page, validate, push lên Shopify, rồi báo cáo kết quả (section nào dùng file nào,
+  việc gì merchant cần làm thêm).
+- Với **Test**: Claude Code tự chụp ảnh site thật, so với Figma (layout + font-size/font-weight/
+  màu...), log kết quả vào tab Google Sheet mới, kèm gallery ảnh so sánh.
 
 Nếu Shopify CLI yêu cầu đăng nhập giữa chừng, Claude Code sẽ dừng lại và đưa link/code xác thực —
 chỉ cần đăng nhập rồi báo lại là tiếp tục được.
