@@ -74,32 +74,20 @@ const wantedKeys = sectionKeysArg ? sectionKeysArg.split(',').map((s) => s.trim(
     const page = await context.newPage();
 
     if (password) {
-      await page.goto(`https://${domain}/password`, { waitUntil: 'domcontentloaded' });
-      const passwordField = page.locator('input[name="password"]').first();
-      if (await passwordField.count()) {
-        // Some themes hide the actual password field behind a "Enter using password" toggle by
-        // default (showing a newsletter-signup email field instead) — confirmed real case. If the
-        // field exists but isn't visible yet, click that toggle first.
-        if (!(await passwordField.isVisible())) {
-          const toggle = page.getByText(/enter using password/i).first();
-          if (await toggle.count()) {
-            await toggle.click();
-            await page.waitForTimeout(300);
-          }
-        }
-        await passwordField.fill(password);
-        await Promise.all([
-          page.waitForNavigation({ waitUntil: 'domcontentloaded' }).catch(() => {}),
-          // Don't require an explicit type="submit" attribute — a bare <button> inside a form is
-          // submit-type by HTML default, but that default is never reflected as a literal
-          // attribute, so a `[type="submit"]` selector silently matches nothing on themes that
-          // just write <button name="commit">.
-          page.locator('form[action*="password"] button, form[action*="password"] input[type="submit"]')
-            .first()
-            .click(),
-        ]);
-      } else {
-        console.error('Warning: no password field found at /password — store may not actually be password-protected.');
+      // Submit the password form directly via a same-context API POST rather than driving the
+      // /password PAGE's UI. Confirmed real case: on a store that hasn't picked a Shopify plan yet,
+      // GET /password itself 30x-redirects straight back to the "Opening soon" home page before any
+      // form ever renders, and that home page's own password entry lives behind a JS-driven modal
+      // (an "Enter using password" toggle) that didn't reliably become interactive under
+      // automation. A direct POST needs neither the redirect nor the modal — Playwright's
+      // `context.request` shares the same cookie jar as `page`, so the resulting session cookie
+      // (scoped correctly to THIS domain, since we post to it directly) is already attached for the
+      // next `page.goto`.
+      const passResp = await context.request.post(`https://${domain}/password`, {
+        form: { form_type: 'storefront_password', utf8: '✓', password },
+      });
+      if (passResp.status() >= 400) {
+        console.error(`Warning: password POST to /password returned status ${passResp.status()} — password may be wrong.`);
       }
     }
 

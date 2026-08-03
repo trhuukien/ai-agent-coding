@@ -113,21 +113,17 @@ function keywordMatch(expected, actual) {
     const page = await context.newPage();
 
     if (password) {
-      await page.goto(`https://${domain}/password`, { waitUntil: 'domcontentloaded' });
-      const passwordField = page.locator('input[name="password"]').first();
-      if (await passwordField.count()) {
-        if (!(await passwordField.isVisible())) {
-          const toggle = page.getByText(/enter using password/i).first();
-          if (await toggle.count()) {
-            await toggle.click();
-            await page.waitForTimeout(300);
-          }
-        }
-        await passwordField.fill(password);
-        await Promise.all([
-          page.waitForNavigation({ waitUntil: 'domcontentloaded' }).catch(() => {}),
-          page.locator('form[action*="password"] button, form[action*="password"] input[type="submit"]').first().click(),
-        ]);
+      // Submit directly via a same-context API POST rather than driving the /password PAGE's UI —
+      // see screenshot-theme-page.js's matching fix for the full explanation: on a store that
+      // hasn't picked a Shopify plan yet, GET /password redirects straight to the "Opening soon"
+      // home page before any form renders, and that page's own password entry lives behind a
+      // JS-driven modal that didn't reliably become interactive under automation. `context.request`
+      // shares the same cookie jar as `page`, so the resulting cookie is already attached below.
+      const passResp = await context.request.post(`https://${domain}/password`, {
+        form: { form_type: 'storefront_password', utf8: '✓', password },
+      });
+      if (passResp.status() >= 400) {
+        console.error(`Warning: password POST to /password returned status ${passResp.status()} — password may be wrong.`);
       }
     }
 
