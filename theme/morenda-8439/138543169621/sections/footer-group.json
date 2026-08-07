@@ -1,0 +1,131 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "media_gallery_AGU8KF": {
+      "type": "media-gallery",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "heading_highlight_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "max_columns": 1,
+        "spacing": 28,
+        "height_desktop": 300,
+        "keep_ratio_on_different_width": false,
+        "show_section_divider": false,
+        "full_width": true,
+        "padding_full_width": false,
+        "edge_style": "adapt",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "min_columns_mobile": "1",
+        "spacing_mobile": 0,
+        "height_mobile": 250,
+        "show_section_divider_mobile": false,
+        "full_width_mobile": false,
+        "edge_style_mobile": "adapt",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-2": {
+          "type": "text",
+          "settings": {
+            "open_by_default": false,
+            "heading_text": "Find Us On",
+            "subtext": "<p>Designed to inspire independence, encourage organisation and bring more calm to everyday family life.<br/></p>",
+            "show_social_icons": true,
+            "icon_layout": "horizontal",
+            "image": "shopify://shop_images/Urthy_Logo_only_dark_new_copy_2 1.png",
+            "image_width": 130,
+            "link_image_footer": "",
+            "open_new_window": false
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": false,
+            "heading_menu": "Shop",
+            "menu": "menu",
+            "show_social_icons": false
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": false,
+            "heading_menu": "Info",
+            "menu": "support",
+            "show_social_icons": false
+          }
+        },
+        "email_footer_CqptCJ": {
+          "type": "email_footer",
+          "settings": {
+            "open_by_default": true,
+            "heading_email": "Join the MORENDA Family",
+            "subtext_email": "<p><br/>Be the first to discover new collections, exclusive offers and Montessori-inspired ideas.<br/></p>",
+            "show_social_icons": false
+          }
+        }
+      },
+      "block_order": [
+        "footer-2",
+        "footer-1",
+        "footer-0",
+        "email_footer_CqptCJ"
+      ],
+      "settings": {
+        "columns_desktop": 5,
+        "show_language_selector": true,
+        "show_currency_selector": true,
+        "show_social_icons": false,
+        "payment_enable": true,
+        "custom_payment": "",
+        "show_copyright": true,
+        "add_copyright_text": "",
+        "additional_layout": "horizontal",
+        "show_powered": false,
+        "enable_follow_on_shop": true,
+        "horizontal_position": "right",
+        "top_padding": 0,
+        "bottom_padding": 20,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "media_gallery_AGU8KF",
+    "footer"
+  ]
+}

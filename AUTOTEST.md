@@ -111,8 +111,9 @@ format" below for what changes per round (a new TAB, never a new file).
   white title cell + merged green round/theme cell across rows 1-2, a green bold-white column-header
   row 3, and a `ONE_OF_LIST` dropdown (`PASS`/`Reopen`/`Review`/`Note for SA`/`Skip`/`Tester done
   setup` — this is the team's real, fixed vocabulary; **never write `FAIL` or invent a status value
-  outside this list**, map any layout/style mismatch to `Reopen`) plus conditional-format
-  background colors on the Status column. Run this once, after all data rows are written.
+  outside this list**, map any layout/style mismatch to `Reopen`) on BOTH the `AI Test` and
+  `Review Test` columns, plus matching conditional-format background colors on each. Run this once,
+  after all data rows are written.
 - `embed-images-in-sheet.js <spreadsheetId> <sheetName> <mappingJsonFile>` — uploads local PNGs via
   the Drive API and writes `=IMAGE(url)` formulas into the given cells. **CONFIRMED BLOCKED on a
   plain personal Gmail account**: Service Accounts have no Drive storage quota of their own (Google
@@ -125,9 +126,10 @@ format" below for what changes per round (a new TAB, never a new file).
   filter bar, one row per section with Figma alongside EVERY round's live screenshot so far —
   `Figma | Round 1 | Round 2 | ...`, most-recent-round notes shown first) from a JSON data blob (see
   the script's own header comment for the exact shape: `sections[].rounds[]`, each round carrying
-  its own `status`/`testNote`/`reopenNote`/`live` image). This published Artifact IS the durable,
-  portable store for round history (see "Round history" below) — publish it once per store/Figma
-  pairing and keep republishing the SAME file path/URL every round, never a new one.
+  its own `aiStatus`/`reviewStatus`/`note`/`live` image — see "Sheet format" below for what these
+  mean). This published Artifact IS the durable, portable store for round history (see "Round
+  history" below) — publish it once per store/Figma pairing and keep republishing the SAME file
+  path/URL every round, never a new one.
 
 ## Step-by-step
 
@@ -141,13 +143,16 @@ Before doing any real work, find out if this store/Figma pairing has been tested
    `<script type="application/json" id="gallery-data">...</script>` blob — this is the SAME JSON
    structure `build-verify-gallery.js` consumes (`sections[].rounds[]`), so it's already exactly
    the data you need, no reformatting. This gives you, per section: its Figma image (reusable,
-   unchanged since the design didn't change), and every prior round's `status`/notes/live image.
-3. **Determine scope from this:** any section whose LATEST round has `status: "Reopen"` is what you
-   re-test this round. Sections that were already `PASS` (or `Review`/`Note for SA`/etc.) do NOT
-   need to be re-tested by default — carry their existing round history forward unchanged into the
-   merged data, don't waste a fresh screenshot+comparison on something already resolved. (If the
-   user explicitly asks for a full re-test of everything regardless of prior status, that overrides
-   this default — but don't assume that's wanted just because a round exists.)
+   unchanged since the design didn't change), and every prior round's `aiStatus`/`reviewStatus`/
+   `note`/live image.
+3. **Determine scope from this using the EFFECTIVE status** (`reviewStatus` if a human tester set
+   one, else `aiStatus` — a human correction always wins over the AI's own original verdict): any
+   section whose LATEST round has an effective status of `Reopen` is what you re-test this round.
+   Sections that were already `PASS` (or `Review`/`Note for SA`/etc.) do NOT need to be re-tested by
+   default — carry their existing round history forward unchanged into the merged data, don't waste
+   a fresh screenshot+comparison on something already resolved. (If the user explicitly asks for a
+   full re-test of everything regardless of prior status, that overrides this default — but don't
+   assume that's wanted just because a round exists.)
 4. If no gallery URL is found (first-ever round for this store/Figma pairing, or the sheet tab is
    brand new): test everything, as a normal round 1.
 
@@ -277,15 +282,31 @@ that, log it as an open item, don't loop forever.
 
 **Sheet format** (read from the team's real `[FC148] AI Testing` tab, this is not an invented
 convention): row 1 = title block (left cell: task/design links, merged 2 rows × cols A-D; right
-cell: `Round N` + theme preview URL, merged 2 rows × cols E-F/G, green background); row 2 = blank
-spacer (part of the same merge); row 3 = column headers `No | Page/Sections | (merged B:D) | | Status
-| Test note | Reopen note`, green background, bold white text; row 4+ = one data row per section
-tested (`No` sequential, `Page` only filled on that page's first row, blank for subsequent rows in
-the same page group, `Section`/`Sub-section` split across 2 columns when useful e.g. `Typography` /
-`Body`).
+cell: `Round N` + theme preview URL **+ the gallery Artifact link** — see below, merged 2 rows ×
+cols E-F/G, green background); row 2 = blank spacer (part of the same merge); row 3 = column
+headers `No | Page/Sections | (merged B:D) | | AI Test | Review Test | Note`, green background,
+bold white text; row 4+ = one data row per section tested (`No` sequential, `Page` only filled on
+that page's first row, blank for subsequent rows in the same page group, `Section`/`Sub-section`
+split across 2 columns when useful e.g. `Typography` / `Body`).
+
+**`AI Test` vs `Review Test` (user's explicit convention, confirmed 2026-08-03): two separate status
+columns, same fixed vocabulary, not one.** `AI Test` (column E) is what THIS script writes — the
+verdict Auto-test itself determined. `Review Test` (column F) is left BLANK by the script, every
+round — it exists solely for a human tester to fill in if they want to override the AI's verdict
+(e.g. the AI said `Reopen` but a human decides it's actually fine, or vice versa). Never write
+anything into `Review Test` yourself; it is not yours to fill.
+
+**Note is a SINGLE column (column G), not a `Test note`/`Reopen note` pair.** Write it in
+**Vietnamese** (the team's real working language for this field — confirmed from existing populated
+tabs like `[kizchann] AI Testing`, not a new requirement). **Leave it completely EMPTY when `AI
+Test` is `PASS`** — a dev scanning the sheet should only see prose where there is something to
+actually act on, never a "matches Figma exactly" confirmation cluttering the view. When the status
+is `Reopen`/`Review`/etc., write one concise note covering both what's wrong AND (if there's a clear
+fix) what to do about it — merge what used to be two separate notes into one dev-facing paragraph,
+don't pad it with the full measurement log.
 
 **Rounds are separate column blocks, never overwritten.** If this spreadsheet/tab already has a
-prior round's results, a new round adds its OWN `Status`/`Test note`/`Reopen note` column triple to
+prior round's results, a new round adds its OWN `AI Test`/`Review Test`/`Note` column triple to
 the right (with its own `Round N` header above them) — it must NEVER overwrite an existing round's
 columns. (This project's own history: an early session did overwrite round 1 by mistake before this
 rule was written down — don't repeat that.)
@@ -320,13 +341,20 @@ Steps, in order:
       0 found one), republish to that SAME file path** so the URL stays identical — the sheet's
       existing link then keeps working with no update needed. Only a genuinely first-ever round
       needs the link written into the sheet for the first time.
-   d. Link it from the sheet's title row (row 1) AND from a merged cell spanning the data rows
-      (`=HYPERLINK(url; label)`) — only need to actually WRITE these cells on the first-ever round;
-      later rounds reuse the same URL so the existing links already point at the right place.
-   - **Locale gotcha (confirmed real, cost a broken formula once): check the spreadsheet's own
-     locale** (`spreadsheets.get(...).properties.locale`) before writing ANY multi-argument formula.
-     A `vi_VN`-locale sheet requires `;` between `HYPERLINK`/similar function arguments, not `,` — a
-     comma there silently becomes a "Formula parse error" cell instead of a working link.
+   d. **Link it from the sheet's title row (row 1) ONLY — never as its own column.** User's explicit
+      call (2026-08-03): don't create a dedicated "Figma"/"Gallery" column repeating the same URL on
+      every data row; it's redundant clutter once the link is already in the header. Fold it into
+      the same `Round N` title-row cell that already carries the theme preview URL (see "Sheet
+      format" above) — one line added to that cell's existing multi-line text, not a new formula, not
+      a new column. Only need to actually WRITE this on the first-ever round; later rounds reuse the
+      same URL so the existing header link already points at the right place.
+   - **Use a plain auto-linkified URL in that cell, not `HYPERLINK()`.** A `HYPERLINK()` formula
+     embedded mid-string inside a multi-line title cell renders as literal, non-clickable formula
+     text instead of evaluating — Google Sheets only evaluates a formula when it is the cell's
+     ENTIRE content. Since this cell already holds multiple lines of plain text (task links, theme
+     URL, scope note), just add the gallery URL as one more plain line — Sheets auto-linkifies any
+     bare URL in plain text on its own, no formula needed. (This also sidesteps the `vi_VN`-locale
+     `;`-vs-`,` argument-separator gotcha entirely, since there's no formula to write.)
 
 ### 7. Report
 
@@ -398,6 +426,20 @@ verdict. Give the sheet tab URL/gallery link directly, don't make the user hunt 
 - **Google Sheets formula argument separator depends on spreadsheet locale**: `vi_VN` (and other
   non-US locales) use `;` between function arguments, not `,` — writing `=HYPERLINK(a, b)` on such a
   sheet produces a silent "Formula parse error" cell. Check `properties.locale` first.
+- **A `HYPERLINK()` formula embedded mid-string inside a multi-line cell renders as literal,
+  non-clickable text, not a working link** — a Sheets formula only evaluates when it is the cell's
+  ENTIRE content. The title-row cell already holds multiple lines of plain text (task links, theme
+  URL, scope), so the gallery URL just gets added as one more plain line — Sheets auto-linkifies a
+  bare URL in plain text on its own. Don't reach for `HYPERLINK()` for this.
+- **Sheet notes are written in Vietnamese, not English** — confirmed real convention from existing
+  populated tabs (e.g. `[kizchann] AI Testing`), missed once (2026-08-03, Crystal 3D Pix round 1
+  written in English, had to be redone). Check an existing populated tab's language before writing
+  the first note, don't assume English just because the rest of this doc/the schemas are in English.
+- **`Note` is a single column, empty on PASS — not a `Test note`/`Reopen note` pair, and not a
+  running log of confirmations.** A dev scanning the sheet should see prose only where a section
+  actually needs attention. And **`AI Test`/`Review Test` are two separate status columns** — the
+  script only ever writes `AI Test`; `Review Test` stays blank for a human tester to override the
+  verdict, never populate it yourself.
 - **`values.append` silently destroys a header row past a blank spacer row** — see `log-to-sheet.js`
   above. Always use explicit `values.update` ranges on any sheet with structure above the data.
 - **Service Accounts have no Google Drive storage quota** — `embed-images-in-sheet.js`'s upload step

@@ -1,0 +1,764 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_image": true,
+        "show_product_name": false,
+        "title_size": 100,
+        "heading_tag": "h1",
+        "show_vendor": false,
+        "link_vendor": false,
+        "make_content_center": false,
+        "desktop_layout": "left",
+        "desktop_media_layout": "thumbnail_slider",
+        "show_arrow_button": true,
+        "mobile_media_size": "full_width",
+        "show_thumnail_mobile": true,
+        "transition_style": "fade",
+        "image_ratio": "square",
+        "thumbnail_position": "horizontal",
+        "enable_thumbnail_overlay": true,
+        "enable_image_zoom": false,
+        "zoom_effect": "enlarge",
+        "enable_video_autoplay": false,
+        "enable_video_loop": false,
+        "show_first_image_avaiable": true,
+        "show_media_with_variant_selected": false,
+        "option_to_classify_variant_media": "",
+        "enable_microdata": false,
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "full_width": false,
+        "spacing_col": "default",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "badges_1": {
+          "type": "badges",
+          "settings": {
+            "position_adapt": false
+          }
+        },
+        "title_1": {
+          "type": "product_name",
+          "settings": {
+            "title_size": 100,
+            "heading_tag": "h1",
+            "enable_product_rating": false
+          }
+        },
+        "rating_1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {
+            "adapt_custom_price_format": false,
+            "show_tax_and_shipping": false,
+            "text_size_price": 70
+          }
+        },
+        "inventory_1": {
+          "type": "inventory_status",
+          "settings": {
+            "incoming": false,
+            "message_incoming": "",
+            "message_backorder": "",
+            "hide_preorder": false
+          }
+        },
+        "trust_badge_1": {
+          "type": "trust_badge",
+          "settings": {
+            "badge": null,
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "variant_picker_1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "max_swatch": 20,
+            "show_variant_option": true,
+            "enable_color_swatches": false,
+            "swatch_size": "small",
+            "enable_size_chart": false,
+            "option_to_show_size_chart": "",
+            "heading": "Size chart",
+            "select_page": "",
+            "select_image": "",
+            "additional_info": "Add extra details for the image, such as measuring guide or important notes.",
+            "size_chart_type": "popup"
+          }
+        },
+        "customize_picker_1": {
+          "type": "customize_picker",
+          "settings": {
+            "width_block": "w-full",
+            "picker_type": "file_upload",
+            "option_style": "normal",
+            "option_name": "Upload a Design",
+            "linked_product": "",
+            "qty_add_on_product": false,
+            "placeholder": "",
+            "required": false,
+            "hide_when_empty": false,
+            "max_text_length": 0,
+            "option_text_note": "",
+            "option_list": "Option 1;Option 2;Option 3",
+            "select_linked_collections": "",
+            "select_linked_products": [],
+            "option_select_note": "",
+            "minimum_select_value": 2,
+            "maximum_select_value": 0,
+            "option_file_note": "",
+            "swatch_value": "",
+            "swatch_linked_collections": "",
+            "swatch_linked_products": [],
+            "swatch_style": "round",
+            "min_date": "2023-12-12",
+            "max_date": "2023-12-31"
+          }
+        },
+        "engraving_1": {
+          "type": "engraving",
+          "settings": {
+            "engraving_option_label": "Free Engraving Text (Optional)",
+            "engraving_required": false,
+            "max_text_length": 0,
+            "engrave_option_note": ""
+          }
+        },
+        "discount_progress_bar_1": {
+          "type": "discount_progress_bar",
+          "settings": {
+            "heading": "Buy More, Save More",
+            "subheading": "",
+            "applied_collections": [],
+            "applied_products": [],
+            "discount_type": "quantity",
+            "calculation_method": "total",
+            "show_progress_bar_icons": true,
+            "icon_size": 30,
+            "show_table": true,
+            "left_col_label": "Goal value",
+            "right_col_label": "Goal label",
+            "goal_1": "1",
+            "goal_1_label": "0% Off",
+            "goal_1_pregoal_message": "Add [x] more to your cart to get [goal_label].",
+            "goal_1_postgoal_message": "Congrats! You've just unlocked [goal_label] discount! Add more for extra rewards!",
+            "icon_1": "award",
+            "another_icon_1": "",
+            "custom_image_1": "",
+            "custom_icon_1": "",
+            "icon_1_reached": "check-mark",
+            "another_icon_1_reached": "",
+            "custom_image_1_reached": "",
+            "custom_icon_1_reached": "",
+            "goal_2": "5",
+            "goal_2_label": "10% off",
+            "goal_2_pregoal_message": "Add [x] more to your cart to get [goal_label].",
+            "goal_2_postgoal_message": "Congrats! You've just unlocked [goal_label] discount! Add more for extra rewards!",
+            "icon_2": "award",
+            "another_icon_2": "",
+            "custom_image_2": "",
+            "custom_icon_2": "",
+            "icon_2_reached": "check-mark",
+            "another_icon_2_reached": "",
+            "custom_image_2_reached": "",
+            "custom_icon_2_reached": "",
+            "goal_3": "25",
+            "goal_3_label": "15% off",
+            "goal_3_pregoal_message": "Add [x] more to your cart to get [goal_label].",
+            "goal_3_postgoal_message": "Congrats! You've just unlocked [goal_label] discount! Add more for extra rewards!",
+            "icon_3": "award",
+            "another_icon_3": "",
+            "custom_image_3": "",
+            "custom_icon_3": "",
+            "icon_3_reached": "check-mark",
+            "another_icon_3_reached": "",
+            "custom_image_3_reached": "",
+            "custom_icon_3_reached": "",
+            "goal_4": "",
+            "goal_4_label": "",
+            "goal_4_pregoal_message": "Add [x] more to your cart to get [goal_label].",
+            "goal_4_postgoal_message": "Congrats! You've just unlocked [goal_label] discount! Add more for extra rewards!",
+            "icon_4": "award",
+            "another_icon_4": "",
+            "custom_image_4": "",
+            "custom_icon_4": "",
+            "icon_4_reached": "check-mark",
+            "another_icon_4_reached": "",
+            "custom_image_4_reached": "",
+            "custom_icon_4_reached": "",
+            "goal_5": "",
+            "goal_5_label": "",
+            "goal_5_pregoal_message": "Add [x] more to your cart to get [goal_label].",
+            "goal_5_postgoal_message": "Congrats! You've just unlocked all rewards!",
+            "icon_5": "award",
+            "another_icon_5": "",
+            "custom_image_5": "",
+            "custom_icon_5": "",
+            "icon_5_reached": "check-mark",
+            "another_icon_5_reached": "",
+            "custom_image_5_reached": "",
+            "custom_icon_5_reached": "",
+            "show_background": true,
+            "show_border": false,
+            "color_background": "#f8f6f2",
+            "color_heading": "#161615",
+            "color_text": "#161615",
+            "color_marker": "#9c7a2e",
+            "color_line_and_border": "#d9d9d9",
+            "color_background_dark": "rgba(0,0,0,0)",
+            "color_heading_dark": "rgba(0,0,0,0)",
+            "color_text_dark": "rgba(0,0,0,0)",
+            "color_marker_dark": "rgba(0,0,0,0)",
+            "color_line_and_border_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "estimate_delivery_1": {
+          "type": "estimate_delivery",
+          "settings": {
+            "hide_when_pre_order": false,
+            "box_type": "adapt",
+            "message": "<p>Order Today - Ships Next Business Day</p>",
+            "tooltip_text": "",
+            "tooltip_icon": "none",
+            "tooltip_icon_position": "left",
+            "tooltip_message": "",
+            "show_background": true,
+            "show_border": false,
+            "background_color_light": "#f8f6f2",
+            "message_color_light": "#161615",
+            "border_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "quantity_selector_1": {
+          "type": "quantity_selector",
+          "settings": {
+            "style": "rounded-md"
+          }
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_button_style": "primary",
+            "show_dynamic_checkout": true,
+            "dymanic_checkout_style": "primary",
+            "show_atc_quantity": false,
+            "show_add_to_cart": true,
+            "show_price": false,
+            "hide_sale_price": true,
+            "show_gift_card_recipient": true,
+            "pickup_availability": true,
+            "hide_when_pre_order": false,
+            "preorder_button_label": "Pre-order",
+            "preorder_message": "<p>This product will be available for sale in 2 weeks, but you can pre-order now to receive 10% discount!</p>",
+            "preorder_show_dynamic_button": false,
+            "show_background": false,
+            "box_type": "adapt",
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "button_light": "#9c7a2e",
+            "button_text_light": "#ffffff",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "button_dark": "rgba(0,0,0,0)",
+            "button_text_dark": "rgba(0,0,0,0)",
+            "button_hover_dark": "rgba(0,0,0,0)",
+            "button_text_hover_dark": "rgba(0,0,0,0)",
+            "secondary_button_dark": "rgba(0,0,0,0)",
+            "secondary_button_text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "collapsible_tab_1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Description",
+            "tab_content": "<p>💎 Turn Any Photo Into a Crystal Keepsake ⚡ Fast Production, Faster Delivery, Perfect for Any Gift.</p><p>A clean-lined rectangular crystal, laser-engraved in true 3D from your photo — a classic, versatile keepsake shape.</p><p>Available Sizes:</p><ul><li>Large — 3.5\" x 2.5\" x 2.5\"</li><li>X-Large — 4.8\" x 3.2\" x 2.4\"</li><li>Mantel — 6\" x 4\" x 2.5\"</li><li>Presidential — 7.1\" x 4.8\" x 3.2\"</li></ul><p>📸 Questions about your photo? See our quick guide — most phone photos work great as-is.</p><p>📏 Not sure which size to pick? View our Rectangle size guide.</p>"
+          }
+        },
+        "complementary_1": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Buy it with",
+            "show_tab": false,
+            "show_background": false,
+            "show_border": true,
+            "max_product_show": 3,
+            "enable_carousel_desktop": false,
+            "enable_swiper_mobile": true,
+            "number_product_per_page": 3,
+            "image_ratio": "square",
+            "show_vendor": false,
+            "show_product_rating": false,
+            "show_highlighted_features": false,
+            "add_as_bundle": false,
+            "border_color_light": "#d9d8d6",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "badges_1",
+        "title_1",
+        "rating_1",
+        "price_1",
+        "inventory_1",
+        "trust_badge_1",
+        "variant_picker_1",
+        "customize_picker_1",
+        "engraving_1",
+        "discount_progress_bar_1",
+        "estimate_delivery_1",
+        "quantity_selector_1",
+        "buy_buttons_1",
+        "collapsible_tab_1",
+        "complementary_1"
+      ]
+    },
+    "flow": {
+      "type": "flow",
+      "settings": {
+        "heading": "How It Works",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "content_position": "middle",
+        "content_alignment": "left",
+        "select_motion": "hover",
+        "open_first_tab": true,
+        "adapt_radius": false,
+        "image_corner_radius": 6,
+        "auto_play": false,
+        "change_steps_speed": 5,
+        "pause_hover": true,
+        "background_color": "#f8f6f2",
+        "heading_color": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "image_position": "second",
+        "image_width": "60",
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "desktop_height": "650px",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_position_mobile": "second",
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "mobile_height": "400px",
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 0
+      },
+      "blocks": {
+        "media_step1": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Image Ratio.png",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "STEP 1",
+            "heading": "Upload a Favorite Photo",
+            "image_heading": "",
+            "image_style_heading": "square",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "<p>Choose the photo you'd like us to transform into a stunning 3D crystal keepsake.</p>",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        },
+        "media_step2": {
+          "type": "media",
+          "settings": {
+            "image": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "STEP 2",
+            "heading": "Preview Your Crystal in Free 3D Render",
+            "image_heading": "",
+            "image_style_heading": "square",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        },
+        "media_step3": {
+          "type": "media",
+          "settings": {
+            "image": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "STEP 3",
+            "heading": "Add Optional Text Engraving",
+            "image_heading": "",
+            "image_style_heading": "square",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        },
+        "media_step4": {
+          "type": "media",
+          "settings": {
+            "image": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "STEP 4",
+            "heading": "We engrave & ship next business day",
+            "image_heading": "",
+            "image_style_heading": "square",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "media_step1",
+        "media_step2",
+        "media_step3",
+        "media_step4"
+      ]
+    },
+    "comparison-table-pdp": {
+      "type": "comparison-table",
+      "settings": {
+        "heading": "Why Real 3D [Beats] Flat Printing",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "description": "<p>See the difference precision laser engraving makes.</p>",
+        "alternative_text": "Crystal 3D Pix",
+        "external_item_labels": "Flat Print",
+        "icon_position": "next",
+        "icon_size": 45,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "column_highlight_light": "#f8f6f2",
+        "line_border": "rgba(0,0,0,0)",
+        "color_icon_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "column_highlight_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "color_icon_dark": "rgba(0,0,0,0)",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "criterion_1": {
+          "type": "criterion",
+          "settings": {
+            "heading": "True 3D depth",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "No",
+            "icon_external_item": "none"
+          }
+        },
+        "criterion_2": {
+          "type": "criterion",
+          "settings": {
+            "heading": "Laser-engraved permanence",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "Fades",
+            "icon_external_item": "none"
+          }
+        },
+        "criterion_3": {
+          "type": "criterion",
+          "settings": {
+            "heading": "Heirloom-grade crystal",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "No",
+            "icon_external_item": "none"
+          }
+        },
+        "criterion_4": {
+          "type": "criterion",
+          "settings": {
+            "heading": "Free 3D preview",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "No",
+            "icon_external_item": "none"
+          }
+        }
+      },
+      "block_order": [
+        "criterion_1",
+        "criterion_2",
+        "criterion_3",
+        "criterion_4"
+      ]
+    },
+    "products-bundle-pdp": {
+      "type": "products-bundle",
+      "settings": {
+        "heading": "Complete the Gift",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "description": "Build your bundle and save 20% on any three items",
+        "heading_alignment": "center",
+        "show_discount_value_label": false,
+        "label_type": "rounded",
+        "button_atb_label": "ADD TO BUNDLE",
+        "collection": "best-sellers",
+        "product_to_show": 3,
+        "products": [],
+        "show_highlighted_features": false,
+        "each_product_can_added_to_bundle_once": true,
+        "show_qty": false,
+        "minimum_items": 3,
+        "discount_type": "percentage",
+        "discount_value": "20",
+        "apply_discount_once_per_order": false,
+        "picker_type": "adapt",
+        "max_swatch": 20,
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "summary_layout": "vertical",
+        "summary_position": "right",
+        "bundler_heading": "Bundle content",
+        "bundler_text": "<p>Add 3 or more products to your box and save 20%</p>",
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "spacing_mobile": 20,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "block_order": []
+    },
+    "product-recommendations-pdp": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You May Also Like",
+        "heading_alignment": "center",
+        "show_recently_viewed_tab": true,
+        "tab_button_style": "button",
+        "enable_swiper_mobile": true,
+        "columns_mobile": "2",
+        "spacing_mobile": 24,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 48
+      },
+      "block_order": []
+    },
+    "faq-pdp": {
+      "type": "faq",
+      "settings": {
+        "heading": "FAQs",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": true,
+        "view_all_position": "top",
+        "button_link": "/pages/faq",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image": "",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "block-1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "What if my photo doesn't upload well?",
+            "row_content": "<p>We'll send you a free 3D preview before engraving — if the result isn't right, our team will help adjust the photo or refund you, no hassle.</p>",
+            "open_by_default": true
+          }
+        },
+        "block-2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "How fast does it ship?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "block-3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "What's your return policy?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "block-4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Can I add custom text engraving?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "email-signup-pdp": {
+      "type": "newsletter",
+      "settings": {
+        "content_layout": "vertical",
+        "form_width": "large",
+        "background_color_light": "#f8f6f2"
+      },
+      "blocks": {
+        "block_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up your email"
+          }
+        },
+        "block_2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our email list for sales, buying guides, and more.</p>"
+          }
+        },
+        "block_3": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Subscribe"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "flow",
+    "comparison-table-pdp",
+    "products-bundle-pdp",
+    "product-recommendations-pdp",
+    "faq-pdp",
+    "email-signup-pdp"
+  ]
+}

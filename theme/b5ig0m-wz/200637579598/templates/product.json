@@ -1,0 +1,923 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_image": true,
+        "show_product_name": true,
+        "title_size": 100,
+        "heading_tag": "h1",
+        "show_vendor": false,
+        "link_vendor": false,
+        "make_content_center": false,
+        "desktop_layout": "left",
+        "desktop_media_layout": "thumbnail_slider",
+        "show_arrow_button": true,
+        "mobile_media_size": "full_width",
+        "show_thumnail_mobile": false,
+        "transition_style": "fade",
+        "image_ratio": "3/4",
+        "thumbnail_position": "horizontal",
+        "enable_thumbnail_overlay": true,
+        "enable_image_zoom": false,
+        "zoom_effect": "enlarge",
+        "enable_video_autoplay": false,
+        "enable_video_loop": false,
+        "show_first_image_avaiable": true,
+        "show_media_with_variant_selected": false,
+        "enable_microdata": false,
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f3f1ef",
+        "text_color_light": "#4a4744",
+        "textlink_color_light": "#6b5b4d",
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "breadcrumb_1": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
+        "badges_1": {
+          "type": "badges",
+          "settings": {
+            "position_adapt": false
+          }
+        },
+        "product_name_1": {
+          "type": "product_name",
+          "settings": {
+            "title_size": 100,
+            "heading_tag": "h1",
+            "enable_product_rating": false
+          }
+        },
+        "rating_1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {
+            "adapt_custom_price_format": false,
+            "show_tax_and_shipping": false,
+            "text_size_price": 70
+          }
+        },
+        "inventory_status_1": {
+          "type": "inventory_status",
+          "settings": {
+            "incoming": false,
+            "message_incoming": "",
+            "message_backorder": "",
+            "hide_preorder": false
+          }
+        },
+        "text_checklist": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✓ Lightweight hydration</p><p>✓ Supports blemish-prone skin</p><p>✓ Helps achieve a smoother-looking complexion</p><p>✓ Soothes and protects the skin</p><p>✓ Fast-absorbing, non-greasy texture</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        },
+        "text_tagline": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clean formulas for clean living.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        },
+        "trust_badge_1": {
+          "type": "trust_badge",
+          "settings": {
+            "badge": "shopify://shop_images/image 299.png",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "trust_badge_2": {
+          "type": "trust_badge",
+          "settings": {
+            "badge": "shopify://shop_images/image 300.png",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "trust_badge_3": {
+          "type": "trust_badge",
+          "settings": {
+            "badge": "shopify://shop_images/image 301.png",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "trust_badge_4": {
+          "type": "trust_badge",
+          "settings": {
+            "badge": "shopify://shop_images/image 303.png",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "trust_badge_5": {
+          "type": "trust_badge",
+          "settings": {
+            "badge": "shopify://shop_images/image 304.png",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "quantity_selector_1": {
+          "type": "quantity_selector",
+          "settings": {
+            "style": "adapt"
+          }
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_button_style": "primary",
+            "show_dynamic_checkout": true,
+            "dymanic_checkout_style": "primary",
+            "show_atc_quantity": false,
+            "show_add_to_cart": true,
+            "show_price": false,
+            "hide_sale_price": true,
+            "show_gift_card_recipient": true,
+            "pickup_availability": true,
+            "hide_when_pre_order": false,
+            "preorder_button_label": "Pre-order",
+            "preorder_message": "<p>This product will be available for sale in 2 weeks, but you can pre-order now to receive 10% discount!</p>",
+            "preorder_show_dynamic_button": false,
+            "show_background": false,
+            "box_type": "adapt",
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "button_light": "#2b2a28",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_1": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_20089_6854)\">\n<path d=\"M10.002 15.3187C9.96103 15.3186 9.92053 15.3096 9.88335 15.2923L4.85697 12.8747C4.81106 12.8519 4.77237 12.8169 4.74521 12.7734C4.71805 12.7299 4.70348 12.6798 4.70313 12.6286V7.21757C4.70299 7.17135 4.7146 7.12585 4.73689 7.08535C4.75917 7.04486 4.79139 7.01069 4.83051 6.98608C4.86964 6.96146 4.91438 6.9472 4.96053 6.94463C5.00668 6.94207 5.05273 6.95128 5.09434 6.97141L10.1207 9.389C10.1666 9.41177 10.2053 9.44684 10.2325 9.4903C10.2596 9.53376 10.2742 9.5839 10.2746 9.63515V15.0461C10.2746 15.0922 10.2629 15.1376 10.2406 15.178C10.2183 15.2183 10.1861 15.2524 10.1471 15.2769C10.1038 15.3045 10.0534 15.319 10.002 15.3187ZM5.24818 12.4615L9.7295 14.6198V9.80878L5.24818 7.65053V12.4615Z\" fill=\"#2B2A28\"/>\n<path d=\"M10.0027 9.90555C9.96464 9.90825 9.92647 9.90301 9.89058 9.89016L4.86421 7.47258C4.81754 7.45085 4.77805 7.41624 4.75038 7.37283C4.72271 7.32942 4.70801 7.27901 4.70801 7.22753C4.70801 7.17605 4.72271 7.12564 4.75038 7.08223C4.77805 7.03881 4.81754 7.00421 4.86421 6.98247L9.89058 4.5539C9.92733 4.53649 9.96749 4.52747 10.0082 4.52747C10.0488 4.52747 10.089 4.53649 10.1257 4.5539L15.1521 6.97148C15.1983 6.99385 15.2373 7.02882 15.2645 7.07237C15.2918 7.11592 15.3061 7.16628 15.306 7.21764C15.306 7.26868 15.2915 7.31867 15.2643 7.36185C15.2371 7.40502 15.1982 7.4396 15.1521 7.46159L10.1104 9.89016C10.0759 9.90248 10.0392 9.90771 10.0027 9.90555ZM5.60706 7.21544L10.0027 9.33192L14.3983 7.21983L10.0027 5.10115L5.60706 7.21544Z\" fill=\"#2B2A28\"/>\n<path d=\"M10.002 15.3187C9.95065 15.319 9.90027 15.3045 9.85697 15.2769C9.81793 15.2524 9.78576 15.2183 9.76347 15.178C9.74117 15.1376 9.72948 15.0922 9.72949 15.0461V9.63735C9.72934 9.58599 9.7437 9.53563 9.77092 9.49208C9.79814 9.44853 9.83711 9.41356 9.88334 9.39119L14.9097 6.97361C14.9513 6.95348 14.9974 6.94427 15.0435 6.94683C15.0897 6.9494 15.1344 6.96366 15.1735 6.98827C15.2127 7.01289 15.2449 7.04705 15.2672 7.08755C15.2894 7.12804 15.3011 7.17354 15.3009 7.21976V12.6264C15.3011 12.6777 15.2867 12.7281 15.2595 12.7716C15.2323 12.8152 15.1933 12.8501 15.1471 12.8725L10.1097 15.2923C10.076 15.3084 10.0393 15.3173 10.002 15.3187ZM10.2745 9.80878V14.6132L14.7559 12.4549V7.65053L10.2745 9.80878Z\" fill=\"#2B2A28\"/>\n<path d=\"M7.48753 8.69666C7.42634 8.69604 7.36714 8.67484 7.31946 8.63648C7.27178 8.59811 7.2384 8.54482 7.2247 8.48518C7.21099 8.42554 7.21776 8.36302 7.24391 8.30769C7.27006 8.25236 7.31407 8.20745 7.36885 8.18018L12.3974 5.76259C12.4624 5.73161 12.5371 5.72762 12.605 5.75151C12.673 5.77539 12.7287 5.82521 12.7601 5.89007C12.7757 5.92221 12.7848 5.95714 12.7869 5.99283C12.7889 6.02852 12.7839 6.06426 12.772 6.09799C12.7602 6.13172 12.7417 6.16276 12.7178 6.18931C12.6939 6.21587 12.6649 6.23741 12.6326 6.2527L7.60621 8.67029C7.56896 8.68736 7.52851 8.69635 7.48753 8.69666Z\" fill=\"#2B2A28\"/>\n<path d=\"M8.16219 11.0704C8.12116 11.0706 8.0806 11.0616 8.04351 11.044L6.55999 10.3297C6.52768 10.3144 6.49872 10.2929 6.47478 10.2663C6.45085 10.2398 6.43243 10.2087 6.42057 10.175C6.40872 10.1413 6.40367 10.1055 6.40572 10.0699C6.40777 10.0342 6.41688 9.99924 6.43252 9.96709C6.46385 9.90223 6.51959 9.85242 6.58754 9.82853C6.65549 9.80465 6.73014 9.80863 6.79516 9.83962L8.27867 10.5495C8.33331 10.5767 8.37724 10.6214 8.40343 10.6765C8.42962 10.7316 8.43656 10.7939 8.42314 10.8535C8.40971 10.913 8.3767 10.9663 8.32939 11.0048C8.28208 11.0434 8.2232 11.0649 8.16219 11.066V11.0704Z\" fill=\"#2B2A28\"/>\n<path d=\"M1.74481 13.567C1.69162 13.5679 1.63935 13.5531 1.59444 13.5246C1.54952 13.4961 1.51394 13.4551 1.49207 13.4066C0.66714 11.3665 0.60321 9.09786 1.31194 7.01458C2.02068 4.9313 3.45482 3.17228 5.35268 2.05851C7.25054 0.944743 9.48559 0.550468 11.65 0.947636C13.8144 1.3448 15.7638 2.50693 17.1426 4.22197C17.1682 4.24927 17.1879 4.28154 17.2004 4.31677C17.213 4.352 17.2181 4.38944 17.2156 4.42676C17.2131 4.46407 17.2029 4.50047 17.1857 4.53368C17.1685 4.56688 17.1446 4.59619 17.1156 4.61978C17.0865 4.64337 17.053 4.66072 17.0169 4.67077C16.9809 4.68082 16.9432 4.68335 16.9061 4.67819C16.8691 4.67304 16.8335 4.66031 16.8016 4.64081C16.7697 4.62131 16.7421 4.59544 16.7206 4.56483C15.4236 2.95653 13.5925 1.86716 11.5602 1.49486C9.52785 1.12256 7.42943 1.49206 5.64652 2.53614C3.86362 3.58023 2.51468 5.22955 1.84502 7.18414C1.17537 9.13873 1.2295 11.2687 1.99756 13.1868C2.01407 13.2281 2.0202 13.2729 2.01544 13.3171C2.01067 13.3613 1.99514 13.4037 1.97021 13.4406C1.94528 13.4775 1.9117 13.5076 1.87241 13.5285C1.83312 13.5494 1.78931 13.5604 1.74481 13.5604V13.567Z\" fill=\"#2B2A28\"/>\n<path d=\"M10.0128 19.1406C8.64059 19.1439 7.28513 18.8389 6.04654 18.2481C4.80795 17.6573 3.71788 16.7959 2.8568 15.7274C2.81134 15.6691 2.79089 15.5952 2.79996 15.5218C2.80903 15.4484 2.84687 15.3817 2.90516 15.3362C2.96344 15.2908 3.03741 15.2703 3.11077 15.2794C3.18414 15.2884 3.2509 15.3263 3.29636 15.3846C4.6013 16.991 6.44028 18.0747 8.47778 18.438C10.5153 18.8012 12.6155 18.4199 14.3952 17.3635C16.1749 16.307 17.5155 14.646 18.1723 12.6834C18.8292 10.7207 18.7586 8.58736 17.9733 6.67249C17.9585 6.63926 17.9506 6.60341 17.9499 6.56706C17.9492 6.53071 17.9557 6.49459 17.9692 6.46082C17.9827 6.42705 18.0028 6.39632 18.0283 6.37043C18.0539 6.34455 18.0843 6.32404 18.1179 6.31011C18.1515 6.29618 18.1875 6.2891 18.2239 6.28931C18.2602 6.28952 18.2962 6.297 18.3296 6.31131C18.363 6.32562 18.3933 6.34648 18.4185 6.37265C18.4437 6.39882 18.4635 6.42978 18.4766 6.4637C19.2254 8.29636 19.3651 10.3212 18.8752 12.2394C18.3853 14.1575 17.2916 15.8673 15.7557 17.1164C14.1296 18.4288 12.1024 19.1433 10.0128 19.1406Z\" fill=\"#2B2A28\"/>\n<path d=\"M16.9537 4.68569H16.9229L14.3845 4.41097C14.3163 4.39896 14.2552 4.36147 14.2137 4.30611C14.1722 4.25074 14.1533 4.18164 14.1608 4.11283C14.1684 4.04403 14.2018 3.98067 14.2544 3.93563C14.3069 3.89059 14.3746 3.86724 14.4438 3.87031L16.7031 4.11426L16.9559 1.84613C16.9575 1.80889 16.9668 1.77238 16.9831 1.73887C16.9995 1.70535 17.0225 1.67555 17.0508 1.65129C17.0791 1.62703 17.1121 1.60884 17.1477 1.59783C17.1833 1.58683 17.2208 1.58325 17.2579 1.58732C17.2949 1.59139 17.3308 1.60301 17.3631 1.62148C17.3955 1.63995 17.4238 1.66486 17.4462 1.69468C17.4685 1.7245 17.4845 1.75859 17.4932 1.79485C17.5019 1.83111 17.503 1.86876 17.4965 1.90547L17.224 4.44393C17.2158 4.51574 17.1795 4.58135 17.1229 4.62635C17.0751 4.66513 17.0153 4.6861 16.9537 4.68569Z\" fill=\"#2B2A28\"/>\n<path d=\"M2.77983 18.345H2.74906C2.67744 18.3373 2.6118 18.3015 2.56649 18.2455C2.52119 18.1895 2.49991 18.1178 2.5073 18.0461L2.78202 15.5077C2.78544 15.4722 2.79596 15.4378 2.81295 15.4064C2.82994 15.3751 2.85305 15.3475 2.88092 15.3253C2.9372 15.28 3.00905 15.2586 3.08092 15.2659L5.61939 15.5385C5.68723 15.5506 5.74797 15.5879 5.78938 15.643C5.83078 15.6981 5.84977 15.7669 5.84253 15.8354C5.83529 15.9039 5.80234 15.9672 5.75034 16.0124C5.69833 16.0576 5.63112 16.0815 5.56224 16.0791L3.29631 15.8352L3.04796 18.1033C3.04092 18.1695 3.00965 18.2309 2.96016 18.2755C2.91068 18.3201 2.84646 18.3449 2.77983 18.345Z\" fill=\"#2B2A28\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_20089_6854\">\n<rect width=\"20\" height=\"20\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>14-day return policy</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_2": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.96973 5.30286C2.96973 4.81801 3.36367 4.42407 3.84851 4.42407H5.75761H12.4849C12.9697 4.42407 13.3637 4.81801 13.3637 5.30286V14.1513H7.7273\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M4.87882 14.1513H3.84851C3.36367 14.1513 2.96973 13.7574 2.96973 13.2725V9.69678\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M18.2735 10.1514L17.3038 8.0605C17.1826 7.78778 16.8795 7.60596 16.5765 7.60596H14.2432V10.1514H18.2735Z\" stroke=\"#2B2A28\" stroke-width=\"0.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M14.6976 14.1514H13.3945V6.72717H16.5763C17.2127 6.72717 17.8188 7.09081 18.0915 7.69687L19.243 10.1514C19.3339 10.3635 19.3945 10.606 19.3945 10.8484V13.2726C19.3945 13.7575 19.0006 14.1514 18.5157 14.1514H17.5763\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M7.31763 15.1512C7.88558 14.5832 7.89518 13.672 7.33906 13.1159C6.78294 12.5597 5.8717 12.5693 5.30375 13.1373C4.7358 13.7052 4.72621 14.6165 5.28233 15.1726C5.83845 15.7287 6.74968 15.7191 7.31763 15.1512Z\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16.1518 15.5757C16.9384 15.5757 17.576 14.938 17.576 14.1514C17.576 13.3648 16.9384 12.7272 16.1518 12.7272C15.3652 12.7272 14.7275 13.3648 14.7275 14.1514C14.7275 14.938 15.3652 15.5757 16.1518 15.5757Z\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M14.3037 10.9999H15.1219\" stroke=\"#2B2A28\" stroke-width=\"0.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M19.3944 11.6969H18.8793C18.6974 11.6969 18.5156 11.8484 18.5156 12.0605C18.5156 12.2424 18.6671 12.4242 18.8793 12.4242H19.3641\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1.87891 6.36353H5.54557\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M0.606445 7.60596H4.78826\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.81836 8.72717H5.54563\" stroke=\"#2B2A28\" stroke-width=\"0.8\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Free shipping above a minimum order value</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_3": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_20089_6881)\">\n<path d=\"M16.9199 6.27374L15.9809 5.13452C15.852 4.97812 15.7735 4.78891 15.7543 4.58734L15.6127 3.11778C15.5392 2.35423 14.9315 1.74663 14.168 1.67308L12.6984 1.53163C12.4969 1.51225 12.3077 1.43382 12.1513 1.30504L11.012 0.365866C10.4202 -0.121955 9.56094 -0.121955 8.96905 0.365866L7.82983 1.30504C7.67358 1.43382 7.48438 1.51225 7.28266 1.53163L5.81309 1.67308C5.04954 1.74663 4.44209 2.35423 4.36839 3.11778L4.22694 4.58734C4.20757 4.78891 4.12914 4.97812 4.00035 5.13452L3.06118 6.27374C2.57336 6.86562 2.57336 7.72484 3.06118 8.31673L4.00035 9.45595C4.12914 9.61235 4.20757 9.80155 4.22694 10.0031L4.36839 11.4727C4.44194 12.2362 5.04954 12.8437 5.81309 12.9174L6.71137 13.0039L4.57713 18.1038C4.5193 18.2427 4.54539 18.3989 4.64534 18.5115C4.74528 18.624 4.89711 18.6686 5.04146 18.6275L6.8931 18.1047C6.90119 18.1025 6.90897 18.106 6.91263 18.1125L7.83991 19.7986C7.90887 19.9242 8.03781 19.9999 8.17972 19.9999C8.18643 19.9999 8.19314 19.9997 8.20001 19.9994C8.35 19.9918 8.4797 19.9011 8.53906 19.7614L10.7923 14.3766C10.8688 14.3326 10.9423 14.2821 11.0122 14.2246L12.1514 13.2856C12.2956 13.1666 12.4682 13.0913 12.6524 13.0651L14.6932 17.9416L13.249 17.5339C12.9743 17.4566 12.6867 17.5769 12.5489 17.8267L11.8258 19.1416L10.8677 16.852C10.8044 16.7008 10.6307 16.6297 10.4795 16.6929C10.3285 16.756 10.2572 16.9298 10.3205 17.0809L11.4428 19.7629C11.5015 19.9011 11.6311 19.9918 11.7812 19.9994C11.7881 19.9997 11.7948 20 11.8015 20C11.9434 20 12.0724 19.9242 12.1413 19.7986L13.0685 18.1128C13.0723 18.106 13.0802 18.1028 13.088 18.1047L14.9393 18.6275C15.084 18.6684 15.236 18.624 15.3358 18.5115C15.4357 18.3989 15.4618 18.2428 15.4038 18.1035L13.2697 13.0037L14.168 12.9172C14.9315 12.8437 15.5392 12.2362 15.6127 11.4727L15.7543 10.003C15.7735 9.8014 15.852 9.61235 15.9809 9.45595L16.9199 8.31673C17.4079 7.72484 17.4079 6.86562 16.9199 6.27374ZM8.15546 19.1416L7.43219 17.8264C7.29456 17.5768 7.00663 17.4564 6.73212 17.5339L5.28804 17.9415L7.32874 13.0651C7.51306 13.0913 7.68564 13.1666 7.82983 13.2854L8.96905 14.2246C9.26507 14.4686 9.62777 14.5905 9.99062 14.5905C10.014 14.5905 10.0372 14.5899 10.0605 14.5888L8.15546 19.1416ZM16.4623 7.93953L15.5233 9.07875C15.3188 9.32655 15.1946 9.62654 15.1638 9.94621L15.0223 11.4158C14.976 11.8973 14.5928 12.2805 14.1112 12.3269L12.8204 12.4512C12.8153 12.4515 12.8101 12.452 12.8051 12.4528L12.6417 12.4685C12.3218 12.4993 12.0219 12.6235 11.7741 12.8278L10.6348 13.7668C10.2616 14.0746 9.71963 14.0746 9.3464 13.7668L8.20718 12.8278C7.95938 12.6235 7.65939 12.4991 7.33957 12.4685L7.17539 12.4526C7.17081 12.452 7.16639 12.4517 7.16181 12.4514L5.87 12.3269C5.38844 12.2805 5.00529 11.8973 4.95891 11.4158L4.81746 9.94636C4.78663 9.62654 4.66243 9.32655 4.45796 9.07875L3.51894 7.93953C3.21117 7.56615 3.21117 7.02416 3.51894 6.65093L4.45796 5.51172C4.66243 5.26392 4.78663 4.96393 4.81746 4.64411L4.95891 3.17454C5.00529 2.69297 5.38844 2.30983 5.87 2.26344L7.33957 2.12199C7.65939 2.09117 7.95938 1.96696 8.20718 1.76265L9.3464 0.823628C9.53301 0.66982 9.76189 0.592763 9.99062 0.592763C10.2194 0.592763 10.4482 0.669667 10.6348 0.823628L11.7741 1.76265C12.0219 1.96696 12.3218 2.09132 12.6417 2.12199L14.1112 2.26344C14.5928 2.30983 14.976 2.69297 15.0223 3.17454L15.1638 4.64411C15.1946 4.96393 15.3188 5.26392 15.5233 5.51172L16.4623 6.65093C16.7699 7.02431 16.7699 7.56615 16.4623 7.93953Z\" fill=\"#2B2A28\"/>\n<path d=\"M9.99043 2.66235C9.79237 2.66235 9.59309 2.67487 9.39778 2.69989C9.23543 2.72064 9.12053 2.86926 9.14128 3.03161C9.16203 3.19412 9.3108 3.30887 9.473 3.28827C9.64329 3.26645 9.81739 3.25546 9.99043 3.25546C12.218 3.25546 14.0303 5.06774 14.0303 7.29536C14.0303 9.52298 12.2179 11.3351 9.99043 11.3351C7.76281 11.3351 5.95053 9.52283 5.95053 7.29521C5.95053 5.70632 6.88741 4.25903 8.3373 3.60794C8.48668 3.54095 8.55351 3.36532 8.48638 3.21594C8.41924 3.0664 8.24361 2.99972 8.09438 3.06686C6.43164 3.81347 5.35742 5.47316 5.35742 7.29521C5.35742 9.84997 7.43581 11.9282 9.99043 11.9282C12.545 11.9282 14.6234 9.84997 14.6234 7.29521C14.6234 4.74059 12.545 2.66235 9.99043 2.66235Z\" fill=\"#2B2A28\"/>\n<path d=\"M7.04543 6.95177C6.69189 7.30531 6.69189 7.88072 7.04543 8.23426L8.34074 9.52973C8.5121 9.70093 8.73976 9.79523 8.98207 9.79523C9.22423 9.79523 9.45204 9.70093 9.62339 9.52973L12.451 6.70198C12.8045 6.34828 12.8045 5.77303 12.451 5.41933C12.0974 5.06579 11.522 5.06579 11.1683 5.41933L8.98207 7.60576L8.32793 6.95177C7.97438 6.59822 7.39898 6.59822 7.04543 6.95177ZM8.98207 8.32185C9.06065 8.32185 9.13603 8.29057 9.19172 8.23487L11.5878 5.8388C11.7102 5.71642 11.9092 5.71657 12.0315 5.8388C12.1539 5.96117 12.1539 6.1603 12.0315 6.28252L9.20393 9.11027C9.14473 9.16947 9.06584 9.20212 8.98207 9.20212C8.89815 9.20212 8.81941 9.16947 8.76021 9.11027L7.46474 7.81495C7.34252 7.69258 7.34252 7.49345 7.46474 7.37123C7.52593 7.31004 7.60634 7.27937 7.68676 7.27937C7.76702 7.27937 7.84743 7.31004 7.90847 7.37108L8.77226 8.23487C8.82796 8.29057 8.90333 8.32185 8.98207 8.32185Z\" fill=\"#2B2A28\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_20089_6881\">\n<rect width=\"20\" height=\"20\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Carefully selected, professionally formulated products</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_4": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22033_3578)\">\n<path d=\"M13.1138 1.5625C13.6687 3.6307 15.2982 5.26398 17.3641 5.82457C17.3011 8.26812 17.0207 11.0743 15.974 13.37C15.4005 14.6279 14.6493 15.6392 13.6776 16.4618C12.6946 17.2939 11.4589 17.9367 9.99969 18.3758C8.54047 17.9367 7.30473 17.2939 6.32176 16.4618C5.35 15.6392 4.59887 14.6279 4.02535 13.37C2.97867 11.0743 2.69828 8.26812 2.63527 5.82457C4.70121 5.26398 6.33063 3.6307 6.88559 1.5625H13.1138ZM14.4712 0H5.52816C5.52816 2.46957 3.52621 4.47152 1.05664 4.47152C1.05664 11.3143 2.20098 17.9103 9.99969 20C17.7984 17.9103 18.9427 11.3143 18.9427 4.47152C16.4732 4.47152 14.4712 2.46957 14.4712 0Z\" fill=\"#4A4744\"/>\n<path d=\"M13.4393 7.7074L8.8541 12.2926L6.56152 9.99998\" stroke=\"#4A4744\" stroke-width=\"1.25\" stroke-miterlimit=\"2.6131\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_22033_3578\">\n<rect width=\"20\" height=\"20\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Secure payments</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_5": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 18 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.5834 6.84151C15.5834 3.06305 12.5204 0 8.74192 0C4.96346 0 1.90042 3.06305 1.90042 6.84151C0.923603 6.96313 0 7.60167 0 9.084V12.6568C0 14.3292 1.17066 14.9373 2.2805 14.9373H3.38274C3.59265 14.9373 3.76283 14.7671 3.76283 14.5572V7.19878C3.76283 6.98888 3.59265 6.8187 3.38274 6.8187H2.66059C2.66059 3.46009 5.38331 0.737362 8.74192 0.737362C12.1005 0.737362 14.8233 3.46009 14.8233 6.8187H14.1011C13.8912 6.8187 13.721 6.98888 13.721 7.19878V14.5458C13.721 14.7557 13.8912 14.9259 14.1011 14.9259H14.8233C14.7168 17.5371 13.4626 18.149 10.9578 18.2592V18.0046C10.9578 17.5847 10.6175 17.2444 10.1976 17.2444H7.80692C7.38707 17.2444 7.04675 17.5847 7.04675 18.0046V19.2398C7.04675 19.6597 7.38707 20 7.80692 20H10.2052C10.6251 20 10.9654 19.6597 10.9654 19.2398V19.0194C13.3751 18.9092 15.458 18.4112 15.5834 14.9031C16.5602 14.7815 17.4838 14.1429 17.4838 12.6606V9.0878C17.4838 7.59787 16.564 6.96313 15.5834 6.84151ZM3.00266 7.55226V14.1657H2.2615C1.69897 14.1657 0.741163 13.9681 0.741163 12.6454V9.0726C0.741163 7.76131 1.68757 7.55226 2.2615 7.55226H3.00266ZM10.2052 18.6659V19.2436H7.80692V18.0084H10.2052V18.6659ZM16.7237 12.6568C16.7237 13.9681 15.7773 14.1771 15.2033 14.1771H14.4812V7.57887H15.2223C15.7849 7.57887 16.7427 7.77651 16.7427 9.0992L16.7237 12.6568Z\" fill=\"#2B2A28\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Responsive customer support</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_6": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.19998 12.6L8.19999 16.2C8.2 17.1942 7.39411 18 6.39999 18H2.8C1.80589 18 1 17.1942 1 16.2V12.6C1 11.6059 1.80589 10.8 2.8 10.8H6.39998C7.39409 10.8 8.19998 11.6059 8.19998 12.6Z\" stroke=\"#4A4744\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M13.5994 3.60004V7.20004C13.5994 8.19419 12.7936 9.00005 11.7994 9.00005H8.19941C7.2053 9.00005 6.39941 8.19419 6.39941 7.20005V3.60005C6.39941 2.60594 7.2053 1.80005 8.19941 1.80005H11.7994C12.7935 1.80005 13.5994 2.60594 13.5994 3.60004Z\" stroke=\"#4A4744\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M18.9998 12.6V16.2C18.9998 17.1942 18.1939 18 17.1998 18H13.5998C12.6057 18 11.7998 17.1942 11.7998 16.2V12.6C11.7998 11.6059 12.6057 10.8 13.5998 10.8H17.1998C18.1939 10.8 18.9998 11.6059 18.9998 12.6Z\" stroke=\"#4A4744\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M4.59961 13.5V10.8\" stroke=\"#4A4744\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M10 4.50005V1.80005\" stroke=\"#4A4744\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M15.3994 13.5V10.8\" stroke=\"#4A4744\" stroke-width=\"0.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Premium packaging</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_7": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 22 28\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22033_3564)\">\n<path d=\"M10.9275 16.6547C14.0906 16.6547 16.6548 14.0905 16.6548 10.9274C16.6548 7.76428 14.0906 5.20007 10.9275 5.20007C7.7644 5.20007 5.2002 7.76428 5.2002 10.9274C5.2002 14.0905 7.7644 16.6547 10.9275 16.6547Z\" stroke=\"#4A4744\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M7.82594 15.7463L6.83594 23.2L10.9269 20.7455L15.0178 23.2L14.0278 15.7382\" stroke=\"#4A4744\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_22033_3564\">\n<rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(1 4)\"/>\n</clipPath>\n</defs>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Transparent ingredients and product information</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)"
+          }
+        },
+        "collapsible_tab_1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Overview",
+            "tab_content": "<p>Valuable addition to any blemish-focused skincare line, offering lightweight hydration while addressing the needs of acne-prone skin.</p><p>Its balanced formula and natural ingredient profile make it an ideal product for brands targeting both teenage and adult consumers seeking gentle yet effective blemish care.</p>"
+          }
+        },
+        "collapsible_tab_2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Description",
+            "tab_content": "<p>This lightweight moisturiser is designed to hydrate, soothe, and support blemish-prone skin without feeling heavy or clogging pores.</p><p>Enriched with Hyaluronic Acid and natural polysaccharides, it helps maintain optimal moisture levels while promoting a smoother, clearer-looking complexion.</p><p>Argan Oil and Sodium PCA support skin hydration and softness, while an antioxidant complex featuring Vitamin C, Mate Leaf, Iceland Moss, and Juniper Callus extracts helps protect and calm the skin.</p><p>The fast-absorbing formula leaves the skin feeling balanced, comfortable, and refreshed.</p>"
+          }
+        },
+        "collapsible_tab_3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "How to Use",
+            "tab_content": "<p>Apply a pea-sized amount to clean skin on the face and neck.</p><ul><li>Gently massage until fully absorbed.</li></ul><p>Use morning and evening.</p>"
+          }
+        },
+        "collapsible_tab_4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Use for",
+            "tab_content": "<ul><li><strong>Skin Concerns:</strong> Blemishes, Dehydrated Skin</li><li><strong>Skin Type:</strong> Blemish-Prone Skin</li></ul>"
+          }
+        },
+        "collapsible_tab_5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Key Active Ingredients",
+            "tab_content": "<p>Argan Oil, Hyaluronic Acid, Sodium PCA, Mate Leaf Extract, Iceland Moss Extract, Juniper Callus Extract</p>"
+          }
+        },
+        "collapsible_tab_6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Ingredients (INCI)",
+            "tab_content": "<p>Aqua/Water, Glycerin, Argania Spinosa (Argan) Kernel Oil, Pentylene Glycol, Polyglyceryl-6 Stearate, Cetearyl Alcohol, Cellulose, Sodium PCA, Isoamyl Laurate, Zinc PCA, Aroma/Fragrance, Caprylic/Capric Triglyceride, Propanediol, Polyglyceryl-6 Behenate, Alcohol, Xanthan Gum, Ilex Paraguariensis (Mate) Leaf Extract, Palmitic Acid, Stearic Acid, Ascorbyl Palmitate, Tocopherol, Potassium Hydroxide, Sodium Phytate, Sodium Hyaluronate, Cetraria Islandica (Iceland Moss) Extract, Usnea Barbata (Lichen) Extract, Rhamnose, Juniperus Communis (Juniper) Callus Extract, CI 77007 (Ultramarines), Glucose, Glucuronic Acid, Silica, Kaolin, Maltodextrin, CI 75815 (Chlorophyllin Copper Complex), Linalool, Linalyl Acetate, Citrus Aurantium Bergamia Peel Oil, Citral, Limonene, Juniperus Virginiana Oil, Citronellol, Pinene</p>"
+          }
+        },
+        "collapsible_tab_7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Ingredient Notes",
+            "tab_content": "<ul><li>Ingredients from organic farming</li><li>From natural origin</li><li>Naturally occurring in essential oils</li><li>Mineral colour pigment</li></ul>"
+          }
+        },
+        "shoppable_video_1": {
+          "type": "shoppable_video",
+          "settings": {
+            "heading": "Customer videos",
+            "video_layout": "aspect-[9/16]",
+            "enable_desktop_slider": true,
+            "swiper_on_mobile": true,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "video_1": "",
+            "show_sound_control_1": false,
+            "enable_video_autoplay_1": false,
+            "video_alt_text_1": "",
+            "product_1": "",
+            "video_2": "",
+            "show_sound_control_2": false,
+            "enable_video_autoplay_2": false,
+            "video_alt_text_2": "",
+            "product_2": "",
+            "video_3": "",
+            "show_sound_control_3": false,
+            "enable_video_autoplay_3": false,
+            "video_alt_text_3": "",
+            "product_3": ""
+          }
+        },
+        "social_sharing_1": {
+          "type": "social_sharing",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "breadcrumb_1",
+        "badges_1",
+        "product_name_1",
+        "rating_1",
+        "price_1",
+        "inventory_status_1",
+        "text_checklist",
+        "text_tagline",
+        "trust_badge_1",
+        "trust_badge_2",
+        "trust_badge_3",
+        "trust_badge_4",
+        "trust_badge_5",
+        "quantity_selector_1",
+        "buy_buttons_1",
+        "icon_text_1",
+        "icon_text_2",
+        "icon_text_3",
+        "icon_text_4",
+        "icon_text_5",
+        "icon_text_6",
+        "icon_text_7",
+        "collapsible_tab_1",
+        "collapsible_tab_2",
+        "collapsible_tab_3",
+        "collapsible_tab_4",
+        "collapsible_tab_5",
+        "collapsible_tab_6",
+        "collapsible_tab_7",
+        "shoppable_video_1",
+        "social_sharing_1"
+      ]
+    },
+    "flow": {
+      "type": "flow",
+      "settings": {
+        "heading": "Why This State [Matters]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "content_position": "middle",
+        "content_alignment": "left",
+        "select_motion": "hover",
+        "open_first_tab": true,
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "auto_play": false,
+        "change_steps_speed": 5,
+        "pause_hover": true,
+        "background_color": "#f3f1ef",
+        "heading_color": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "image_position": "second",
+        "image_width": "60",
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "desktop_height": "650px",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_position_mobile": "first",
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "mobile_height": "400px",
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "signal": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Image Ratio.png",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "",
+            "heading": "The signal",
+            "image_heading": "shopify://shop_images/image 103.png",
+            "image_style_heading": "rounded",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "<p>Water is the first thing skin loses under stress, weather, and age — without it, every other function slows down.</p>",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        },
+        "support": {
+          "type": "media",
+          "settings": {
+            "image": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "",
+            "heading": "The support",
+            "image_heading": "shopify://shop_images/image 103.png",
+            "image_style_heading": "rounded",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        },
+        "result": {
+          "type": "media",
+          "settings": {
+            "image": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "",
+            "heading": "The result",
+            "image_heading": "shopify://shop_images/image 103.png",
+            "image_style_heading": "rounded",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "signal",
+        "support",
+        "result"
+      ]
+    },
+    "text-column-image": {
+      "type": "text-column-with-image",
+      "settings": {
+        "title": "Your Daily System",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "subheading": "Fed With [Purpose]",
+        "text": "<p>Each ingredient is chosen for what it does — not for how it looks on a label.</p>",
+        "secondary_background": "column",
+        "image_ratio": "75%",
+        "adapt_corners": true,
+        "rounded_corner_image": false,
+        "column_content_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "#4a4744",
+        "text_light": "#4a4744",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_bar_every": 5,
+        "image_position_desktop": "top",
+        "column_layout_desktop": "lg:w-1/4",
+        "spacing_desktop": 28,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_position_mobile": "top",
+        "column_layout_mobile": "w-full",
+        "spacing_mobile": 24,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Image Ratio.png",
+            "image_link": "",
+            "open_new_window_image": false,
+            "sub_title": "",
+            "title": "Hyaluronic Acid & Polysaccharides",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "text": "<p>Maintains balanced moisture levels for a smoother, clearer-looking complexion.</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_new_window": false,
+            "show_button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column-1"
+      ]
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "[Formulated] With Rigor",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "secondary_background": "column",
+        "border_column": "none",
+        "column_content_alignment": "center",
+        "icon_position": "above",
+        "icon_size": 57,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": true,
+        "change_bar_every": 5,
+        "background_color_light": "#f3f1ef",
+        "heading_light": "#2b2a28",
+        "text_light": "#4a4744",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "color_icon_light": "#6B5B4D",
+        "column_layout_desktop": "lg:w-1/4",
+        "section_height_desktop": "md:py-7",
+        "spacing_desktop": 28,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "column_layout_mobile": "w-1/2",
+        "section_height_mobile": "py-5",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M38.8677 6.1888C38.8677 5.81144 38.4903 5.43408 38.113 5.43408H34.2639C33.5847 5.43408 32.9809 5.43408 32.3016 5.43408L31.245 5.50955L30.2639 5.6605C28.9054 5.96238 27.6224 6.33974 26.4149 7.01899C25.2073 7.69823 24.1507 8.45295 23.245 9.43408C23.245 9.43408 23.245 9.43408 23.1696 9.43408C21.2073 11.3209 19.8488 13.8114 19.396 16.5284L19.245 17.5096L19.1696 18.5662V20.5284V24.1511C18.7922 24.6794 18.4903 25.2077 18.1884 25.736C18.2639 24.9058 18.2639 24.1511 18.3394 23.3209C18.3394 22.7171 18.4149 22.1888 18.4149 21.585V20.6794L18.3394 19.7737C18.1884 18.6416 17.8111 17.4341 17.2828 16.3775C16.7545 15.3209 16.0752 14.3397 15.245 13.4341C13.5847 11.6982 11.3205 10.4907 8.90542 10.0379L7.99976 9.88691L7.0941 9.81144C6.49033 9.81144 5.96202 9.81144 5.35825 9.81144C5.13184 9.81144 1.66014 9.81144 1.88655 9.81144C1.50919 9.81144 1.13184 10.1888 1.13184 10.5662V14.0379V15.7737L1.20731 16.6794L1.35825 17.585C1.81108 20.0001 3.01863 22.1888 4.82995 23.8492C5.73561 24.6794 6.71674 25.3586 7.77334 25.8869C8.82995 26.4152 10.0375 26.7171 11.1696 26.9435L12.0752 27.019H12.9809C13.5847 27.019 14.113 26.9435 14.7167 26.9435C15.6979 26.868 16.679 26.868 17.6601 26.7926C17.4337 27.1699 17.2828 27.6228 17.0564 28.0001C16.1507 30.1133 15.6224 32.3775 15.6224 34.5662C16.2262 32.3775 17.0564 30.4152 18.113 28.5284C18.7167 27.3963 19.4715 26.2643 20.2262 25.2077H23.7733H25.7356L26.7922 25.1322L27.7733 24.9813C29.1318 24.6794 30.4149 24.302 31.6224 23.6228C32.8299 22.9435 33.8866 22.1888 34.7922 21.2077H34.8677C36.8299 19.3209 38.1884 16.8303 38.6413 14.1133L38.7922 13.1322L38.8677 12.0756C38.8677 11.3963 38.8677 10.7926 38.8677 10.1133V6.1888ZM31.0186 22.3397C29.962 22.9435 28.7545 23.2454 27.5469 23.4718L26.6413 23.6228L25.7356 23.6982C25.1318 23.6982 24.4526 23.6982 23.8488 23.6982H21.4337C21.5847 23.5473 21.7356 23.3209 21.8866 23.1699C23.245 21.5096 24.7545 19.9246 26.2639 18.3397C27.7733 16.7548 29.3582 15.1699 30.8677 13.5096C28.9809 14.7171 27.1696 16.0001 25.4337 17.4341C23.7733 18.868 22.1884 20.3775 20.7545 22.1133V20.5284C20.7545 19.9246 20.7545 19.2454 20.7545 18.6416L20.8299 17.736L20.9809 16.8303C21.2073 15.6228 21.5092 14.4152 22.113 13.3586C22.6413 12.302 23.396 11.2454 24.2262 10.3397C25.1318 9.50955 26.113 8.83031 27.1696 8.22654C28.2262 7.62276 29.4337 7.32087 30.6413 7.09446L31.5469 6.94352L32.4526 6.86804H34.3394H37.4337V9.96238V11.8492L37.3582 12.8303L37.2073 13.736C36.9809 14.9435 36.679 16.1511 36.0752 17.2077C35.5469 18.2643 34.7922 19.3209 33.962 20.2265C33.0564 21.1322 32.0752 21.8114 31.0186 22.3397ZM14.7167 26.5662C14.113 26.5662 13.5847 26.4907 12.9809 26.4907L12.1507 26.4152L11.3205 26.2643C9.13184 25.8114 7.16957 24.6794 5.66014 23.0945C4.90542 22.2643 4.30165 21.4341 3.77335 20.453C3.32051 19.4718 3.01863 18.4152 2.79221 17.3586L2.64127 16.5284L2.5658 15.6982C2.5658 15.1699 2.5658 14.5662 2.5658 13.9624V11.2454H5.28278H7.01863H7.84882L8.67901 11.3209C9.73561 11.4718 10.7922 11.7737 11.7733 12.302C12.679 12.9813 13.5847 13.585 14.3394 14.3397C15.9243 15.8492 17.0564 17.8114 17.5092 20.0001L17.6601 20.8303L17.7356 21.6605C17.8111 22.1888 17.8111 22.7926 17.8111 23.3963C17.8866 24.302 17.8866 25.1322 17.962 26.0379C17.8111 26.3397 17.6601 26.5662 17.5092 26.868C16.679 26.6416 15.6979 26.6416 14.7167 26.5662Z\" fill=\"#6B5B4D\"/>\n<path d=\"M11.321 18.7922C10.4154 18.1884 9.50973 17.5847 8.45312 17.1318C9.0569 18.0375 9.81162 18.8677 10.5663 19.6224C12.0758 21.2073 13.5852 22.5658 15.2456 24.0752C16.0758 24.7545 16.8305 25.5092 17.8116 26.1884C17.3588 25.1318 16.8305 24.1507 16.1512 23.3205C14.7927 21.5092 13.2078 20.0752 11.321 18.7922Z\" fill=\"#6B5B4D\"/>\n</svg>",
+            "title": "Ecocert Certified",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Certified natural &amp; organic sourcing</p>"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M38.8677 6.1888C38.8677 5.81144 38.4903 5.43408 38.113 5.43408H34.2639C33.5847 5.43408 32.9809 5.43408 32.3016 5.43408L31.245 5.50955L30.2639 5.6605C28.9054 5.96238 27.6224 6.33974 26.4149 7.01899C25.2073 7.69823 24.1507 8.45295 23.245 9.43408C23.245 9.43408 23.245 9.43408 23.1696 9.43408C21.2073 11.3209 19.8488 13.8114 19.396 16.5284L19.245 17.5096L19.1696 18.5662V20.5284V24.1511C18.7922 24.6794 18.4903 25.2077 18.1884 25.736C18.2639 24.9058 18.2639 24.1511 18.3394 23.3209C18.3394 22.7171 18.4149 22.1888 18.4149 21.585V20.6794L18.3394 19.7737C18.1884 18.6416 17.8111 17.4341 17.2828 16.3775C16.7545 15.3209 16.0752 14.3397 15.245 13.4341C13.5847 11.6982 11.3205 10.4907 8.90542 10.0379L7.99976 9.88691L7.0941 9.81144C6.49033 9.81144 5.96202 9.81144 5.35825 9.81144C5.13184 9.81144 1.66014 9.81144 1.88655 9.81144C1.50919 9.81144 1.13184 10.1888 1.13184 10.5662V14.0379V15.7737L1.20731 16.6794L1.35825 17.585C1.81108 20.0001 3.01863 22.1888 4.82995 23.8492C5.73561 24.6794 6.71674 25.3586 7.77334 25.8869C8.82995 26.4152 10.0375 26.7171 11.1696 26.9435L12.0752 27.019H12.9809C13.5847 27.019 14.113 26.9435 14.7167 26.9435C15.6979 26.868 16.679 26.868 17.6601 26.7926C17.4337 27.1699 17.2828 27.6228 17.0564 28.0001C16.1507 30.1133 15.6224 32.3775 15.6224 34.5662C16.2262 32.3775 17.0564 30.4152 18.113 28.5284C18.7167 27.3963 19.4715 26.2643 20.2262 25.2077H23.7733H25.7356L26.7922 25.1322L27.7733 24.9813C29.1318 24.6794 30.4149 24.302 31.6224 23.6228C32.8299 22.9435 33.8866 22.1888 34.7922 21.2077H34.8677C36.8299 19.3209 38.1884 16.8303 38.6413 14.1133L38.7922 13.1322L38.8677 12.0756C38.8677 11.3963 38.8677 10.7926 38.8677 10.1133V6.1888ZM31.0186 22.3397C29.962 22.9435 28.7545 23.2454 27.5469 23.4718L26.6413 23.6228L25.7356 23.6982C25.1318 23.6982 24.4526 23.6982 23.8488 23.6982H21.4337C21.5847 23.5473 21.7356 23.3209 21.8866 23.1699C23.245 21.5096 24.7545 19.9246 26.2639 18.3397C27.7733 16.7548 29.3582 15.1699 30.8677 13.5096C28.9809 14.7171 27.1696 16.0001 25.4337 17.4341C23.7733 18.868 22.1884 20.3775 20.7545 22.1133V20.5284C20.7545 19.9246 20.7545 19.2454 20.7545 18.6416L20.8299 17.736L20.9809 16.8303C21.2073 15.6228 21.5092 14.4152 22.113 13.3586C22.6413 12.302 23.396 11.2454 24.2262 10.3397C25.1318 9.50955 26.113 8.83031 27.1696 8.22654C28.2262 7.62276 29.4337 7.32087 30.6413 7.09446L31.5469 6.94352L32.4526 6.86804H34.3394H37.4337V9.96238V11.8492L37.3582 12.8303L37.2073 13.736C36.9809 14.9435 36.679 16.1511 36.0752 17.2077C35.5469 18.2643 34.7922 19.3209 33.962 20.2265C33.0564 21.1322 32.0752 21.8114 31.0186 22.3397ZM14.7167 26.5662C14.113 26.5662 13.5847 26.4907 12.9809 26.4907L12.1507 26.4152L11.3205 26.2643C9.13184 25.8114 7.16957 24.6794 5.66014 23.0945C4.90542 22.2643 4.30165 21.4341 3.77335 20.453C3.32051 19.4718 3.01863 18.4152 2.79221 17.3586L2.64127 16.5284L2.5658 15.6982C2.5658 15.1699 2.5658 14.5662 2.5658 13.9624V11.2454H5.28278H7.01863H7.84882L8.67901 11.3209C9.73561 11.4718 10.7922 11.7737 11.7733 12.302C12.679 12.9813 13.5847 13.585 14.3394 14.3397C15.9243 15.8492 17.0564 17.8114 17.5092 20.0001L17.6601 20.8303L17.7356 21.6605C17.8111 22.1888 17.8111 22.7926 17.8111 23.3963C17.8866 24.302 17.8866 25.1322 17.962 26.0379C17.8111 26.3397 17.6601 26.5662 17.5092 26.868C16.679 26.6416 15.6979 26.6416 14.7167 26.5662Z\" fill=\"#6B5B4D\"/>\n<path d=\"M11.321 18.7922C10.4154 18.1884 9.50973 17.5847 8.45312 17.1318C9.0569 18.0375 9.81162 18.8677 10.5663 19.6224C12.0758 21.2073 13.5852 22.5658 15.2456 24.0752C16.0758 24.7545 16.8305 25.5092 17.8116 26.1884C17.3588 25.1318 16.8305 24.1507 16.1512 23.3205C14.7927 21.5092 13.2078 20.0752 11.321 18.7922Z\" fill=\"#6B5B4D\"/>\n</svg>",
+            "title": "Whole-Plant Actives",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Botanical extracts, not isolates</p>"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M38.8677 6.1888C38.8677 5.81144 38.4903 5.43408 38.113 5.43408H34.2639C33.5847 5.43408 32.9809 5.43408 32.3016 5.43408L31.245 5.50955L30.2639 5.6605C28.9054 5.96238 27.6224 6.33974 26.4149 7.01899C25.2073 7.69823 24.1507 8.45295 23.245 9.43408C23.245 9.43408 23.245 9.43408 23.1696 9.43408C21.2073 11.3209 19.8488 13.8114 19.396 16.5284L19.245 17.5096L19.1696 18.5662V20.5284V24.1511C18.7922 24.6794 18.4903 25.2077 18.1884 25.736C18.2639 24.9058 18.2639 24.1511 18.3394 23.3209C18.3394 22.7171 18.4149 22.1888 18.4149 21.585V20.6794L18.3394 19.7737C18.1884 18.6416 17.8111 17.4341 17.2828 16.3775C16.7545 15.3209 16.0752 14.3397 15.245 13.4341C13.5847 11.6982 11.3205 10.4907 8.90542 10.0379L7.99976 9.88691L7.0941 9.81144C6.49033 9.81144 5.96202 9.81144 5.35825 9.81144C5.13184 9.81144 1.66014 9.81144 1.88655 9.81144C1.50919 9.81144 1.13184 10.1888 1.13184 10.5662V14.0379V15.7737L1.20731 16.6794L1.35825 17.585C1.81108 20.0001 3.01863 22.1888 4.82995 23.8492C5.73561 24.6794 6.71674 25.3586 7.77334 25.8869C8.82995 26.4152 10.0375 26.7171 11.1696 26.9435L12.0752 27.019H12.9809C13.5847 27.019 14.113 26.9435 14.7167 26.9435C15.6979 26.868 16.679 26.868 17.6601 26.7926C17.4337 27.1699 17.2828 27.6228 17.0564 28.0001C16.1507 30.1133 15.6224 32.3775 15.6224 34.5662C16.2262 32.3775 17.0564 30.4152 18.113 28.5284C18.7167 27.3963 19.4715 26.2643 20.2262 25.2077H23.7733H25.7356L26.7922 25.1322L27.7733 24.9813C29.1318 24.6794 30.4149 24.302 31.6224 23.6228C32.8299 22.9435 33.8866 22.1888 34.7922 21.2077H34.8677C36.8299 19.3209 38.1884 16.8303 38.6413 14.1133L38.7922 13.1322L38.8677 12.0756C38.8677 11.3963 38.8677 10.7926 38.8677 10.1133V6.1888ZM31.0186 22.3397C29.962 22.9435 28.7545 23.2454 27.5469 23.4718L26.6413 23.6228L25.7356 23.6982C25.1318 23.6982 24.4526 23.6982 23.8488 23.6982H21.4337C21.5847 23.5473 21.7356 23.3209 21.8866 23.1699C23.245 21.5096 24.7545 19.9246 26.2639 18.3397C27.7733 16.7548 29.3582 15.1699 30.8677 13.5096C28.9809 14.7171 27.1696 16.0001 25.4337 17.4341C23.7733 18.868 22.1884 20.3775 20.7545 22.1133V20.5284C20.7545 19.9246 20.7545 19.2454 20.7545 18.6416L20.8299 17.736L20.9809 16.8303C21.2073 15.6228 21.5092 14.4152 22.113 13.3586C22.6413 12.302 23.396 11.2454 24.2262 10.3397C25.1318 9.50955 26.113 8.83031 27.1696 8.22654C28.2262 7.62276 29.4337 7.32087 30.6413 7.09446L31.5469 6.94352L32.4526 6.86804H34.3394H37.4337V9.96238V11.8492L37.3582 12.8303L37.2073 13.736C36.9809 14.9435 36.679 16.1511 36.0752 17.2077C35.5469 18.2643 34.7922 19.3209 33.962 20.2265C33.0564 21.1322 32.0752 21.8114 31.0186 22.3397ZM14.7167 26.5662C14.113 26.5662 13.5847 26.4907 12.9809 26.4907L12.1507 26.4152L11.3205 26.2643C9.13184 25.8114 7.16957 24.6794 5.66014 23.0945C4.90542 22.2643 4.30165 21.4341 3.77335 20.453C3.32051 19.4718 3.01863 18.4152 2.79221 17.3586L2.64127 16.5284L2.5658 15.6982C2.5658 15.1699 2.5658 14.5662 2.5658 13.9624V11.2454H5.28278H7.01863H7.84882L8.67901 11.3209C9.73561 11.4718 10.7922 11.7737 11.7733 12.302C12.679 12.9813 13.5847 13.585 14.3394 14.3397C15.9243 15.8492 17.0564 17.8114 17.5092 20.0001L17.6601 20.8303L17.7356 21.6605C17.8111 22.1888 17.8111 22.7926 17.8111 23.3963C17.8866 24.302 17.8866 25.1322 17.962 26.0379C17.8111 26.3397 17.6601 26.5662 17.5092 26.868C16.679 26.6416 15.6979 26.6416 14.7167 26.5662Z\" fill=\"#6B5B4D\"/>\n<path d=\"M11.321 18.7922C10.4154 18.1884 9.50973 17.5847 8.45312 17.1318C9.0569 18.0375 9.81162 18.8677 10.5663 19.6224C12.0758 21.2073 13.5852 22.5658 15.2456 24.0752C16.0758 24.7545 16.8305 25.5092 17.8116 26.1884C17.3588 25.1318 16.8305 24.1507 16.1512 23.3205C14.7927 21.5092 13.2078 20.0752 11.321 18.7922Z\" fill=\"#6B5B4D\"/>\n</svg>",
+            "title": "Vegan & Cruelty-Free",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>No animal-derived ingredients</p>"
+          }
+        },
+        "column_4": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M38.8677 6.1888C38.8677 5.81144 38.4903 5.43408 38.113 5.43408H34.2639C33.5847 5.43408 32.9809 5.43408 32.3016 5.43408L31.245 5.50955L30.2639 5.6605C28.9054 5.96238 27.6224 6.33974 26.4149 7.01899C25.2073 7.69823 24.1507 8.45295 23.245 9.43408C23.245 9.43408 23.245 9.43408 23.1696 9.43408C21.2073 11.3209 19.8488 13.8114 19.396 16.5284L19.245 17.5096L19.1696 18.5662V20.5284V24.1511C18.7922 24.6794 18.4903 25.2077 18.1884 25.736C18.2639 24.9058 18.2639 24.1511 18.3394 23.3209C18.3394 22.7171 18.4149 22.1888 18.4149 21.585V20.6794L18.3394 19.7737C18.1884 18.6416 17.8111 17.4341 17.2828 16.3775C16.7545 15.3209 16.0752 14.3397 15.245 13.4341C13.5847 11.6982 11.3205 10.4907 8.90542 10.0379L7.99976 9.88691L7.0941 9.81144C6.49033 9.81144 5.96202 9.81144 5.35825 9.81144C5.13184 9.81144 1.66014 9.81144 1.88655 9.81144C1.50919 9.81144 1.13184 10.1888 1.13184 10.5662V14.0379V15.7737L1.20731 16.6794L1.35825 17.585C1.81108 20.0001 3.01863 22.1888 4.82995 23.8492C5.73561 24.6794 6.71674 25.3586 7.77334 25.8869C8.82995 26.4152 10.0375 26.7171 11.1696 26.9435L12.0752 27.019H12.9809C13.5847 27.019 14.113 26.9435 14.7167 26.9435C15.6979 26.868 16.679 26.868 17.6601 26.7926C17.4337 27.1699 17.2828 27.6228 17.0564 28.0001C16.1507 30.1133 15.6224 32.3775 15.6224 34.5662C16.2262 32.3775 17.0564 30.4152 18.113 28.5284C18.7167 27.3963 19.4715 26.2643 20.2262 25.2077H23.7733H25.7356L26.7922 25.1322L27.7733 24.9813C29.1318 24.6794 30.4149 24.302 31.6224 23.6228C32.8299 22.9435 33.8866 22.1888 34.7922 21.2077H34.8677C36.8299 19.3209 38.1884 16.8303 38.6413 14.1133L38.7922 13.1322L38.8677 12.0756C38.8677 11.3963 38.8677 10.7926 38.8677 10.1133V6.1888ZM31.0186 22.3397C29.962 22.9435 28.7545 23.2454 27.5469 23.4718L26.6413 23.6228L25.7356 23.6982C25.1318 23.6982 24.4526 23.6982 23.8488 23.6982H21.4337C21.5847 23.5473 21.7356 23.3209 21.8866 23.1699C23.245 21.5096 24.7545 19.9246 26.2639 18.3397C27.7733 16.7548 29.3582 15.1699 30.8677 13.5096C28.9809 14.7171 27.1696 16.0001 25.4337 17.4341C23.7733 18.868 22.1884 20.3775 20.7545 22.1133V20.5284C20.7545 19.9246 20.7545 19.2454 20.7545 18.6416L20.8299 17.736L20.9809 16.8303C21.2073 15.6228 21.5092 14.4152 22.113 13.3586C22.6413 12.302 23.396 11.2454 24.2262 10.3397C25.1318 9.50955 26.113 8.83031 27.1696 8.22654C28.2262 7.62276 29.4337 7.32087 30.6413 7.09446L31.5469 6.94352L32.4526 6.86804H34.3394H37.4337V9.96238V11.8492L37.3582 12.8303L37.2073 13.736C36.9809 14.9435 36.679 16.1511 36.0752 17.2077C35.5469 18.2643 34.7922 19.3209 33.962 20.2265C33.0564 21.1322 32.0752 21.8114 31.0186 22.3397ZM14.7167 26.5662C14.113 26.5662 13.5847 26.4907 12.9809 26.4907L12.1507 26.4152L11.3205 26.2643C9.13184 25.8114 7.16957 24.6794 5.66014 23.0945C4.90542 22.2643 4.30165 21.4341 3.77335 20.453C3.32051 19.4718 3.01863 18.4152 2.79221 17.3586L2.64127 16.5284L2.5658 15.6982C2.5658 15.1699 2.5658 14.5662 2.5658 13.9624V11.2454H5.28278H7.01863H7.84882L8.67901 11.3209C9.73561 11.4718 10.7922 11.7737 11.7733 12.302C12.679 12.9813 13.5847 13.585 14.3394 14.3397C15.9243 15.8492 17.0564 17.8114 17.5092 20.0001L17.6601 20.8303L17.7356 21.6605C17.8111 22.1888 17.8111 22.7926 17.8111 23.3963C17.8866 24.302 17.8866 25.1322 17.962 26.0379C17.8111 26.3397 17.6601 26.5662 17.5092 26.868C16.679 26.6416 15.6979 26.6416 14.7167 26.5662Z\" fill=\"#6B5B4D\"/>\n<path d=\"M11.321 18.7922C10.4154 18.1884 9.50973 17.5847 8.45312 17.1318C9.0569 18.0375 9.81162 18.8677 10.5663 19.6224C12.0758 21.2073 13.5852 22.5658 15.2456 24.0752C16.0758 24.7545 16.8305 25.5092 17.8116 26.1884C17.3588 25.1318 16.8305 24.1507 16.1512 23.3205C14.7927 21.5092 13.2078 20.0752 11.321 18.7922Z\" fill=\"#6B5B4D\"/>\n</svg>",
+            "title": "Transparent Formulation",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Full INCI disclosed, no hidden fragrance blends</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4"
+      ]
+    },
+    "comparison-table": {
+      "type": "product-comparison-table",
+      "settings": {
+        "title": "Find [Your Function]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_alignment": "center",
+        "text": "",
+        "view_all": "",
+        "link_view_all": "",
+        "compare_products": [],
+        "auto_product_recommendation": false,
+        "text_to_use_for_empty_fields": "-",
+        "product_image_ratio": "square",
+        "background_color_light": "rgba(0,0,0,0)",
+        "criteria_light": "rgba(0,0,0,0)",
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "#6b5b4d",
+        "text_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "products-bundle": {
+      "type": "products-bundle",
+      "settings": {
+        "heading": "Complete Your Ritual\n[What] Night [Still Needs]",
+        "description": "Purify prepares skin — Recovery and Revival complete the night's work.",
+        "heading_alignment": "center",
+        "show_discount_value_label": true,
+        "button_atb_label": "Add to bundle",
+        "each_product_can_added_to_bundle_once": true,
+        "minimum_items": 3,
+        "discount_type": "percentage",
+        "discount_value": "20",
+        "swiper_on_mobile": true,
+        "columns_mobile": "2",
+        "bundler_heading": "Bundle content",
+        "bundler_text": "<p>Add 3 or more products to your box and save 20%:</p>",
+        "highlight_type": "font_highlight"
+      }
+    },
+    "customer-reviews": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "products_to_show": 4,
+        "show_recently_viewed_tab": true,
+        "enable_clear_history": true,
+        "tabs_desktop_alignment": "center",
+        "title_size": 120,
+        "title_style": "none",
+        "tab_button_style": "button",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "enable_carousel_desktop": false,
+        "enable_swiper_mobile": true,
+        "enable_arrow_mobile": false,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_section_divider": false,
+        "spacing": 28,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 28,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48,
+        "background_color_light": "#f3f1ef"
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {
+        "heading": "FAQs",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image": "",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "question_1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Will this clog my pores?",
+            "row_content": "<p>No — the formula is lightweight and non-comedogenic, designed specifically for blemish-prone skin.</p>",
+            "open_by_default": true
+          }
+        },
+        "question_2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Can I use this with other actives (retinol, acids)?",
+            "row_content": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "open_by_default": false
+          }
+        },
+        "question_3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Is it suitable for teenage skin?",
+            "row_content": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "open_by_default": false
+          }
+        },
+        "question_4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "What's your return policy?",
+            "row_content": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ]
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "background_color_light": "#f3f1ef",
+        "content_layout": "vertical",
+        "form_width": "large",
+        "padding_top": 40,
+        "padding_bottom": 40
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up And Save",
+            "text": "<p>Ritual tips, new state launches, and 10% off your first order.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Submit"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "email_form"
+      ]
+    }
+  },
+  "order": [
+    "product",
+    "flow",
+    "text-column-image",
+    "multicolumn",
+    "comparison-table",
+    "products-bundle",
+    "customer-reviews",
+    "product-recommendations",
+    "faq",
+    "newsletter"
+  ]
+}

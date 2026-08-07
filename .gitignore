@@ -1,6 +1,5 @@
 node_modules/
 .env
-theme/
 *.log
 *.json.key
 rising-pen-*.json

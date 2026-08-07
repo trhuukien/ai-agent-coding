@@ -1,0 +1,102 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-2": {
+          "type": "text",
+          "settings": {
+            "open_by_default": true,
+            "heading_text": "",
+            "subtext": "<p>Mithraveda engineers clinically structured, 100% plant-powered formulations that transform everyday rituals into measurable skin and hair performance</p>",
+            "show_social_icons": false,
+            "icon_layout": "horizontal",
+            "image_width": 200,
+            "link_image_footer": "",
+            "open_new_window": false
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": false,
+            "heading_menu": "Shop",
+            "menu": "",
+            "show_social_icons": false
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": false,
+            "heading_menu": "Learn",
+            "menu": "",
+            "show_social_icons": false
+          }
+        },
+        "link_list_JMLJPG": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": false,
+            "heading_menu": "Support",
+            "menu": "",
+            "show_social_icons": false
+          }
+        },
+        "text_fa7UTa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "open_by_default": false,
+            "heading_text": "Custom text",
+            "subtext": "<p>Enter custom message or instruction.</p>",
+            "show_social_icons": false,
+            "icon_layout": "horizontal",
+            "image_width": 100,
+            "link_image_footer": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "footer-2",
+        "footer-1",
+        "footer-0",
+        "link_list_JMLJPG",
+        "text_fa7UTa"
+      ],
+      "settings": {
+        "columns_desktop": 5,
+        "show_language_selector": true,
+        "show_currency_selector": true,
+        "show_social_icons": false,
+        "payment_enable": true,
+        "custom_payment": "",
+        "show_copyright": true,
+        "add_copyright_text": "<p>Designed by Omni Themes.</p>",
+        "additional_layout": "horizontal",
+        "show_powered": false,
+        "enable_follow_on_shop": false,
+        "horizontal_position": "right",
+        "top_padding": 0,
+        "bottom_padding": 20,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

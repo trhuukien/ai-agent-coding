@@ -1,0 +1,279 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "show_product_name": false,
+        "show_breadcrumbs": true
+      },
+      "blocks": {
+        "badges_1": {
+          "type": "badges",
+          "settings": {}
+        },
+        "product_name_1": {
+          "type": "product_name",
+          "settings": {
+            "heading_tag": "h1"
+          }
+        },
+        "rating_1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_status_1": {
+          "type": "inventory_status",
+          "settings": {}
+        },
+        "estimate_delivery_1": {
+          "type": "estimate_delivery",
+          "settings": {}
+        },
+        "back_in_stock_1": {
+          "type": "back_in_stock_alert",
+          "settings": {
+            "text_info": "<p>Este produto está esgotado. Registe-se para ser o primeiro a saber quando estiver novamente disponível.</p>",
+            "button_label": "Enviar"
+          }
+        },
+        "quantity_selector_1": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {
+            "button_light": "#e5212c",
+            "show_button_style": "primary"
+          }
+        },
+        "feature_icon_1": {
+          "type": "feature_icon",
+          "settings": {
+            "icon_1": "truck",
+            "title_1": "Entrega em 24h",
+            "text_1": "<p>Portugal Continental</p>",
+            "icon_2": "truck",
+            "title_2": "Pagamento Seguro",
+            "text_2": "<p>Transação protegida</p>",
+            "icon_3": "credit-card",
+            "title_3": "Devolução 14 dias",
+            "text_3": "<p>Direito a troca ou reembolso</p>"
+          }
+        },
+        "description_1": {
+          "type": "description",
+          "settings": {}
+        },
+        "nutrition_fact_1": {
+          "type": "nutrition_fact",
+          "settings": {
+            "heading": "Informação Nutricional",
+            "nutrition_details": "<p>Valores médios por 100 ml<br/>Energia: 12 Kj / 3 kcal<br/>Gordura: 0 g (das quais saturadas: 0 g)<br/>Hidratos de carbono: 1,4 g (dos quais açúcar: 0 g)<br/>Proteína: 0 g<br/>Sal: 0,2 g</p>"
+          }
+        },
+        "collapsible_tab_ingredients": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredientes",
+            "tab_content": "<p>Água carbonatada, ácido (ácido cítrico), intensificador de sabor (eritritol), taurina (0,4%), regulador de acidez (citratos de sódio), aromas, extrato de raiz de panax ginseng (0.08%), conservantes (ácido sórbico, ácido benzoico), edulcorantes (sucralose, acessulfame K), cafeína (0,03%), L-carnitina L-tartarato (0,015%), vitaminas (B3, B5, B6, B12), concentrado de cenoura e mirtilo, corantes (E129, E133), inositol. Contém: 500 ml</p>"
+          }
+        },
+        "collapsible_tab_allergens": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Alergénios & Validade",
+            "tab_content": "<p>Contém corantes e conservantes. Consulta a lista completa de alergénios e o formato de datas de validade para produtos importados na nossa [página de informação sobre alergénicos.]</p>"
+          }
+        },
+        "complementary_1": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Compre juntamente com"
+          }
+        },
+        "payment_methods_1": {
+          "type": "payment_methods",
+          "settings": {
+            "heading": "Pague com",
+            "text": "A sua transação está protegida por medidas de segurança avançadas para manter as suas informações confidenciais."
+          }
+        },
+        "social_sharing_1": {
+          "type": "social_sharing",
+          "settings": {}
+        },
+        "sticky_atc_1": {
+          "type": "sticky_add_to_cart",
+          "settings": {
+            "show_quantity_selector": true
+          }
+        }
+      },
+      "block_order": [
+        "badges_1",
+        "product_name_1",
+        "rating_1",
+        "price_1",
+        "inventory_status_1",
+        "estimate_delivery_1",
+        "back_in_stock_1",
+        "quantity_selector_1",
+        "buy_buttons_1",
+        "feature_icon_1",
+        "description_1",
+        "nutrition_fact_1",
+        "collapsible_tab_ingredients",
+        "collapsible_tab_allergens",
+        "complementary_1",
+        "payment_methods_1",
+        "social_sharing_1",
+        "sticky_atc_1"
+      ]
+    },
+    "product_bundle_pdp": {
+      "type": "buy-your-own-bundle",
+      "settings": {
+        "heading": "COMPLETA O TEU DROP",
+        "text": "<p>Prefere escolher tu mesmo? Monta a tua caixa.</p>",
+        "button_atb_label": "Adicionar",
+        "bundler_heading": "Conteúdo do pacote",
+        "pre_goal_msg": "Adicione [x] ou mais produtos à sua caixa e poupe [goal_label]",
+        "goal_1": "3",
+        "goal_1_label": "20% off",
+        "discount_type_1": "percentage",
+        "discount_value_1": "20",
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "collection": "",
+            "min_required": 3
+          }
+        }
+      },
+      "block_order": [
+        "step_1"
+      ]
+    },
+    "review_app": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      },
+      "block_order": []
+    },
+    "products_recommendation": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Também Vais Querer Isto",
+        "heading_alignment": "center",
+        "products_to_show": 2,
+        "show_recently_viewed_tab": true,
+        "tabs_desktop_alignment": "center",
+        "tab_button_style": "button",
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "enable_swiper_mobile": true,
+        "columns_mobile": "2",
+        "spacing_mobile": 24,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 48
+      },
+      "block_order": []
+    },
+    "faq_pdp": {
+      "type": "faq",
+      "settings": {
+        "heading": "Perguntas frequentes",
+        "heading_alignment": "center",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "faq_1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "Como é feito o envio?",
+            "row_content": "<p>Entregamos em 24h em Portugal Continental. Portes grátis a partir de €75. Envio para ilhas sujeito a prazos adicionais.</p>",
+            "open_by_default": true
+          }
+        },
+        "faq_2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "Posso devolver o produto?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "faq_3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "É um produto original?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3"
+      ]
+    },
+    "email_signup": {
+      "type": "newsletter",
+      "settings": {
+        "background_color_light": "#0b0700",
+        "heading_light": "#ffffff",
+        "text_light": "#c7c7c7",
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "heading_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Entra para a Lista VIP",
+            "text": "<p>Sabe primeiro quando cai um drop novo.</p>"
+          }
+        },
+        "email_form_1": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Quero saber"
+          }
+        }
+      },
+      "block_order": [
+        "heading_1",
+        "email_form_1"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "product_bundle_pdp",
+    "review_app",
+    "products_recommendation",
+    "faq_pdp",
+    "email_signup"
+  ]
+}

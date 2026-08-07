@@ -1,0 +1,308 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "breadcrumbs": {
+          "type": "breadcrumbs",
+          "settings": {
+            "show_breadcrumbs_border": false,
+            "full_width_breadcrumb": true,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-center",
+            "background_color_light": "#f2f2f2",
+            "text_color_light": "rgba(0,0,0,0)",
+            "textlink_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "#313131",
+            "text_color_dark": "rgba(0,0,0,0)",
+            "textlink_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "full_width": false,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-left",
+            "background_color_light": "#e7f2df",
+            "text_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_color_dark": "rgba(0,0,0,0)",
+            "padding_top": 56,
+            "padding_bottom": 36
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs",
+        "description"
+      ],
+      "settings": {
+        "show_collection_image": false,
+        "image_overlay_opacity": 20,
+        "show_collection_name": true,
+        "show_breadcrumb_below_title": true,
+        "title_position": "text-center",
+        "size_title": 170,
+        "heading_tag": "h1",
+        "full_width_title": false,
+        "desktop_height": "450px",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_height": "auto",
+        "full_width_mobile": true,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 32
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "default_hide_filtering": false,
+        "expand_filter": false,
+        "sticky_filtering": false,
+        "filter_edge_style": "adapt",
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_page": "",
+        "products_per_row_on_desktop": 4,
+        "products_per_row_on_mobile": "2",
+        "pagination": "pagination",
+        "paginate_type": "circle",
+        "show_vendor": false,
+        "show_rating": false,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "show_description": true,
+        "enable_advanced_filter": false,
+        "key_value": "",
+        "hide_unavaiable_filter": false,
+        "columns_desktop_1": 4,
+        "desktop_image_width_1": 150,
+        "columns_desktop_2": 4,
+        "desktop_image_width_2": 150,
+        "enable_desktop_slider": false,
+        "image_ratio_filter": "round",
+        "advanced_filter_image_ratio": "square",
+        "enable_micro_schema": false,
+        "full_width": false,
+        "spacing_col": 28,
+        "spacing_row": 64,
+        "padding_top": 0,
+        "padding_bottom": 56,
+        "spacing_col_mobile": 16,
+        "spacing_row_mobile": 32,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 44
+      }
+    },
+    "media_text_col_1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_trust": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "In Better We Trust",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Health is a continuous journey of self-improvement, which is the ethos we follow in everything we do. Our formulas are developed with accredited nutritionists and made with ingredients we trust - sourced from pristine regions globally and held to the highest safety and quality standards. We produce our range in GMP-certified, state of the art facilities and each product is third party tested for complete peace of mind.</p>",
+            "number_of_lines_shown": "none",
+            "heading_light": "#080604",
+            "text_light": "#333333",
+            "color_heading_highlight_light": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading_trust"
+      ],
+      "settings": {
+        "show_hero": false,
+        "image": "",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "desktop_image_width": "large",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "#e7f2df",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "left",
+        "columns_desktop": 1,
+        "columns_mobile": "1",
+        "heading_color_light": "#080604",
+        "text_color_light": "#333333",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 0
+      }
+    },
+    "video_shopping_col_1": {
+      "type": "video-shopping",
+      "blocks": {
+        "video_1": {
+          "type": "shoppable_video",
+          "settings": {
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "integrated_social_media": "none",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "image": "shopify://shop_images/Frame_693_1.png"
+          }
+        },
+        "video_2": {
+          "type": "shoppable_video",
+          "settings": {
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "integrated_social_media": "none",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "image": "shopify://shop_images/Frame_693_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2"
+      ],
+      "settings": {
+        "heading": "Made With [Love]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "",
+        "video_layout": "aspect-[9/16]",
+        "enable_hotspots": false,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "#080604",
+        "color_heading_highlight_light": "#185681",
+        "hotspot_color_light": "rgba(0,0,0,0)",
+        "columns_desktop": 3,
+        "rows_desktop": 1,
+        "spacing": 8,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "spacing_mobile": 8,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "newsletter_col_1": {
+      "type": "newsletter",
+      "blocks": {
+        "nl_heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up and Get [10% Off Your First Order]",
+            "highlight_type": "font_highlight",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": 100
+          }
+        },
+        "nl_text": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join the Priowell list for early access, wellness tips and subscriber-only offers.</p>"
+          }
+        },
+        "nl_form": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Subscribe",
+            "background_color_light": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "nl_heading",
+        "nl_text",
+        "nl_form"
+      ],
+      "settings": {
+        "image": "",
+        "image_mobile": "",
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "#e7f2df",
+        "heading_light": "#080604",
+        "color_heading_highlight_light": "#185681",
+        "text_light": "#333333",
+        "button_light": "#7ac943",
+        "button_text_light": "#ffffff",
+        "button_hover_light": "rgba(0,0,0,0)",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "rgba(0,0,0,0)",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "media_text_col_1",
+    "video_shopping_col_1",
+    "newsletter_col_1"
+  ]
+}

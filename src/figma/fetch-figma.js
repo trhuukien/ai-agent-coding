@@ -158,7 +158,16 @@ function summarizeNode(node, depth = 0, apiDepthLimit = null) {
   }
 
   if (node.cornerRadius != null) out.cornerRadius = node.cornerRadius;
-  if (node.layoutMode && node.layoutMode !== 'NONE') out.layoutMode = node.layoutMode;
+  if (node.layoutMode && node.layoutMode !== 'NONE') {
+    out.layoutMode = node.layoutMode;
+    // Real auto-layout alignment — MIN/CENTER/MAX/SPACE_BETWEEN (primary) and
+    // MIN/CENTER/MAX/BASELINE (counter). Only meaningful (and only ever present) on a frame that
+    // actually has layoutMode set, which is why this is nested under that check rather than a
+    // standalone `if` — ground truth for alignment when it exists, replacing the box-gap-math
+    // inference that's the only fallback on a NONE-layout (absolutely positioned) frame.
+    if (node.primaryAxisAlignItems) out.primaryAxisAlign = node.primaryAxisAlignItems;
+    if (node.counterAxisAlignItems) out.counterAxisAlign = node.counterAxisAlignItems;
+  }
   if (node.itemSpacing != null) out.itemSpacing = node.itemSpacing;
   if (node.paddingLeft != null) {
     out.padding = {

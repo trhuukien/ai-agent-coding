@@ -1,0 +1,363 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_image": true,
+        "show_product_name": true,
+        "title_size": 100,
+        "heading_tag": "h1",
+        "show_vendor": true,
+        "link_vendor": false,
+        "desktop_layout": "left",
+        "desktop_media_layout": "thumbnail_slider",
+        "show_arrow_button": true,
+        "mobile_media_size": "full_width",
+        "show_thumnail_mobile": true,
+        "transition_style": "fade",
+        "image_ratio": "square",
+        "thumbnail_position": "horizontal",
+        "enable_thumbnail_overlay": true,
+        "enable_image_zoom": false,
+        "show_first_image_avaiable": true,
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f6faff",
+        "text_color_light": "#0a1e5d",
+        "textlink_color_light": "#ff6900",
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "breadcrumb-block": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
+        "vendor-block": {
+          "type": "vendor",
+          "settings": {
+            "link_vendor": false
+          }
+        },
+        "product-name-block": {
+          "type": "product_name",
+          "settings": {
+            "title_size": 100,
+            "heading_tag": "h1",
+            "enable_product_rating": false
+          }
+        },
+        "badges-block": {
+          "type": "badges",
+          "settings": {}
+        },
+        "rating-block": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price-block": {
+          "type": "price",
+          "settings": {
+            "text_size_price": 70
+          }
+        },
+        "inventory-status-block": {
+          "type": "inventory_status",
+          "settings": {}
+        },
+        "variant-picker-block": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "show_variant_option": true,
+            "enable_color_swatches": true,
+            "swatch_size": "medium",
+            "enable_size_chart": true,
+            "option_to_show_size_chart": "Size",
+            "heading": "Size chart",
+            "size_chart_type": "popup"
+          }
+        },
+        "buy-buttons-block": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_button_style": "primary",
+            "show_dynamic_checkout": true,
+            "dymanic_checkout_style": "primary",
+            "show_atc_quantity": true,
+            "show_add_to_cart": true,
+            "pickup_availability": true
+          }
+        },
+        "estimate-delivery-block": {
+          "type": "estimate_delivery",
+          "settings": {
+            "show_background": true,
+            "background_color_light": "#f6faff"
+          }
+        },
+        "icon-text-shipping": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "text": "<p>Free shipping over ₹350.00</p>"
+          }
+        },
+        "icon-text-returns": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "none",
+            "text": "<p>We accept returns within 14 days.</p>"
+          }
+        },
+        "frequently-bought-block": {
+          "type": "frequently_bought",
+          "settings": {
+            "icon": "shopping-bag",
+            "text": "Frequently Bought Together",
+            "show_border": true
+          }
+        },
+        "description-block": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": true,
+            "open_by_default": true,
+            "heading": "Description"
+          }
+        },
+        "collapsible-tab-model-size": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "heading": "Model size information"
+          }
+        },
+        "collapsible-tab-shipping-return": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "heading": "Shipping &amp; return"
+          }
+        },
+        "complementary-block": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Pair Well With",
+            "show_tab": false,
+            "show_border": true,
+            "max_product_show": 2,
+            "enable_swiper_mobile": false
+          }
+        },
+        "collection-link-block": {
+          "type": "collection_link",
+          "settings": {
+            "text": "See more by collection_name",
+            "background_color_light": "#0a1e5d",
+            "text_light": "#ffffff"
+          }
+        },
+        "payment-methods-block": {
+          "type": "payment_methods",
+          "settings": {
+            "heading": "Pay With",
+            "text": "Encrypted checkout. Safe. Secure. Trusted.",
+            "custom_payment": "diners_club, discover, master, visa, paypal, american_express",
+            "show_border": true
+          }
+        },
+        "social-sharing-block": {
+          "type": "social_sharing",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "breadcrumb-block",
+        "vendor-block",
+        "product-name-block",
+        "badges-block",
+        "rating-block",
+        "price-block",
+        "inventory-status-block",
+        "variant-picker-block",
+        "buy-buttons-block",
+        "estimate-delivery-block",
+        "icon-text-shipping",
+        "icon-text-returns",
+        "frequently-bought-block",
+        "description-block",
+        "collapsible-tab-model-size",
+        "collapsible-tab-shipping-return",
+        "complementary-block",
+        "collection-link-block",
+        "payment-methods-block",
+        "social-sharing-block"
+      ]
+    },
+    "faq_product": {
+      "type": "faq",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": true,
+        "collapsible": true,
+        "show_view_all": false,
+        "desktop_layout": "1",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "faq_1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "How do I choose the right size?",
+            "row_content": "<p>Please refer to our Size Guide on the product page. If you're between sizes, we recommend sizing up for a more relaxed fit or contacting our customer support for personalized advice.</p>",
+            "open_by_default": true
+          }
+        },
+        "faq_2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "Does this item fit true to size?",
+            "open_by_default": false
+          }
+        },
+        "faq_3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "How should I wash this item?",
+            "open_by_default": false
+          }
+        },
+        "faq_4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "Can I track my order?",
+            "open_by_default": false
+          }
+        },
+        "faq_5": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "heading": "How long will my order take to arrive?",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ]
+    },
+    "product_recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "products_to_show": 4,
+        "show_recently_viewed_tab": true,
+        "enable_clear_history": true,
+        "tabs_desktop_alignment": "left",
+        "title_size": 120,
+        "title_style": "none",
+        "tab_button_style": "button",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": false,
+        "show_highlighted_attributes": false,
+        "show_quickview": true,
+        "enable_carousel_desktop": false,
+        "enable_swiper_mobile": true,
+        "enable_arrow_mobile": false,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_section_divider": false,
+        "spacing": 28,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 12,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "email_signup_pdp": {
+      "type": "newsletter",
+      "settings": {
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "#f6faff",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "heading_block": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don't Miss Out On The Offer!",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "paragraph_block": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up to receive a 10% discount code for your first order.</p>"
+          }
+        },
+        "email_form_block": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Sign Up"
+          }
+        }
+      },
+      "block_order": [
+        "heading_block",
+        "paragraph_block",
+        "email_form_block"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "faq_product",
+    "product_recommendations",
+    "email_signup_pdp"
+  ]
+}

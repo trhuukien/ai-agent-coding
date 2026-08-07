@@ -43,6 +43,31 @@ Any `needsDeeperFetch: true` (or old `decorative: true`) on a node whose box is 
 an icon (rule of thumb: bigger than ~60×60px) is almost certainly real content — re-fetch that exact
 node at full depth before concluding it has nothing to configure.
 
+### 2026-08-05 — `image_picker` filenames used raw Figma layer names, spaces and all
+
+The rule (CLAUDE.md / SETUP.md) used to say "use the Figma layer's own name, verbatim — do NOT
+slugify/lowercase/hyphenate it," on the theory that Figma's own Export names the downloaded file
+after the layer as-is, so matching it exactly (including spaces/parens/emoji) was the safest way to
+guarantee a merchant's uploaded file matched. In practice this produced real
+`shopify://shop_images/<filename>` values with literal spaces (e.g. `Social image 2.png`,
+`Image Ratio (1).png`) — fragile in ways a plain "verbatim" rule didn't anticipate (raw spaces don't
+reliably round-trip through every upload path/URL context).
+
+**Rule updated**: filenames are now sanitized, not verbatim — replace every run of non-alphanumeric
+characters (spaces, `()`, `-`, `–`, `/`, emoji, punctuation, ...) with a single `_`, trim leading/
+trailing `_`, keep case as-is (still no lowercasing/rewording). E.g. `"Image Ratio (1)"` →
+`Image_Ratio_1`. The merchant-facing instruction changed to match: export the layer from Figma (file
+downloads with the original, unsanitized name), then **rename it to the sanitized form** before
+uploading — a small manual step, but a far more reliable one than hoping a raw space survives
+untouched everywhere. No code enforces this (it's a manual-construction rule the orchestrator/
+subagents follow when writing `image_picker` values, not a script) — see SETUP.md's "image_picker
+fields ARE pre-filled" bullet for the full current wording.
+
+This was a docs/convention-only fix — no script or `src/` code changed, since none ever implemented
+filename construction in the first place (confirmed: `shop_images` only appeared in SETUP.md and
+ONBOARDING.md prose before this fix; the repo's only `slugify()` is in
+`src/shopify/audit-section.js`, used for section-file name matching, unrelated to image filenames).
+
 ## Other real mistakes from past sessions (not code bugs — judgment errors, still worth avoiding)
 
 - Picked `email-signup-banner.liquid` for a homepage newsletter section without checking

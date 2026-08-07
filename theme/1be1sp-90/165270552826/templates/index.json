@@ -1,0 +1,1066 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_promotion_grid": {
+      "type": "promotion-grid",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "max_columns": 2,
+        "spacing": 28,
+        "height_desktop": 350,
+        "keep_ratio_on_different_width": false,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "min_columns_mobile": "2",
+        "spacing_mobile": 8,
+        "height_mobile": 240,
+        "show_section_divider_mobile": false,
+        "full_width_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "banner_1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Banner_1.png",
+            "image_link": "",
+            "content_position": "bottom",
+            "overlay_opacity": 0,
+            "number_of_columns": 2,
+            "number_of_row": 1,
+            "icon": "none",
+            "sub_title": "",
+            "title": "Clothzo Fashion",
+            "highlight_type": "underline",
+            "title_size": 100,
+            "text": "<p>Savings Up To ₹100+</p>",
+            "text_size": 130,
+            "button_label": "Shop All",
+            "button_link": "#",
+            "text_align": "left",
+            "media_position": "top",
+            "line_1": "Save",
+            "line_2": "10%",
+            "sale_label_position": "top-right",
+            "sale_label_style": "circle",
+            "sale_label_background_color": "#c8343d",
+            "sale_label_color": "#ffffff",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "background_button": "#ffffff",
+            "color_button": "#0a1e5d",
+            "show_button_style": "primary"
+          }
+        },
+        "banner_2": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Banner_2.png",
+            "content_position": "bottom",
+            "overlay_opacity": 30,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "title": "Electronics",
+            "highlight_type": "underline",
+            "title_size": 80,
+            "text": "<p>Save up to 20% Off</p>",
+            "text_size": 130,
+            "text_align": "left",
+            "media_position": "top",
+            "sale_label_position": "top-left",
+            "sale_label_style": "circle",
+            "color_overlay": "#000000",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "show_button_style": "primary"
+          }
+        },
+        "banner_3": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Banner_3.png",
+            "content_position": "bottom",
+            "overlay_opacity": 20,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "title": "Home &amp; Kitchen",
+            "highlight_type": "underline",
+            "title_size": 80,
+            "text": "<p>Flat 15% Off</p>",
+            "text_size": 130,
+            "text_align": "left",
+            "media_position": "top",
+            "sale_label_position": "top-left",
+            "sale_label_style": "circle",
+            "color_overlay": "#000000",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "show_button_style": "primary"
+          }
+        },
+        "banner_4": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Banner_4.png",
+            "content_position": "bottom",
+            "overlay_opacity": 20,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "title": "Toys &amp; Baby",
+            "highlight_type": "underline",
+            "title_size": 80,
+            "text": "<p>Grab Buy One &amp; Get One</p>",
+            "text_size": 130,
+            "text_align": "left",
+            "media_position": "top",
+            "sale_label_position": "top-left",
+            "sale_label_style": "circle",
+            "color_overlay": "#000000",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "show_button_style": "primary"
+          }
+        },
+        "banner_5": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Banner_5.png",
+            "content_position": "bottom",
+            "overlay_opacity": 20,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "title": "Beauty &amp; Personal Care",
+            "highlight_type": "underline",
+            "title_size": 80,
+            "text": "<p>Up to 20% Off</p>",
+            "text_size": 130,
+            "text_align": "left",
+            "media_position": "top",
+            "sale_label_position": "top-left",
+            "sale_label_style": "circle",
+            "color_overlay": "#000000",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "show_button_style": "primary"
+          }
+        },
+        "banner_6": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Banner 6.png",
+            "content_position": "bottom",
+            "overlay_opacity": 0,
+            "number_of_columns": 2,
+            "number_of_row": 1,
+            "icon": "none",
+            "title": "Accessories",
+            "highlight_type": "underline",
+            "title_size": 100,
+            "text": "<p>Savings Up To ₹100+</p>",
+            "text_size": 130,
+            "button_label": "Shop All",
+            "button_link": "#",
+            "text_align": "left",
+            "media_position": "top",
+            "sale_label_position": "top-left",
+            "sale_label_style": "circle",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "background_button": "#ffffff",
+            "color_button": "#0a1e5d",
+            "show_button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "banner_1",
+        "banner_2",
+        "banner_3",
+        "banner_4",
+        "banner_5",
+        "banner_6"
+      ]
+    },
+    "flash_sale": {
+      "type": "flash-sale",
+      "settings": {
+        "image": "",
+        "image_mobile": "",
+        "image_overlay_opacity": 0,
+        "show_hero": false,
+        "border_section": "none",
+        "content_layout": "vertical",
+        "content_alignment": "center",
+        "full_width": false,
+        "padding_full_width": false,
+        "adapt_corners_desktop": true,
+        "rounded_corner_image": true,
+        "spacing_col": 40,
+        "spacing_row": 32,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "content_alignment_mobile": "center",
+        "full_width_mobile": false,
+        "adapt_corners_mobile": true,
+        "rounded_corner_image_mobile": true,
+        "spacing_row_mobile": 20,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28,
+        "background_color_light": "#ffe9da",
+        "text_light": "#0a1e5d"
+      },
+      "blocks": {
+        "image_banner": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "This Week's Deals 10% Off",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Discover your best deal with unbeatable flash offers.</p>",
+            "text_size": 100,
+            "coupon_code": ""
+          }
+        },
+        "countdown_timer": {
+          "type": "countdown_timer",
+          "settings": {
+            "countdown_type": "standard",
+            "countdown_interval": 7,
+            "interval_unit": "day",
+            "timezone": "-4",
+            "end_year": 2026,
+            "end_month": "8",
+            "end_day": "3",
+            "end_hour": "23",
+            "end_minute": "45",
+            "text_position": "below",
+            "timer_style": "square",
+            "border_style": "line_vertical",
+            "overlay_opacity": 100,
+            "timer_color_countdown": "#ffffff",
+            "text_color_countdown": "#f8f6f1",
+            "bg_color_countdown": "#0a1e5d",
+            "spacing_col": 40,
+            "spacing_col_mobile": 8
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Explore Now",
+            "button_link": "#",
+            "show_button_style": "primary",
+            "color_button": "#ff6900"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner",
+        "countdown_timer",
+        "buttons"
+      ]
+    },
+    "featured_collection_bestseller": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestseller!",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "Our Top Deals",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "show_description": false,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ]
+    },
+    "featured_collection_clothzo": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Clothzo New Arrivals — Elevate your style every day",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "enable_desktop_slider": false,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "women_collection": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": true,
+            "promotion_position": "left",
+            "image": "shopify://shop_images/Rectangle 1218.png",
+            "image_ratio": "133"
+          }
+        },
+        "men_collection": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        },
+        "unisex_collection": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        }
+      },
+      "block_order": [
+        "women_collection",
+        "men_collection",
+        "unisex_collection"
+      ]
+    },
+    "promotion_grid_deals": {
+      "type": "promotion-grid",
+      "settings": {
+        "heading": "Best Value Deals on Clothzo",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "max_columns": 3,
+        "spacing": 28,
+        "height_desktop": 350,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "min_columns_mobile": "1",
+        "spacing_mobile": 16,
+        "height_mobile": 220,
+        "show_section_divider_mobile": false,
+        "full_width_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "banner_1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify://shop_images/Banner_1.png",
+            "image_link": "/collections/night-wears",
+            "enable_content_overlay": true,
+            "content_position": "center",
+            "number_of_columns": 2,
+            "number_of_row": 1,
+            "icon": "none",
+            "title": "Night Wears",
+            "highlight_type": "underline",
+            "title_size": 100,
+            "text": "<p>Sale 10% Off</p>",
+            "text_size": 130,
+            "button_label": "Shop All",
+            "button_link": "/collections/night-wears",
+            "show_button_style": "primary",
+            "text_align": "left",
+            "media_position": "top",
+            "sale_label_position": "top-right",
+            "sale_label_style": "circle",
+            "sale_label_background_color": "#c8343d",
+            "sale_label_color": "#ffffff",
+            "text_color": "#0a1e5d",
+            "background_button": "#ffffff",
+            "color_button": "#0a1e5d"
+          }
+        }
+      },
+      "block_order": [
+        "banner_1"
+      ]
+    },
+    "collection_list_budgets": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Shop with Budgets",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "background_color_light": "#f6faff",
+        "image_ratio": "square",
+        "title_size": 80,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "show_item_count": true,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "spacing_mobile": 12,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "limited-stock": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "limited-stock"
+          }
+        },
+        "under-99": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "under-99"
+          }
+        },
+        "under-199": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "under-199"
+          }
+        },
+        "under-299": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "under-299"
+          }
+        }
+      },
+      "block_order": [
+        "limited-stock",
+        "under-99",
+        "under-199",
+        "under-299"
+      ]
+    },
+    "featured_collection_electronics": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Electronics",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "enable_desktop_slider": false,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "1",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 0
+      },
+      "blocks": {
+        "block-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "electronics",
+            "show_description": true,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": true,
+            "promotion_position": "left",
+            "card_link": "#",
+            "heading": "Hot Deals",
+            "highlight_type": "underline",
+            "content": "<p>Grab Buy One &amp; Get One</p>",
+            "content_alignment": "left",
+            "content_position": "bottom",
+            "image": "shopify://shop_images/Banner_2.png",
+            "enable_text_overlay": true,
+            "overlay_opacity": 30,
+            "image_ratio": "100",
+            "color_text": "#ffffff",
+            "show_button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "block-1"
+      ]
+    },
+    "featured_collection_home_kitchen": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Home &amp; Kitchen",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "enable_desktop_slider": false,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "1",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 0
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "kitchenware",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": true,
+            "promotion_position": "left",
+            "card_link": "/collections/kitchenware",
+            "heading": "You’ll Love",
+            "highlight_type": "underline",
+            "content": "<p>Multicookers at exclusive prices</p>",
+            "content_alignment": "left",
+            "content_position": "bottom",
+            "image": "shopify://shop_images/Banner_2.png",
+            "enable_text_overlay": true,
+            "overlay_opacity": 40,
+            "image_ratio": "100",
+            "color_text": "#ffffff",
+            "show_button_style": "secondary"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "chocolates",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "bedding",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ]
+    },
+    "featured_collection_accessories": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "1",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "collection-accessories": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "show_description": true,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": true,
+            "promotion_position": "left",
+            "heading": "Flat 20% Off",
+            "highlight_type": "underline",
+            "content": "<p>Grab Buy One &amp; Get One</p>",
+            "content_alignment": "left",
+            "content_position": "bottom",
+            "image": "shopify://shop_images/Banner_2.png",
+            "enable_text_overlay": true,
+            "overlay_opacity": 30,
+            "image_ratio": "150",
+            "color_text": "#ffffff",
+            "show_button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "collection-accessories"
+      ]
+    },
+    "featured_collection_beauty": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Beauty",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "color_background": "#f6faff",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "lip-care",
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": true,
+            "promotion_position": "left",
+            "card_link": "/collections/lip-care",
+            "heading": "Hot Deals",
+            "highlight_type": "underline",
+            "content": "<p>Grab Buy One &amp; Get One</p>",
+            "content_alignment": "left",
+            "content_position": "bottom",
+            "image": "shopify://shop_images/Banner_2.png",
+            "enable_text_overlay": true,
+            "overlay_opacity": 30,
+            "image_ratio": "100",
+            "color_text": "#ffffff"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "hair-care",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ]
+    },
+    "featured_collection_trending": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Currently trending",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "color_background": "#f6faff",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "electronics": {
+          "type": "collection",
+          "settings": {
+            "collection": "electronics",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        },
+        "clothzo": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        },
+        "beauty": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        },
+        "baby": {
+          "type": "collection",
+          "settings": {
+            "collection": "baby-care",
+            "show_rating": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        }
+      },
+      "block_order": [
+        "electronics",
+        "clothzo",
+        "beauty",
+        "baby"
+      ]
+    },
+    "video_shopping_made_with_love": {
+      "type": "video-shopping",
+      "settings": {
+        "heading": "Made With Love",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "Shopping Videos",
+        "video_layout": "aspect-[9/16]",
+        "product_card_position": "bottom",
+        "enable_hotspots": false,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "spacing_mobile": 8,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "block_1": {
+          "type": "shoppable_video",
+          "settings": {
+            "integrated_social_media": "none"
+          }
+        },
+        "block_2": {
+          "type": "shoppable_video",
+          "settings": {
+            "integrated_social_media": "none"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2"
+      ]
+    },
+    "testimonial_customers_say": {
+      "type": "testimonials-with-card",
+      "settings": {
+        "heading": "What Customers Say",
+        "highlight_type": "underline",
+        "heading_alignment": "center",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "image_ratio": "round",
+        "full_width": false,
+        "show_section_divider": false,
+        "top_padding": 60,
+        "bottom_padding": 60,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "top_padding_mobile": 28,
+        "bottom_padding_mobile": 28
+      },
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon_star": "5_star",
+            "title": "High Recommened!!!",
+            "text": "<p>“The product matches the description, and the price is much better than elsewhere.”</p>",
+            "show_author_image": false,
+            "author": "Jenna P."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-1"
+      ]
+    },
+    "email_signup_offer": {
+      "type": "newsletter",
+      "settings": {
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "#f6faff",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "heading_block": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don't Miss Out On The Offer!",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "paragraph_block": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up to receive a 10% discount code for your first order.</p>"
+          }
+        },
+        "email_form_block": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Sign Up"
+          }
+        }
+      },
+      "block_order": [
+        "heading_block",
+        "paragraph_block",
+        "email_form_block"
+      ]
+    }
+  },
+  "order": [
+    "hero_promotion_grid",
+    "flash_sale",
+    "featured_collection_bestseller",
+    "featured_collection_clothzo",
+    "promotion_grid_deals",
+    "collection_list_budgets",
+    "featured_collection_electronics",
+    "featured_collection_home_kitchen",
+    "featured_collection_accessories",
+    "featured_collection_beauty",
+    "featured_collection_trending",
+    "video_shopping_made_with_love",
+    "testimonial_customers_say",
+    "email_signup_offer"
+  ]
+}

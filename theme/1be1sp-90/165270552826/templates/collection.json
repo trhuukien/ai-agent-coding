@@ -1,0 +1,183 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": true,
+        "image_overlay_opacity": 60,
+        "show_collection_name": true,
+        "show_breadcrumb_below_title": true,
+        "title_position": "text-center",
+        "desktop_height": "450px",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_height": "300px",
+        "full_width_mobile": true,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 32
+      }
+    },
+    "collection_description": {
+      "type": "collection-description",
+      "settings": {
+        "heading": "",
+        "heading_alignment": "center",
+        "number_of_lines_shown": "none",
+        "desktop_content_alignment": "text-center",
+        "width_content": 75,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "mobile_content_alignment": "text-center",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "main-collection-product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_row_on_desktop": 4,
+        "products_per_row_on_mobile": "2",
+        "pagination": "click_to_load",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "show_description": false,
+        "full_width": false,
+        "spacing_col": 12,
+        "spacing_row": 28,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "spacing_col_mobile": 12,
+        "spacing_row_mobile": 20,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "collection_list_explore": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Explore Other Collection",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "image_ratio": "square",
+        "title_size": 80,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "show_item_count": true,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "spacing": 8,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "spacing_mobile": 8,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "automotive": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automotive"
+          }
+        },
+        "beauty": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "toys": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "toys"
+          }
+        }
+      },
+      "block_order": [
+        "automotive",
+        "beauty",
+        "toys"
+      ]
+    },
+    "email_signup_collection": {
+      "type": "newsletter",
+      "settings": {
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "#f6faff",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "heading_block": {
+          "type": "heading",
+          "settings": {
+            "heading": "Don't Miss Out On The Offer!",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "paragraph_block": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up to receive a 10% discount code for your first order.</p>"
+          }
+        },
+        "email_form_block": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Sign Up"
+          }
+        }
+      },
+      "block_order": [
+        "heading_block",
+        "paragraph_block",
+        "email_form_block"
+      ]
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "collection_description",
+    "main-collection-product-grid",
+    "collection_list_explore",
+    "email_signup_collection"
+  ]
+}

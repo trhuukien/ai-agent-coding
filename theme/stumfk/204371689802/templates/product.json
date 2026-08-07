@@ -1,0 +1,985 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_product": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_image": true,
+        "show_product_name": true,
+        "title_size": 100,
+        "heading_tag": "h1",
+        "show_vendor": true,
+        "link_vendor": false,
+        "make_content_center": false,
+        "desktop_layout": "left",
+        "desktop_media_layout": "thumbnail_slider",
+        "show_arrow_button": true,
+        "mobile_media_size": "full_width",
+        "show_thumnail_mobile": true,
+        "transition_style": "fade",
+        "image_ratio": "square",
+        "thumbnail_position": "horizontal",
+        "enable_thumbnail_overlay": true,
+        "enable_image_zoom": false,
+        "zoom_effect": "enlarge",
+        "enable_video_autoplay": false,
+        "enable_video_loop": false,
+        "show_first_image_avaiable": true,
+        "show_media_with_variant_selected": false,
+        "option_to_classify_variant_media": "",
+        "enable_microdata": false,
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "full_width": false
+      },
+      "blocks": {
+        "badges_1": {
+          "type": "badges",
+          "settings": {
+            "position_adapt": true
+          }
+        },
+        "vendor_1": {
+          "type": "vendor",
+          "settings": {
+            "link_vendor": false,
+            "select_page": "",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "product_name_1": {
+          "type": "product_name",
+          "settings": {
+            "title_size": 100,
+            "heading_tag": "h1",
+            "enable_product_rating": false
+          }
+        },
+        "rating_1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {
+            "adapt_custom_price_format": false,
+            "show_tax_and_shipping": false,
+            "text_size_price": 70
+          }
+        },
+        "description_1": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_by_default": false,
+            "make_content_center": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "heading": "Description",
+            "custom_description": "<p>Popolna rešitev za občutljiva stopala. Pametna zasnova brez elastike spodbuja zdrav krvni obtok, ne da bi pri tem ščipala ali puščala zategnjene sledi, zaradi česar ste udobni, zračni in elegantni ves dan.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        },
+        "text_korist_heading": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Korist:</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        },
+        "icon_text_korist_1": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "checkmark",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 11 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.785714 4.93429L3.47959 7.7L10.2143 0.785714\" stroke=\"#1A1A1A\" stroke-width=\"1.57143\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Pospešuje prekrvavitev</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "#221800",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_korist_2": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "checkmark",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 11 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.785714 4.93429L3.47959 7.7L10.2143 0.785714\" stroke=\"#1A1A1A\" stroke-width=\"1.57143\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Prileganje, brez sledi</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "#221800",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_korist_3": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "checkmark",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 11 9\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M0.785714 4.93429L3.47959 7.7L10.2143 0.785714\" stroke=\"#1A1A1A\" stroke-width=\"1.57143\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Udobje brez drgnjenja</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "#221800",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "variant_picker_1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "max_swatch": 20,
+            "show_variant_option": true,
+            "enable_color_swatches": false,
+            "swatch_size": "small",
+            "enable_size_chart": false,
+            "option_to_show_size_chart": "",
+            "heading": "Size chart",
+            "select_page": "",
+            "select_image": "",
+            "additional_info": "Add extra details for the image, such as measuring guide or important notes.",
+            "size_chart_type": "popup"
+          }
+        },
+        "size_chart_1": {
+          "type": "size_chart",
+          "settings": {
+            "heading": "Tabela velikosti",
+            "select_page": "",
+            "select_image": "",
+            "additional_info": "",
+            "size_chart_type": "popup"
+          }
+        },
+        "gift_wrapping_1": {
+          "type": "gift_wrapping",
+          "settings": {
+            "text_gift": "",
+            "show_border": false,
+            "color_icon_light": "rgba(0,0,0,0)",
+            "border_color_light": "rgba(0,0,0,0)",
+            "color_icon_dark": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "volume_pricing_table_1": {
+          "type": "volume_pricing_table",
+          "settings": {
+            "layout": "table",
+            "discount_summary_layout": "vertical",
+            "default_design": false,
+            "show_progress_bar": true,
+            "pre_goal_msg": "Add [x] more to get [goal_label].",
+            "post_goal_msg": "Congrats! You've just unlocked [goal_label] pricing.",
+            "goal_icon": "award",
+            "another_goal_icon": "",
+            "custom_goal_icon": "",
+            "goal_reached_icon": "award",
+            "another_goal_reached_icon": "",
+            "custom_goal_reached_icon": "",
+            "icon_size": 20,
+            "background_option_color": "rgba(0,0,0,0)",
+            "active_option_discount_color": "#8f4d63"
+          }
+        },
+        "trust_badge_1": {
+          "type": "trust_badge",
+          "settings": {
+            "badge": "shopify://shop_images/feature icon.png",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "inventory_status_1": {
+          "type": "inventory_status",
+          "settings": {
+            "incoming": false,
+            "message_incoming": "",
+            "message_backorder": "",
+            "hide_preorder": false
+          }
+        },
+        "quantity_selector_1": {
+          "type": "quantity_selector",
+          "settings": {
+            "style": "rounded-full"
+          }
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_button_style": "primary",
+            "show_dynamic_checkout": true,
+            "dymanic_checkout_style": "primary",
+            "show_atc_quantity": false,
+            "show_add_to_cart": true,
+            "show_price": false,
+            "hide_sale_price": true,
+            "show_gift_card_recipient": true,
+            "pickup_availability": true,
+            "hide_when_pre_order": false,
+            "preorder_button_label": "Pre-order",
+            "preorder_message": "<p>This product will be available for sale in 2 weeks, but you can pre-order now to receive 10% discount!</p>",
+            "preorder_show_dynamic_button": false,
+            "show_background": false,
+            "box_type": "adapt",
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "button_light": "rgba(0,0,0,0)",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "button_dark": "rgba(0,0,0,0)",
+            "button_text_dark": "rgba(0,0,0,0)",
+            "button_hover_dark": "rgba(0,0,0,0)",
+            "button_text_hover_dark": "rgba(0,0,0,0)",
+            "secondary_button_dark": "rgba(0,0,0,0)",
+            "secondary_button_text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "estimate_delivery_1": {
+          "type": "estimate_delivery",
+          "settings": {
+            "hide_when_pre_order": false,
+            "box_type": "adapt",
+            "message": "<p>Predvidena dostava med <strong>earliest_delivery_date in latest_delivery_date.</strong> Naročite v <strong>time_to_cut_off.</strong></p>",
+            "tooltip_text": "",
+            "tooltip_icon": "none",
+            "custom_icon": "",
+            "tooltip_icon_position": "left",
+            "tooltip_message": "",
+            "show_background": true,
+            "show_border": false,
+            "background_color_light": "#faf7f8",
+            "message_color_light": "rgba(0,0,0,0)",
+            "border_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)",
+            "bg_tooltip_color_light": "rgba(0,0,0,0)",
+            "tooltip_color_light": "rgba(0,0,0,0)",
+            "bg_tooltip_color_dark": "rgba(0,0,0,0)",
+            "tooltip_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_shipping_1": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "free-shipping",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.28698 2V6.56923H3.57269V4.85612H4.21303V3.71325H3.57269V3.14406H4.85338V2C4.00545 2 3.05786 2 2.28698 2ZM6.78572 2C6.4302 1.99886 6.14107 2.25437 6.14035 2.57038V6.56923H7.42606V4.85612H8.71178V6.56923H9.99749V4.28244C9.99607 3.96861 9.71021 3.7145 9.35714 3.71325V2.57038C9.35644 2.25437 9.06729 1.99879 8.71178 2H6.78572ZM11.2845 2V6.56923C12.1416 6.56923 12.9987 6.56923 13.8559 6.56923V5.42531H12.5702V4.85612H13.2155V3.71325H12.5702V3.14406H13.8559V2C12.9987 2 12.1416 2 11.2845 2ZM15.1416 2V6.56923C15.9992 6.56923 16.8567 6.56923 17.7143 6.56923V5.42531H16.4286V4.85612H17.0689V3.71325H16.4286V3.14406H17.7143V2C16.8567 2 15.9992 2 15.1416 2ZM7.42606 3.14406H8.07143V3.71325H7.42606V3.14406ZM1 7.1429V16.2835C0.998656 16.599 1.28533 16.8559 1.64035 16.8571H3.69197C3.96015 17.5185 4.66793 18 5.49875 18C6.32956 18 7.03734 17.5185 7.30553 16.8571C9.31529 16.8571 11.3251 16.8571 13.3348 16.8571C13.603 17.5185 14.3108 18 15.1416 18C15.9724 18 16.6815 17.5185 16.9496 16.8571H18.3546C18.7116 16.8583 19.0014 16.6008 19 16.2835V12.2846C18.9989 12.1701 18.9591 12.0585 18.8857 11.9643L16.2616 8.53464C16.1417 8.37871 15.9429 8.28564 15.7305 8.28577H12.5702V7.1429H11.2845V15.7143H7.30677C7.03973 15.0521 6.33106 14.5714 5.49874 14.5714C4.66641 14.5714 3.95775 15.0521 3.6907 15.7143H2.28697V7.1429H1ZM12.5702 9.42864H15.394L17.7143 12.462V15.7143H16.9509C16.6838 15.0521 15.9739 14.5714 15.1416 14.5714C14.3093 14.5714 13.6006 15.0521 13.3336 15.7143H12.5702V9.42864ZM5.49875 15.7143C5.8614 15.7143 6.14035 15.9611 6.14035 16.2835C6.14035 16.6058 5.8614 16.8571 5.49875 16.8571C5.13609 16.8571 4.85338 16.6058 4.85338 16.2835C4.85338 15.9611 5.13609 15.7143 5.49875 15.7143ZM15.1416 15.7143C15.5043 15.7143 15.7832 15.9611 15.7832 16.2835C15.7832 16.6058 15.5043 16.8571 15.1416 16.8571C14.7789 16.8571 14.4962 16.6058 14.4962 16.2835C14.4962 15.9611 14.7789 15.7143 15.1416 15.7143Z\" fill=\"#1A1A1A\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Brezplačna dostava nad €35.00</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "#353436",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_returns_1": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "return-exchange",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_21001_36529)\">\n<path d=\"M10.6604 5.55177C10.4284 5.43531 10.1655 5.37402 9.89784 5.37402C9.63021 5.37402 9.36726 5.43531 9.13526 5.55177L5.88879 7.187C5.65718 7.30412 5.46485 7.47223 5.33099 7.67452C5.19713 7.87681 5.12644 8.10622 5.12598 8.33981V11.6103C5.12641 11.8439 5.19709 12.0732 5.33095 12.2755C5.46482 12.4778 5.65717 12.6458 5.88879 12.7629L9.1355 14.3983C9.36751 14.5147 9.63045 14.576 9.89808 14.576C10.1657 14.576 10.4286 14.5147 10.6607 14.3983L13.9057 12.7639C14.1372 12.6468 14.3294 12.4787 14.4632 12.2764C14.597 12.0742 14.6676 11.8448 14.6681 11.6113V7.86681C14.6681 7.77696 14.641 7.68868 14.5895 7.61087C14.538 7.53305 14.4639 7.46843 14.3748 7.4235L10.6604 5.55177ZM9.72186 6.43859C9.77537 6.41164 9.83606 6.39745 9.89784 6.39745C9.95962 6.39745 10.0203 6.41164 10.0738 6.43859L12.913 7.86927L9.90019 9.38451L6.88601 7.86681L9.72186 6.43859ZM6.47515 11.8763C6.42162 11.8493 6.37717 11.8105 6.34627 11.7638C6.31538 11.717 6.29914 11.664 6.29918 11.6101V8.75261L9.31312 10.2709V13.3057L6.47515 11.8763ZM13.3187 11.8775L10.4863 13.3041V10.272L13.4949 8.75671V11.6113C13.4947 11.6652 13.4784 11.7182 13.4475 11.7649C13.4165 11.8116 13.3721 11.8504 13.3187 11.8775Z\" fill=\"#1A1A1A\"/>\n<path d=\"M4.61426 3.0174C4.61426 3.15316 4.67606 3.28337 4.78607 3.37937C4.89608 3.47537 5.04528 3.5293 5.20086 3.5293H10.7745C12.5642 3.53099 14.2801 4.15216 15.5456 5.25654C16.8111 6.36092 17.5229 7.85829 17.5248 9.42011C17.5248 9.55588 17.5866 9.68608 17.6966 9.78209C17.8067 9.87809 17.9559 9.93202 18.1114 9.93202C18.267 9.93202 18.4162 9.87809 18.5262 9.78209C18.6362 9.68608 18.698 9.55588 18.698 9.42011C18.6957 7.58686 17.8602 5.82926 16.3747 4.53295C14.8893 3.23664 12.8752 2.5075 10.7745 2.50549H5.20086C5.04528 2.50549 4.89608 2.55943 4.78607 2.65543C4.67606 2.75143 4.61426 2.88163 4.61426 3.0174Z\" fill=\"#1A1A1A\"/>\n<path d=\"M1.34945 3.43641L4.12993 5.13778C4.25732 5.21573 4.41497 5.24634 4.56822 5.22286C4.72146 5.19937 4.85774 5.12373 4.94707 5.01256C5.0364 4.9014 5.07147 4.76382 5.04456 4.63009C5.01765 4.49636 4.93097 4.37744 4.80358 4.29948L2.70802 3.01726L4.80358 1.73504C4.86781 1.69686 4.92271 1.64792 4.96508 1.59108C5.00745 1.53423 5.03646 1.4706 5.05041 1.40389C5.06437 1.33717 5.063 1.26871 5.04637 1.20246C5.02975 1.13621 4.99821 1.07351 4.95359 1.01799C4.90896 0.962471 4.85214 0.915244 4.78642 0.87905C4.7207 0.842857 4.6474 0.818419 4.57077 0.807157C4.49414 0.795895 4.4157 0.798033 4.34003 0.813446C4.26435 0.82886 4.19294 0.857242 4.12993 0.896943L1.34945 2.59811C1.27229 2.64532 1.2093 2.70806 1.16581 2.78103C1.12232 2.85399 1.09961 2.93502 1.09961 3.01726C1.09961 3.0995 1.12232 3.18053 1.16581 3.25349C1.2093 3.32645 1.27229 3.38919 1.34945 3.43641Z\" fill=\"#1A1A1A\"/>\n<path d=\"M15.1834 16.9865C15.1834 16.8508 15.1216 16.7205 15.0116 16.6245C14.9016 16.5285 14.7524 16.4746 14.5968 16.4746H9.02316C7.23344 16.4729 5.51758 15.8518 4.25207 14.7474C2.98655 13.643 2.27473 12.1456 2.27281 10.5838C2.27281 10.448 2.21101 10.3178 2.101 10.2218C1.99099 10.1258 1.84178 10.0719 1.68621 10.0719C1.53063 10.0719 1.38143 10.1258 1.27142 10.2218C1.16141 10.3178 1.09961 10.448 1.09961 10.5838C1.10197 12.417 1.93753 14.1746 3.42297 15.4709C4.90841 16.7672 6.92243 17.4964 9.02316 17.4984H14.5968C14.7524 17.4984 14.9016 17.4445 15.0116 17.3485C15.1216 17.2525 15.1834 17.1223 15.1834 16.9865Z\" fill=\"#1A1A1A\"/>\n<path d=\"M18.45 16.5678L15.6696 14.8665C15.6065 14.8279 15.5353 14.8005 15.4601 14.7859C15.3849 14.7713 15.3072 14.7698 15.2313 14.7814C15.1554 14.793 15.0829 14.8176 15.0179 14.8537C14.9529 14.8897 14.8967 14.9366 14.8524 14.9917C14.8082 15.0467 14.7768 15.1088 14.7601 15.1745C14.7434 15.2401 14.7416 15.3079 14.7549 15.3742C14.7683 15.4404 14.7964 15.5037 14.8377 15.5604C14.8791 15.6171 14.9328 15.6662 14.9959 15.7048L17.0915 16.987L14.9959 18.269C14.9328 18.3076 14.8791 18.3567 14.8377 18.4134C14.7964 18.4701 14.7683 18.5334 14.7549 18.5996C14.7416 18.6658 14.7434 18.7337 14.7601 18.7993C14.7768 18.8649 14.8082 18.9271 14.8524 18.9821C14.8967 19.0371 14.9529 19.084 15.0179 19.1201C15.0829 19.1562 15.1554 19.1808 15.2313 19.1924C15.3072 19.204 15.3849 19.2025 15.4601 19.1879C15.5353 19.1733 15.6065 19.1459 15.6696 19.1073L18.45 17.4061C18.5272 17.3589 18.5902 17.2962 18.6337 17.2232C18.6772 17.1503 18.6999 17.0692 18.6999 16.987C18.6999 16.9048 18.6772 16.8237 18.6337 16.7508C18.5902 16.6778 18.5272 16.6151 18.45 16.5678Z\" fill=\"#1A1A1A\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_21001_36529\">\n<rect width=\"20\" height=\"20\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Vračila sprejemamo v 14 dneh.</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "#353436",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "frequently_bought_1": {
+          "type": "frequently_bought",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "shopping-bag",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 1.66663L2.5 4.99996V16.6666C2.5 17.1087 2.67559 17.5326 2.98816 17.8451C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8451C17.3244 17.5326 17.5 17.1087 17.5 16.6666V4.99996L15 1.66663H5Z\" stroke=\"#242424\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M2.5 5H17.5\" stroke=\"#242424\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M13.3337 8.33337C13.3337 9.21743 12.9825 10.0653 12.3573 10.6904C11.7322 11.3155 10.8844 11.6667 10.0003 11.6667C9.11627 11.6667 8.26842 11.3155 7.6433 10.6904C7.01818 10.0653 6.66699 9.21743 6.66699 8.33337\" stroke=\"#242424\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "text": "Pogosto kupljeno skupaj",
+            "show_background": false,
+            "show_border": false,
+            "list_products": [],
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": false,
+            "variant_type": "adapt",
+            "border_color_light": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "collapsible_tab_1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Opisi",
+            "tab_content": "<p>Ženske nogavice z vzorcem pikic do sredine meč brez elastike (paket 6 parov) so popolna mešanica mode in zdravja stopal. Z igrivim vzorcem pikic in izdelane iz vrhunske, ultra mehke pletenine te nogavice zagotavljajo občutek oblaka in zračnosti ves dan brez kakršne koli zamašenosti.</p>"
+          }
+        },
+        "collapsible_tab_2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Zakaj vam ne stisnejo nog?",
+            "tab_content": ""
+          }
+        },
+        "collapsible_tab_3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Za koga je namenjeno?",
+            "tab_content": ""
+          }
+        },
+        "collapsible_tab_4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Specializirane ugodnosti",
+            "tab_content": ""
+          }
+        },
+        "collapsible_tab_5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Sestava materiala",
+            "tab_content": ""
+          }
+        },
+        "collapsible_tab_6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Dostava in vračilo",
+            "tab_content": ""
+          }
+        },
+        "complementary_1": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Dobro se ujema z:",
+            "show_tab": false,
+            "show_background": false,
+            "show_border": true,
+            "max_product_show": 2,
+            "enable_carousel_desktop": false,
+            "enable_swiper_mobile": false,
+            "number_product_per_page": 2,
+            "image_ratio": "square",
+            "show_vendor": false,
+            "show_product_rating": false,
+            "show_highlighted_features": false,
+            "add_as_bundle": false,
+            "border_color_light": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "html_contact_1": {
+          "type": "html",
+          "settings": {
+            "custom_html": "<div style=\"background:#f9eef2;border-radius:8px;padding:20px 16px;\"><p style=\"margin:0;color:#1a1a1a;font-size:14px;line-height:22px;\">[Potrebujete pomoč? Kontaktirajte nas na] <a href=\"tel:070810350\" style=\"color:#9b536b;font-weight:500;\">[070 810 350]</a></p></div>"
+          }
+        }
+      },
+      "block_order": [
+        "badges_1",
+        "vendor_1",
+        "product_name_1",
+        "rating_1",
+        "price_1",
+        "description_1",
+        "text_korist_heading",
+        "icon_text_korist_1",
+        "icon_text_korist_2",
+        "icon_text_korist_3",
+        "variant_picker_1",
+        "size_chart_1",
+        "gift_wrapping_1",
+        "volume_pricing_table_1",
+        "trust_badge_1",
+        "inventory_status_1",
+        "quantity_selector_1",
+        "buy_buttons_1",
+        "estimate_delivery_1",
+        "icon_text_shipping_1",
+        "icon_text_returns_1",
+        "frequently_bought_1",
+        "collapsible_tab_1",
+        "collapsible_tab_2",
+        "collapsible_tab_3",
+        "collapsible_tab_4",
+        "collapsible_tab_5",
+        "collapsible_tab_6",
+        "complementary_1",
+        "html_contact_1"
+      ]
+    },
+    "flexible_area_icons": {
+      "type": "flexible-area",
+      "settings": {
+        "heading": "Zakaj so [nogavice Stumfki boljše] od navadnih nogavic?",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "",
+        "content_width": "full_width",
+        "row_gap": 8,
+        "col_gap": 8,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "content_width_mobile": "full_width",
+        "row_gap_mobile": 8,
+        "col_gap_mobile": 8,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 0,
+        "background_color_light": "#faf7f8",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)"
+      },
+      "blocks": {
+        "item_group_1": {
+          "type": "item-group",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "left",
+            "mobile_content_alignment": "left",
+            "content_position": "center",
+            "group_opacity": 100,
+            "edges_type": "rounded_corners",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": false,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "100",
+            "row_gap": 10,
+            "col_gap": 10,
+            "padding_left_desktop": 20,
+            "padding_right_desktop": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 20,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 10,
+            "col_gap_mobile": 10,
+            "padding_left_mobile": 20,
+            "padding_right_mobile": 20,
+            "padding_top_mobile": 20,
+            "padding_bottom_mobile": 20,
+            "background_color_light": "#faf7f8",
+            "line_border_light": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "text_icon_1": {
+              "type": "text-with-icon",
+              "settings": {
+                "desktop_width": "100",
+                "mobile_width": "100",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "icon_position": "above",
+                "icon": "another_icon",
+                "another_icon": "",
+                "custom_image": "",
+                "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M30.2406 2.15157C30.066 1.90407 29.8002 1.73657 29.5014 1.68324C29.2023 1.63199 28.896 1.70115 28.6485 1.8774L20.001 7.97991C19.3252 7.38199 18.4948 6.98032 17.5823 6.82407C16.2852 6.59865 14.9793 6.89115 13.9056 7.65199C12.8385 8.40407 12.1281 9.53282 11.9064 10.8295C11.8652 11.072 11.8477 11.3145 11.8418 11.5562C8.7106 11.997 6.29102 14.6866 6.29102 17.9387C6.29102 19.0857 6.60102 20.1907 7.18643 21.1857C6.63893 21.9774 6.31602 22.9362 6.31602 23.9699C6.31602 26.2903 7.92352 28.2407 10.0798 28.7607V37.1907C10.0798 37.8224 10.5914 38.3332 11.2223 38.3332H16.8777C17.5085 38.3332 18.0202 37.8224 18.0202 37.1907V28.7607C20.1864 28.2453 21.8018 26.2928 21.8018 23.9699C21.8018 22.9066 21.4573 21.9245 20.8789 21.1203C21.5623 20.9974 22.2306 20.7295 22.8339 20.3041C24.7293 18.9674 25.396 16.5287 24.5768 14.467L33.2269 8.36407C33.7423 8.00032 33.8652 7.28865 33.5014 6.77324L30.2406 2.15157ZM12.3302 13.8066C12.4468 14.0466 12.5785 14.2803 12.7356 14.5024C13.3218 15.3345 14.1535 15.9507 15.106 16.2853C15.0964 17.2895 15.4018 18.2824 15.9964 19.1237C16.0018 19.1312 16.0081 19.1374 16.0135 19.1449C15.3102 19.2741 14.6414 19.5553 14.0556 19.9737C13.2402 19.387 12.2527 19.0632 11.2223 19.0632C10.4014 19.0632 9.6281 19.2682 8.94727 19.6262C8.73477 19.1595 8.5756 18.5962 8.5756 17.9387C8.5756 15.817 10.1698 14.0641 12.3302 13.8066ZM16.8773 26.6095C16.2464 26.6095 15.7348 27.1203 15.7348 27.752V36.0482H12.3643V27.752C12.3643 27.1203 11.8527 26.6095 11.2218 26.6095C9.77643 26.6095 8.6006 25.4245 8.6006 23.9699C8.6006 22.5241 9.77643 21.3482 11.2218 21.3482C11.9793 21.3482 12.6923 21.6762 13.1773 22.252C13.3927 22.5066 13.7089 22.6537 14.0423 22.6557C14.3531 22.6157 14.6939 22.5153 14.9127 22.2628C15.4164 21.6803 16.1327 21.3478 16.8773 21.3478C18.3327 21.3478 19.5164 22.5237 19.5164 23.9695C19.5164 25.4249 18.3327 26.6095 16.8773 26.6095ZM22.4356 13.1812C21.9202 13.5449 21.7977 14.2566 22.1606 14.772C22.9939 15.9545 22.7043 17.5991 21.5156 18.4382C20.3348 19.2662 18.6956 18.987 17.8623 17.8066C17.4256 17.1862 17.2831 16.4166 17.4727 15.6891C17.5568 15.3678 17.4956 15.022 17.3048 14.7495C17.1139 14.4749 16.8131 14.2966 16.4806 14.2653C15.7164 14.1874 15.0314 13.7945 14.601 13.1853C14.196 12.612 14.0381 11.9112 14.1577 11.2149C14.276 10.5207 14.6539 9.91865 15.2218 9.51699C15.671 9.20032 16.196 9.0349 16.7352 9.0349C16.8868 9.0349 17.0398 9.04824 17.1923 9.0749C17.8877 9.19532 18.4943 9.57699 18.8998 10.1528C19.0743 10.4003 19.3406 10.5678 19.6389 10.6216C19.9385 10.6749 20.2448 10.6037 20.4923 10.4274L29.031 4.40282L30.9739 7.15615L22.4356 13.1812Z\" fill=\"#1A1A1A\"/>\n</svg>",
+                "icon_size": 40,
+                "corner_image": 0,
+                "title": "Nimajo nobenih elastičnih trakov",
+                "highlight_type": "underline",
+                "title_link": "",
+                "open_new_window": false,
+                "heading_size": 100,
+                "text": "<p>Sila raztezanja je enakomerno porazdeljena vzdolž meča zaradi lastniške tehnologije biotkanja, kar nogavice ohranja naravno na mestu brez pritiska.</p>",
+                "text_size": 100,
+                "heading_color_light": "rgba(0,0,0,0)",
+                "heading_highlight_color_light": "rgba(0,0,0,0)",
+                "text_color_light": "#353436",
+                "text_link_color_light": "rgba(0,0,0,0)",
+                "color_icon_light": "#1a1a1a"
+              }
+            }
+          },
+          "block_order": [
+            "text_icon_1"
+          ]
+        },
+        "item_group_2": {
+          "type": "item-group",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "left",
+            "mobile_content_alignment": "left",
+            "content_position": "center",
+            "group_opacity": 100,
+            "edges_type": "rounded_corners",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": false,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "100",
+            "row_gap": 10,
+            "col_gap": 10,
+            "padding_left_desktop": 20,
+            "padding_right_desktop": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 20,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 10,
+            "col_gap_mobile": 10,
+            "padding_left_mobile": 20,
+            "padding_right_mobile": 20,
+            "padding_top_mobile": 20,
+            "padding_bottom_mobile": 20,
+            "background_color_light": "#faf7f8",
+            "line_border_light": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "text_icon_2": {
+              "type": "text-with-icon",
+              "settings": {
+                "desktop_width": "100",
+                "mobile_width": "100",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "icon_position": "above",
+                "icon": "another_icon",
+                "another_icon": "",
+                "custom_image": "",
+                "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_21017_14967)\">\n<path d=\"M19.2763 2.26994C19.6913 1.91002 20.3083 1.91002 20.7233 2.26994L24.3055 5.37717C24.5313 5.57297 24.827 5.66889 25.1248 5.64297L29.8523 5.2315C30.3999 5.18382 30.8991 5.54596 31.023 6.08068L32.0918 10.6968C32.1593 10.9877 32.3418 11.2388 32.5982 11.3927L36.665 13.8341C37.1361 14.1169 37.3268 14.7029 37.112 15.2081L35.2594 19.5699C35.1426 19.8449 35.1426 20.1551 35.2594 20.4301L37.112 24.7919C37.3268 25.2971 37.1361 25.8831 36.665 26.166L32.5982 28.6073C32.3418 28.7612 32.1593 29.0123 32.0918 29.3033L31.023 33.9193C30.8991 34.454 30.3999 34.8162 29.8523 34.7685L25.1248 34.3571C24.827 34.331 24.5313 34.4271 24.3055 34.6228L20.7233 37.7301C20.3083 38.0899 19.6913 38.0899 19.2763 37.7301L15.694 34.6228C15.4683 34.4271 15.1726 34.331 14.8747 34.3571L10.1473 34.7685C9.59972 34.8162 9.10051 34.454 8.9767 33.9193L7.90779 29.3033C7.84044 29.0123 7.6577 28.7612 7.40143 28.6073L3.33467 26.166C2.86358 25.8831 2.67289 25.2971 2.88752 24.7919L4.74031 20.4301C4.85705 20.1551 4.85705 19.8449 4.74031 19.5699L2.88752 15.2081C2.67289 14.7029 2.86358 14.1169 3.33467 13.8341L7.40143 11.3927C7.6577 11.2388 7.84044 10.9877 7.90779 10.6968L8.9767 6.08068C9.10051 5.54596 9.59972 5.18382 10.1473 5.2315L14.8747 5.64297C15.1726 5.66889 15.4683 5.57297 15.694 5.37717L19.2763 2.26994Z\" stroke=\"#1A1A1A\" stroke-width=\"2.5\"/>\n<path d=\"M14.4844 21.8359L18.1617 25.5074L27.3548 16.3286\" stroke=\"#1A1A1A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_21017_14967\">\n<rect width=\"40\" height=\"40\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+                "icon_size": 40,
+                "corner_image": 0,
+                "title": "Spodbuja optimalen krvni obtok.",
+                "highlight_type": "underline",
+                "title_link": "",
+                "open_new_window": false,
+                "heading_size": 100,
+                "text": "<p>Popolnoma diha, pomaga preprečevati edeme in zagotavlja varnost za ljudi s sladkorno boleznijo.</p>",
+                "text_size": 100,
+                "heading_color_light": "rgba(0,0,0,0)",
+                "heading_highlight_color_light": "rgba(0,0,0,0)",
+                "text_color_light": "#353436",
+                "text_link_color_light": "rgba(0,0,0,0)",
+                "color_icon_light": "#1a1a1a"
+              }
+            }
+          },
+          "block_order": [
+            "text_icon_2"
+          ]
+        },
+        "item_group_3": {
+          "type": "item-group",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "left",
+            "mobile_content_alignment": "left",
+            "content_position": "center",
+            "group_opacity": 100,
+            "edges_type": "rounded_corners",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": false,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "100",
+            "row_gap": 10,
+            "col_gap": 10,
+            "padding_left_desktop": 20,
+            "padding_right_desktop": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 20,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 10,
+            "col_gap_mobile": 10,
+            "padding_left_mobile": 20,
+            "padding_right_mobile": 20,
+            "padding_top_mobile": 20,
+            "padding_bottom_mobile": 20,
+            "background_color_light": "#faf7f8",
+            "line_border_light": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "text_icon_3": {
+              "type": "text-with-icon",
+              "settings": {
+                "desktop_width": "100",
+                "mobile_width": "100",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "icon_position": "above",
+                "icon": "another_icon",
+                "another_icon": "",
+                "custom_image": "",
+                "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20.1852 38C12.5819 38 6.40039 31.3928 6.40039 23.2419C6.40039 15.3379 18.8253 2.9263 19.3198 2.37056C19.8144 1.87648 20.5561 1.87648 21.0508 2.37056C21.6071 2.92636 33.9702 15.3379 33.9702 23.2419C33.97 31.3928 27.7886 38 20.1853 38H20.1852ZM20.1852 5.08754C16.3528 9.10125 8.87301 18.0549 8.87301 23.3036C8.87301 30.0961 13.9418 35.5918 20.1852 35.5918C26.4286 35.5918 31.4975 30.0343 31.4975 23.3036C31.4975 18.0549 24.0178 9.10125 20.1852 5.08754Z\" fill=\"#1A1A1A\"/>\n<path d=\"M17.5268 32.5043C16.8468 32.5043 16.2904 31.9485 16.2904 31.2693C16.2904 29.0463 14.4977 27.2555 12.2724 27.2555C11.5925 27.2555 11.0361 26.6998 11.0361 26.0206C11.0361 25.3414 11.5925 24.7856 12.2724 24.7856C14.4977 24.7856 16.2904 22.9948 16.2904 20.7719C16.2904 20.0927 16.8468 19.5369 17.5268 19.5369C18.2067 19.5369 18.7631 20.0927 18.7631 20.7719C18.7631 22.9948 20.5558 24.7856 22.7811 24.7856C23.461 24.7856 24.0174 25.3414 24.0174 26.0206C24.0174 26.6998 23.461 27.2555 22.7811 27.2555C20.5558 27.2555 18.7631 29.0463 18.7631 31.2693C18.7631 31.9485 18.2067 32.5043 17.5268 32.5043ZM16.1051 26.0206C16.6615 26.4527 17.1559 26.8851 17.527 27.4409C17.9596 26.8851 18.3924 26.3913 18.9488 26.0206C18.3924 25.5884 17.8981 25.156 17.527 24.6002C17.0941 25.156 16.6613 25.6501 16.1051 26.0206Z\" fill=\"#1A1A1A\"/>\n</svg>",
+                "icon_size": 40,
+                "corner_image": 0,
+                "title": "Ergonomska oblika za tesno prileganje.",
+                "highlight_type": "underline",
+                "title_link": "",
+                "open_new_window": false,
+                "heading_size": 100,
+                "text": "<p>Gladka tkanina se prilagodi krivuljam noge, popolnoma odpravi trenje in zagotavlja vrhunsko zaščito za občutljivo kožo.</p>",
+                "text_size": 100,
+                "heading_color_light": "rgba(0,0,0,0)",
+                "heading_highlight_color_light": "rgba(0,0,0,0)",
+                "text_color_light": "#353436",
+                "text_link_color_light": "rgba(0,0,0,0)",
+                "color_icon_light": "#1a1a1a"
+              }
+            }
+          },
+          "block_order": [
+            "text_icon_3"
+          ]
+        },
+        "item_group_4": {
+          "type": "item-group",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "left",
+            "mobile_content_alignment": "left",
+            "content_position": "center",
+            "group_opacity": 100,
+            "edges_type": "rounded_corners",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": false,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "100",
+            "row_gap": 10,
+            "col_gap": 10,
+            "padding_left_desktop": 20,
+            "padding_right_desktop": 20,
+            "padding_top_desktop": 20,
+            "padding_bottom_desktop": 20,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 10,
+            "col_gap_mobile": 10,
+            "padding_left_mobile": 20,
+            "padding_right_mobile": 20,
+            "padding_top_mobile": 20,
+            "padding_bottom_mobile": 20,
+            "background_color_light": "#faf7f8",
+            "line_border_light": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "text_icon_4": {
+              "type": "text-with-icon",
+              "settings": {
+                "desktop_width": "100",
+                "mobile_width": "100",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "icon_position": "above",
+                "icon": "another_icon",
+                "another_icon": "",
+                "custom_image": "",
+                "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M28.9818 6.90967C24.5879 9.7884 5.25488 23.7503 5.25488 38.0001\" stroke=\"#1A1A1A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20.9598 24.5646C21.0786 23.2129 21.9192 22.1351 23.2628 21.945C24.4391 21.7787 26.2458 21.6357 28.9815 21.6357C31.7172 21.6357 33.5239 21.7787 34.7002 21.945C36.0438 22.1351 36.8844 23.2129 37.0033 24.5646C37.0887 25.5362 37.1632 26.7841 37.1632 28.1811C37.1632 31.8745 35.2139 35.3304 31.9299 37.0205C30.8329 37.5852 29.7624 37.9992 28.9815 37.9992C28.2006 37.9992 27.1301 37.5852 26.0331 37.0205C22.7491 35.3304 20.7998 31.8745 20.7998 28.1811C20.7998 26.7841 20.8743 25.5362 20.9598 24.5646Z\" stroke=\"#1A1A1A\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n<path d=\"M25.71 28.7818L28.742 32.2727L33.0735 25.7273\" stroke=\"#1A1A1A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M17.5269 33.0193C13.4987 33.4114 9.5034 32.1866 6.60351 29.2868C1.11036 23.7936 1.62817 14.3697 7.76005 8.23777C15.0297 0.968071 26.5358 1.74268 31.1331 2.40845C32.3635 2.58663 33.3039 3.52819 33.482 4.75857C33.8679 7.42378 34.29 12.4092 33.1613 17.5452\" stroke=\"#1A1A1A\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+                "icon_size": 40,
+                "corner_image": 0,
+                "title": "74 % vrhunskega naravnega bombaža.",
+                "highlight_type": "underline",
+                "title_link": "",
+                "open_new_window": false,
+                "heading_size": 100,
+                "text": "<p>Super mehak, izjemno vpojen in izjemno zračen, zaradi česar so vaša stopala suha in udobna ves dan.</p>",
+                "text_size": 100,
+                "heading_color_light": "rgba(0,0,0,0)",
+                "heading_highlight_color_light": "rgba(0,0,0,0)",
+                "text_color_light": "#353436",
+                "text_link_color_light": "rgba(0,0,0,0)",
+                "color_icon_light": "#1a1a1a"
+              }
+            }
+          },
+          "block_order": [
+            "text_icon_4"
+          ]
+        }
+      },
+      "block_order": [
+        "item_group_1",
+        "item_group_2",
+        "item_group_3",
+        "item_group_4"
+      ]
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {
+        "heading": "Pogosta vprašanja",
+        "highlight_type": "underline",
+        "heading_size": 90,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image": "",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "block-1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Kaj so nogavice brez elastike in zakaj naj bi jih nosil/a?",
+            "row_content": "<p>Nogavice brez elastike so izdelane z inovativno tehnologijo pletenja, ki odpravlja tesen, omejujoč gumijast trak na zgornjem robu. Namesto tega se napetost enakomerno porazdeli po mečih.</p>",
+            "open_by_default": true
+          }
+        },
+        "block-2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Ali nogavice brez elastike med hojo ali gibanjem zdrsnejo dol?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "block-3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Zakaj so bambusove nogavice Stumfki boljše od navadnih bombažnih nogavic?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "block-4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Kako hitro je dostava in ali lahko sledim svojemu naročilu?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4"
+      ]
+    },
+    "product_recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Morda vam bo všeč tudi",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "products_to_show": 4,
+        "background_color_light": "",
+        "background_color_dark": "",
+        "show_recently_viewed_tab": false,
+        "enable_clear_history": true,
+        "tabs_desktop_alignment": "center",
+        "title_size": 120,
+        "title_style": "none",
+        "tab_button_style": "label",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "enable_carousel_desktop": false,
+        "enable_swiper_mobile": true,
+        "enable_arrow_mobile": false,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_section_divider": false,
+        "spacing": 28,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 24,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "featured_blog": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog",
+        "highlight_type": "underline",
+        "heading_size": 90,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "blog": "",
+        "blog_with_tag": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_show_more": false,
+        "show_view_all": true,
+        "view_all_position": "top",
+        "title_size": 170,
+        "content_alignment": "left",
+        "show_image": true,
+        "image_ratio": "75",
+        "item_secondary_background": false,
+        "show_author": true,
+        "show_name": false,
+        "show_date": true,
+        "show_excerpt": true,
+        "show_tag": false,
+        "show_comment_counts": false,
+        "show_read_more": true,
+        "button_read_more_label": "Preberi več >>",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "full_width": false,
+        "spacing": 28,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "1",
+        "spacing_mobile": 28,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main_product",
+    "flexible_area_icons",
+    "faq",
+    "product_recommendations",
+    "featured_blog"
+  ]
+}

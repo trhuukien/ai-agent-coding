@@ -1,16 +1,21 @@
 #!/usr/bin/env node
 // Apply the team's existing "AI Testing" sheet visual format to a sheet tab that already has data
-// written in the No/Page/Sections/Status/Test note/Reopen note layout (see log-to-sheet.js) —
-// copied from the real formatting found on the "[FC148] AI Testing" tab (read via the Sheets API,
-// not guessed): a merged white title cell + merged green round/theme cell across rows 1-2, a green
+// written in the No/Page/Sections/AI Test/Review Test/Note layout (see log-to-sheet.js) — copied
+// from the real formatting found on the "[FC148] AI Testing" tab (read via the Sheets API, not
+// guessed): a merged white title cell + merged green round/theme cell across rows 1-2, a green
 // bold-white column-header row, and a validated dropdown (with conditional-format colors as a
 // fallback, since the exact native dropdown "chip" colors aren't exposed through the public
-// Sheets API) on the Status column.
+// Sheets API) on BOTH the "AI Test" column (E, written by the script) and the "Review Test" column
+// (F, left blank for a human tester to override the AI's verdict if it was wrong — same dropdown
+// vocabulary, not a separate one). Column G is a single free-text "Note" column (Vietnamese, per
+// team convention) — left BLANK when AI Test is PASS; only populated to explain a real issue, so a
+// dev scanning the sheet only sees noise where there's something to act on. There is no longer a
+// separate "Test note"/"Reopen note" pair of columns — that was consolidated into this one column.
 //
 // Usage:
 //   node scripts/format-test-sheet.js <spreadsheetId> <sheetName> <dataRowCount>
-//   dataRowCount: number of data rows under the header (rows 4..3+dataRowCount get the Status
-//   dropdown + conditional formatting applied).
+//   dataRowCount: number of data rows under the header (rows 4..3+dataRowCount get the AI Test +
+//   Review Test dropdowns and conditional formatting applied).
 require('dotenv').config({ quiet: true });
 const { google } = require('googleapis');
 
@@ -94,10 +99,11 @@ const STATUS_COLORS = {
           fields: 'userEnteredFormat(backgroundColor,horizontalAlignment,wrapStrategy,textFormat)',
         },
       },
-      // Status column (E) dropdown validation across all data rows
-      {
+      // AI Test (E) + Review Test (F) dropdown validation across all data rows — same vocabulary,
+      // two independent columns (Review Test starts blank; a human fills it in only to override).
+      ...[4, 5].map((colIndex) => ({
         setDataValidation: {
-          range: { sheetId, startRowIndex: dataStartRow, endRowIndex: dataEndRow, startColumnIndex: 4, endColumnIndex: 5 },
+          range: { sheetId, startRowIndex: dataStartRow, endRowIndex: dataEndRow, startColumnIndex: colIndex, endColumnIndex: colIndex + 1 },
           rule: {
             condition: {
               type: 'ONE_OF_LIST',
@@ -107,22 +113,25 @@ const STATUS_COLORS = {
             showCustomUi: true,
           },
         },
-      },
-      // Conditional formatting fallback: color the Status cell background by its exact text value
-      ...Object.entries(STATUS_COLORS).map(([value, color]) => ({
-        addConditionalFormatRule: {
-          rule: {
-            ranges: [{ sheetId, startRowIndex: dataStartRow, endRowIndex: dataEndRow, startColumnIndex: 4, endColumnIndex: 5 }],
-            booleanRule: {
-              condition: { type: 'TEXT_EQ', values: [{ userEnteredValue: value }] },
-              format: { backgroundColor: color },
-            },
-          },
-          index: 0,
-        },
       })),
-      // Column widths: keep Page/Sections and note columns readable
-      { updateDimensionProperties: { range: { sheetId, dimension: 'COLUMNS', startIndex: 5, endIndex: 7 }, properties: { pixelSize: 260 }, fields: 'pixelSize' } },
+      // Conditional formatting fallback: color AI Test/Review Test cells by their exact text value
+      ...[4, 5].flatMap((colIndex) =>
+        Object.entries(STATUS_COLORS).map(([value, color]) => ({
+          addConditionalFormatRule: {
+            rule: {
+              ranges: [{ sheetId, startRowIndex: dataStartRow, endRowIndex: dataEndRow, startColumnIndex: colIndex, endColumnIndex: colIndex + 1 }],
+              booleanRule: {
+                condition: { type: 'TEXT_EQ', values: [{ userEnteredValue: value }] },
+                format: { backgroundColor: color },
+              },
+            },
+            index: 0,
+          },
+        }))
+      ),
+      // Column widths: AI Test/Review Test stay narrow (status words), Note gets the wide column
+      { updateDimensionProperties: { range: { sheetId, dimension: 'COLUMNS', startIndex: 4, endIndex: 6 }, properties: { pixelSize: 120 }, fields: 'pixelSize' } },
+      { updateDimensionProperties: { range: { sheetId, dimension: 'COLUMNS', startIndex: 6, endIndex: 7 }, properties: { pixelSize: 420 }, fields: 'pixelSize' } },
       { updateDimensionProperties: { range: { sheetId, dimension: 'COLUMNS', startIndex: 1, endIndex: 4 }, properties: { pixelSize: 140 }, fields: 'pixelSize' } },
     ];
 

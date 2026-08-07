@@ -1,0 +1,130 @@
+{%- liquid
+  assign heading = section.settings.heading
+  assign subheading = section.settings.subheading
+-%}
+<div class="curated-bundle-grid-wrapper x-pgw page-width" style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  {%- if heading != blank or subheading != blank -%}
+    <div class="curated-bundle-header text-center mb-8">
+      {%- if heading != blank -%}
+        <h2 class="h2">{{ heading | escape }}</h2>
+      {%- endif -%}
+      {%- if subheading != blank -%}
+        <p class="mt-2" style="color: rgba(var(--colors-text));">{{ subheading | escape }}</p>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="curated-bundle-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px;">
+    {%- for bundle in shop.metaobjects.product_bundle.values -%}
+      {%- liquid
+        assign bundle_products = bundle.products_included.value
+        assign product_a = bundle_products[0]
+        assign product_b = bundle_products[1]
+      -%}
+      {%- if product_a != blank and product_b != blank -%}
+        {%- liquid
+          assign variant_a = product_a.selected_or_first_available_variant
+          assign variant_b = product_b.selected_or_first_available_variant
+          assign combined_price = variant_a.price | plus: variant_b.price
+        -%}
+        <div class="curated-bundle-card" style="border: 0.5px solid rgba(var(--colors-line-and-border)); border-radius: 12px; padding: 1rem; display: flex; flex-direction: column;">
+          <div style="position: relative; aspect-ratio: 1; overflow: hidden; border-radius: 8px; margin-bottom: 12px; background: #0a0a0a;">
+            {%- if bundle.image != blank -%}
+              <img
+                src="{{ bundle.image | image_url: width: 600 }}"
+                alt="{{ bundle.crystal_bundle | escape }}"
+                loading="lazy"
+                width="600"
+                height="600"
+                style="width: 100%; height: 100%; object-fit: cover;"
+              >
+            {%- else -%}
+              <img
+                src="{{ product_a.featured_media | image_url: width: 600 }}"
+                alt="{{ bundle.crystal_bundle | escape }}"
+                loading="lazy"
+                width="600"
+                height="600"
+                style="width: 100%; height: 100%; object-fit: cover;"
+              >
+            {%- endif -%}
+            {%- if bundle.bundle_savings.value != blank -%}
+              <span style="position: absolute; top: 10px; right: 10px; background: rgba(76,160,54,0.95); color: #fff; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px;">
+                Save {{ bundle.bundle_savings.value }}%
+              </span>
+            {%- endif -%}
+          </div>
+
+          <h3 class="h5" style="margin-bottom: 6px;">{{ bundle.crystal_bundle.value | escape }}</h3>
+
+          <div style="margin-bottom: 12px;">
+            {%- if bundle.bundle_price.value != blank -%}
+              <span style="font-weight: 600; font-size: 16px;">{{ bundle.bundle_price.value | money }}</span>
+              <span style="text-decoration: line-through; color: rgba(var(--colors-text)); opacity: 0.6; margin-left: 6px; font-size: 14px;">{{ combined_price | money }}</span>
+            {%- else -%}
+              <span style="font-weight: 600; font-size: 16px;">{{ combined_price | money }}</span>
+            {%- endif -%}
+          </div>
+
+          <button
+            type="button"
+            class="button button-solid w-full mt-auto"
+            data-curated-bundle-add
+            data-variant-a="{{ variant_a.id }}"
+            data-variant-b="{{ variant_b.id }}"
+            data-bundle-name="{{ bundle.crystal_bundle.value | escape }}"
+          >
+            <span class="curated-bundle-btn-text">Add bundle to cart</span>
+          </button>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+<script src="{{ 'curated-bundle-add.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Curated crystal bundles",
+  "tag": "section",
+  "class": "section section-curated-bundle-grid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Popular pairings",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Pre-matched crystal and base combinations, ready to add in one click.",
+      "label": "Subheading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 40,
+      "label": "Top padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 40,
+      "label": "Bottom padding"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Curated crystal bundles"
+    }
+  ]
+}
+{% endschema %}

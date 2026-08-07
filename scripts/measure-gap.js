@@ -52,10 +52,14 @@ if (viewportArg) {
       }
     }
 
+    // 'networkidle' can hang past any reasonable timeout on a real store running a chat widget,
+    // analytics beacon, or other persistent/polling connection — see screenshot-theme-page.js's
+    // own fix for this same real gotcha.
     await page.goto(`https://${domain}${pagePath}?preview_theme_id=${themeId}`, {
-      waitUntil: 'networkidle',
+      waitUntil: 'load',
       timeout: 45000,
     });
+    await page.waitForTimeout(1500);
 
     const result = await page.evaluate((key) => {
       const section = document.querySelector(`[id*="${key}"]`);

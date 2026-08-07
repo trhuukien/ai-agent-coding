@@ -92,7 +92,11 @@ const wantedKeys = sectionKeysArg ? sectionKeysArg.split(',').map((s) => s.trim(
     }
 
     const targetUrl = `https://${domain}${pagePath}?preview_theme_id=${themeId}`;
-    await page.goto(targetUrl, { waitUntil: 'networkidle', timeout: 45000 });
+    // 'networkidle' can hang past any reasonable timeout on a real store running a chat widget,
+    // analytics beacon, or other persistent/polling connection — the network never actually goes
+    // quiet. 'load' plus the script's own scroll/wait sequence below is what actually gates
+    // section content, so it's a safe, faster substitute (confirmed real case, this store).
+    await page.goto(targetUrl, { waitUntil: 'load', timeout: 45000 });
 
     // Shopify's own theme-preview chrome (the "Draft" bar with Hide bar/Exit preview/Copy link) and
     // its platform-level privacy/consent banner are never real theme content — confirmed real case:

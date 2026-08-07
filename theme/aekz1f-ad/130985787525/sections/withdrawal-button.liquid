@@ -1,0 +1,241 @@
+{% style %}
+  .button-{{ section.id }}, .button-{{ section.id }} *:before {
+    {% if section.settings.button_light.alpha != 0.0 %}
+      --colors-button: {{ section.settings.button_light.red }}, {{ section.settings.button_light.green }}, {{ section.settings.button_light.blue }};
+    {% endif %}
+    {% if section.settings.button_text_light.alpha != 0.0 %}
+      --colors-button-text: {{ section.settings.button_text_light.red }}, {{ section.settings.button_text_light.green }}, {{ section.settings.button_text_light.blue }};
+    {% endif %}
+    {% if section.settings.button_hover_light.alpha != 0.0 %}
+      --colors-button-hover: rgb({{ section.settings.button_hover_light.red }}, {{ section.settings.button_hover_light.green }}, {{ section.settings.button_hover_light.blue }});
+    {% endif %}
+    {% if section.settings.button_text_hover_light.alpha != 0.0 %}
+      --colors-button-text-hover: {{ section.settings.button_text_hover_light.red }}, {{ section.settings.button_text_hover_light.green }}, {{ section.settings.button_text_hover_light.blue }};
+    {% endif %}
+  }
+  .dark .button-{{ section.id }}, .dark .button-{{ section.id }} *:before {
+    {% if section.settings.button_dark.alpha != 0.0 %}
+      --colors-button: {{ section.settings.button_dark.red }}, {{ section.settings.button_dark.green }}, {{ section.settings.button_dark.blue }};
+    {% else %}
+      --colors-button: {{ settings.colors_dark_button.red }}, {{ settings.colors_dark_button.green }}, {{ settings.colors_dark_button.blue }};
+    {% endif %}
+    {% if section.settings.button_text_dark.alpha != 0.0 %}
+      --colors-button-text: {{ section.settings.button_text_dark.red }}, {{ section.settings.button_text_dark.green }}, {{ section.settings.button_text_dark.blue }};
+    {% else %}
+      --colors-button-text: {{ settings.colors_dark_button_text.red }}, {{ settings.colors_dark_button_text.green }}, {{ settings.colors_dark_button_text.blue }};
+    {% endif %}
+    {% if section.settings.button_hover_dark.alpha != 0.0 %}
+      --colors-button-hover: rgb({{ section.settings.button_hover_dark.red }}, {{ section.settings.button_hover_dark.green }}, {{ section.settings.button_hover_dark.blue }});
+    {% else %}
+      --colors-button-hover: rgb({{ settings.colors_dark_button_hover.red }}, {{ settings.colors_dark_button_hover.green }}, {{ settings.colors_dark_button_hover.blue }});
+    {% endif %}
+    {% if section.settings.button_text_hover_dark.alpha != 0.0 %}
+      --colors-button-text-hover: {{ section.settings.button_text_hover_dark.red }}, {{ section.settings.button_text_hover_dark.green }}, {{ section.settings.button_text_hover_dark.blue }};
+    {% else %}
+      --colors-button-text-hover: {{ settings.colors_dark_button_text_hover.red }}, {{ settings.colors_dark_button_text_hover.green }}, {{ settings.colors_dark_button_text_hover.blue }};
+    {% endif %}
+  }
+  {%- if section.settings.button_position == "custom" -%}
+    .button-{{ section.id }} {
+      left: {{ section.settings.custom_horizontal }}%;
+      top: {{ section.settings.custom_vertical }}%;
+      transform: translate(-{{ section.settings.custom_horizontal }}%,-{{ section.settings.custom_vertical }}%);
+    }
+  {%- endif -%}
+{% endstyle %}
+{% liquid
+  assign position = section.settings.button_position
+  assign button_position_class = ""
+  if position contains 'top'
+    assign button_position_class = "top-4"
+  elsif position contains 'middle'
+    assign button_position_class = "top-1/2 -translate-y-1/2"
+  elsif position contains 'bottom'
+    assign button_position_class = "bottom-4"
+  endif
+  if position contains 'left'
+    assign button_position_class = button_position_class | append: " left-4"
+  elsif position contains 'center'
+    assign button_position_class = button_position_class | append: " left-1/2 -translate-x-1/2"
+  elsif position contains 'right'
+    assign button_position_class = button_position_class | append: " right-4"
+  endif
+%}
+<div class="button-{{ section.id }} fixed {{ button_position_class }} z-[100] w-max">
+  {% if customer %}
+    <a class="button button-solid leading-normal block empty:hidden text-center pl-2 pr-2 pt-1 pb-1 md:pl-2.5 md:pr-2.5" href="{{ routes.account_url }}/orders"{% if section.settings.open_new_window %} target="_blank"{% endif %}>
+      {% render 'button-label', button_label: section.settings.button_label, show_button_style: 'primary' %}
+    </a>
+  {% else %}
+    {% if section.settings.button_link == blank %}
+      <div class="button button-solid leading-normal empty:hidden text-center pl-2 pr-2 pt-1 pb-1 md:pl-2.5 md:pr-2.5 opacity-70 disable-btn-animation hover:cursor-not-allowed">
+        {% render 'button-label', button_label: section.settings.button_label, show_button_style: 'primary' %}
+      </div>
+    {% else %}
+      <a class="button button-solid leading-normal block empty:hidden text-center pl-2 pr-2 pt-1 pb-1 md:pl-2.5 md:pr-2.5" href="{{ section.settings.button_link }}"{% if section.settings.open_new_window %} target="_blank"{% endif %}>
+        {% render 'button-label', button_label: section.settings.button_label, show_button_style: 'primary' %}
+      </a>
+    {% endif %}
+  {% endif %}
+</div>
+{% schema %}
+  {
+    "name": "t:sections.all.button.is_withdrawn",
+    "enabled_on": {
+      "groups": [
+        "aside"
+      ]
+    },
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Withdraw from contract here",
+        "label": "t:sections.all.button.label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "t:sections.all.button.link"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:sections.all.button.url_required",
+        "visible_if": "{{ section.settings.button_link == blank }}"
+      },
+      {
+        "type": "select",
+        "id": "button_position",
+        "options": [
+          {
+            "value": "top-left",
+            "label": "t:sections.all.content_position.options__1.label"
+          },
+          {
+            "value": "top-center",
+            "label": "t:sections.all.content_position.options__2.label"
+          },
+          {
+            "value": "top-right",
+            "label": "t:sections.all.content_position.options__3.label"
+          },
+          {
+            "value": "middle-left",
+            "label": "t:sections.all.alignment.center_left.label"
+          },
+          {
+            "value": "middle-center",
+            "label": "t:sections.all.content_alignment.options__2.label"
+          },
+          {
+            "value": "middle-right",
+            "label": "t:sections.all.alignment.center_right.label"
+          },
+          {
+            "value": "bottom-left",
+            "label": "t:sections.all.content_position.options__7.label"
+          },
+          {
+            "value": "bottom-center",
+            "label": "t:sections.all.content_position.options__8.label"
+          },
+          {
+            "value": "bottom-right",
+            "label": "t:sections.all.content_position.options__9.label"
+          },
+          {
+            "value": "custom",
+            "label": "t:sections.promotion-banner.settings.desktop_content_position.options__10.label"
+          }
+        ],
+        "default": "bottom-right",
+        "label": "t:sections.all.button.button_position"
+      },
+      {
+        "type": "range",
+        "id": "custom_horizontal",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 50,
+        "label": "t:sections.promotion-banner.settings.content_horizontal.label",
+        "info": "t:sections.slideshow.blocks.slide.settings.custom_horizontal.info",
+        "visible_if": "{{ section.settings.button_position == 'custom' }}"
+      },
+      {
+        "type": "range",
+        "id": "custom_vertical",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 50,
+        "label": "t:sections.promotion-banner.settings.content_vertical.label",
+        "info": "t:sections.slideshow.blocks.slide.settings.custom_horizontal.info",
+        "visible_if": "{{ section.settings.button_position == 'custom' }}"
+      },
+      {
+        "type": "checkbox",
+        "id": "open_new_window",
+        "default": false,
+        "label": "t:sections.all.open_new_window.label"
+      },
+      {
+        "type": "color",
+        "id": "button_light",
+        "label": "t:sections.all.button.primary_button_light",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "button_text_light",
+        "label": "t:sections.all.button.primary_button_text_light",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "button_hover_light",
+        "label": "t:sections.all.button.primary_button_hover_light",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "button_text_hover_light",
+        "label": "t:sections.all.button.primary_button_hover_text_light",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "button_dark",
+        "label": "t:sections.all.button.primary_button_dark",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "button_text_dark",
+        "label": "t:sections.all.button.primary_button_text_dark",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "button_hover_dark",
+        "label": "t:sections.all.button.primary_button_hover_dark",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "button_text_hover_dark",
+        "label": "t:sections.all.button.primary_button_hover_text_dark",
+        "default": "rgba(0,0,0,0)"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.all.button.is_withdrawn",
+        "category": "t:categories.utilities_and_layout"
+      }
+    ]
+  }
+{% endschema %}

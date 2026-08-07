@@ -1,0 +1,212 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_banner_main": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": false,
+        "image_overlay_opacity": 20,
+        "show_collection_name": true,
+        "show_breadcrumb_below_title": false,
+        "title_position": "text-center",
+        "size_title": 170,
+        "heading_tag": "h1",
+        "full_width_title": false,
+        "desktop_height": "450px",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_height": "300px",
+        "full_width_mobile": true,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 32
+      },
+      "blocks": {
+        "breadcrumbs": {
+          "type": "breadcrumbs",
+          "settings": {
+            "show_breadcrumbs_border": false,
+            "full_width_breadcrumb": true,
+            "desktop_content_alignment": "text-center",
+            "mobile_content_alignment": "text-left",
+            "background_color_light": "#f9f4ec",
+            "text_color_light": "rgba(0,0,0,0)",
+            "textlink_color_light": "rgba(0,0,0,0)"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "full_width": false,
+            "desktop_content_alignment": "text-center",
+            "mobile_content_alignment": "text-left",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_color_light": "#3a3731",
+            "padding_top": 56,
+            "padding_bottom": 36
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs",
+        "description"
+      ]
+    },
+    "product_grid_main": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "default_hide_filtering": false,
+        "expand_filter": false,
+        "sticky_filtering": false,
+        "filter_edge_style": "adapt",
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_page": "",
+        "products_per_row_on_desktop": 4,
+        "products_per_row_on_mobile": "1",
+        "pagination": "pagination",
+        "paginate_type": "circle",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "show_description": true,
+        "enable_advanced_filter": false,
+        "key_value": "",
+        "hide_unavaiable_filter": false,
+        "columns_desktop_1": 4,
+        "desktop_image_width_1": 150,
+        "columns_desktop_2": 4,
+        "desktop_image_width_2": 150,
+        "enable_desktop_slider": false,
+        "image_ratio_filter": "round",
+        "advanced_filter_image_ratio": "square",
+        "enable_micro_schema": false,
+        "full_width": true,
+        "spacing_col": 20,
+        "spacing_row": 64,
+        "padding_top": 80,
+        "padding_bottom": 100,
+        "spacing_col_mobile": 16,
+        "spacing_row_mobile": 32,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 44
+      },
+      "blocks": {
+        "promotion_block_JzSuDK": {
+          "type": "promotion_block",
+          "settings": {
+            "subheading": "",
+            "heading": "Barrier Ritual Duo",
+            "highlight_type": "underline",
+            "title_size": 80,
+            "content": "<p>Serum + Balm, made to work together. The simplest way to start.</p>",
+            "text_size": 100,
+            "image": "",
+            "image_mobile": "",
+            "image_link": "",
+            "open_new_window_image": false,
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "image_overlay_opacity": 50,
+            "position": 4,
+            "button_label": "SHOP THE DUO",
+            "button_link": "#",
+            "open_new_window": false,
+            "show_button_style": "primary",
+            "alignment": "center",
+            "content_position": "center",
+            "background_color_light": "#F6F6F6",
+            "text_color_light": "#FFFFFF",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "#7F8D7C",
+            "color_text_button": "#FFFFFF",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "number_of_columns_mobile": "1",
+            "number_of_row_mobile": "1"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_block_JzSuDK"
+      ]
+    },
+    "newsletter_main": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_es1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join Our Community",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Enjoy 15% off your first order, plus early access to new launches, exclusive offers and practical skincare advise delivered to your inbox.</p>",
+            "text_size": 100
+          }
+        },
+        "email_form_es1": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "SUBMIT",
+            "background_color_light": "#F5F3EE"
+          }
+        }
+      },
+      "block_order": [
+        "heading_es1",
+        "email_form_es1"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "horizontal",
+        "background_color_light": "#7F8D7C",
+        "heading_light": "#F5F3EE",
+        "color_heading_highlight_light": "#F5F3EE",
+        "text_light": "#F5F3EE",
+        "button_light": "#F5F3EE",
+        "button_text_light": "#1F1F1F",
+        "button_hover_light": "rgba(0,0,0,0)",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "#909D8E",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    }
+  },
+  "order": [
+    "collection_banner_main",
+    "product_grid_main",
+    "newsletter_main"
+  ]
+}

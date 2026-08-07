@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": true,
+        "show_collection_name": true,
+        "image_overlay_opacity": 0
+      },
+      "blocks": {
+        "breadcrumbs_1": {
+          "type": "breadcrumbs",
+          "settings": {}
+        },
+        "description_1": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "breadcrumbs_1",
+        "description_1"
+      ]
+    },
+    "product_grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_page": "",
+        "products_per_row_on_mobile": "1",
+        "pagination": "click_to_load",
+        "show_highlighted_attributes": true,
+        "show_quickview": true
+      },
+      "blocks": {
+        "promotion_block_1": {
+          "type": "promotion_block",
+          "settings": {
+            "heading": "Drop de Verão",
+            "content": "<p>Stock limitado. Quando acabar, acabou.</p>",
+            "button_label": "Compre agora",
+            "button_link": "#",
+            "position": 2,
+            "color_button": "#e5212c",
+            "color_text_button": "#ffffff",
+            "show_button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "promotion_block_1"
+      ]
+    },
+    "collection_list_page": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Mais coleções",
+        "heading_alignment": "center",
+        "columns_mobile": "1",
+        "swiper_on_mobile": true
+      },
+      "blocks": {
+        "promo_novidades": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "novo"
+          }
+        }
+      },
+      "block_order": [
+        "promo_novidades"
+      ]
+    },
+    "email_signup": {
+      "type": "newsletter",
+      "settings": {
+        "background_color_light": "#0b0700",
+        "heading_light": "#ffffff",
+        "text_light": "#c7c7c7",
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "heading_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Entra para a Lista VIP",
+            "text": "<p>Sabe primeiro quando cai um drop novo.</p>"
+          }
+        },
+        "email_form_1": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Quero saber"
+          }
+        }
+      },
+      "block_order": [
+        "heading_1",
+        "email_form_1"
+      ]
+    }
+  },
+  "order": [
+    "banner",
+    "product_grid",
+    "collection_list_page",
+    "email_signup"
+  ]
+}

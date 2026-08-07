@@ -127,6 +127,30 @@ starting — don't guess.
   Render each already-identified top-level child/section node as its own separate image instead
   (one call, many node ids, same batching this script already does) — every section's own frame is a
   reasonable, legible aspect ratio on its own.
+- `figma-section-facts.js <sectionJsonFile> [pageWidthPx]` — pre-computes, BY CODE (zero model
+  reasoning, near-free), the handful of facts a developer would read off a Figma section at a glance:
+  background color, column count, full-width or not, padding/itemSpacing (real auto-layout ground
+  truth, same source `figma-fetch-image.js`'s own alignment work already reads), and real
+  `primaryAxisAlign`/`counterAxisAlign` (Figma's own auto-layout alignment property — read this
+  DIRECTLY instead of inferring alignment from box-gap math whenever a section has `layoutMode` set;
+  box-gap math is still the fallback for a `layoutMode: "NONE"` frame, which has no such property).
+  Run this on a section's own already-fetched JSON (full depth) right after step 2 of the fetch
+  pipeline, BEFORE handing the section to a configuring subagent — hand the subagent this SMALL flat
+  facts object first, and only the full raw JSON as a fallback for whatever this script flagged as
+  ambiguous (or for genuinely deep detail — icons, block-level content — it was never meant to cover).
+  **Every fact carries a `confidence`: `"confirmed"` (trust it) or `"ambiguous"` (a `reason` string
+  explains why the structure didn't match this script's assumptions — fall back to reading the raw
+  section JSON, or the rendered PNG, for THAT SPECIFIC fact; never treat an ambiguous fact as if it
+  were confirmed).** This is a FAST PATH for the clean/common case, not a universal replacement for
+  reading real Figma data — confirmed real case this guards against: a mobile single-card carousel
+  section's only `HORIZONTAL`-layout frame was one card's own internal badge row, not a repeated grid
+  of cards; a naive "count children of the first HORIZONTAL frame found" would have silently reported
+  a wrong column count, whereas this script correctly refuses to guess a `columns` value unless the
+  section's OWN direct children (not some arbitrarily-nested frame) are structurally homogeneous in a
+  `HORIZONTAL` layout. Same discipline for `background` (only trusts the section's own fill, or
+  exactly one large covering child rectangle — multiple candidates or none at all → ambiguous, don't
+  guess) and `fullWidth` (only confident when the section/page width ratio is clearly ≥98% or ≤90%;
+  a ratio in between is reported ambiguous rather than rounded to a guess).
 - `fetch-shopify-collections.js <shop-domain> [password]` — fetch a store's REAL collection list
   (id, title, handle) via the storefront's public `/collections.json` endpoint. No Admin API token
   needed, no app install — genuinely public, unauthenticated data. If the storefront is
@@ -501,18 +525,28 @@ isolation).** The same Figma component/instance is sometimes reused verbatim acr
 page) — configuring it fresh per page wastes a full schema-read + subagent dispatch on content
 that's already been analyzed once. After listing every page's sections (this step), before moving to
 step 5:
-- Same Figma node name + same child count/structure + matching first few characters of visible text
-  → flag as a likely duplicate candidate. Same discipline as the multi-slide `_N` rule below:
-  structural evidence, not a bare naming coincidence, is what confirms it.
-- Confirm once the Figma JSON is actually fetched: byte-identical (or near-identical) content across
-  the flagged instances is a confirmed duplicate.
+- Same Figma node name + same child count/structure + matching visible text → treat as a confirmed
+  duplicate directly from THIS signal (the already-rendered image from this step's own visual
+  cross-check, plus the text already visible in it/in the lightweight discovery JSON) — **don't fetch
+  the full-depth JSON separately just to re-confirm it.** A dedicated JSON-diff confirmation step
+  sounds safer but isn't actually buying much here: whatever a static image/text comparison can't see
+  (a button href, a collection handle) is either itself DERIVED from the same visible signal anyway
+  (e.g. a collection reference is matched by title, so matching title → matching collection follows
+  naturally, see §5's collection-matching rule) or low-stakes/easily caught later if it did somehow
+  differ (a merchant clicking through and noticing the wrong collection is an easy, obvious, cheap
+  fix — nothing like the silent, invisible-until-push failure classes elsewhere in this project, e.g.
+  the `image_picker` URL-prefix or `number`-type corruption bugs, that genuinely warrant this level
+  of caution). Reserve real skepticism for genuine structural mismatches (different child count,
+  different visible text) — those are correctly NOT treated as duplicates in the first place.
 Once confirmed: fetch full data and dispatch exactly ONE subagent for that section (§5), not one per
-page it appears on. Once that subagent returns its section JSON, YOU apply the SAME resulting JSON
-to every template that needs it via separate `apply-section.js` calls (different `template`/
+page it appears on — this is the ONE real JSON fetch this section ever needs, not a separate
+pre-check plus a real one. Once that subagent returns its section JSON, YOU apply the SAME resulting
+JSON to every template that needs it via separate `apply-section.js` calls (different `template`/
 `sectionKey` args, identical `settings`/`blocks` payload) — never re-analyze or re-dispatch a second
-subagent for content already configured once. If a duplicate is near- but not byte-identical (e.g.
-same layout, one button link differs), still reuse the first result as a base and hand a follow-up
-pass only the specific fields that differ, rather than a full fresh analysis.
+subagent for content already configured once. If, once that one real fetch happens, it turns out the
+instances are near- but not byte-identical (e.g. same layout, one button link differs) — a real but
+uncommon case — still reuse the first result as a base and hand a follow-up pass only the specific
+fields that differ, rather than a full fresh analysis.
 
 **Multi-slide/multi-state sections (slideshows, scrollable carousels/rows).** A single static Figma
 frame can only ever show ONE state of anything that changes over time or scroll position — a
@@ -606,9 +640,18 @@ every field explicitly", schema two-phase reading) still apply universally — i
 dispatch.
 
 Rules every subagent (or you, doing it directly) must follow:
+- **Run `figma-section-facts.js` on the section's fetched JSON BEFORE dispatching it** — hand the
+  subagent this small facts object (background/columns/fullWidth/padding/itemSpacing/alignment, each
+  with a `confidence`) alongside the raw JSON, not instead of it. This settles the "confirmed" facts
+  by code, for free, so the subagent's own reading time goes toward the fields this script couldn't
+  determine (see its own `needsDeeperCheck` list) and toward genuinely deep detail (icons, block
+  content) it was never meant to cover — never toward re-deriving a fact the script already confirmed.
 - **Look at the section's rendered PNG first for layout facts** (column count, whether a
   pagination-dot strip means a real carousel, true center/left/right alignment) — this is what the
   image is for; never guess these from box-gap math when a real screenshot is sitting right there.
+  This is exactly the fallback path for whatever `figma-section-facts.js` flagged `ambiguous` (its
+  `reason` string says why) — treat its `needsDeeperCheck` list as your checklist for what the image
+  still needs to answer, rather than re-checking everything from scratch.
   Then **analyze the Figma JSON for every visually distinct piece, then read schema — never the
   other way round.** Walk the section's pre-fetched Figma JSON and list, in plain words, every
   visually distinct piece it shows (title, price, a 3-item icon row, an accordion group, a CTA
@@ -627,10 +670,14 @@ Rules every subagent (or you, doing it directly) must follow:
   which is very often non-blank placeholder content.
 - `richtext` fields need a `<p>/<ul>/<ol>/<h1-6>` root — wrap bare strings; plain `text` fields take
   bare strings as-is.
-- **Alignment/position fields: compute from box-gap math (child box vs. parent box, left-gap vs.
-  right-gap), never from a single TEXT node's own `font.align`.** `font.align` only describes how
-  text wraps within one run — a centered block routinely contains a TEXT node whose own align is
+- **Alignment/position fields: prefer the node's own real `primaryAxisAlign`/`counterAxisAlign`
+  (present whenever `layoutMode` is set — `figma-section-facts.js` surfaces these directly) over
+  box-gap math, and NEVER from a single TEXT node's own `font.align`.** `font.align` only describes
+  how text wraps within one run — a centered block routinely contains a TEXT node whose own align is
   "LEFT". This was the single most common real mistake this project has produced — check it twice.
+  Box-gap math (child box vs. parent box, left-gap vs. right-gap) is still the right fallback ONLY
+  when the node has no `layoutMode` at all (a `"NONE"`/absolutely-positioned frame has no real
+  alignment property to read).
 - **Color fields defaulting to `rgba(0,0,0,0)` ("inherit the global theme color") may ONLY be left
   blank when the Figma value ACTUALLY, CONFIRMED equals that global token — never as a default
   low-effort choice, and never just because "no color override evidence" was found without actually
@@ -709,18 +756,27 @@ Rules every subagent (or you, doing it directly) must follow:
   library, whenever that happens — so a filename set NOW will start resolving correctly the moment a
   matching-named file is uploaded later, with no need to touch the section config again. So: never
   leave an `image_picker` field truly blank when Figma shows a real photo. Set it to
-  `shopify://shop_images/<filename>` using **the Figma layer's own `name`, verbatim** (plus the real
-  file extension — `.png` if unknown) — do NOT invent a nicer/descriptive name, and do NOT
-  slugify/lowercase/hyphenate it. The point of this field is to match whatever file the merchant
-  actually gets when they right-click that exact layer in Figma and choose Export — Figma's own
-  export names the downloaded file after the layer's name as-is, so using anything else just forces
-  the merchant to manually rename the file before upload, the opposite of the goal. Only touch
-  characters that are genuinely illegal in a filename (e.g. `/`). A generic layer name (`"img"`,
-  `"Rectangle 408"`) is fine functionally — the reference still resolves correctly on a plain name
-  match — just describe the image's real purpose in the merchant follow-up report (§7) next to that
-  filename, so a human reviewing it knows what `img.png` is actually for even though the filename
-  itself stays generic. This has not been verified end-to-end against a real store yet (confirm the
-  resolve behavior once, on the first real use, rather than assuming it's flawless).
+  `shopify://shop_images/<filename>` using **the Figma layer's own `name`, sanitized** (plus the real
+  file extension — `.png` if unknown): replace every run of one-or-more characters that aren't
+  letters/digits (spaces, `()`, `-`, `–`, `/`, emoji, punctuation, ...) with a single `_`, then trim
+  any leading/trailing `_` — e.g. `"Image Ratio (1)"` → `Image_Ratio_1`, `"Logo_fragfuel_...copia 1"`
+  → keep as-is where it's already `_`-joined, only collapsing genuinely non-alnum runs. Do NOT invent
+  a nicer/descriptive name, and do NOT lowercase or otherwise reword it — only this
+  space/punctuation-to-`_` normalization, nothing else. (Earlier versions of this rule said "verbatim,
+  do not touch it at all" — that produced real filenames with literal spaces/parentheses, e.g.
+  `shopify://shop_images/Social image 2.png`, which is fragile: many upload paths/URL contexts don't
+  round-trip raw spaces reliably. Sanitizing is now mandatory, not optional.) The point of this field
+  is to match whatever file the merchant ends up uploading — since Figma's own export names the
+  downloaded file after the layer's name as-is, tell the merchant (in the §7 follow-up report) to
+  rename the exported file to the sanitized form before uploading (e.g. export gives
+  `Image Ratio (1).png`, merchant uploads it as `Image_Ratio_1.png`) — this is a small manual step but
+  a far more reliable one than hoping a raw space survives untouched everywhere. A generic layer name
+  (`"img"`, `"Rectangle 408"` → `Rectangle_408`) is fine functionally — the reference still resolves
+  correctly on a plain sanitized-name match — just describe the image's real purpose in the merchant
+  follow-up report (§7) next to that filename, so a human reviewing it knows what `img.png` is
+  actually for even though the filename itself stays generic. This has not been verified end-to-end
+  against a real store yet (confirm the resolve behavior once, on the first real use, rather than
+  assuming it's flawless).
 - **Collection reference confidently matched → any CTA/button link tied to that same block must
   also point at it.** When a block's `collection` field gets a real handle (matched via
   `fetch-shopify-collections.js`), also set that same block's own button/CTA link field (e.g.

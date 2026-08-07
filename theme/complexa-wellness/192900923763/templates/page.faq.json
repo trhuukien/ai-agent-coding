@@ -1,0 +1,323 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "promotion_banner_h9dR73": {
+      "type": "promotion-banner",
+      "blocks": {
+        "image_banner_tRYXPN": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "Frequently Asked Questions",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "subheading": "",
+            "subheading_size": 100,
+            "text": "Below are some of the most common questions our customers have asked us! If you don't find what you're looking for, please send us an email at hello@arise.com.",
+            "text_size": 100,
+            "content_box_type": "square",
+            "add_frame": false,
+            "color_content_box_light": "rgba(0,0,0,0)",
+            "color_content_box_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_tRYXPN"
+      ],
+      "settings": {
+        "heading": "",
+        "image": "",
+        "image_link": "",
+        "open_new_window": false,
+        "image_overlay_opacity": 30,
+        "content_position": "center",
+        "content_horizontal": 50,
+        "content_vertical": 50,
+        "position_content_mobile": "center",
+        "content_alignment": "center",
+        "show_hero": false,
+        "full_width": true,
+        "padding_full_width": false,
+        "adapt_corners_desktop": false,
+        "rounded_corner_image": false,
+        "desktop_height": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width_mobile": true,
+        "adapt_corners_mobile": false,
+        "rounded_corner_image_mobile": false,
+        "mobile_height": "400px",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "faq_z3VxKL": {
+      "type": "faq",
+      "blocks": {
+        "category_FNBBAY": {
+          "type": "category",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 28,
+            "title": "Category"
+          }
+        },
+        "frequently_asked_question_mQeGqR": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "heart",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "How long will it take to see results from these supplements?",
+            "row_content": "<p>Consistency is key! While some people notice a difference in energy or focus within a few days, most supplements require <strong>4 to 6 weeks</strong> of daily use to allow the nutrients to build up in your system and deliver noticeable, long-term benefits.</p>"
+          }
+        },
+        "frequently_asked_question_DLg389": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "heart",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Are your products third-party tested?",
+            "row_content": "<p>Absolutely. Your safety and trust are our top priorities. All of our supplements are manufactured in <strong>cGMP-certified facilities</strong> and undergo rigorous testing by independent, third-party laboratories. This ensures that what you see on the label is exactly what you get in the bottle—with zero harmful contaminants, heavy metals, or undisclosed fillers.</p>"
+          }
+        },
+        "frequently_asked_question_7iUWPf": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "heart",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Can I take these supplements alongside my prescription medications?",
+            "row_content": "<p><strong>Important Note:</strong> While our products are made from natural, high-quality ingredients, they can still interact with certain prescription medications.</p><p>We always recommend <strong>consulting with your healthcare provider</strong> before starting any new supplement regimen to ensure it safely aligns with your specific health needs and current medications.</p>"
+          }
+        },
+        "frequently_asked_question_Dxi66i": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "heart",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "How and when should I take my supplements for the best absorption?",
+            "row_content": "<p>It depends on the specific product, but as a general rule:</p><ul><li><strong>Fat-soluble vitamins (like D3, E, and K):</strong> Take these with a meal that contains healthy fats (like avocado, eggs, or nuts) for optimal absorption.</li><li><strong>Water-soluble vitamins (like Vitamin C and B-complex):</strong> These can be taken with a glass of water on an empty stomach or with food.</li></ul><p><em>Always check the \"Suggested Use\" section on your specific bottle for exact instructions.</em></p>"
+          }
+        },
+        "frequently_asked_question_gG8BBp": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "heart",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Are your supplements vegan, gluten-free, or allergen-free?",
+            "row_content": "<p>We strive to make our products accessible to everyone. The majority of our product line is gluten-free, non-GMO, and free of major allergens (like soy, dairy, and nuts). We also offer a wide selection of vegan and vegetarian options. You can easily find specific allergen and dietary labels on each product page and on the back of every bottle.</p><p>What specific health niche is your supplement brand targeting (e.g., gut health, fitness, sleep, or general wellness)? I can easily tailor these answers to match your exact product line and brand voice!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_FNBBAY",
+        "frequently_asked_question_mQeGqR",
+        "frequently_asked_question_DLg389",
+        "frequently_asked_question_7iUWPf",
+        "frequently_asked_question_Dxi66i",
+        "frequently_asked_question_gG8BBp"
+      ],
+      "name": "t:sections.question_and_answer.name",
+      "settings": {
+        "heading": "FAQs",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": true,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_heading": false,
+        "heading_size": 50,
+        "heading_tag": "h1",
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": true,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "max_container_page_width": 100,
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "featured_blog_AQNcj4": {
+      "type": "featured-blog",
+      "disabled": true,
+      "name": "t:sections.featured-blog.name",
+      "settings": {
+        "heading": "Blog posts",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "blog": "",
+        "blog_with_tag": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_show_more": false,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "title_size": 140,
+        "content_alignment": "left",
+        "show_image": true,
+        "image_ratio": "75",
+        "item_secondary_background": false,
+        "show_author": true,
+        "show_name": false,
+        "show_date": true,
+        "show_excerpt": true,
+        "show_tag": true,
+        "show_comment_counts": true,
+        "show_read_more": false,
+        "button_read_more_label": "READ NOW",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "full_width": false,
+        "spacing": 28,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "1",
+        "spacing_mobile": 28,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "collection_list_hTPfFh": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_9htphK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "featured_collection_ieah6V": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "featured_collection_7Jkznd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        },
+        "featured_collection_TMW74q": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_9htphK",
+        "featured_collection_ieah6V",
+        "featured_collection_7Jkznd",
+        "featured_collection_TMW74q"
+      ],
+      "name": "t:sections.collection-list.name",
+      "settings": {
+        "heading": "Explore Our Collections",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "background_color_light": "",
+        "background_color_dark": "",
+        "collection_metafield": "",
+        "image_ratio": "square",
+        "title_size": 80,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "image_overlay_opacity": 5,
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "show_item_count": true,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "spacing_mobile": 4,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "promotion_banner_h9dR73",
+    "faq_z3VxKL",
+    "main",
+    "featured_blog_AQNcj4",
+    "collection_list_hTPfFh"
+  ]
+}

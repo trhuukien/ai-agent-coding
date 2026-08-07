@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "newsletter_PGyBAW": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_dKRFAK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unlock 10% Off On Your First Ritual",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Join the community. Get ingredient guides, ritual inspiration, and early access to new drops.</p>",
+            "text_size": 100
+          }
+        },
+        "email_form_CAEgrz": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Join The Ritual",
+            "background_color_light": "#ffffff",
+            "background_color_dark": ""
+          }
+        },
+        "paragraph_bYqz7P": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>No spam. Unsubscribe anytime.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dKRFAK",
+        "email_form_CAEgrz",
+        "paragraph_bYqz7P"
+      ],
+      "disabled": true,
+      "settings": {
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "#fcfaf6",
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "button_light": "rgba(0,0,0,0)",
+        "button_text_light": "rgba(0,0,0,0)",
+        "button_hover_light": "rgba(0,0,0,0)",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "#dfdfdc",
+        "background_color_dark": "#313131",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "button_dark": "rgba(0,0,0,0)",
+        "button_text_dark": "rgba(0,0,0,0)",
+        "button_hover_dark": "rgba(0,0,0,0)",
+        "button_text_hover_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "#3c3b3b",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_FjJtCr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled.png",
+            "image_width": 200,
+            "link_image_footer": "",
+            "open_new_window": false,
+            "rounded_corner_image": false,
+            "alignment": "left",
+            "text": "<p>Live more. Manage less. A wellness ecosystem for people living with complex, multisystem chronic health conditions.</p>",
+            "spacing": 28
+          }
+        },
+        "link_list_6LkrYE": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": true,
+            "heading_menu": "SHOP",
+            "menu": "footershop",
+            "show_social_icons": false
+          }
+        },
+        "link_list_i9gHXh": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": false,
+            "heading_menu": "ABOUT",
+            "menu": "footerabout",
+            "show_social_icons": false
+          }
+        },
+        "link_list_hDAkk3": {
+          "type": "link_list",
+          "settings": {
+            "open_by_default": false,
+            "heading_menu": "SUPPORT",
+            "menu": "footersupport",
+            "show_social_icons": false
+          }
+        }
+      },
+      "block_order": [
+        "image_FjJtCr",
+        "link_list_6LkrYE",
+        "link_list_i9gHXh",
+        "link_list_hDAkk3"
+      ],
+      "settings": {
+        "columns_desktop": 5,
+        "show_language_selector": false,
+        "show_currency_selector": false,
+        "show_social_icons": false,
+        "payment_enable": false,
+        "custom_payment": "diners-club,discover,master,visa,paypal,american-express",
+        "show_copyright": true,
+        "add_copyright_text": "<p><a href=\"https://omnithemes.com/\" title=\"https://omnithemes.com/\">Designed by Omni Themes.</a></p>",
+        "additional_layout": "vertical",
+        "show_powered": false,
+        "enable_follow_on_shop": false,
+        "horizontal_position": "right",
+        "top_padding": 0,
+        "bottom_padding": 40,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "newsletter_PGyBAW",
+    "footer"
+  ]
+}

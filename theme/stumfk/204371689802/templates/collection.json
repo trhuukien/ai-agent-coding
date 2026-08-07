@@ -1,0 +1,524 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main_collection_banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": false,
+        "image_overlay_opacity": 20,
+        "show_collection_name": true,
+        "show_breadcrumb_below_title": false,
+        "title_position": "text-center",
+        "size_title": 170,
+        "heading_tag": "h1",
+        "full_width_title": false,
+        "desktop_height": "450px",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_height": "auto",
+        "full_width_mobile": true,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 20
+      },
+      "blocks": {
+        "breadcrumbs": {
+          "type": "breadcrumbs",
+          "settings": {
+            "show_breadcrumbs_border": false,
+            "full_width_breadcrumb": true,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-left",
+            "background_color_light": "#faf7f8",
+            "text_color_light": "rgba(0,0,0,0)",
+            "textlink_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "#313131",
+            "text_color_dark": "rgba(0,0,0,0)",
+            "textlink_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "full_width": false,
+            "desktop_content_alignment": "text-center",
+            "mobile_content_alignment": "text-center",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_color_dark": "rgba(0,0,0,0)",
+            "padding_top": 20,
+            "padding_bottom": 36
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs",
+        "description"
+      ]
+    },
+    "featured_collection_bestseller": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestseller",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "show_view_all": false,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "button",
+        "color_background": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "tab_bestseller": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-selling-collection",
+            "show_description": false,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "tab_bestseller"
+      ]
+    },
+    "main_collection_product_grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "default_hide_filtering": false,
+        "expand_filter": false,
+        "sticky_filtering": false,
+        "filter_edge_style": "adapt",
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_page": "",
+        "products_per_row_on_desktop": 4,
+        "products_per_row_on_mobile": "2",
+        "pagination": "pagination",
+        "paginate_type": "circle",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "show_description": false,
+        "enable_advanced_filter": false,
+        "key_value": "",
+        "hide_unavaiable_filter": false,
+        "columns_desktop_1": 4,
+        "desktop_image_width_1": 150,
+        "columns_desktop_2": 4,
+        "desktop_image_width_2": 150,
+        "enable_desktop_slider": false,
+        "image_ratio_filter": "square",
+        "advanced_filter_image_ratio": "square",
+        "enable_micro_schema": false,
+        "full_width": false,
+        "spacing_col": 28,
+        "spacing_row": 28,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "spacing_col_mobile": 12,
+        "spacing_row_mobile": 24,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 40
+      },
+      "block_order": []
+    },
+    "collection_list_other": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Raziščite druge zbirke",
+        "highlight_type": "underline",
+        "heading_size": 90,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "collection_metafield": "",
+        "image_ratio": "square",
+        "title_size": 80,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "image_overlay_opacity": 5,
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "#33312d",
+        "show_item_count": true,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "spacing_mobile": 12,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "najlonske": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "najlonske-nogavice",
+            "title": ""
+          }
+        },
+        "nizke": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nizke-nogavice",
+            "title": ""
+          }
+        },
+        "tanjse": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tanjse-nogavice",
+            "title": ""
+          }
+        },
+        "brez_elastike": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nogavice-brez-elastike",
+            "title": ""
+          }
+        },
+        "spodnje_perilo": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "spodnje-perilo",
+            "title": ""
+          }
+        },
+        "pizame": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pizame",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "najlonske",
+        "nizke",
+        "tanjse",
+        "brez_elastike",
+        "spodnje_perilo",
+        "pizame"
+      ]
+    },
+    "image_with_text_ankles": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/image 99.png",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "300px",
+        "desktop_image_width": "large",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 8,
+        "video": "",
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "#faf7f8",
+        "background_color_dark": "",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 30,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "",
+        "text_color_light": "",
+        "line_border_light": "#eddce1",
+        "icon_color_light": "",
+        "heading_color_dark": "",
+        "text_color_dark": "",
+        "line_border_dark": "",
+        "icon_color_dark": "",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": true,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 32
+      },
+      "blocks": {
+        "heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Več o nogavicah, prijaznih do gležnjev.",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Običajne nogavice imajo pogosto elastične trakove, ki stisnejo gleženj, kar povzroča nelagodje in pušča sledi – zlasti pri tistih, ki dolgo stojijo/sedijo, starejših ali tistih s težavami s krvnim obtokom. Naše nogavice, ki ne stisnejo gležnja, uporabljajo posebno tehnologijo tkanja, ki omogoča, da se manšeta nogavice nežno objame stopalo brez pritiska, hkrati pa ohranja svojo obliko ves dan. To je priljubljena izbira med strankami s sladkorno boleznijo in tistimi z oteklimi nogami.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "",
+            "text_light": "",
+            "color_heading_highlight_light": "",
+            "heading_dark": "",
+            "text_dark": "",
+            "color_heading_highlight_dark": ""
+          }
+        },
+        "col_1": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_23001_5708)\">\n<path d=\"M14.457 1.70245C14.7682 1.43252 15.231 1.43252 15.5422 1.70245L18.2289 4.03287C18.3982 4.17973 18.62 4.25166 18.8434 4.23222L22.389 3.92362C22.7997 3.88787 23.1741 4.15947 23.267 4.56051L24.0686 8.02261C24.1192 8.24077 24.2561 8.4291 24.4484 8.54449L27.4985 10.3756C27.8518 10.5877 27.9948 11.0271 27.8338 11.4061L26.4443 14.6774C26.3567 14.8837 26.3567 15.1163 26.4443 15.3226L27.8338 18.5939C27.9948 18.9728 27.8518 19.4123 27.4985 19.6245L24.4484 21.4555C24.2561 21.5709 24.1192 21.7592 24.0686 21.9775L23.267 25.4395C23.1741 25.8405 22.7997 26.1122 22.389 26.0764L18.8434 25.7678C18.62 25.7483 18.3982 25.8203 18.2289 25.9671L15.5422 28.2976C15.231 28.5675 14.7682 28.5675 14.457 28.2976L11.7703 25.9671C11.601 25.8203 11.3792 25.7483 11.1558 25.7678L7.61025 26.0764C7.19955 26.1122 6.82514 25.8405 6.73228 25.4395L5.9306 21.9775C5.88008 21.7592 5.74303 21.5709 5.55083 21.4555L2.50076 19.6245C2.14744 19.4123 2.00442 18.9728 2.16539 18.5939L3.55499 15.3226C3.64254 15.1163 3.64254 14.8837 3.55499 14.6774L2.16539 11.4061C2.00442 11.0271 2.14744 10.5877 2.50076 10.3756L5.55083 8.54449C5.74303 8.4291 5.88008 8.24077 5.9306 8.02261L6.73228 4.56051C6.82514 4.15947 7.19955 3.88787 7.61025 3.92362L11.1558 4.23222C11.3792 4.25166 11.601 4.17973 11.7703 4.03287L14.457 1.70245Z\" stroke=\"#1A1A1A\" stroke-width=\"2.5\"/>\n<path d=\"M10.8633 16.377L13.6212 19.1307L20.5161 12.2466\" stroke=\"#1A1A1A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_23001_5708\">\n<rect width=\"30\" height=\"30\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "title": "Brezšivno",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "",
+            "wide_desktop": 1,
+            "wide_mobile": "1"
+          }
+        },
+        "col_2": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_23001_5708)\">\n<path d=\"M14.457 1.70245C14.7682 1.43252 15.231 1.43252 15.5422 1.70245L18.2289 4.03287C18.3982 4.17973 18.62 4.25166 18.8434 4.23222L22.389 3.92362C22.7997 3.88787 23.1741 4.15947 23.267 4.56051L24.0686 8.02261C24.1192 8.24077 24.2561 8.4291 24.4484 8.54449L27.4985 10.3756C27.8518 10.5877 27.9948 11.0271 27.8338 11.4061L26.4443 14.6774C26.3567 14.8837 26.3567 15.1163 26.4443 15.3226L27.8338 18.5939C27.9948 18.9728 27.8518 19.4123 27.4985 19.6245L24.4484 21.4555C24.2561 21.5709 24.1192 21.7592 24.0686 21.9775L23.267 25.4395C23.1741 25.8405 22.7997 26.1122 22.389 26.0764L18.8434 25.7678C18.62 25.7483 18.3982 25.8203 18.2289 25.9671L15.5422 28.2976C15.231 28.5675 14.7682 28.5675 14.457 28.2976L11.7703 25.9671C11.601 25.8203 11.3792 25.7483 11.1558 25.7678L7.61025 26.0764C7.19955 26.1122 6.82514 25.8405 6.73228 25.4395L5.9306 21.9775C5.88008 21.7592 5.74303 21.5709 5.55083 21.4555L2.50076 19.6245C2.14744 19.4123 2.00442 18.9728 2.16539 18.5939L3.55499 15.3226C3.64254 15.1163 3.64254 14.8837 3.55499 14.6774L2.16539 11.4061C2.00442 11.0271 2.14744 10.5877 2.50076 10.3756L5.55083 8.54449C5.74303 8.4291 5.88008 8.24077 5.9306 8.02261L6.73228 4.56051C6.82514 4.15947 7.19955 3.88787 7.61025 3.92362L11.1558 4.23222C11.3792 4.25166 11.601 4.17973 11.7703 4.03287L14.457 1.70245Z\" stroke=\"#1A1A1A\" stroke-width=\"2.5\"/>\n<path d=\"M10.8633 16.377L13.6212 19.1307L20.5161 12.2466\" stroke=\"#1A1A1A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_23001_5708\">\n<rect width=\"30\" height=\"30\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "title": "Široka manšeta nogavice",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "",
+            "wide_desktop": 1,
+            "wide_mobile": "1"
+          }
+        },
+        "col_3": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_23001_5708)\">\n<path d=\"M14.457 1.70245C14.7682 1.43252 15.231 1.43252 15.5422 1.70245L18.2289 4.03287C18.3982 4.17973 18.62 4.25166 18.8434 4.23222L22.389 3.92362C22.7997 3.88787 23.1741 4.15947 23.267 4.56051L24.0686 8.02261C24.1192 8.24077 24.2561 8.4291 24.4484 8.54449L27.4985 10.3756C27.8518 10.5877 27.9948 11.0271 27.8338 11.4061L26.4443 14.6774C26.3567 14.8837 26.3567 15.1163 26.4443 15.3226L27.8338 18.5939C27.9948 18.9728 27.8518 19.4123 27.4985 19.6245L24.4484 21.4555C24.2561 21.5709 24.1192 21.7592 24.0686 21.9775L23.267 25.4395C23.1741 25.8405 22.7997 26.1122 22.389 26.0764L18.8434 25.7678C18.62 25.7483 18.3982 25.8203 18.2289 25.9671L15.5422 28.2976C15.231 28.5675 14.7682 28.5675 14.457 28.2976L11.7703 25.9671C11.601 25.8203 11.3792 25.7483 11.1558 25.7678L7.61025 26.0764C7.19955 26.1122 6.82514 25.8405 6.73228 25.4395L5.9306 21.9775C5.88008 21.7592 5.74303 21.5709 5.55083 21.4555L2.50076 19.6245C2.14744 19.4123 2.00442 18.9728 2.16539 18.5939L3.55499 15.3226C3.64254 15.1163 3.64254 14.8837 3.55499 14.6774L2.16539 11.4061C2.00442 11.0271 2.14744 10.5877 2.50076 10.3756L5.55083 8.54449C5.74303 8.4291 5.88008 8.24077 5.9306 8.02261L6.73228 4.56051C6.82514 4.15947 7.19955 3.88787 7.61025 3.92362L11.1558 4.23222C11.3792 4.25166 11.601 4.17973 11.7703 4.03287L14.457 1.70245Z\" stroke=\"#1A1A1A\" stroke-width=\"2.5\"/>\n<path d=\"M10.8633 16.377L13.6212 19.1307L20.5161 12.2466\" stroke=\"#1A1A1A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_23001_5708\">\n<rect width=\"30\" height=\"30\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "title": "Primerna za občutljivo kožo",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "",
+            "wide_desktop": 1,
+            "wide_mobile": "1"
+          }
+        },
+        "col_4": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_23001_5708)\">\n<path d=\"M14.457 1.70245C14.7682 1.43252 15.231 1.43252 15.5422 1.70245L18.2289 4.03287C18.3982 4.17973 18.62 4.25166 18.8434 4.23222L22.389 3.92362C22.7997 3.88787 23.1741 4.15947 23.267 4.56051L24.0686 8.02261C24.1192 8.24077 24.2561 8.4291 24.4484 8.54449L27.4985 10.3756C27.8518 10.5877 27.9948 11.0271 27.8338 11.4061L26.4443 14.6774C26.3567 14.8837 26.3567 15.1163 26.4443 15.3226L27.8338 18.5939C27.9948 18.9728 27.8518 19.4123 27.4985 19.6245L24.4484 21.4555C24.2561 21.5709 24.1192 21.7592 24.0686 21.9775L23.267 25.4395C23.1741 25.8405 22.7997 26.1122 22.389 26.0764L18.8434 25.7678C18.62 25.7483 18.3982 25.8203 18.2289 25.9671L15.5422 28.2976C15.231 28.5675 14.7682 28.5675 14.457 28.2976L11.7703 25.9671C11.601 25.8203 11.3792 25.7483 11.1558 25.7678L7.61025 26.0764C7.19955 26.1122 6.82514 25.8405 6.73228 25.4395L5.9306 21.9775C5.88008 21.7592 5.74303 21.5709 5.55083 21.4555L2.50076 19.6245C2.14744 19.4123 2.00442 18.9728 2.16539 18.5939L3.55499 15.3226C3.64254 15.1163 3.64254 14.8837 3.55499 14.6774L2.16539 11.4061C2.00442 11.0271 2.14744 10.5877 2.50076 10.3756L5.55083 8.54449C5.74303 8.4291 5.88008 8.24077 5.9306 8.02261L6.73228 4.56051C6.82514 4.15947 7.19955 3.88787 7.61025 3.92362L11.1558 4.23222C11.3792 4.25166 11.601 4.17973 11.7703 4.03287L14.457 1.70245Z\" stroke=\"#1A1A1A\" stroke-width=\"2.5\"/>\n<path d=\"M10.8633 16.377L13.6212 19.1307L20.5161 12.2466\" stroke=\"#1A1A1A\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_23001_5708\">\n<rect width=\"30\" height=\"30\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "title": "Dihajoč in mehak material",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "",
+            "wide_desktop": 1,
+            "wide_mobile": "1"
+          }
+        }
+      },
+      "block_order": [
+        "heading-1",
+        "col_1",
+        "col_2",
+        "col_3",
+        "col_4"
+      ]
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {
+        "heading": "FAQ — Nogavice brez elastike",
+        "highlight_type": "underline",
+        "heading_size": 90,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": true,
+        "view_all_position": "top",
+        "button_link": "#",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image": "",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "block-1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Iz katerega materiala so izdelane?",
+            "row_content": "<p>Kombinacija bombaža (za mehkobo in dihanje kože) z majhnim deležem elastana za obliko – vendar brez tesnega elastičnega traku na robu, ki bi stiskal nogo. [prilagodi glede na dejansko sestavo izdelka]</p>",
+            "open_by_default": true
+          }
+        },
+        "block-2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Kako izbrati pravo velikost?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "block-3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Ali so primerne za diabetike?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "block-4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Ali imajo protibakterijsko zaščito?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "block-5": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "How long until I see results?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ]
+    }
+  },
+  "order": [
+    "main_collection_banner",
+    "featured_collection_bestseller",
+    "main_collection_product_grid",
+    "collection_list_other",
+    "image_with_text_ankles",
+    "faq"
+  ]
+}

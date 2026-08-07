@@ -1,0 +1,711 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "media_with_text_1_pp": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/Image Ratio.png",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "desktop_image_width": "large",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "video": "",
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "#eeebe6",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 60,
+        "bottom_padding": 60,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 28,
+        "bottom_padding_mobile": 28
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Authenticity Guarantee",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Every item at <strong>Eliana Luxury</strong> is carefully inspected by our authentication team before it is offered for sale. We examine craftsmanship, leather, hardware, stitching, serial identifiers and overall construction to help ensure every piece meets our authenticity standards.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "#171515",
+            "text_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ MORE",
+            "button_link": "#",
+            "open_new_window": false,
+            "show_button_style": "primary",
+            "button_light": "#75593b",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ]
+    },
+    "media_with_text_2_pp": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/Image Ratio.png",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "natural",
+        "desktop_image_width": "large",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "video": "",
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "#eeebe6",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "solid",
+        "icon_position": "col",
+        "icon_size": 34,
+        "alignment": "left",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 60,
+        "bottom_padding": 60,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 28,
+        "bottom_padding_mobile": 28
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Why Choose [Eliana Luxury]",
+            "highlight_type": "font_highlight",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Discover timeless designer pieces with complete confidence. Every item is carefully authenticated, thoughtfully curated, and selected to deliver exceptional luxury, value, and peace of mind.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "columns_1": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22035_35498)\">\n<path d=\"M11.5501 1.36216C11.7987 1.14621 12.1684 1.14621 12.417 1.36216L14.5629 3.22649C14.6982 3.34398 14.8753 3.40153 15.0537 3.38597L17.8858 3.13909C18.2138 3.11049 18.5129 3.32777 18.5871 3.64861L19.2274 6.41828C19.2678 6.59281 19.3772 6.74348 19.5307 6.83579L21.967 8.30066C22.2492 8.47035 22.3634 8.82191 22.2348 9.12507L21.125 11.7421C21.055 11.9071 21.055 12.0933 21.125 12.2583L22.2348 14.8753C22.3634 15.1784 22.2492 15.53 21.967 15.6998L19.5307 17.1646C19.3772 17.2569 19.2678 17.4076 19.2274 17.5822L18.5871 20.3518C18.5129 20.6726 18.2138 20.8899 17.8858 20.8613L15.0537 20.6145C14.8753 20.5988 14.6982 20.6564 14.5629 20.7738L12.417 22.6383C12.1684 22.8542 11.7987 22.8542 11.5501 22.6383L9.40411 20.7738C9.26888 20.6564 9.09175 20.5988 8.9133 20.6145L6.0813 20.8613C5.75325 20.8899 5.4542 20.6726 5.38002 20.3518L4.73968 17.5822C4.69933 17.4076 4.58986 17.2569 4.43634 17.1646L2.00011 15.6998C1.71789 15.53 1.60366 15.1784 1.73223 14.8753L2.84217 12.2583C2.9121 12.0933 2.9121 11.9071 2.84217 11.7421L1.73223 9.12507C1.60366 8.82191 1.71789 8.47035 2.00011 8.30066L4.43634 6.83579C4.58986 6.74348 4.69933 6.59281 4.73968 6.41828L5.38002 3.64861C5.4542 3.32777 5.75325 3.11049 6.0813 3.13909L8.9133 3.38597C9.09175 3.40153 9.26888 3.34398 9.40411 3.22649L11.5501 1.36216Z\" stroke=\"#75593B\" stroke-width=\"1.3\"/>\n<path d=\"M8.67969 13.1017L10.8826 15.3046L16.3899 9.79736\" stroke=\"#75593B\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n</svg>",
+            "title": "",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Authenticity Guaranteed</p>",
+            "wide_desktop": 4,
+            "wide_mobile": "1"
+          }
+        },
+        "columns_2": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22035_35498)\">\n<path d=\"M11.5501 1.36216C11.7987 1.14621 12.1684 1.14621 12.417 1.36216L14.5629 3.22649C14.6982 3.34398 14.8753 3.40153 15.0537 3.38597L17.8858 3.13909C18.2138 3.11049 18.5129 3.32777 18.5871 3.64861L19.2274 6.41828C19.2678 6.59281 19.3772 6.74348 19.5307 6.83579L21.967 8.30066C22.2492 8.47035 22.3634 8.82191 22.2348 9.12507L21.125 11.7421C21.055 11.9071 21.055 12.0933 21.125 12.2583L22.2348 14.8753C22.3634 15.1784 22.2492 15.53 21.967 15.6998L19.5307 17.1646C19.3772 17.2569 19.2678 17.4076 19.2274 17.5822L18.5871 20.3518C18.5129 20.6726 18.2138 20.8899 17.8858 20.8613L15.0537 20.6145C14.8753 20.5988 14.6982 20.6564 14.5629 20.7738L12.417 22.6383C12.1684 22.8542 11.7987 22.8542 11.5501 22.6383L9.40411 20.7738C9.26888 20.6564 9.09175 20.5988 8.9133 20.6145L6.0813 20.8613C5.75325 20.8899 5.4542 20.6726 5.38002 20.3518L4.73968 17.5822C4.69933 17.4076 4.58986 17.2569 4.43634 17.1646L2.00011 15.6998C1.71789 15.53 1.60366 15.1784 1.73223 14.8753L2.84217 12.2583C2.9121 12.0933 2.9121 11.9071 2.84217 11.7421L1.73223 9.12507C1.60366 8.82191 1.71789 8.47035 2.00011 8.30066L4.43634 6.83579C4.58986 6.74348 4.69933 6.59281 4.73968 6.41828L5.38002 3.64861C5.4542 3.32777 5.75325 3.11049 6.0813 3.13909L8.9133 3.38597C9.09175 3.40153 9.26888 3.34398 9.40411 3.22649L11.5501 1.36216Z\" stroke=\"#75593B\" stroke-width=\"1.3\"/>\n<path d=\"M8.67969 13.1017L10.8826 15.3046L16.3899 9.79736\" stroke=\"#75593B\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n</svg>",
+            "title": "",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Carefully Curated Collection</p>",
+            "wide_desktop": 4,
+            "wide_mobile": "1"
+          }
+        },
+        "columns_3": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22035_35498)\">\n<path d=\"M11.5501 1.36216C11.7987 1.14621 12.1684 1.14621 12.417 1.36216L14.5629 3.22649C14.6982 3.34398 14.8753 3.40153 15.0537 3.38597L17.8858 3.13909C18.2138 3.11049 18.5129 3.32777 18.5871 3.64861L19.2274 6.41828C19.2678 6.59281 19.3772 6.74348 19.5307 6.83579L21.967 8.30066C22.2492 8.47035 22.3634 8.82191 22.2348 9.12507L21.125 11.7421C21.055 11.9071 21.055 12.0933 21.125 12.2583L22.2348 14.8753C22.3634 15.1784 22.2492 15.53 21.967 15.6998L19.5307 17.1646C19.3772 17.2569 19.2678 17.4076 19.2274 17.5822L18.5871 20.3518C18.5129 20.6726 18.2138 20.8899 17.8858 20.8613L15.0537 20.6145C14.8753 20.5988 14.6982 20.6564 14.5629 20.7738L12.417 22.6383C12.1684 22.8542 11.7987 22.8542 11.5501 22.6383L9.40411 20.7738C9.26888 20.6564 9.09175 20.5988 8.9133 20.6145L6.0813 20.8613C5.75325 20.8899 5.4542 20.6726 5.38002 20.3518L4.73968 17.5822C4.69933 17.4076 4.58986 17.2569 4.43634 17.1646L2.00011 15.6998C1.71789 15.53 1.60366 15.1784 1.73223 14.8753L2.84217 12.2583C2.9121 12.0933 2.9121 11.9071 2.84217 11.7421L1.73223 9.12507C1.60366 8.82191 1.71789 8.47035 2.00011 8.30066L4.43634 6.83579C4.58986 6.74348 4.69933 6.59281 4.73968 6.41828L5.38002 3.64861C5.4542 3.32777 5.75325 3.11049 6.0813 3.13909L8.9133 3.38597C9.09175 3.40153 9.26888 3.34398 9.40411 3.22649L11.5501 1.36216Z\" stroke=\"#75593B\" stroke-width=\"1.3\"/>\n<path d=\"M8.67969 13.1017L10.8826 15.3046L16.3899 9.79736\" stroke=\"#75593B\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n</svg>",
+            "title": "",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Transparent Product Details</p>",
+            "wide_desktop": 4,
+            "wide_mobile": "1"
+          }
+        },
+        "columns_4": {
+          "type": "columns",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22035_35498)\">\n<path d=\"M11.5501 1.36216C11.7987 1.14621 12.1684 1.14621 12.417 1.36216L14.5629 3.22649C14.6982 3.34398 14.8753 3.40153 15.0537 3.38597L17.8858 3.13909C18.2138 3.11049 18.5129 3.32777 18.5871 3.64861L19.2274 6.41828C19.2678 6.59281 19.3772 6.74348 19.5307 6.83579L21.967 8.30066C22.2492 8.47035 22.3634 8.82191 22.2348 9.12507L21.125 11.7421C21.055 11.9071 21.055 12.0933 21.125 12.2583L22.2348 14.8753C22.3634 15.1784 22.2492 15.53 21.967 15.6998L19.5307 17.1646C19.3772 17.2569 19.2678 17.4076 19.2274 17.5822L18.5871 20.3518C18.5129 20.6726 18.2138 20.8899 17.8858 20.8613L15.0537 20.6145C14.8753 20.5988 14.6982 20.6564 14.5629 20.7738L12.417 22.6383C12.1684 22.8542 11.7987 22.8542 11.5501 22.6383L9.40411 20.7738C9.26888 20.6564 9.09175 20.5988 8.9133 20.6145L6.0813 20.8613C5.75325 20.8899 5.4542 20.6726 5.38002 20.3518L4.73968 17.5822C4.69933 17.4076 4.58986 17.2569 4.43634 17.1646L2.00011 15.6998C1.71789 15.53 1.60366 15.1784 1.73223 14.8753L2.84217 12.2583C2.9121 12.0933 2.9121 11.9071 2.84217 11.7421L1.73223 9.12507C1.60366 8.82191 1.71789 8.47035 2.00011 8.30066L4.43634 6.83579C4.58986 6.74348 4.69933 6.59281 4.73968 6.41828L5.38002 3.64861C5.4542 3.32777 5.75325 3.11049 6.0813 3.13909L8.9133 3.38597C9.09175 3.40153 9.26888 3.34398 9.40411 3.22649L11.5501 1.36216Z\" stroke=\"#75593B\" stroke-width=\"1.3\"/>\n<path d=\"M8.67969 13.1017L10.8826 15.3046L16.3899 9.79736\" stroke=\"#75593B\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n</svg>",
+            "title": "",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Trusted Experience</p>",
+            "wide_desktop": 4,
+            "wide_mobile": "1"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "MORE ABOUT US",
+            "button_link": "",
+            "open_new_window": false,
+            "show_button_style": "primary",
+            "button_light": "#75593b",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "button_dark": "rgba(0,0,0,0)",
+            "button_text_dark": "rgba(0,0,0,0)",
+            "button_hover_dark": "rgba(0,0,0,0)",
+            "button_text_hover_dark": "rgba(0,0,0,0)",
+            "secondary_button_dark": "rgba(0,0,0,0)",
+            "secondary_button_text_dark": "rgba(0,0,0,0)",
+            "colors_text_link_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "columns_1",
+        "columns_2",
+        "columns_3",
+        "columns_4",
+        "button"
+      ]
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "products_to_show": 4,
+        "background_color_light": "",
+        "background_color_dark": "",
+        "show_recently_viewed_tab": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "enable_carousel_desktop": false,
+        "enable_swiper_mobile": true,
+        "enable_arrow_mobile": false,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_section_divider": false,
+        "spacing": 28,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "1",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 16,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      },
+      "block_order": []
+    },
+    "faq_pp": {
+      "type": "faq",
+      "settings": {
+        "heading": "FAQs",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": true,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image": "",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "faq_1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Are your designer items authentic?",
+            "row_content": "<p>Yes. Every item is carefully authenticated by our team before being listed for sale.</p>",
+            "open_by_default": true
+          }
+        },
+        "faq_2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "How do you authenticate your products?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "faq_3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Can I trust Eliana Luxury?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "faq_4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "How do you ensure product quality?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4"
+      ]
+    },
+    "email_signup_pp": {
+      "type": "newsletter",
+      "settings": {
+        "image": "",
+        "image_mobile": "",
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "#eeebe6",
+        "heading_light": "#2b2b2b",
+        "color_heading_highlight_light": "",
+        "text_light": "#424141",
+        "button_light": "",
+        "button_text_light": "",
+        "button_hover_light": "",
+        "button_text_hover_light": "",
+        "line_border": "",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52
+      },
+      "blocks": {
+        "heading_block": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP YOUR EMAIL",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": 100
+          }
+        },
+        "paragraph_block": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our email list for sales, recipes, buying guides, and more.</p>"
+          }
+        },
+        "email_form_block": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Subscribe",
+            "background_color_light": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_block",
+        "paragraph_block",
+        "email_form_block"
+      ]
+    },
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_image": true,
+        "show_product_name": false,
+        "title_size": 100,
+        "heading_tag": "h1",
+        "show_vendor": false,
+        "link_vendor": false,
+        "make_content_center": false,
+        "desktop_layout": "left",
+        "desktop_media_layout": "thumbnail_slider",
+        "show_arrow_button": true,
+        "mobile_media_size": "full_width",
+        "show_thumnail_mobile": true,
+        "transition_style": "fade",
+        "image_ratio": "square",
+        "thumbnail_position": "horizontal",
+        "enable_thumbnail_overlay": true,
+        "enable_image_zoom": false,
+        "zoom_effect": "enlarge",
+        "enable_video_autoplay": false,
+        "enable_video_loop": false,
+        "show_first_image_avaiable": true,
+        "show_media_with_variant_selected": false,
+        "option_to_classify_variant_media": "",
+        "enable_microdata": false,
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#eeebe6",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "full_width": false,
+        "spacing_col": "default",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "vendor_1": {
+          "type": "vendor",
+          "settings": {
+            "link_vendor": false,
+            "select_page": "",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "product_name_1": {
+          "type": "product_name",
+          "settings": {
+            "title_size": 100,
+            "heading_tag": "h1",
+            "enable_product_rating": false
+          }
+        },
+        "rating_1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {
+            "adapt_custom_price_format": false,
+            "show_tax_and_shipping": false,
+            "text_size_price": 70
+          }
+        },
+        "inventory_status_1": {
+          "type": "inventory_status",
+          "settings": {
+            "incoming": false,
+            "message_incoming": "",
+            "message_backorder": "",
+            "hide_preorder": false
+          }
+        },
+        "text_item_condition": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Item Condition</strong></p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        },
+        "icon_text_excellent": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22035_24167)\">\n<path d=\"M23.4168 10.5857L21.78 8.94915C21.3915 8.56067 21.0732 7.79296 21.0732 7.2424V4.9279C21.0732 3.82691 20.1737 2.92747 19.073 2.92689H16.7576C16.2077 2.92689 15.4391 2.60796 15.0506 2.21976L13.414 0.58321C12.6364 -0.194403 11.3632 -0.194403 10.5856 0.58321L8.94901 2.22094C8.56017 2.60942 7.7907 2.92747 7.24196 2.92747H4.92746C3.82793 2.92747 2.92733 3.82691 2.92733 4.9279V7.24246C2.92733 7.79085 2.60904 8.56096 2.2205 8.94921L0.583649 10.5858C-0.19455 11.3634 -0.19455 12.6366 0.583649 13.4154L2.2205 15.052C2.60927 15.4405 2.92733 16.2103 2.92733 16.7587V19.0733C2.92733 20.1731 3.82793 21.0737 4.92746 21.0737H7.24202C7.79193 21.0737 8.56052 21.392 8.94907 21.7803L10.5856 23.4174C11.3632 24.1944 12.6364 24.1944 13.4141 23.4174L15.0506 21.7803C15.4394 21.3918 16.2077 21.0737 16.7577 21.0737H19.0731C20.1738 21.0737 21.0732 20.1731 21.0732 19.0733V16.7587C21.0732 16.2079 21.3918 15.4402 21.7801 15.052L23.4169 13.4154C24.1939 12.6366 24.1939 11.3633 23.4168 10.5857ZM10.4122 16.5003L5.9994 12.087L7.41365 10.673L10.4125 13.6719L16.5857 7.50016L17.9996 8.91411L10.4122 16.5003Z\" fill=\"#297E3D\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_22035_24167\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "icon_size": 24,
+            "text": "<p>Excellent</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "size_chart_condition_guide": {
+          "type": "size_chart",
+          "settings": {
+            "heading": "Condition Guide",
+            "select_page": "",
+            "select_image": "",
+            "additional_info": "",
+            "size_chart_type": "popup"
+          }
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_button_style": "primary",
+            "show_dynamic_checkout": true,
+            "dymanic_checkout_style": "primary",
+            "show_atc_quantity": true,
+            "show_add_to_cart": true,
+            "show_price": false,
+            "hide_sale_price": true,
+            "show_gift_card_recipient": true,
+            "pickup_availability": true,
+            "hide_when_pre_order": false,
+            "preorder_button_label": "Pre-order",
+            "preorder_message": "<p>This product will be available for sale in 2 weeks, but you can pre-order now to receive 10% discount!</p>",
+            "preorder_show_dynamic_button": false,
+            "show_background": false,
+            "box_type": "adapt",
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "button_light": "rgba(0,0,0,0)",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "button_dark": "rgba(0,0,0,0)",
+            "button_text_dark": "rgba(0,0,0,0)",
+            "button_hover_dark": "rgba(0,0,0,0)",
+            "button_text_hover_dark": "rgba(0,0,0,0)",
+            "secondary_button_dark": "rgba(0,0,0,0)",
+            "secondary_button_text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "estimate_delivery_1": {
+          "type": "estimate_delivery",
+          "settings": {
+            "hide_when_pre_order": false,
+            "box_type": "adapt",
+            "message": "<p>Estimated delivery between <strong>earliest_delivery_date and latest_delivery_date.</strong> Order within <strong>time_to_cut_off.</strong></p>",
+            "tooltip_text": "",
+            "tooltip_icon": "none",
+            "custom_icon": "",
+            "tooltip_icon_position": "left",
+            "tooltip_message": "",
+            "show_background": false,
+            "show_border": true,
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "border_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)",
+            "bg_tooltip_color_light": "rgba(0,0,0,0)",
+            "tooltip_color_light": "rgba(0,0,0,0)",
+            "bg_tooltip_color_dark": "rgba(0,0,0,0)",
+            "tooltip_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_returns": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<mask id=\"mask0_22035_24251\" style=\"mask-type:luminance\" maskUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"20\" height=\"20\">\n<path d=\"M0 0H20V20H0V0Z\" fill=\"white\"/>\n</mask>\n<g mask=\"url(#mask0_22035_24251)\">\n<path d=\"M19.4141 17.845C19.4141 18.708 18.708 19.4141 17.845 19.4141H2.15492C1.29195 19.4141 0.585938 18.708 0.585938 17.845V2.15496C0.585938 1.29199 1.29195 0.585938 2.15492 0.585938H17.845C18.708 0.585938 19.4141 1.29199 19.4141 2.15496V17.845Z\" stroke=\"#383838\" stroke-width=\"1.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12.5094 0.585815V4.03762C12.5094 4.90058 11.8034 5.60664 10.9404 5.60664H8.9948C8.1319 5.60664 7.42578 4.90058 7.42578 4.03762V0.585815\" stroke=\"#383838\" stroke-width=\"1.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8.63643 12.6624L6.86133 10.8873L8.63643 9.11206\" stroke=\"#383838\" stroke-width=\"1.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6.86133 15.9081H11.8821C13.2686 15.9081 14.3926 14.7842 14.3926 13.3977C14.3926 12.0112 13.2686 10.8873 11.8821 10.8873H7.04962\" stroke=\"#383838\" stroke-width=\"1.5\" stroke-miterlimit=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>3 Days returns</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "icon_text_authentic": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_22035_24264)\">\n<path d=\"M11.9118 15.1855C15.7076 15.1855 18.7846 12.1084 18.7846 8.31271C18.7846 4.51699 15.7076 1.43994 11.9118 1.43994C8.11611 1.43994 5.03906 4.51699 5.03906 8.31271C5.03906 12.1084 8.11611 15.1855 11.9118 15.1855Z\" stroke=\"#383838\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8.18996 14.0955L7.00195 23.0399L11.9111 20.0945L16.8202 23.0399L15.6322 14.0857\" stroke=\"#383838\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_22035_24264\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "icon_size": 24,
+            "text": "<p>100% Authentic Products Guaranteed</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "table_of_information_description": {
+          "type": "table_of_information",
+          "settings": {
+            "show_in_tab": true,
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Description",
+            "left_label": "",
+            "right_label": "",
+            "details": "<p>Brand: HERMES<br/>Model: Kelly<br/>Brand: Code G stamped<br/>Color: Etoupe<br/>Material: Epsom<br/>Size: W25xH18xD10<br/>Accessory: Box, Dustbag, Shoulder Strap, 2 Keys, Cadena, Clochette</p>",
+            "text_to_use_for_empty_fields": "-",
+            "extra_details": ""
+          }
+        },
+        "table_of_information_condition_details": {
+          "type": "table_of_information",
+          "settings": {
+            "show_in_tab": true,
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Condition Details",
+            "left_label": "",
+            "right_label": "",
+            "details": "<p>Surface: Scuffs, Pressed marks<br/>Hardware: Scuffs<br/>Box: Tears, Dents<br/>Odor: No particular smell</p>",
+            "text_to_use_for_empty_fields": "-",
+            "extra_details": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor_1",
+        "product_name_1",
+        "rating_1",
+        "price_1",
+        "inventory_status_1",
+        "text_item_condition",
+        "icon_text_excellent",
+        "size_chart_condition_guide",
+        "buy_buttons_1",
+        "estimate_delivery_1",
+        "icon_text_returns",
+        "icon_text_authentic",
+        "table_of_information_description",
+        "table_of_information_condition_details"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "media_with_text_1_pp",
+    "media_with_text_2_pp",
+    "product-recommendations",
+    "faq_pp",
+    "email_signup_pp"
+  ]
+}

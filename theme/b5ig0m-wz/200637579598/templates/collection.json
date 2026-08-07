@@ -1,0 +1,417 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": true,
+        "image_overlay_opacity": 20,
+        "show_collection_name": true,
+        "show_breadcrumb_below_title": false,
+        "title_position": "text-center",
+        "size_title": 170,
+        "heading_tag": "h1",
+        "full_width_title": false,
+        "desktop_height": "450px",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_height": "250px",
+        "full_width_mobile": true,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 32
+      },
+      "blocks": {
+        "breadcrumbs": {
+          "type": "breadcrumbs",
+          "settings": {
+            "show_breadcrumbs_border": false,
+            "full_width_breadcrumb": true,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-center",
+            "background_color_light": "#f3f1ef",
+            "text_color_light": "#4a4744",
+            "textlink_color_light": "#6b5b4d"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "full_width": false,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-center",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_color_light": "#4a4744",
+            "padding_top": 20,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs",
+        "description"
+      ]
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "filter_edge_style": "rounded",
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_row_on_mobile": "2",
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "spacing_col_mobile": 16,
+        "spacing_row_mobile": 20
+      }
+    },
+    "flow": {
+      "type": "flow",
+      "settings": {
+        "heading": "Understanding [Hydration]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "Why It Matters",
+        "text": "",
+        "content_position": "middle",
+        "content_alignment": "left",
+        "select_motion": "hover",
+        "open_first_tab": true,
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "auto_play": false,
+        "change_steps_speed": 5,
+        "pause_hover": true,
+        "background_color": "#f3f1ef",
+        "heading_color": "#2b2a28",
+        "text_color": "rgba(0,0,0,0)",
+        "image_position": "second",
+        "image_width": "60",
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "desktop_height": "650px",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_position_mobile": "first",
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "mobile_height": "natural",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "signal": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Image Ratio.png",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "",
+            "heading": "The signal",
+            "image_heading": "shopify://shop_images/image 103.png",
+            "image_style_heading": "rounded",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "<p>Tightness, flaking, or dullness usually means the skin barrier can't hold onto water anymore.</p>",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        },
+        "support": {
+          "type": "media",
+          "settings": {
+            "image": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "",
+            "heading": "The support",
+            "image_heading": "shopify://shop_images/image 103.png",
+            "image_style_heading": "rounded",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        },
+        "result": {
+          "type": "media",
+          "settings": {
+            "image": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "subheading": "",
+            "heading": "The result",
+            "image_heading": "shopify://shop_images/image 103.png",
+            "image_style_heading": "rounded",
+            "image_ratio_heading": "aspect-16/9",
+            "description": "",
+            "button_text": "",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "signal",
+        "support",
+        "result"
+      ]
+    },
+    "blog": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Useful Article",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "blog": "",
+        "blog_with_tag": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_show_more": false,
+        "show_view_all": true,
+        "view_all_position": "top",
+        "title_size": 140,
+        "content_alignment": "left",
+        "show_image": true,
+        "image_ratio": "100",
+        "item_secondary_background": false,
+        "show_author": false,
+        "show_name": false,
+        "show_date": false,
+        "show_excerpt": true,
+        "show_tag": false,
+        "show_comment_counts": false,
+        "show_read_more": true,
+        "button_read_more_label": "Read now",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "full_width": false,
+        "spacing": 28,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "1",
+        "spacing_mobile": 28,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "media-gallery": {
+      "type": "media-gallery",
+      "settings": {
+        "heading": "More Collections",
+        "heading_alignment": "center",
+        "heading_color_light": "#2b2a28",
+        "swiper_on_mobile": true,
+        "min_columns_mobile": "1",
+        "height_mobile": 350,
+        "edge_style_mobile": "rounded_corners",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 48,
+        "full_width_mobile": false
+      },
+      "blocks": {
+        "collection_1": {
+          "type": "collection",
+          "settings": {
+            "collection": "morning-ritual",
+            "image": "shopify://shop_images/Image Ratio.png",
+            "show_text_overlay": true,
+            "collection_content_alignment": "center",
+            "collection_content_position": "bottom",
+            "image_overlay_opacity": 30,
+            "collection_title_color": "#ffffff",
+            "number_of_columns": 1,
+            "number_of_row": 1
+          }
+        }
+      },
+      "block_order": [
+        "collection_1"
+      ]
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Subscribe & [save 10%.]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "show_view_all": false,
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_description": false,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ]
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "Our Polices",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "secondary_background": "column",
+        "border_column": "none",
+        "column_content_alignment": "center",
+        "icon_position": "above",
+        "icon_size": 40,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": true,
+        "change_bar_every": 5,
+        "column_layout_desktop": "lg:w-1/4",
+        "section_height_desktop": "md:py-7",
+        "spacing_desktop": 28,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "column_layout_mobile": "w-full",
+        "section_height_mobile": "py-5",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "background_color_light": "#f3f1ef"
+      },
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M38.8677 6.1888C38.8677 5.81144 38.4903 5.43408 38.113 5.43408H34.2639C33.5847 5.43408 32.9809 5.43408 32.3016 5.43408L31.245 5.50955L30.2639 5.6605C28.9054 5.96238 27.6224 6.33974 26.4149 7.01899C25.2073 7.69823 24.1507 8.45295 23.245 9.43408C23.245 9.43408 23.245 9.43408 23.1696 9.43408C21.2073 11.3209 19.8488 13.8114 19.396 16.5284L19.245 17.5096L19.1696 18.5662V20.5284V24.1511C18.7922 24.6794 18.4903 25.2077 18.1884 25.736C18.2639 24.9058 18.2639 24.1511 18.3394 23.3209C18.3394 22.7171 18.4149 22.1888 18.4149 21.585V20.6794L18.3394 19.7737C18.1884 18.6416 17.8111 17.4341 17.2828 16.3775C16.7545 15.3209 16.0752 14.3397 15.245 13.4341C13.5847 11.6982 11.3205 10.4907 8.90542 10.0379L7.99976 9.88691L7.0941 9.81144C6.49033 9.81144 5.96202 9.81144 5.35825 9.81144C5.13184 9.81144 1.66014 9.81144 1.88655 9.81144C1.50919 9.81144 1.13184 10.1888 1.13184 10.5662V14.0379V15.7737L1.20731 16.6794L1.35825 17.585C1.81108 20.0001 3.01863 22.1888 4.82995 23.8492C5.73561 24.6794 6.71674 25.3586 7.77334 25.8869C8.82995 26.4152 10.0375 26.7171 11.1696 26.9435L12.0752 27.019H12.9809C13.5847 27.019 14.113 26.9435 14.7167 26.9435C15.6979 26.868 16.679 26.868 17.6601 26.7926C17.4337 27.1699 17.2828 27.6228 17.0564 28.0001C16.1507 30.1133 15.6224 32.3775 15.6224 34.5662C16.2262 32.3775 17.0564 30.4152 18.113 28.5284C18.7167 27.3963 19.4715 26.2643 20.2262 25.2077H23.7733H25.7356L26.7922 25.1322L27.7733 24.9813C29.1318 24.6794 30.4149 24.302 31.6224 23.6228C32.8299 22.9435 33.8866 22.1888 34.7922 21.2077H34.8677C36.8299 19.3209 38.1884 16.8303 38.6413 14.1133L38.7922 13.1322L38.8677 12.0756C38.8677 11.3963 38.8677 10.7926 38.8677 10.1133V6.1888ZM31.0186 22.3397C29.962 22.9435 28.7545 23.2454 27.5469 23.4718L26.6413 23.6228L25.7356 23.6982C25.1318 23.6982 24.4526 23.6982 23.8488 23.6982H21.4337C21.5847 23.5473 21.7356 23.3209 21.8866 23.1699C23.245 21.5096 24.7545 19.9246 26.2639 18.3397C27.7733 16.7548 29.3582 15.1699 30.8677 13.5096C28.9809 14.7171 27.1696 16.0001 25.4337 17.4341C23.7733 18.868 22.1884 20.3775 20.7545 22.1133V20.5284C20.7545 19.9246 20.7545 19.2454 20.7545 18.6416L20.8299 17.736L20.9809 16.8303C21.2073 15.6228 21.5092 14.4152 22.113 13.3586C22.6413 12.302 23.396 11.2454 24.2262 10.3397C25.1318 9.50955 26.113 8.83031 27.1696 8.22654C28.2262 7.62276 29.4337 7.32087 30.6413 7.09446L31.5469 6.94352L32.4526 6.86804H34.3394H37.4337V9.96238V11.8492L37.3582 12.8303L37.2073 13.736C36.9809 14.9435 36.679 16.1511 36.0752 17.2077C35.5469 18.2643 34.7922 19.3209 33.962 20.2265C33.0564 21.1322 32.0752 21.8114 31.0186 22.3397ZM14.7167 26.5662C14.113 26.5662 13.5847 26.4907 12.9809 26.4907L12.1507 26.4152L11.3205 26.2643C9.13184 25.8114 7.16957 24.6794 5.66014 23.0945C4.90542 22.2643 4.30165 21.4341 3.77335 20.453C3.32051 19.4718 3.01863 18.4152 2.79221 17.3586L2.64127 16.5284L2.5658 15.6982C2.5658 15.1699 2.5658 14.5662 2.5658 13.9624V11.2454H5.28278H7.01863H7.84882L8.67901 11.3209C9.73561 11.4718 10.7922 11.7737 11.7733 12.302C12.679 12.9813 13.5847 13.585 14.3394 14.3397C15.9243 15.8492 17.0564 17.8114 17.5092 20.0001L17.6601 20.8303L17.7356 21.6605C17.8111 22.1888 17.8111 22.7926 17.8111 23.3963C17.8866 24.302 17.8866 25.1322 17.962 26.0379C17.8111 26.3397 17.6601 26.5662 17.5092 26.868C16.679 26.6416 15.6979 26.6416 14.7167 26.5662Z\" fill=\"#6B5B4D\"/>\n<path d=\"M11.321 18.7922C10.4154 18.1884 9.50973 17.5847 8.45312 17.1318C9.0569 18.0375 9.81162 18.8677 10.5663 19.6224C12.0758 21.2073 13.5852 22.5658 15.2456 24.0752C16.0758 24.7545 16.8305 25.5092 17.8116 26.1884C17.3588 25.1318 16.8305 24.1507 16.1512 23.3205C14.7927 21.5092 13.2078 20.0752 11.321 18.7922Z\" fill=\"#6B5B4D\"/>\n</svg>",
+            "title": "Free shipping",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Free shipping above a minimum order value</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_1"
+      ]
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "content_layout": "vertical",
+        "padding_top": 40,
+        "padding_bottom": 40
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign Up And Save",
+            "text": "<p>Ritual tips, new state launches, and 10% off your first order.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Submit"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "email_form"
+      ]
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "flow",
+    "blog",
+    "media-gallery",
+    "featured-collection",
+    "multicolumn",
+    "newsletter"
+  ]
+}

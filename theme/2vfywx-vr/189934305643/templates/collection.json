@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": true,
+        "show_collection_name": true,
+        "show_breadcrumb_below_title": false,
+        "title_position": "text-center"
+      },
+      "blocks": {
+        "breadcrumbs_1": {
+          "type": "breadcrumbs",
+          "settings": {
+            "full_width_breadcrumb": true,
+            "mobile_content_alignment": "text-center",
+            "background_color_light": "#f8f6f2"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs_1"
+      ]
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "enable_collection_count": true,
+        "products_per_row_on_mobile": "2"
+      },
+      "blocks": {
+        "promotion_block_1": {
+          "type": "promotion_block",
+          "settings": {
+            "heading": "SEASONAL SALE",
+            "content": "<p>Sale up to 30%</p>",
+            "button_label": "Shop Now",
+            "show_button_style": "primary",
+            "alignment": "center",
+            "content_position": "center",
+            "image": "shopify://shop_images/text.png",
+            "image_overlay_opacity": 40,
+            "text_color_light": "#ffffff",
+            "text_color_dark": "#ffffff",
+            "color_button": "#9c7a2e",
+            "color_text_button": "#ffffff",
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "number_of_columns_mobile": "1",
+            "number_of_row_mobile": "1",
+            "position": 2
+          }
+        }
+      },
+      "block_order": [
+        "promotion_block_1"
+      ]
+    },
+    "collection-list-more": {
+      "type": "collection-list-carousel",
+      "settings": {
+        "heading": "More Collections",
+        "heading_alignment": "center",
+        "text": "",
+        "image_ratio": "landscape",
+        "content_alignment": "center",
+        "columns_mobile": "1",
+        "enable_arrow_mobile": true,
+        "full_width": false,
+        "full_width_mobile": false
+      },
+      "blocks": {
+        "featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pet-memorial"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection-1"
+      ]
+    },
+    "email-signup-collection": {
+      "type": "newsletter",
+      "settings": {
+        "content_layout": "vertical",
+        "form_width": "large",
+        "background_color_light": "#f8f6f2"
+      },
+      "blocks": {
+        "block_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up your email"
+          }
+        },
+        "block_2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our email list for sales, buying guides, and more.</p>"
+          }
+        },
+        "block_3": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Subscribe"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3"
+      ]
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "collection-list-more",
+    "email-signup-collection"
+  ]
+}

@@ -18,17 +18,25 @@
 //       "key": "shop_the_look_hp", "page": "Home page", "section": "Shop the look", "sub": "",
 //       "figma": "data:image/jpeg;base64,...",
 //       "rounds": [
-//         { "round": 1, "status": "Reopen", "testNote": "...", "reopenNote": "...", "live": "data:image/jpeg;base64,..." },
-//         { "round": 2, "status": "PASS",   "testNote": "...", "reopenNote": "...", "live": "data:image/jpeg;base64,..." }
+//         { "round": 1, "aiStatus": "Reopen", "reviewStatus": "", "note": "...", "live": "data:image/jpeg;base64,..." },
+//         { "round": 2, "aiStatus": "PASS",   "reviewStatus": "", "note": "",    "live": "data:image/jpeg;base64,..." }
 //       ]
 //     }
 //   ]
 // }
 //
+// "aiStatus" is what this script/round wrote automatically; "reviewStatus" is left blank for a
+// human tester to fill in ONLY when they want to override the AI's verdict (same team vocabulary,
+// not a separate one) — see AUTOTEST.md's Sheet-format note. "note" is a SINGLE free-text field
+// (Vietnamese, per team convention), left EMPTY when the effective status is PASS — a dev scanning
+// the gallery should only see prose where there's an actual issue to act on, never a "matches
+// Figma exactly" confirmation. The effective status shown/filtered on is reviewStatus if a human
+// has set one, else aiStatus (a human correction always wins).
+//
 // A section's CARD shows one column per Figma + each round present for it (so different sections
 // can have different column counts — a section only re-tested in round 1 shows 2 columns; one
 // re-tested through round 3 shows 4). Status/Page filters both operate on the LATEST round's
-// status/page per section. Notes are listed per round, most recent first.
+// effective status/page per section. Notes are listed per round, most recent first.
 const fs = require('fs');
 
 const [, , dataFile, outFile] = process.argv;
@@ -62,12 +70,22 @@ for (const sec of sections) {
 }
 
 const allStatuses = ['all', 'PASS', 'Reopen', 'Review', 'Note for SA', 'Skip', 'Tester done setup'];
-const statusesPresent = new Set(sections.map((s) => (s.rounds[s.rounds.length - 1] || {}).status || 'PASS'));
+const effectiveStatus = (r) => (r && (r.reviewStatus || r.aiStatus)) || 'PASS';
+const statusesPresent = new Set(sections.map((s) => effectiveStatus(s.rounds[s.rounds.length - 1])));
 
 // Every card gets the SAME number of columns (Figma + 1 per round up to the highest round number
 // seen anywhere), so the grid divides evenly across all cards — a section not re-tested in a later
 // round just shows a blank placeholder column instead of shrinking that card's column width.
 const maxRound = sections.reduce((max, s) => Math.max(max, ...s.rounds.map((r) => r.round), 0), 0);
+
+function statusBadges(r) {
+  if (!r) return '';
+  const parts = [`<span class="badge ${esc(statusClass(r.aiStatus))}">AI: ${esc(r.aiStatus || 'PASS')}</span>`];
+  if (r.reviewStatus) {
+    parts.push(`<span class="badge ${esc(statusClass(r.reviewStatus))}">Review: ${esc(r.reviewStatus)}</span>`);
+  }
+  return parts.join(' ');
+}
 
 function sectionCard(sec) {
   const latest = sec.rounds[sec.rounds.length - 1] || {};
@@ -79,30 +97,24 @@ function sectionCard(sec) {
     })
   );
   const label = [sec.section, sec.sub].filter(Boolean).join(' — ');
+  const eff = effectiveStatus(latest);
 
   return `
-  <article class="card" data-status="${esc(statusClass(latest.status))}" data-page="${esc(sec.page)}">
+  <article class="card" data-status="${esc(statusClass(eff))}" data-page="${esc(sec.page)}">
     <div class="card-head">
       <span class="section-name">${esc(label)}</span>
-      <span class="badge ${esc(statusClass(latest.status))}">${esc(latest.status || 'PASS')}</span>
+      <span class="badge ${esc(statusClass(eff))}">${esc(eff)}</span>
     </div>
     <div class="imgs" style="grid-template-columns: repeat(${cols.length}, 1fr);">
       ${cols
         .map((c) => {
           const r = c.round;
-          const hasNote = r && (r.testNote || r.reopenNote);
+          const hasNote = r && r.note;
           return `
       <div class="imgcol${c.notTested ? ' imgcol-empty' : ''}">
-        <div class="lbl">${esc(c.label)}${r ? ` <span class="badge ${esc(statusClass(r.status))}">${esc(r.status || 'PASS')}</span>` : ''}</div>
+        <div class="lbl">${esc(c.label)} ${statusBadges(r)}</div>
         ${c.img ? `<img src="${c.img}" loading="lazy" alt="${esc(c.label)} — ${esc(label)}">` : `<div class="no-shot">${c.notTested ? 'không re-test round này' : 'no image'}</div>`}
-        ${
-          hasNote
-            ? `<div class="note-inline">
-          ${r.testNote ? `<div class="row"><span class="k">Test note:</span>${noteHtml(r.testNote)}</div>` : ''}
-          ${r.reopenNote ? `<div class="row"><span class="k">Reopen note:</span>${noteHtml(r.reopenNote)}</div>` : ''}
-        </div>`
-            : ''
-        }
+        ${hasNote ? `<div class="note-inline">${noteHtml(r.note)}</div>` : ''}
       </div>`;
         })
         .join('')}
@@ -218,10 +230,8 @@ h1 {
 .imgcol-empty { border-style: dashed; opacity: 0.55; }
 
 .note-inline { font-size: 0.8rem; line-height: 1.45; padding: 8px; border-top: 1px solid var(--border); }
-.note-inline .row { margin-bottom: 2px; }
-.note-inline .row:last-child { margin-bottom: 0; }
-.note-inline .row p { margin: 0; }
-.note-inline .k { color: var(--muted); font-weight: 600; margin-right: 4px; }
+.note-inline p { margin: 0 0 2px; }
+.note-inline p:last-child { margin-bottom: 0; }
 
 .empty { color: var(--muted); font-style: italic; padding: 20px; text-align: center; }
 </style>

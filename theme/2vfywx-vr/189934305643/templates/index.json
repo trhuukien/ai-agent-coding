@@ -1,0 +1,889 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "settings": {
+        "show_hero": true,
+        "auto_play": true,
+        "change_slides_speed": 5,
+        "pause_hover": true,
+        "slider_visual": "bars",
+        "show_arrow": true,
+        "image_pagination_background": "rgba(0,0,0,0)",
+        "image_pagination_text": "rgba(0,0,0,0)",
+        "transition_style": "fade",
+        "full_width": true,
+        "padding_full_width": false,
+        "adapt_corners_desktop": true,
+        "rounded_corner_image": false,
+        "desktop_height": "750",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "full_width_mobile": true,
+        "adapt_corners_mobile": true,
+        "rounded_corner_image_mobile": false,
+        "show_content_below_image": false,
+        "mobile_height": "500",
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Slider.png",
+            "image_mobile": "shopify://shop_images/Slider.png",
+            "image_link": "",
+            "open_new_window_image": false,
+            "overlay_opacity": 0,
+            "video": "",
+            "video_url": "",
+            "video_alt_text": "",
+            "show_sound_control": false,
+            "enable_video_autoplay": false,
+            "mobile_video": "",
+            "mobile_video_url": "",
+            "enable_bakground": false,
+            "subheading": "",
+            "subheading_size": 100,
+            "heading": "Some Moments Deserve to Last Forever",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "text": "<p>Precision 3D laser engraving on premium crystal, made from your favorite photo.</p>",
+            "button_label_1": "Shop Crystals",
+            "button_link_1": "",
+            "open_new_window_button": false,
+            "show_button_style_1": "secondary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_window_button_2": false,
+            "show_button_style_2": "primary",
+            "content_alignment": "bottom-center",
+            "custom_horizontal": 50,
+            "custom_vertical": 50,
+            "alignment": "center",
+            "text_product": "Check out our products:",
+            "list_products": [],
+            "show_rating": false,
+            "open_new_window_product": false,
+            "content_background_color": "rgba(0,0,0,0)",
+            "color_text": "#ffffff",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "#ffffff",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_product_card_background": "rgba(0,0,0,0)",
+            "color_product_card_text": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ]
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "secondary_background": "none",
+        "border_column": "none",
+        "column_content_alignment": "start",
+        "icon_position": "next",
+        "icon_size": 45,
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_bar_every": 5,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "color_icon_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "color_icon_dark": "rgba(0,0,0,0)",
+        "column_layout_desktop": "lg:w-1/4",
+        "section_height_desktop": "md:py-7",
+        "spacing_desktop": 28,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "column_layout_mobile": "w-1/2",
+        "section_height_mobile": "py-5",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      },
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_24007_5046)\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M22.2656 23.9998H7.98818C7.67742 23.9998 7.42568 23.7481 7.42568 23.4374C7.42568 23.1266 7.67742 22.8749 7.98818 22.8749H22.2656C22.5764 22.8749 22.8281 23.1266 22.8281 23.4374C22.8281 23.7481 22.5762 23.9998 22.2656 23.9998ZM6.15232 23.9998H1.73535C1.42454 23.9998 1.17285 23.7481 1.17285 23.4374C1.17285 23.1266 1.42454 22.8749 1.73535 22.8749H6.15232C6.46308 22.8749 6.71482 23.1266 6.71482 23.4374C6.71482 23.7481 6.46302 23.9998 6.15232 23.9998Z\" fill=\"#9C7A2E\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14.1001 15.4939H9.90057C9.70093 15.4939 9.51618 15.3881 9.41519 15.2158L6.99411 11.0828C6.94357 10.9967 6.91699 10.8985 6.91699 10.7985V7.98072C6.91699 7.66996 7.16868 7.41821 7.47944 7.41821H16.5214C16.8322 7.41821 17.0839 7.66996 17.0839 7.98072V10.7984C17.0839 10.8985 17.0572 10.9965 17.0068 11.0828L14.5857 15.2157C14.4845 15.3881 14.2997 15.4939 14.1001 15.4939ZM10.2228 14.369H13.7776L15.9587 10.646V8.54322H8.0417V10.646L10.2228 14.369Z\" fill=\"#9C7A2E\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.0011 19.8765C11.7847 19.8765 11.5874 19.7523 11.4939 19.557L9.39409 15.1743C9.31055 14.9999 9.32245 14.7952 9.42532 14.6316C9.52824 14.468 9.70801 14.3688 9.90134 14.3688L14.1008 14.3689C14.2941 14.3689 14.4739 14.4682 14.5771 14.6317C14.6798 14.7953 14.6917 15.0002 14.6083 15.1744L12.5085 19.557C12.415 19.7523 12.2177 19.8765 12.0011 19.8765ZM10.7945 15.4939L12.0011 18.0123L13.2075 15.4938L10.7945 15.4939Z\" fill=\"#9C7A2E\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.39762 21.5024C9.26209 21.5024 9.12601 21.4536 9.01794 21.3548L6.46873 19.0208C6.23963 18.811 6.22402 18.4552 6.43374 18.2263C6.64357 17.997 6.99923 17.9814 7.2285 18.1912L9.77764 20.5251C10.0068 20.7349 10.0224 21.0907 9.81263 21.3196C9.7018 21.4411 9.54999 21.5024 9.39762 21.5024Z\" fill=\"#9C7A2E\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14.6027 21.5025C14.4503 21.5025 14.2985 21.4411 14.1877 21.3196C13.9779 21.0904 13.9935 20.7348 14.2228 20.525L16.7722 18.1911C17.0011 17.9812 17.3568 17.9969 17.5667 18.2262C17.7765 18.4554 17.7609 18.811 17.5316 19.0207L14.9822 21.3547C14.8745 21.4536 14.7384 21.5025 14.6027 21.5025Z\" fill=\"#9C7A2E\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.001 23.9998C11.6902 23.9998 11.4385 23.7481 11.4385 23.4374V19.3141C11.4385 19.0033 11.6902 18.7516 12.001 18.7516C12.3115 18.7516 12.5635 19.0033 12.5635 19.3141V23.4374C12.5637 23.7481 12.3117 23.9998 12.001 23.9998Z\" fill=\"#9C7A2E\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.7603 8.54327H3.24115C1.90836 8.54327 0.824219 7.45907 0.824219 6.12628C0.824219 4.79349 1.90836 3.70935 3.24115 3.70935H20.76C22.0926 3.70935 23.1769 4.7935 23.1769 6.12628C23.1769 7.45907 22.0928 8.54327 20.7603 8.54327ZM3.24115 4.83435C2.52889 4.83435 1.94917 5.41402 1.94917 6.12628C1.94917 6.8386 2.52889 7.41827 3.24115 7.41827H20.76C21.4723 7.41827 22.052 6.8386 22.052 6.12628C22.052 5.41402 21.4723 4.83435 20.76 4.83435H3.24115Z\" fill=\"#9C7A2E\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17.7621 4.83433H6.23925C4.90647 4.83433 3.82227 3.75013 3.82227 2.41734C3.82227 1.08455 4.90658 0.000183105 6.23925 0.000183105H10.0863C10.3971 0.000183105 10.6488 0.251869 10.6488 0.56263C10.6488 0.873447 10.3971 1.12513 10.0863 1.12513H6.23925C5.52699 1.12513 4.94727 1.70485 4.94727 2.41712C4.94727 3.1296 5.52699 3.70932 6.23925 3.70932H17.7621C18.4744 3.70932 19.0541 3.1296 19.0541 2.41734C19.0541 1.70485 18.4744 1.12513 17.7621 1.12513H11.9221C11.6114 1.12513 11.3596 0.873447 11.3596 0.56263C11.3596 0.251871 11.6114 0.000183105 11.9221 0.000183105H17.7621C19.0948 0.000183105 20.1791 1.08433 20.1791 2.41711C20.1791 3.7499 19.0948 4.83433 17.7621 4.83433Z\" fill=\"#9C7A2E\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_24007_5046\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "custom_image": "",
+            "title": "Precision 3D Laser Engraving",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_24007_4961)\">\n<path d=\"M11.5501 1.36198C11.7987 1.14602 12.1684 1.14602 12.417 1.36198L14.5629 3.22631C14.6982 3.34379 14.8753 3.40134 15.0537 3.38579L17.8858 3.13891C18.2138 3.11031 18.5129 3.32759 18.5871 3.64842L19.2274 6.4181C19.2678 6.59263 19.3772 6.74329 19.5307 6.83561L21.967 8.30048C22.2492 8.47017 22.3634 8.82173 22.2348 9.12488L21.125 11.7419C21.055 11.9069 21.055 12.0931 21.125 12.2581L22.2348 14.8751C22.3634 15.1783 22.2492 15.5299 21.967 15.6996L19.5307 17.1644C19.3772 17.2567 19.2678 17.4074 19.2274 17.582L18.5871 20.3516C18.5129 20.6724 18.2138 20.8898 17.8858 20.8611L15.0537 20.6143C14.8753 20.5986 14.6982 20.6562 14.5629 20.7737L12.417 22.6381C12.1684 22.854 11.7987 22.854 11.5501 22.6381L9.40411 20.7737C9.26888 20.6562 9.09175 20.5986 8.9133 20.6143L6.0813 20.8611C5.75325 20.8898 5.4542 20.6724 5.38002 20.3516L4.73968 17.582C4.69933 17.4074 4.58986 17.2567 4.43634 17.1644L2.00011 15.6996C1.71789 15.5299 1.60366 15.1783 1.73223 14.8751L2.84217 12.2581C2.9121 12.0931 2.9121 11.9069 2.84217 11.7419L1.73223 9.12488C1.60366 8.82173 1.71789 8.47017 2.00011 8.30048L4.43634 6.83561C4.58986 6.74329 4.69933 6.59263 4.73968 6.4181L5.38002 3.64842C5.4542 3.32759 5.75325 3.11031 6.0813 3.13891L8.9133 3.38579C9.09175 3.40134 9.26888 3.34379 9.40411 3.22631L11.5501 1.36198Z\" stroke=\"#9C7A2E\" stroke-width=\"1.5\"/>\n<path d=\"M8.67969 13.1015L10.8826 15.3044L16.3899 9.79712\" stroke=\"#9C7A2E\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_24007_4961\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "custom_image": "",
+            "title": "Satisfaction Guaranteed",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 22\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.1532 7.42444C10.8012 7.42444 9.70508 8.52048 9.70508 9.87258C9.70508 11.2246 10.8011 12.3207 12.1532 12.3207C13.5053 12.3207 14.6014 11.2247 14.6014 9.87258C14.6014 8.52048 13.5053 7.42444 12.1532 7.42444ZM12.1532 11.1549C11.445 11.1549 10.8709 10.5808 10.8709 9.87252C10.8709 9.16429 11.445 8.59016 12.1532 8.59016C12.8614 8.59016 13.4356 9.16429 13.4356 9.87252C13.4356 10.5808 12.8614 11.1549 12.1532 11.1549Z\" fill=\"#9C7A2E\"/>\n<path d=\"M21.9173 1.82867L6.00454 0.021771C5.38696 -0.0660331 4.76123 0.114261 4.28506 0.517245C3.80894 0.886423 3.50375 1.43366 3.43987 2.03273L3.14846 4.42257H2.24492C0.96256 4.42257 0.00078761 5.55917 0.00078761 6.84154V18.7615C-0.0315113 19.9844 0.933608 21.0019 2.15651 21.0342C2.18596 21.035 2.21547 21.0352 2.24492 21.0348H18.2451C19.5275 21.0348 20.6933 20.0439 20.6933 18.7615V18.2952C21.0908 18.2184 21.468 18.0596 21.8007 17.8289C22.2729 17.4314 22.5753 16.8683 22.6459 16.2551L23.9866 4.42257C24.1232 3.13725 23.2009 1.98102 21.9173 1.82867ZM19.5275 18.7615C19.5275 19.4027 18.8863 19.869 18.2451 19.869H2.24492C1.66572 19.886 1.1824 19.4303 1.16539 18.8511C1.1645 18.8212 1.16489 18.7914 1.16656 18.7615V16.6049L5.68395 13.2824C6.22662 12.8658 6.99097 12.9028 7.49091 13.3698L10.6676 16.1677C11.1501 16.5727 11.7573 16.7992 12.3872 16.8089C12.8796 16.8149 13.364 16.6837 13.7861 16.43L19.5275 13.1075V18.7615H19.5275ZM19.5275 11.7378L13.174 15.4391C12.6284 15.7623 11.9379 15.7038 11.4545 15.2934L8.24862 12.4664C7.3298 11.6768 5.98686 11.6284 5.0136 12.3498L1.16656 15.1476V6.84154C1.16656 6.20035 1.60374 5.58835 2.24492 5.58835H18.2451C18.9301 5.61674 19.4834 6.1574 19.5275 6.84154V11.7378ZM22.8219 4.26521C22.8215 4.26906 22.8212 4.27296 22.8207 4.27681L21.451 16.1094C21.4533 16.4162 21.3134 16.7068 21.0721 16.8963C20.9555 17.0129 20.6932 17.0712 20.6932 17.1294V6.84154C20.6472 5.51382 19.5732 4.45264 18.2451 4.42257H4.31418L4.57647 2.14932C4.63337 1.85495 4.78728 1.58819 5.01365 1.39155C5.26925 1.21482 5.5783 1.13243 5.88801 1.15837L21.7717 2.99445C22.4125 3.05531 22.8828 3.62425 22.8219 4.26521Z\" fill=\"#9C7A2E\"/>\n</svg>",
+            "custom_image": "",
+            "title": "Personalized From Your Photo",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": ""
+          }
+        },
+        "column-4": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_24007_5012)\">\n<path d=\"M15 20.2499C15 20.4489 15.079 20.6396 15.2197 20.7803C15.3603 20.9209 15.5511 20.9999 15.75 20.9999H21.75C21.9489 20.9999 22.1397 20.9209 22.2803 20.7803C22.421 20.6396 22.5 20.4489 22.5 20.2499C22.5 20.051 22.421 19.8603 22.2803 19.7196C22.1397 19.579 21.9489 19.4999 21.75 19.4999H15.75C15.5511 19.4999 15.3603 19.579 15.2197 19.7196C15.079 19.8603 15 20.051 15 20.2499Z\" fill=\"#9C7A2E\"/>\n<path d=\"M0 20.2499C0 20.4489 0.0790176 20.6396 0.21967 20.7803C0.360322 20.9209 0.551088 20.9999 0.75 20.9999H6.375C6.57391 20.9999 6.76468 20.9209 6.90533 20.7803C7.04598 20.6396 7.125 20.4489 7.125 20.2499C7.125 20.051 7.04598 19.8603 6.90533 19.7196C6.76468 19.579 6.57391 19.4999 6.375 19.4999H0.75C0.551088 19.4999 0.360322 19.579 0.21967 19.7196C0.0790176 19.8603 0 20.051 0 20.2499Z\" fill=\"#9C7A2E\"/>\n<path d=\"M12.75 20.9999C13.1642 20.9999 13.5 20.6642 13.5 20.2499C13.5 19.8357 13.1642 19.4999 12.75 19.4999C12.3358 19.4999 12 19.8357 12 20.2499C12 20.6642 12.3358 20.9999 12.75 20.9999Z\" fill=\"#9C7A2E\"/>\n<path d=\"M23.5425 8.01746C23.382 7.8509 23.189 7.71904 22.9755 7.63003C22.762 7.54102 22.5325 7.49675 22.3013 7.49996H18.5513L18.975 4.99871C19.0193 4.75056 19.0087 4.49571 18.9439 4.25211C18.8791 4.0085 18.7617 3.78206 18.6 3.58871C18.4404 3.40305 18.2424 3.25426 18.0197 3.15261C17.797 3.05096 17.5548 2.99887 17.31 2.99996H4.5C4.30109 2.99996 4.11032 3.07897 3.96967 3.21963C3.82902 3.36028 3.75 3.55104 3.75 3.74996C3.75 3.94887 3.82902 4.13963 3.96967 4.28029C4.11032 4.42094 4.30109 4.49996 4.5 4.49996H17.31C17.3393 4.49797 17.3687 4.50192 17.3964 4.51159C17.4241 4.52126 17.4496 4.53643 17.4713 4.55621C17.5073 4.61301 17.5194 4.68175 17.505 4.74746L15.5025 16.5H5.97C5.86286 16.0653 5.61109 15.6801 5.25604 15.4075C4.90099 15.1349 4.46379 14.9912 4.01625 15C3.53137 15.011 3.05922 15.1572 2.65304 15.4223C2.24687 15.6873 1.92284 16.0606 1.7175 16.5H0.75C0.551088 16.5 0.360322 16.579 0.21967 16.7196C0.0790176 16.8603 0 17.051 0 17.25C0 17.4489 0.0790176 17.6396 0.21967 17.7803C0.360322 17.9209 0.551088 18 0.75 18H1.54875C1.61844 18.295 1.75581 18.5697 1.95 18.8025C2.14249 19.0246 2.38112 19.2021 2.64926 19.3226C2.91739 19.443 3.20857 19.5036 3.5025 19.5C3.98738 19.489 4.45953 19.3427 4.86571 19.0777C5.27188 18.8126 5.59591 18.4393 5.80125 18H17.2987C17.3684 18.295 17.5058 18.5697 17.7 18.8025C17.8925 19.0246 18.1311 19.2021 18.3993 19.3226C18.6674 19.443 18.9586 19.5036 19.2525 19.5C19.7374 19.489 20.2095 19.3427 20.6157 19.0777C21.0219 18.8126 21.3459 18.4393 21.5513 18H21.6112C22.1429 17.99 22.6515 17.7811 23.0368 17.4146C23.4221 17.048 23.656 16.5505 23.6925 16.02L24 9.26996C24.013 9.04103 23.9792 8.81186 23.9005 8.59649C23.8219 8.38111 23.7 8.18407 23.5425 8.01746ZM4.51875 17.1225C4.46618 17.3585 4.33894 17.5714 4.15589 17.7294C3.97283 17.8875 3.74371 17.9824 3.5025 18C3.42695 18.0045 3.35135 17.992 3.28126 17.9634C3.21118 17.9349 3.14838 17.891 3.0975 17.835C3.0487 17.7705 3.01467 17.6961 2.99782 17.6171C2.98097 17.538 2.98171 17.4562 3 17.3775C3.04914 17.1397 3.17539 16.9248 3.35914 16.7662C3.54289 16.6075 3.77388 16.5139 4.01625 16.5C4.0918 16.4954 4.1674 16.5079 4.23749 16.5365C4.30757 16.565 4.37037 16.6089 4.42125 16.665C4.47005 16.7294 4.50408 16.8038 4.52093 16.8829C4.53778 16.9619 4.53704 17.0437 4.51875 17.1225ZM20.2687 17.1225C20.2162 17.3585 20.0889 17.5714 19.9059 17.7294C19.7228 17.8875 19.4937 17.9824 19.2525 18C19.177 18.0045 19.1014 17.992 19.0313 17.9634C18.9612 17.9349 18.8984 17.891 18.8475 17.835C18.7987 17.7705 18.7647 17.6961 18.7478 17.6171C18.731 17.538 18.7317 17.4562 18.75 17.3775C18.7991 17.1397 18.9254 16.9248 19.1091 16.7662C19.2929 16.6075 19.5239 16.5139 19.7663 16.5C19.8418 16.4954 19.9174 16.5079 19.9875 16.5365C20.0576 16.565 20.1204 16.6089 20.1712 16.665C20.2201 16.7294 20.2541 16.8038 20.2709 16.8829C20.2878 16.9619 20.287 17.0437 20.2687 17.1225ZM22.44 10.5H20.1562C19.9573 10.5 19.7666 10.579 19.6259 10.7196C19.4853 10.8603 19.4062 11.051 19.4062 11.25C19.4062 11.4489 19.4853 11.6396 19.6259 11.7803C19.7666 11.9209 19.9573 12 20.1562 12H22.3725L22.1925 15.9525C22.1777 16.0811 22.1243 16.2023 22.0393 16.3001C21.9543 16.3978 21.8416 16.4675 21.7162 16.5C21.6454 16.2106 21.5094 15.9413 21.3187 15.7125C21.1277 15.4876 20.8897 15.3072 20.6215 15.1841C20.3533 15.0611 20.0613 14.9982 19.7663 15C19.2814 15.011 18.8092 15.1572 18.403 15.4223C17.9969 15.6873 17.6728 16.0606 17.4675 16.5H17.025L18.3038 8.99996H22.3013C22.3286 8.99608 22.3564 8.99868 22.3826 9.00755C22.4087 9.01641 22.4324 9.0313 22.4518 9.051C22.4711 9.07071 22.4856 9.09468 22.4939 9.12098C22.5023 9.14729 22.5044 9.1752 22.5 9.20246L22.44 10.5Z\" fill=\"#9C7A2E\"/>\n<path d=\"M2.25 11.9999C2.05109 11.9999 1.86032 12.079 1.71967 12.2196C1.57902 12.3603 1.5 12.551 1.5 12.7499C1.5 12.9489 1.57902 13.1396 1.71967 13.2803C1.86032 13.4209 2.05109 13.4999 2.25 13.4999H9.02625C9.22516 13.4999 9.41593 13.4209 9.55658 13.2803C9.69723 13.1396 9.77625 12.9489 9.77625 12.7499C9.77625 12.551 9.69723 12.3603 9.55658 12.2196C9.41593 12.079 9.22516 11.9999 9.02625 11.9999H2.25Z\" fill=\"#9C7A2E\"/>\n<path d=\"M0.75 8.99994H11.2913C11.4902 8.99994 11.6809 8.92092 11.8216 8.78027C11.9622 8.63962 12.0413 8.44885 12.0413 8.24994C12.0413 8.05103 11.9622 7.86026 11.8216 7.71961C11.6809 7.57896 11.4902 7.49994 11.2913 7.49994H0.75C0.551088 7.49994 0.360322 7.57896 0.21967 7.71961C0.0790176 7.86026 0 8.05103 0 8.24994C0 8.44885 0.0790176 8.63962 0.21967 8.78027C0.360322 8.92092 0.551088 8.99994 0.75 8.99994Z\" fill=\"#9C7A2E\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_24007_5012\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "custom_image": "",
+            "title": "Ships Next Business Day",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3",
+        "column-4"
+      ]
+    },
+    "featured-collection-best-sellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop By Our [Best Seller]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "color_background": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "show_description": false,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": false,
+            "show_highlighted_features": false,
+            "show_highlighted_attributes": false,
+            "show_quickview": true,
+            "show_promotion": false,
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "enable_video_autoplay": false,
+            "video_alt_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ]
+    },
+    "promotion-banner": {
+      "type": "promotion-banner",
+      "settings": {
+        "heading": "Flash Sale 15% Off",
+        "image": "",
+        "image_2": "",
+        "image_3": "",
+        "image_mobile": "",
+        "image_link": "",
+        "open_new_window": false,
+        "image_overlay_opacity": 50,
+        "content_position": "center",
+        "content_horizontal": 50,
+        "content_vertical": 50,
+        "position_content_mobile": "center",
+        "content_alignment": "center",
+        "show_hero": false,
+        "full_width": true,
+        "padding_full_width": false,
+        "adapt_corners_desktop": true,
+        "rounded_corner_image": false,
+        "desktop_height": "750px",
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "full_width_mobile": true,
+        "adapt_corners_mobile": true,
+        "rounded_corner_image_mobile": false,
+        "mobile_height": "400px",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 20
+      },
+      "blocks": {
+        "image_banner_1": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "Flash Sale 15% Off",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "subheading": "HOLIDAY SEASON",
+            "subheading_size": 100,
+            "text": "",
+            "text_size": 130,
+            "content_box_type": "square",
+            "add_frame": false,
+            "color_content_box_light": "rgba(0,0,0,0)",
+            "color_content_box_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "countdown_timer_1": {
+          "type": "countdown_timer",
+          "settings": {
+            "countdown_type": "standard",
+            "countdown_interval": 7,
+            "interval_unit": "day",
+            "timezone": "-4",
+            "end_year": 2026,
+            "end_month": "8",
+            "end_day": "9",
+            "end_hour": "0",
+            "end_minute": "0",
+            "timer_style": "square",
+            "border_style": "none",
+            "overlay_opacity": 100,
+            "timer_color_countdown": "#ffffff",
+            "text_color_countdown": "#ffffff",
+            "bg_color_countdown": "rgba(0,0,0,0)",
+            "spacing_col": 16,
+            "spacing_col_mobile": 16
+          }
+        },
+        "buttons_1": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Shop the Sale",
+            "button_link": "#",
+            "open_new_window_button": false,
+            "show_button_style_1": "secondary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_window_button_2": false,
+            "show_button_style_2": "primary",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "#ffffff",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_1",
+        "countdown_timer_1",
+        "buttons_1"
+      ]
+    },
+    "collection-list-occasion": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Find the [Right Gift for the Moment]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "background_color_light": "",
+        "background_color_dark": "",
+        "collection_metafield": "",
+        "image_ratio": "auto",
+        "title_size": 80,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "image_overlay_opacity": 5,
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "show_item_count": false,
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "spacing_mobile": 24,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 0
+      },
+      "blocks": {
+        "occasion_wedding": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Wedding & Anniversary"
+          }
+        },
+        "occasion_graduation": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Graduation"
+          }
+        },
+        "occasion_sympathy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Sympathy"
+          }
+        },
+        "occasion_birthday": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "Birthday"
+          }
+        }
+      },
+      "block_order": [
+        "occasion_wedding",
+        "occasion_graduation",
+        "occasion_sympathy",
+        "occasion_birthday"
+      ]
+    },
+    "featured-collection-shop-by-shape": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Choose [Your Crystal]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "Shop by Shape",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "color_background": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "columns_desktop": 4,
+        "rows_desktop": 2,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "shop-by-shape",
+            "show_description": false,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": false,
+            "show_highlighted_features": false,
+            "show_highlighted_attributes": false,
+            "show_quickview": true,
+            "show_promotion": false,
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ]
+    },
+    "comparison-table-home": {
+      "type": "comparison-table",
+      "settings": {
+        "heading": "Why Real 3D [Beats] Flat Printing",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "description": "<p>See the difference precision laser engraving makes.</p>",
+        "alternative_text": "Crystal 3D Pix",
+        "external_item_labels": "Flat Print",
+        "icon_position": "next",
+        "icon_size": 45,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "column_highlight_light": "#f8f6f2",
+        "line_border": "rgba(0,0,0,0)",
+        "color_icon_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "column_highlight_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "color_icon_dark": "rgba(0,0,0,0)",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "criterion_1": {
+          "type": "criterion",
+          "settings": {
+            "heading": "True 3D depth",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "No",
+            "icon_external_item": "none"
+          }
+        },
+        "criterion_2": {
+          "type": "criterion",
+          "settings": {
+            "heading": "Laser-engraved permanence",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "Fades",
+            "icon_external_item": "none"
+          }
+        },
+        "criterion_3": {
+          "type": "criterion",
+          "settings": {
+            "heading": "Heirloom-grade crystal",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "No",
+            "icon_external_item": "none"
+          }
+        },
+        "criterion_4": {
+          "type": "criterion",
+          "settings": {
+            "heading": "Free 3D preview",
+            "criterion_detail_product": "Yes",
+            "icon_store_item": "none",
+            "criterion_detail_externals": "No",
+            "icon_external_item": "none"
+          }
+        }
+      },
+      "block_order": [
+        "criterion_1",
+        "criterion_2",
+        "criterion_3",
+        "criterion_4"
+      ]
+    },
+    "image-with-text-corporate": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/image 110.png",
+        "content_layout": "no-overlap",
+        "text_alignment": "start",
+        "background_color_light": "#f8f6f2",
+        "line_border": "none",
+        "image_alignment": "left",
+        "image_alignment_mobile": "left",
+        "mobile_height": "natural"
+      },
+      "blocks": {
+        "heading_cgp01": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Bulk Gifts for [Teams, Clients & Employees]",
+            "highlight_type": "font_highlight",
+            "text": "<p>Recognition, redefined. Each award in this collection is laser-engraved in cinematic HD, transforming a logo, milestone, or achievement into a three-dimensional work of art suspended within premium optical crystal. Sophisticated. Substantial. Unforgettable.</p>",
+            "color_heading_highlight_light": "#9c7a2e"
+          }
+        },
+        "button_cgp01": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Coporate Gifts",
+            "button_link": "/collections/corporate-awards",
+            "show_button_style": "primary",
+            "button_light": "#9c7a2e",
+            "button_text_light": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cgp01",
+        "button_cgp01"
+      ]
+    },
+    "video-shopping-home": {
+      "type": "video-shopping",
+      "settings": {
+        "heading": "Real People. [Real Result]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "video_layout": "aspect-[2/3]",
+        "enable_hotspots": false,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "hotspot_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "hotspot_color_dark": "rgba(0,0,0,0)",
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "spacing_mobile": 8,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "shoppable-video-1": {
+          "type": "shoppable_video",
+          "settings": {
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "integrated_social_media": "none",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "image": "shopify://shop_images/Frame 693.png",
+            "product_1": "",
+            "hotspot_desktop_horizontal_1": 50,
+            "hotspot_desktop_vertical_1": 91,
+            "hotspot_mobile_horizontal_1": 50,
+            "hotspot_mobile_vertical_1": 91,
+            "product_2": "",
+            "hotspot_desktop_horizontal_2": 50,
+            "hotspot_desktop_vertical_2": 91,
+            "hotspot_mobile_horizontal_2": 50,
+            "hotspot_mobile_vertical_2": 91,
+            "product_3": "",
+            "hotspot_desktop_horizontal_3": 64,
+            "hotspot_desktop_vertical_3": 50,
+            "hotspot_mobile_horizontal_3": 65,
+            "hotspot_mobile_vertical_3": 50,
+            "product_4": "",
+            "hotspot_desktop_horizontal_4": 20,
+            "hotspot_desktop_vertical_4": 20,
+            "hotspot_mobile_horizontal_4": 20,
+            "hotspot_mobile_vertical_4": 20,
+            "product_5": "",
+            "hotspot_desktop_horizontal_5": 20,
+            "hotspot_desktop_vertical_5": 20,
+            "hotspot_mobile_horizontal_5": 20,
+            "hotspot_mobile_vertical_5": 20
+          }
+        }
+      },
+      "block_order": [
+        "shoppable-video-1"
+      ]
+    },
+    "testimonials-home": {
+      "type": "testimonials",
+      "settings": {
+        "heading": "Customer Love Us",
+        "heading_alignment": "center",
+        "text_alignment": "start",
+        "testimonial_items_view": "single",
+        "show_author_image": false,
+        "top_padding_mobile": 48,
+        "bottom_padding_mobile": 48
+      },
+      "blocks": {
+        "block_1": {
+          "type": "testimonial",
+          "settings": {
+            "icon_star": "quote",
+            "title": "",
+            "text": "<p>\"The crystal arrived exactly as previewed — my mom cried when she saw her wedding photo inside.\"</p>",
+            "author": "Emily R."
+          }
+        }
+      },
+      "block_order": [
+        "block_1"
+      ]
+    },
+    "map-home": {
+      "type": "map",
+      "settings": {
+        "store_address": "6275 West Plano Parkway Suite 500, Plano, TX, United States, 75093",
+        "content_position": "left",
+        "content_alignment": "left",
+        "bg_color_map": "#f8f6f2"
+      },
+      "blocks": {
+        "block_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Visit Us"
+          }
+        },
+        "block_2": {
+          "type": "richtext",
+          "settings": {
+            "text": "<ul><li>Address: 6275 West Plano Parkway Suite 500, Plano, TX, United States, 75093</li><li>Email: awallick@crystal3dpix.com</li><li>Hours: Monday - Saturday: 10am - 6pm Sunday: 11am - 4pm</li></ul>"
+          }
+        },
+        "block_3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Directions"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3"
+      ]
+    },
+    "social-feed-home": {
+      "type": "social-feeds",
+      "settings": {
+        "heading": "See us on [@crystal3dpix_usa]",
+        "highlight_type": "font_highlight",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "button_label": "Follow us",
+        "button_link": "http://instagram.com/crystal3dpix_usa",
+        "open_new_window_button": true,
+        "show_button_style": "secondary",
+        "integrated_social_media": "instagram",
+        "media_ratio": "aspect-square",
+        "social_post_layout": "2",
+        "swiper_on_mobile": true
+      },
+      "block_order": []
+    },
+    "email-signup-home": {
+      "type": "newsletter",
+      "settings": {
+        "content_layout": "vertical",
+        "form_width": "large",
+        "background_color_light": "#f8f6f2"
+      },
+      "blocks": {
+        "block_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up your email"
+          }
+        },
+        "block_2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our email list for sales, buying guides, and more.</p>"
+          }
+        },
+        "block_3": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Subscribe"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3"
+      ]
+    }
+  },
+  "order": [
+    "slideshow",
+    "multicolumn",
+    "featured-collection-best-sellers",
+    "promotion-banner",
+    "collection-list-occasion",
+    "featured-collection-shop-by-shape",
+    "comparison-table-home",
+    "image-with-text-corporate",
+    "video-shopping-home",
+    "testimonials-home",
+    "map-home",
+    "social-feed-home",
+    "email-signup-home"
+  ]
+}

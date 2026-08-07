@@ -1,0 +1,1306 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "desktop_height": "450px",
+            "full_width": true,
+            "mobile_height": "250px",
+            "full_width_mobile": true
+          }
+        },
+        "breadcrumbs": {
+          "type": "breadcrumbs",
+          "settings": {
+            "show_breadcrumbs_border": false,
+            "full_width_breadcrumb": false,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-left",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_color_light": "rgba(0,0,0,0)",
+            "textlink_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_color_dark": "rgba(0,0,0,0)",
+            "textlink_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h1",
+            "blog_show_author": false,
+            "blog_show_date": false,
+            "content_alignment": "text-left",
+            "title_size": 120
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+            "text_size": 100
+          }
+        },
+        "button": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "show_back_to_blog": true,
+            "blog_show_tags": true,
+            "blog_show_share_social": true
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "breadcrumbs",
+        "title",
+        "content",
+        "button"
+      ],
+      "settings": {
+        "blog_show_comment_counts": false,
+        "enable_microdata": false,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "page_width": 1400,
+        "enable_table_of_contents": true,
+        "table_of_contents_title": "Table of Contents",
+        "table_position": "left",
+        "open_tab": true,
+        "sticky_table_of_contents": false,
+        "list_style": "Ordered",
+        "social_sharing": true
+      }
+    },
+    "flexible_area_xJkkWT": {
+      "type": "flexible-area",
+      "blocks": {
+        "item_group_kgKKeg": {
+          "type": "item-group",
+          "name": "contents",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "center",
+            "mobile_content_alignment": "center",
+            "content_position": "center",
+            "group_opacity": 100,
+            "edges_type": "square",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": true,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "100",
+            "row_gap": 10,
+            "col_gap": 10,
+            "padding_left_desktop": 0,
+            "padding_right_desktop": 0,
+            "padding_top_desktop": 0,
+            "padding_bottom_desktop": 0,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 4,
+            "col_gap_mobile": 10,
+            "padding_left_mobile": 0,
+            "padding_right_mobile": 0,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0,
+            "background_color_light": "rgba(0,0,0,0)",
+            "line_border_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "line_border_dark": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "item_group_LimC46": {
+              "type": "item-group",
+              "name": "heading",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "50",
+                "row_gap": 2,
+                "col_gap": 10,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 0,
+                "col_gap_mobile": 10,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "heading_RiKKV8": {
+                  "type": "heading",
+                  "name": "t:sections.all.text.heading",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "heading": "What It Actually Does",
+                    "highlight_type": "font_highlight",
+                    "heading_size": 120,
+                    "heading_tag": "h2",
+                    "heading_alignment": "adapt",
+                    "mobile_heading_alignment": "adapt",
+                    "heading_color_light": "rgba(0,0,0,0)",
+                    "heading_highlight_color_light": "rgba(0,0,0,0)",
+                    "heading_color_dark": "rgba(0,0,0,0)",
+                    "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_RiKKV8"
+              ]
+            },
+            "item_group_D3rgDh": {
+              "type": "item-group",
+              "name": "text",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "50",
+                "row_gap": 10,
+                "col_gap": 10,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 10,
+                "col_gap_mobile": 10,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "rich_text_LcTFLd": {
+                  "type": "rich-text",
+                  "name": "t:sections.rich-text.name",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "text": "<p>Ashwagandha is classified as an adaptogen - a substance that helps the body adapt to physical and psychological stress. But that description undersells the specificity of the evidence.</p><p>In peer-reviewed clinical trials, ashwagandha root extract has been shown to:</p>",
+                    "text_size": 100,
+                    "content_alignment": "adapt",
+                    "mobile_content_alignment": "adapt",
+                    "text_color_light": "rgba(0,0,0,0)",
+                    "text_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "rich_text_LcTFLd"
+              ]
+            }
+          },
+          "block_order": [
+            "item_group_LimC46",
+            "item_group_D3rgDh"
+          ]
+        },
+        "item_group_iKTmqn": {
+          "type": "item-group",
+          "name": "blocks text",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "center",
+            "mobile_content_alignment": "left",
+            "content_position": "center",
+            "group_opacity": 100,
+            "edges_type": "square",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": true,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "25",
+            "row_gap": 40,
+            "col_gap": 0,
+            "padding_left_desktop": 0,
+            "padding_right_desktop": 0,
+            "padding_top_desktop": 0,
+            "padding_bottom_desktop": 0,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 4,
+            "col_gap_mobile": 14,
+            "padding_left_mobile": 0,
+            "padding_right_mobile": 0,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0,
+            "background_color_light": "rgba(0,0,0,0)",
+            "line_border_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "line_border_dark": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "item_group_KdAxRN": {
+              "type": "item-group",
+              "name": "block text",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "center",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "100",
+                "row_gap": 0,
+                "col_gap": 0,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 0,
+                "col_gap_mobile": 0,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "heading_9KVLXD": {
+                  "type": "heading",
+                  "name": "t:sections.all.text.heading",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "heading": "01",
+                    "highlight_type": "underline",
+                    "heading_size": 100,
+                    "heading_tag": "h2",
+                    "heading_alignment": "adapt",
+                    "mobile_heading_alignment": "adapt",
+                    "heading_color_light": "rgba(0,0,0,0)",
+                    "heading_highlight_color_light": "rgba(0,0,0,0)",
+                    "heading_color_dark": "rgba(0,0,0,0)",
+                    "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                },
+                "rich_text_DdDeqc": {
+                  "type": "rich-text",
+                  "name": "t:sections.rich-text.name",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "text": "<p>Reduce serum cortisol levels significantly in adults under chronic stress</p>",
+                    "text_size": 100,
+                    "content_alignment": "adapt",
+                    "mobile_content_alignment": "adapt",
+                    "text_color_light": "rgba(0,0,0,0)",
+                    "text_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_9KVLXD",
+                "rich_text_DdDeqc"
+              ]
+            },
+            "item_group_qMD6Ny": {
+              "type": "item-group",
+              "name": "block text",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "center",
+                "mobile_content_alignment": "left",
+                "content_position": "start",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "100",
+                "row_gap": 0,
+                "col_gap": 0,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 0,
+                "col_gap_mobile": 0,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "heading_3EBGw6": {
+                  "type": "heading",
+                  "name": "t:sections.all.text.heading",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "heading": "02",
+                    "highlight_type": "underline",
+                    "heading_size": 100,
+                    "heading_tag": "h2",
+                    "heading_alignment": "adapt",
+                    "mobile_heading_alignment": "adapt",
+                    "heading_color_light": "rgba(0,0,0,0)",
+                    "heading_highlight_color_light": "rgba(0,0,0,0)",
+                    "heading_color_dark": "rgba(0,0,0,0)",
+                    "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                },
+                "rich_text_MyQWtU": {
+                  "type": "rich-text",
+                  "name": "t:sections.rich-text.name",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "text": "<p>Support testosterone levels and muscle recovery in resistance-trained adults</p>",
+                    "text_size": 100,
+                    "content_alignment": "adapt",
+                    "mobile_content_alignment": "adapt",
+                    "text_color_light": "rgba(0,0,0,0)",
+                    "text_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_3EBGw6",
+                "rich_text_MyQWtU"
+              ]
+            },
+            "item_group_mMTqBr": {
+              "type": "item-group",
+              "name": "block text",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "center",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "100",
+                "row_gap": 0,
+                "col_gap": 0,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 0,
+                "col_gap_mobile": 0,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "heading_gWTMJP": {
+                  "type": "heading",
+                  "name": "t:sections.all.text.heading",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "heading": "03",
+                    "highlight_type": "underline",
+                    "heading_size": 100,
+                    "heading_tag": "h2",
+                    "heading_alignment": "adapt",
+                    "mobile_heading_alignment": "adapt",
+                    "heading_color_light": "rgba(0,0,0,0)",
+                    "heading_highlight_color_light": "rgba(0,0,0,0)",
+                    "heading_color_dark": "rgba(0,0,0,0)",
+                    "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                },
+                "rich_text_wjLNzB": {
+                  "type": "rich-text",
+                  "name": "t:sections.rich-text.name",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "text": "<p>Improve subjective measures of stress, anxiety, and wellbeing</p>",
+                    "text_size": 100,
+                    "content_alignment": "adapt",
+                    "mobile_content_alignment": "adapt",
+                    "text_color_light": "rgba(0,0,0,0)",
+                    "text_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_gWTMJP",
+                "rich_text_wjLNzB"
+              ]
+            }
+          },
+          "block_order": [
+            "item_group_KdAxRN",
+            "item_group_qMD6Ny",
+            "item_group_mMTqBr"
+          ]
+        },
+        "image_7BUBBn": {
+          "type": "image",
+          "settings": {
+            "desktop_width": "50",
+            "mobile_width": "100",
+            "image": "",
+            "image_url": "",
+            "open_new_window": false,
+            "image_style": "square",
+            "image_ratio": "none",
+            "content_alignment": "adapt",
+            "mobile_content_alignment": "adapt"
+          },
+          "blocks": {}
+        },
+        "item_group_EGWQfa": {
+          "type": "item-group",
+          "name": "blocks text",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "left",
+            "mobile_content_alignment": "left",
+            "content_position": "center",
+            "group_opacity": 100,
+            "edges_type": "square",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": true,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "25",
+            "row_gap": 40,
+            "col_gap": 0,
+            "padding_left_desktop": 0,
+            "padding_right_desktop": 0,
+            "padding_top_desktop": 0,
+            "padding_bottom_desktop": 0,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 4,
+            "col_gap_mobile": 14,
+            "padding_left_mobile": 0,
+            "padding_right_mobile": 0,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0,
+            "background_color_light": "rgba(0,0,0,0)",
+            "line_border_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "line_border_dark": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "item_group_qgbyER": {
+              "type": "item-group",
+              "name": "block text",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "center",
+                "mobile_content_alignment": "left",
+                "content_position": "center",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "100",
+                "row_gap": 0,
+                "col_gap": 0,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 0,
+                "col_gap_mobile": 0,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "heading_MrwDBU": {
+                  "type": "heading",
+                  "name": "t:sections.all.text.heading",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "heading": "04",
+                    "highlight_type": "underline",
+                    "heading_size": 100,
+                    "heading_tag": "h2",
+                    "heading_alignment": "adapt",
+                    "mobile_heading_alignment": "adapt",
+                    "heading_color_light": "rgba(0,0,0,0)",
+                    "heading_highlight_color_light": "rgba(0,0,0,0)",
+                    "heading_color_dark": "rgba(0,0,0,0)",
+                    "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                },
+                "rich_text_6GwrcD": {
+                  "type": "rich-text",
+                  "name": "t:sections.rich-text.name",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "text": "<p>Improve subjective measures of stress, anxiety, and wellbeing</p>",
+                    "text_size": 100,
+                    "content_alignment": "adapt",
+                    "mobile_content_alignment": "adapt",
+                    "text_color_light": "rgba(0,0,0,0)",
+                    "text_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_MrwDBU",
+                "rich_text_6GwrcD"
+              ]
+            },
+            "item_group_z77BRm": {
+              "type": "item-group",
+              "name": "block text",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "center",
+                "mobile_content_alignment": "left",
+                "content_position": "start",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "100",
+                "row_gap": 0,
+                "col_gap": 0,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 0,
+                "col_gap_mobile": 0,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "heading_FnKNnx": {
+                  "type": "heading",
+                  "name": "t:sections.all.text.heading",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "heading": "05",
+                    "highlight_type": "underline",
+                    "heading_size": 100,
+                    "heading_tag": "h2",
+                    "heading_alignment": "adapt",
+                    "mobile_heading_alignment": "adapt",
+                    "heading_color_light": "rgba(0,0,0,0)",
+                    "heading_highlight_color_light": "rgba(0,0,0,0)",
+                    "heading_color_dark": "rgba(0,0,0,0)",
+                    "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                },
+                "rich_text_9WAUn8": {
+                  "type": "rich-text",
+                  "name": "t:sections.rich-text.name",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "text": "<p>Improve sleep quality and reduce time to sleep onset</p>",
+                    "text_size": 100,
+                    "content_alignment": "adapt",
+                    "mobile_content_alignment": "adapt",
+                    "text_color_light": "rgba(0,0,0,0)",
+                    "text_color_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "heading_FnKNnx",
+                "rich_text_9WAUn8"
+              ]
+            }
+          },
+          "block_order": [
+            "item_group_qgbyER",
+            "item_group_z77BRm"
+          ]
+        }
+      },
+      "block_order": [
+        "item_group_kgKKeg",
+        "item_group_iKTmqn",
+        "image_7BUBBn",
+        "item_group_EGWQfa"
+      ],
+      "name": "t:sections.flexible-area.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "content_width": "full_width",
+        "row_gap": 28,
+        "col_gap": 28,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 0,
+        "padding_bottom": 80,
+        "content_width_mobile": "full_width",
+        "row_gap_mobile": 16,
+        "col_gap_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 28,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "heading_highlight_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_e9t3Fk": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Uch6Vd": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Why The Form Matters",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Here is where most supplement labels become misleading.<br/>The clinical trials that produced the evidence above didn't use generic ashwagandha root powder. They used standardised, patented extracts - specifically KSM-66® and Sensoril®, both of which are produced from roots using proprietary extraction methods that concentrate the active withanolides to a consistent, clinically meaningful level.<br/>Generic ashwagandha powder can contain anywhere from 1% to 8% withanolides. KSM-66® is standardised to a minimum of 5% withanolides with a full-spectrum root extract, which means it retains the natural balance of the plant's compounds rather than isolating one component.<br/>When you buy a supplement that says \"ashwagandha\" without specifying the extract form, you have no way of knowing whether it contains enough active compounds to do anything at all.<br/>At Arise, we use KSM-66® in every formula that contains ashwagandha. It's more expensive. It's worth it.</p>",
+            "number_of_lines_shown": "large",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Uch6Vd"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "show_hero": false,
+        "image": "",
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "dashed",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": true,
+        "padding_full_width": true,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 0
+      }
+    },
+    "flexible_area_9PeFxE": {
+      "type": "flexible-area",
+      "blocks": {
+        "item_group_zHJjjX": {
+          "type": "item-group",
+          "name": "contents",
+          "settings": {
+            "container_type": "flex",
+            "content_alignment": "center",
+            "mobile_content_alignment": "center",
+            "content_position": "start",
+            "group_opacity": 100,
+            "edges_type": "square",
+            "border_column": "none",
+            "enable_desktop_slider": false,
+            "swiper_on_mobile": true,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 4,
+            "desktop_width": "100",
+            "row_gap": 28,
+            "col_gap": 10,
+            "padding_left_desktop": 0,
+            "padding_right_desktop": 0,
+            "padding_top_desktop": 0,
+            "padding_bottom_desktop": 0,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 40,
+            "col_gap_mobile": 10,
+            "padding_left_mobile": 0,
+            "padding_right_mobile": 0,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0,
+            "background_color_light": "rgba(0,0,0,0)",
+            "line_border_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "line_border_dark": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "item_group_fEwjLN": {
+              "type": "item-group",
+              "name": "heading",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "start",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "50",
+                "row_gap": 20,
+                "col_gap": 10,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 16,
+                "col_gap_mobile": 10,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "item_group_KRN64B": {
+                  "type": "item-group",
+                  "name": "t:sections.flexible-area.blocks.item-group.name",
+                  "settings": {
+                    "container_type": "flex",
+                    "content_alignment": "left",
+                    "mobile_content_alignment": "left",
+                    "content_position": "center",
+                    "group_opacity": 100,
+                    "edges_type": "square",
+                    "border_column": "none",
+                    "enable_desktop_slider": false,
+                    "swiper_on_mobile": true,
+                    "enable_arrow_mobile": false,
+                    "auto_play": false,
+                    "change_slides_speed": 5,
+                    "columns_desktop": 4,
+                    "desktop_width": "100",
+                    "row_gap": 10,
+                    "col_gap": 10,
+                    "padding_left_desktop": 0,
+                    "padding_right_desktop": 0,
+                    "padding_top_desktop": 0,
+                    "padding_bottom_desktop": 0,
+                    "columns_mobile": "1",
+                    "mobile_width": "100",
+                    "row_gap_mobile": 0,
+                    "col_gap_mobile": 10,
+                    "padding_left_mobile": 0,
+                    "padding_right_mobile": 0,
+                    "padding_top_mobile": 0,
+                    "padding_bottom_mobile": 0,
+                    "background_color_light": "rgba(0,0,0,0)",
+                    "line_border_light": "rgba(0,0,0,0)",
+                    "background_color_dark": "rgba(0,0,0,0)",
+                    "line_border_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {
+                    "heading_KUjrfV": {
+                      "type": "heading",
+                      "name": "t:sections.all.text.heading",
+                      "settings": {
+                        "desktop_width": "100",
+                        "mobile_width": "100",
+                        "heading": "Third-party Testing",
+                        "highlight_type": "font_highlight",
+                        "heading_size": 100,
+                        "heading_tag": "h2",
+                        "heading_alignment": "adapt",
+                        "mobile_heading_alignment": "adapt",
+                        "heading_color_light": "rgba(0,0,0,0)",
+                        "heading_highlight_color_light": "rgba(0,0,0,0)",
+                        "heading_color_dark": "rgba(0,0,0,0)",
+                        "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                      },
+                      "blocks": {}
+                    },
+                    "rich_text_cwEbtB": {
+                      "type": "rich-text",
+                      "name": "t:sections.rich-text.name",
+                      "settings": {
+                        "desktop_width": "100",
+                        "mobile_width": "100",
+                        "text": "<p>Supplements are not regulated the same way pharmaceuticals are. In most markets, a supplement company can put almost anything in a capsule and make almost any claim about it, as long as they don't claim to treat a specific disease.<br/>This is why third-party testing matters. It means an independent laboratory - one with no financial relationship to the supplement company - has tested the product to verify that:<br/></p><ol><li>The ingredients listed are actually present</li><li>They're present at the stated concentrations</li><li>The product doesn't contain contaminants, heavy metals, or undisclosed substances</li></ol><p>Look for: NSF Certified for Sport, Informed Sport, or USP Verified certification on any supplement you take. These are the most rigorous third-party standards available.<br/>Every Arise formula is third-party tested before it reaches you. The results are available on request.</p>",
+                        "text_size": 100,
+                        "content_alignment": "adapt",
+                        "mobile_content_alignment": "adapt",
+                        "text_color_light": "rgba(0,0,0,0)",
+                        "text_color_dark": "rgba(0,0,0,0)"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_KUjrfV",
+                    "rich_text_cwEbtB"
+                  ]
+                },
+                "item_group_xPgdNc": {
+                  "type": "item-group",
+                  "name": "t:sections.flexible-area.blocks.item-group.name",
+                  "settings": {
+                    "container_type": "carousel",
+                    "content_alignment": "left",
+                    "mobile_content_alignment": "left",
+                    "content_position": "center",
+                    "group_opacity": 100,
+                    "edges_type": "rounded_corners",
+                    "border_column": "none",
+                    "enable_desktop_slider": false,
+                    "swiper_on_mobile": true,
+                    "enable_arrow_mobile": false,
+                    "auto_play": false,
+                    "change_slides_speed": 5,
+                    "columns_desktop": 4,
+                    "desktop_width": "100",
+                    "row_gap": 10,
+                    "col_gap": 25,
+                    "padding_left_desktop": 0,
+                    "padding_right_desktop": 0,
+                    "padding_top_desktop": 0,
+                    "padding_bottom_desktop": 0,
+                    "columns_mobile": "2",
+                    "mobile_width": "100",
+                    "row_gap_mobile": 28,
+                    "col_gap_mobile": 10,
+                    "padding_left_mobile": 0,
+                    "padding_right_mobile": 0,
+                    "padding_top_mobile": 0,
+                    "padding_bottom_mobile": 0,
+                    "background_color_light": "rgba(0,0,0,0)",
+                    "line_border_light": "rgba(0,0,0,0)",
+                    "background_color_dark": "rgba(0,0,0,0)",
+                    "line_border_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {
+                    "image_rjQTDz": {
+                      "type": "image",
+                      "name": "t:sections.all.image.label",
+                      "settings": {
+                        "desktop_width": "50",
+                        "mobile_width": "100",
+                        "image": "",
+                        "image_url": "",
+                        "open_new_window": false,
+                        "image_style": "square",
+                        "image_ratio": "none",
+                        "content_alignment": "adapt",
+                        "mobile_content_alignment": "adapt"
+                      },
+                      "blocks": {}
+                    },
+                    "image_mPCpbE": {
+                      "type": "image",
+                      "name": "t:sections.all.image.label",
+                      "settings": {
+                        "desktop_width": "30",
+                        "mobile_width": "100",
+                        "image": "",
+                        "image_url": "",
+                        "open_new_window": false,
+                        "image_style": "square",
+                        "image_ratio": "none",
+                        "content_alignment": "adapt",
+                        "mobile_content_alignment": "adapt"
+                      },
+                      "blocks": {}
+                    },
+                    "image_AQFA4d": {
+                      "type": "image",
+                      "name": "t:sections.all.image.label",
+                      "settings": {
+                        "desktop_width": "30",
+                        "mobile_width": "100",
+                        "image": "",
+                        "image_url": "",
+                        "open_new_window": false,
+                        "image_style": "square",
+                        "image_ratio": "none",
+                        "content_alignment": "adapt",
+                        "mobile_content_alignment": "adapt"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "image_rjQTDz",
+                    "image_mPCpbE",
+                    "image_AQFA4d"
+                  ]
+                }
+              },
+              "block_order": [
+                "item_group_KRN64B",
+                "item_group_xPgdNc"
+              ]
+            },
+            "item_group_CPgJTG": {
+              "type": "item-group",
+              "name": "heading",
+              "settings": {
+                "container_type": "flex",
+                "content_alignment": "left",
+                "mobile_content_alignment": "left",
+                "content_position": "start",
+                "group_opacity": 100,
+                "edges_type": "square",
+                "border_column": "none",
+                "enable_desktop_slider": false,
+                "swiper_on_mobile": true,
+                "enable_arrow_mobile": false,
+                "auto_play": false,
+                "change_slides_speed": 5,
+                "columns_desktop": 4,
+                "desktop_width": "50",
+                "row_gap": 2,
+                "col_gap": 10,
+                "padding_left_desktop": 0,
+                "padding_right_desktop": 0,
+                "padding_top_desktop": 0,
+                "padding_bottom_desktop": 0,
+                "columns_mobile": "1",
+                "mobile_width": "100",
+                "row_gap_mobile": 0,
+                "col_gap_mobile": 10,
+                "padding_left_mobile": 0,
+                "padding_right_mobile": 0,
+                "padding_top_mobile": 0,
+                "padding_bottom_mobile": 0,
+                "background_color_light": "rgba(0,0,0,0)",
+                "line_border_light": "rgba(0,0,0,0)",
+                "background_color_dark": "rgba(0,0,0,0)",
+                "line_border_dark": "rgba(0,0,0,0)"
+              },
+              "blocks": {
+                "item_group_B7Ubbx": {
+                  "type": "item-group",
+                  "name": "t:sections.flexible-area.blocks.item-group.name",
+                  "settings": {
+                    "container_type": "flex",
+                    "content_alignment": "left",
+                    "mobile_content_alignment": "left",
+                    "content_position": "center",
+                    "group_opacity": 100,
+                    "edges_type": "square",
+                    "border_column": "none",
+                    "enable_desktop_slider": false,
+                    "swiper_on_mobile": true,
+                    "enable_arrow_mobile": false,
+                    "auto_play": false,
+                    "change_slides_speed": 5,
+                    "columns_desktop": 4,
+                    "desktop_width": "100",
+                    "row_gap": 10,
+                    "col_gap": 10,
+                    "padding_left_desktop": 0,
+                    "padding_right_desktop": 0,
+                    "padding_top_desktop": 0,
+                    "padding_bottom_desktop": 0,
+                    "columns_mobile": "1",
+                    "mobile_width": "100",
+                    "row_gap_mobile": 0,
+                    "col_gap_mobile": 10,
+                    "padding_left_mobile": 0,
+                    "padding_right_mobile": 0,
+                    "padding_top_mobile": 0,
+                    "padding_bottom_mobile": 0,
+                    "background_color_light": "rgba(0,0,0,0)",
+                    "line_border_light": "rgba(0,0,0,0)",
+                    "background_color_dark": "rgba(0,0,0,0)",
+                    "line_border_dark": "rgba(0,0,0,0)"
+                  },
+                  "blocks": {
+                    "heading_B77dwe": {
+                      "type": "heading",
+                      "name": "t:sections.all.text.heading",
+                      "settings": {
+                        "desktop_width": "100",
+                        "mobile_width": "100",
+                        "heading": "The Honest Bottom Line",
+                        "highlight_type": "font_highlight",
+                        "heading_size": 100,
+                        "heading_tag": "h2",
+                        "heading_alignment": "adapt",
+                        "mobile_heading_alignment": "adapt",
+                        "heading_color_light": "rgba(0,0,0,0)",
+                        "heading_highlight_color_light": "rgba(0,0,0,0)",
+                        "heading_color_dark": "rgba(0,0,0,0)",
+                        "heading_highlight_color_dark": "rgba(0,0,0,0)"
+                      },
+                      "blocks": {}
+                    },
+                    "rich_text_FhQD77": {
+                      "type": "rich-text",
+                      "name": "t:sections.rich-text.name",
+                      "settings": {
+                        "desktop_width": "100",
+                        "mobile_width": "100",
+                        "text": "<p>Ashwagandha works. The evidence is genuinely strong. But the quality of the extract determines the quality of the outcome — and most of what's available on the market doesn't use the forms that the clinical research actually studied.<br/>Read the label. Ask for the extract form. Expect a specific answer.</p>",
+                        "text_size": 100,
+                        "content_alignment": "adapt",
+                        "mobile_content_alignment": "adapt",
+                        "text_color_light": "rgba(0,0,0,0)",
+                        "text_color_dark": "rgba(0,0,0,0)"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "heading_B77dwe",
+                    "rich_text_FhQD77"
+                  ]
+                },
+                "image_hD4Ah3": {
+                  "type": "image",
+                  "name": "t:sections.all.image.label",
+                  "settings": {
+                    "desktop_width": "100",
+                    "mobile_width": "100",
+                    "image": "",
+                    "image_url": "",
+                    "open_new_window": false,
+                    "image_style": "square",
+                    "image_ratio": "aspect-[3/2]",
+                    "content_alignment": "adapt",
+                    "mobile_content_alignment": "adapt"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "item_group_B7Ubbx",
+                "image_hD4Ah3"
+              ]
+            }
+          },
+          "block_order": [
+            "item_group_fEwjLN",
+            "item_group_CPgJTG"
+          ]
+        }
+      },
+      "block_order": [
+        "item_group_zHJjjX"
+      ],
+      "name": "t:sections.flexible-area.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "content_width": "full_width",
+        "row_gap": 28,
+        "col_gap": 28,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "content_width_mobile": "full_width",
+        "row_gap_mobile": 16,
+        "col_gap_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "heading_highlight_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "flexible_area_xJkkWT",
+    "image_with_text_e9t3Fk",
+    "flexible_area_9PeFxE"
+  ]
+}

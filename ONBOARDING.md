@@ -96,8 +96,12 @@ nghĩa), nó sẽ dừng và hỏi trực tiếp — chỉ cần trả lời là
 
 ## 5. Vài điều cần biết khi review kết quả
 
-- Ảnh (`image_picker`): Claude set sẵn tên file đúng bằng tên layer Figma — chỉ cần export layer đó
-  từ Figma và upload lên Shopify Admin, **không cần đổi tên file**, hệ thống tự nhận diện đúng ảnh.
+- Ảnh (`image_picker`): Claude set sẵn tên file dựa theo tên layer Figma nhưng đã **chuẩn hoá** —
+  khoảng trắng/ký tự đặc biệt (dấu cách, ngoặc, gạch ngang, emoji...) được thay bằng `_`, ví dụ layer
+  Figma `"Image Ratio (1)"` → file cần upload là `Image_Ratio_1.png`. Khi export layer đó từ Figma,
+  file tải về sẽ giữ nguyên tên gốc (có khoảng trắng) — **cần đổi tên file theo đúng dạng đã chuẩn hoá**
+  (xem tên chính xác trong báo cáo cuối) trước khi upload lên Shopify Admin, hệ thống mới nhận diện
+  đúng ảnh.
 - Sản phẩm/Collection/Video: Figma không có khái niệm tài nguyên Shopify thật, nên các field này
   thường để trống hoặc gán theo dữ liệu collection thật (nếu có) — luôn được liệt kê rõ trong báo cáo
   cuối, không bao giờ tự bịa.

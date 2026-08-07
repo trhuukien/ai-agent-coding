@@ -1,0 +1,758 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_image": true,
+        "show_product_name": false,
+        "title_size": 100,
+        "heading_tag": "h1",
+        "show_vendor": false,
+        "link_vendor": false,
+        "make_content_center": false,
+        "desktop_layout": "left",
+        "desktop_media_layout": "2_columns",
+        "show_arrow_button": true,
+        "mobile_media_size": "full_width",
+        "show_thumnail_mobile": false,
+        "transition_style": "fade",
+        "image_ratio": "square",
+        "thumbnail_position": "horizontal",
+        "enable_thumbnail_overlay": true,
+        "enable_image_zoom": false,
+        "enable_video_autoplay": false,
+        "enable_video_loop": false,
+        "show_first_image_avaiable": true,
+        "show_media_with_variant_selected": false,
+        "option_to_classify_variant_media": "",
+        "enable_microdata": false,
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "full_width": true,
+        "spacing_col": "default",
+        "padding_top": 60,
+        "padding_bottom": 100,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "product_name_1": {
+          "type": "product_name",
+          "settings": {
+            "title_size": 100,
+            "heading_tag": "h1",
+            "enable_product_rating": false
+          }
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {
+            "adapt_custom_price_format": false,
+            "show_tax_and_shipping": false,
+            "text_size_price": 70
+          }
+        },
+        "subscription_1": {
+          "type": "subscription",
+          "settings": {
+            "label": "Best Way to Save – Subscribe & Save 20% Automatically",
+            "text": "<p>✔ Enjoy exclusive savings with every delivery.</p><p>✔ Your favorites, delivered before you run out.</p><p>✔ Skip, pause, or cancel anytime.</p>"
+          }
+        },
+        "quantity_selector_1": {
+          "type": "quantity_selector",
+          "settings": {
+            "style": "adapt"
+          }
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_button_style": "primary",
+            "show_dynamic_checkout": false,
+            "dymanic_checkout_style": "primary",
+            "show_atc_quantity": false,
+            "show_add_to_cart": true,
+            "show_price": false,
+            "hide_sale_price": true,
+            "show_gift_card_recipient": true,
+            "pickup_availability": true,
+            "hide_when_pre_order": false,
+            "preorder_button_label": "Pre-order",
+            "preorder_message": "<p>This product will be available for sale in 2 weeks, but you can pre-order now to receive 10% discount!</p>",
+            "preorder_show_dynamic_button": false,
+            "show_background": false,
+            "box_type": "adapt",
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "button_light": "#7f8d7c",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "button_dark": "rgba(0,0,0,0)",
+            "button_text_dark": "rgba(0,0,0,0)",
+            "button_hover_dark": "rgba(0,0,0,0)",
+            "button_text_hover_dark": "rgba(0,0,0,0)",
+            "secondary_button_dark": "rgba(0,0,0,0)",
+            "secondary_button_text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "description_1": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_by_default": false,
+            "make_content_center": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": null,
+            "custom_icon": "",
+            "heading": "Description",
+            "custom_description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        },
+        "variant_picker_1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "max_swatch": 20,
+            "show_variant_option": true,
+            "enable_color_swatches": false,
+            "swatch_size": "small",
+            "enable_size_chart": false,
+            "option_to_show_size_chart": "",
+            "heading": "Size chart",
+            "select_page": null,
+            "select_image": null,
+            "additional_info": "Add extra details for the image, such as measuring guide or important notes.",
+            "size_chart_type": "popup"
+          }
+        },
+        "collapsible_tab_1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": null,
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "WHAT IS A BARRIER SERUM?",
+            "tab_content": "<p>A Barrier Serum is the first nourishing step after cleansing. Its lightweight texture allows carefully selected botanical oils and advanced actives to absorb quickly, helping support a healthy skin barrier. It prepares the skin for Barrier Balm, which helps seal in moisture and reduce moisture loss. Together they create a simple two-step ritual.</p>"
+          }
+        },
+        "collapsible_tab_2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": null,
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "SKIN TYPES",
+            "tab_content": "<p></p>"
+          }
+        },
+        "collapsible_tab_3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": null,
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "INGREDIENTS",
+            "tab_content": "<p></p>"
+          }
+        },
+        "collapsible_tab_4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": null,
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "HOW TO USE",
+            "tab_content": "<p></p>"
+          }
+        },
+        "collapsible_tab_5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": null,
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "NEED TO KNOW",
+            "tab_content": "<p></p>"
+          }
+        },
+        "complementary_1": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Commonly paired with:",
+            "show_tab": false,
+            "show_background": true,
+            "show_border": false,
+            "max_product_show": 2,
+            "enable_carousel_desktop": false,
+            "enable_swiper_mobile": true,
+            "number_product_per_page": 3,
+            "image_ratio": "square",
+            "show_vendor": false,
+            "show_product_rating": false,
+            "show_highlighted_features": false,
+            "add_as_bundle": false,
+            "border_color_light": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "shoppable_video_1": {
+          "type": "shoppable_video",
+          "settings": {
+            "heading": "Video Ritual",
+            "video_layout": "aspect-[9/16]",
+            "enable_desktop_slider": true,
+            "swiper_on_mobile": true,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "video_1": null,
+            "show_sound_control_1": false,
+            "enable_video_autoplay_1": false,
+            "video_alt_text_1": "",
+            "product_1": null,
+            "video_2": null,
+            "show_sound_control_2": false,
+            "enable_video_autoplay_2": false,
+            "video_alt_text_2": "",
+            "product_2": null,
+            "video_3": null,
+            "show_sound_control_3": false,
+            "enable_video_autoplay_3": false,
+            "video_alt_text_3": "",
+            "product_3": null,
+            "video_4": null,
+            "show_sound_control_4": false,
+            "enable_video_autoplay_4": false,
+            "video_alt_text_4": "",
+            "product_4": null,
+            "video_5": null,
+            "show_sound_control_5": false,
+            "enable_video_autoplay_5": false,
+            "video_alt_text_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_name_1",
+        "price_1",
+        "subscription_1",
+        "quantity_selector_1",
+        "buy_buttons_1",
+        "description_1",
+        "variant_picker_1",
+        "collapsible_tab_1",
+        "collapsible_tab_2",
+        "collapsible_tab_3",
+        "collapsible_tab_4",
+        "collapsible_tab_5",
+        "complementary_1",
+        "shoppable_video_1"
+      ]
+    },
+    "flexible_howto_ingredients": {
+      "type": "flexible-area",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "content_width": "full_width",
+        "row_gap": 4,
+        "col_gap": 4,
+        "full_width": true,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "content_width_mobile": "full_width",
+        "row_gap_mobile": 4,
+        "col_gap_mobile": 4,
+        "full_width_mobile": true,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28,
+        "background_color_light": "#f9f4ec",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)"
+      },
+      "blocks": {
+        "how_to_use_media": {
+          "type": "image-with-text",
+          "settings": {
+            "desktop_width": "100",
+            "mobile_width": "100",
+            "container_alignment": "adapt",
+            "mobile_container_alignment": "adapt",
+            "show_hero": false,
+            "image": "shopify://shop_images/Video.png",
+            "image_second": "",
+            "desktop_height": "natural",
+            "mobile_height": "natural",
+            "desktop_image_width": "large",
+            "image_layout": "normal",
+            "image_alignment": "left",
+            "image_alignment_mobile": "left",
+            "adapt_radius": false,
+            "image_corner_radius": 0,
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "enable_video_autoplay": false,
+            "content_layout": "no-overlap",
+            "spacing_image": false,
+            "text_position": "center",
+            "content_alignment": "left",
+            "background_color_light": "rgba(0,0,0,0)",
+            "subheading": "",
+            "heading": "How to Use [Barrier Serum]",
+            "highlight_type": "font_highlight",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>After cleansing massage 2-3 drops onto skin and neck, avoiding the eye area. Use morning and night for optimal hydration and a radiant glow.</p>",
+            "text_size": 100,
+            "heading_color_light": "rgba(0,0,0,0)",
+            "heading_highlight_color_light": "rgba(0,0,0,0)",
+            "text_color_light": "rgba(0,0,0,0)",
+            "button_label": "",
+            "button_link": "",
+            "open_new_window": false,
+            "show_button_style": "primary",
+            "button_light": "rgba(0,0,0,0)",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          },
+          "blocks": {}
+        },
+        "key_ingredients_heading": {
+          "type": "heading",
+          "settings": {
+            "desktop_width": "100",
+            "mobile_width": "100",
+            "heading": "Key Ingredients",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "heading_alignment": "center",
+            "mobile_heading_alignment": "center",
+            "heading_color_light": "rgba(0,0,0,0)",
+            "heading_highlight_color_light": "rgba(0,0,0,0)"
+          },
+          "blocks": {}
+        },
+        "ingredients_carousel": {
+          "type": "item-group",
+          "settings": {
+            "container_type": "carousel",
+            "content_alignment": "center",
+            "mobile_content_alignment": "center",
+            "content_position": "start",
+            "group_opacity": 100,
+            "edges_type": "rounded_corners",
+            "border_column": "none",
+            "enable_desktop_slider": true,
+            "swiper_on_mobile": true,
+            "enable_arrow_mobile": false,
+            "auto_play": false,
+            "change_slides_speed": 5,
+            "columns_desktop": 3,
+            "desktop_width": "100",
+            "row_gap": 10,
+            "col_gap": 20,
+            "padding_left_desktop": 0,
+            "padding_right_desktop": 0,
+            "padding_top_desktop": 0,
+            "padding_bottom_desktop": 0,
+            "columns_mobile": "1",
+            "mobile_width": "100",
+            "row_gap_mobile": 10,
+            "col_gap_mobile": 10,
+            "padding_left_mobile": 0,
+            "padding_right_mobile": 0,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0,
+            "background_color_light": "rgba(0,0,0,0)",
+            "line_border_light": "rgba(0,0,0,0)"
+          },
+          "blocks": {
+            "ingredient_1": {
+              "type": "image-with-text",
+              "settings": {
+                "desktop_width": "100",
+                "mobile_width": "100",
+                "container_alignment": "adapt",
+                "mobile_container_alignment": "adapt",
+                "show_hero": false,
+                "image": "shopify://shop_images/Dektop_Product_card_Image_1.png",
+                "image_second": "",
+                "desktop_height": "natural",
+                "mobile_height": "natural",
+                "desktop_image_width": "large",
+                "image_layout": "stacked",
+                "image_alignment": "left",
+                "image_alignment_mobile": "left",
+                "adapt_radius": false,
+                "image_corner_radius": 8,
+                "video": "",
+                "show_sound_control": false,
+                "video_url": "",
+                "video_alt_text": "",
+                "enable_video_autoplay": false,
+                "content_layout": "no-overlap",
+                "spacing_image": false,
+                "text_position": "center",
+                "content_alignment": "left",
+                "background_color_light": "rgba(0,0,0,0)",
+                "subheading": "",
+                "heading": "Olive-derived Squalane",
+                "highlight_type": "underline",
+                "heading_size": 100,
+                "heading_tag": "h3",
+                "text": "<p>Lightweight hydration. A fast-absorbing botanical lipid that helps replenish moisture, soften the skin and support a healthy skin barrier without feeling heavy.</p>",
+                "text_size": 100,
+                "heading_color_light": "rgba(0,0,0,0)",
+                "heading_highlight_color_light": "rgba(0,0,0,0)",
+                "text_color_light": "rgba(0,0,0,0)",
+                "button_label": "",
+                "button_link": "",
+                "open_new_window": false,
+                "show_button_style": "primary",
+                "button_light": "rgba(0,0,0,0)",
+                "button_text_light": "rgba(0,0,0,0)",
+                "button_hover_light": "rgba(0,0,0,0)",
+                "button_text_hover_light": "rgba(0,0,0,0)",
+                "secondary_button_light": "rgba(0,0,0,0)",
+                "secondary_button_text_light": "rgba(0,0,0,0)",
+                "colors_text_link": "rgba(0,0,0,0)"
+              },
+              "blocks": {}
+            },
+            "ingredient_2": {
+              "type": "image-with-text",
+              "settings": {
+                "desktop_width": "100",
+                "mobile_width": "100",
+                "container_alignment": "adapt",
+                "mobile_container_alignment": "adapt",
+                "show_hero": false,
+                "image": "shopify://shop_images/Dektop_Product_card_Image_2.png",
+                "image_second": "",
+                "desktop_height": "natural",
+                "mobile_height": "natural",
+                "desktop_image_width": "large",
+                "image_layout": "stacked",
+                "image_alignment": "left",
+                "image_alignment_mobile": "left",
+                "adapt_radius": false,
+                "image_corner_radius": 8,
+                "video": "",
+                "show_sound_control": false,
+                "video_url": "",
+                "video_alt_text": "",
+                "enable_video_autoplay": false,
+                "content_layout": "no-overlap",
+                "spacing_image": false,
+                "text_position": "center",
+                "content_alignment": "left",
+                "background_color_light": "rgba(0,0,0,0)",
+                "subheading": "",
+                "heading": "Meadowfoam Seed Oil",
+                "highlight_type": "underline",
+                "heading_size": 100,
+                "heading_tag": "h3",
+                "text": "<p>Locks in lasting nourishment. Chosen for its exceptional stability and silky skin feel, helping to reduce moisture loss while giving the serum its luxurious glide.</p>",
+                "text_size": 100,
+                "heading_color_light": "rgba(0,0,0,0)",
+                "heading_highlight_color_light": "rgba(0,0,0,0)",
+                "text_color_light": "rgba(0,0,0,0)",
+                "button_label": "",
+                "button_link": "",
+                "open_new_window": false,
+                "show_button_style": "primary",
+                "button_light": "rgba(0,0,0,0)",
+                "button_text_light": "rgba(0,0,0,0)",
+                "button_hover_light": "rgba(0,0,0,0)",
+                "button_text_hover_light": "rgba(0,0,0,0)",
+                "secondary_button_light": "rgba(0,0,0,0)",
+                "secondary_button_text_light": "rgba(0,0,0,0)",
+                "colors_text_link": "rgba(0,0,0,0)"
+              },
+              "blocks": {}
+            },
+            "ingredient_3": {
+              "type": "image-with-text",
+              "settings": {
+                "desktop_width": "100",
+                "mobile_width": "100",
+                "container_alignment": "adapt",
+                "mobile_container_alignment": "adapt",
+                "show_hero": false,
+                "image": "shopify://shop_images/Dektop_Product_card_Image_3.png",
+                "image_second": "",
+                "desktop_height": "natural",
+                "mobile_height": "natural",
+                "desktop_image_width": "large",
+                "image_layout": "stacked",
+                "image_alignment": "left",
+                "image_alignment_mobile": "left",
+                "adapt_radius": false,
+                "image_corner_radius": 8,
+                "video": "",
+                "show_sound_control": false,
+                "video_url": "",
+                "video_alt_text": "",
+                "enable_video_autoplay": false,
+                "content_layout": "no-overlap",
+                "spacing_image": false,
+                "text_position": "center",
+                "content_alignment": "left",
+                "background_color_light": "rgba(0,0,0,0)",
+                "subheading": "",
+                "heading": "Bakuchiol",
+                "highlight_type": "underline",
+                "heading_size": 100,
+                "heading_tag": "h3",
+                "text": "<p>Locks in lasting nourishment. Chosen for its exceptional stability and silky skin feel, helping to reduce moisture loss while giving the serum its luxurious glide.</p>",
+                "text_size": 100,
+                "heading_color_light": "rgba(0,0,0,0)",
+                "heading_highlight_color_light": "rgba(0,0,0,0)",
+                "text_color_light": "rgba(0,0,0,0)",
+                "button_label": "",
+                "button_link": "",
+                "open_new_window": false,
+                "show_button_style": "primary",
+                "button_light": "rgba(0,0,0,0)",
+                "button_text_light": "rgba(0,0,0,0)",
+                "button_hover_light": "rgba(0,0,0,0)",
+                "button_text_hover_light": "rgba(0,0,0,0)",
+                "secondary_button_light": "rgba(0,0,0,0)",
+                "secondary_button_text_light": "rgba(0,0,0,0)",
+                "colors_text_link": "rgba(0,0,0,0)"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "ingredient_1",
+            "ingredient_2",
+            "ingredient_3"
+          ]
+        }
+      },
+      "block_order": [
+        "how_to_use_media",
+        "key_ingredients_heading",
+        "ingredients_carousel"
+      ]
+    },
+    "faq_main": {
+      "type": "faq",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": true,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "#f9f4ec",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "question_aB3xK9": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Why should I use a Barrier Serum?",
+            "row_content": "<p></p>",
+            "open_by_default": false
+          }
+        },
+        "question_pQ7mZa": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Can I use the Barrier Serum on its own?",
+            "row_content": "<p></p>",
+            "open_by_default": false
+          }
+        },
+        "question_Ln4tRb": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Do I need both the Barrier Serum and Barrier Balm?",
+            "row_content": "<p></p>",
+            "open_by_default": false
+          }
+        },
+        "question_Wk9VeD": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Is the Barrier Serum suitable for sensitive skin?",
+            "row_content": "<p></p>",
+            "open_by_default": false
+          }
+        },
+        "question_Xy2Hqf": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Can I wear it under makeup?",
+            "row_content": "<p></p>",
+            "open_by_default": false
+          }
+        },
+        "question_Tm6Cvs": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Is it suitable for morning and evening use?",
+            "row_content": "<p></p>",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "question_aB3xK9",
+        "question_pQ7mZa",
+        "question_Ln4tRb",
+        "question_Wk9VeD",
+        "question_Xy2Hqf",
+        "question_Tm6Cvs"
+      ]
+    },
+    "newsletter_main": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_es1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join Our Community",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Enjoy 15% off your first order, plus early access to new launches, exclusive offers and practical skincare advise delivered to your inbox.</p>",
+            "text_size": 100
+          }
+        },
+        "email_form_es1": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "SUBMIT",
+            "background_color_light": "#F5F3EE"
+          }
+        }
+      },
+      "block_order": [
+        "heading_es1",
+        "email_form_es1"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "horizontal",
+        "background_color_light": "#7F8D7C",
+        "heading_light": "#F5F3EE",
+        "color_heading_highlight_light": "#F5F3EE",
+        "text_light": "#F5F3EE",
+        "button_light": "#F5F3EE",
+        "button_text_light": "#1F1F1F",
+        "button_hover_light": "rgba(0,0,0,0)",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "#909D8E",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "flexible_howto_ingredients",
+    "faq_main",
+    "newsletter_main"
+  ]
+}

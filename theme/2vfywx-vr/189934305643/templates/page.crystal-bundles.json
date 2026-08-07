@@ -1,0 +1,95 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "curated": {
+      "type": "curated-bundle-grid",
+      "settings": {
+        "heading": "Popular pairings",
+        "subheading": "Pre-matched crystal and base combinations, ready to add in one click.",
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "main": {
+      "type": "products-bundle",
+      "settings": {
+        "heading": "Or Build Your Own Crystal Bundle",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "description": "Pair your crystal with a display base and save. Add any 2 items to unlock your discount.",
+        "heading_alignment": "center",
+        "show_discount_value_label": true,
+        "label_type": "rounded",
+        "button_atb_label": "ADD TO BUNDLE",
+        "products": [
+          "gid://shopify/Product/15101739434347",
+          "gid://shopify/Product/15109453939051",
+          "gid://shopify/Product/15109591662955",
+          "gid://shopify/Product/15109625610603",
+          "gid://shopify/Product/15114811507051",
+          "gid://shopify/Product/15109817860459",
+          "gid://shopify/Product/15105409909099",
+          "gid://shopify/Product/15140725588331",
+          "gid://shopify/Product/15117360300395",
+          "gid://shopify/Product/15101717512555"
+        ],
+        "show_highlighted_features": false,
+        "each_product_can_added_to_bundle_once": true,
+        "minimum_items": 2,
+        "discount_type": "percentage",
+        "discount_value": "10",
+        "apply_discount_once_per_order": false,
+        "picker_type": "adapt",
+        "max_swatch": 20,
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "summary_layout": "vertical",
+        "summary_position": "right",
+        "bundler_heading": "Your Bundle",
+        "bundler_text": "<p>Add at least 2 items to save 10%</p>",
+        "background_color_light": "rgba(0,0,0,0)",
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "button_light": "rgba(0,0,0,0)",
+        "button_text_light": "rgba(0,0,0,0)",
+        "button_hover_light": "rgba(0,0,0,0)",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "button_dark": "rgba(0,0,0,0)",
+        "button_text_dark": "rgba(0,0,0,0)",
+        "button_hover_dark": "rgba(0,0,0,0)",
+        "button_text_hover_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "spacing": 4,
+        "show_section_divider": true,
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "columns_mobile": "1",
+        "spacing_mobile": 4,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "curated",
+    "main"
+  ]
+}

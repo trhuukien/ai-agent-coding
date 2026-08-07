@@ -1,0 +1,394 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_founder": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hero": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Our Story",
+            "highlight_type": "underline",
+            "heading_base_size": 140,
+            "heading_tag": "h1",
+            "text": "<p>Crystal 3D Pix was born out of a simple, powerful idea: that our most cherished life milestones deserve to be captured in a medium as brilliant and enduring as the memories themselves. We set out to disrupt traditional personalized gifting by combining cutting-edge subsurface laser technology with premium optical-grade crystal.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "#212529",
+            "color_heading_highlight_light": "#4CA036",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hero"
+      ],
+      "settings": {
+        "show_hero": true,
+        "image": "",
+        "image_second": "",
+        "desktop_height": "650px",
+        "mobile_height": "natural",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "adapt_radius": false,
+        "image_corner_radius": 0,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "#FFFFFF",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 45,
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 48,
+        "bottom_padding": 48,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 24,
+        "bottom_padding_mobile": 24
+      }
+    },
+    "co_founders": {
+      "type": "multicolumn",
+      "blocks": {
+        "rocky": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "custom_image": "",
+            "title": "Rocky",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p><strong>Chief Comfort Officer.</strong> Rocky joined the founding team as a puppy and has never left the couch (or the boardroom, which are often the same place). Responsibilities include quality-testing every dog bed on the premises, aggressively negotiating with squeaky toys, and enforcing mandatory belly-rub breaks. Believes every good idea starts with a nap.</p>"
+          }
+        },
+        "gunner": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "custom_image": "",
+            "title": "Gunner",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p><strong>Director of Perimeter Security.</strong> Gunner runs a tight ship — patrolling the yard, interrogating the mail carrier, and personally taste-testing anything that hits the kitchen floor (quality control is serious business). When he's not on duty, he's the reason the phrase &quot;photographed mid-zoomie&quot; exists in our brand guidelines.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "rocky",
+        "gunner"
+      ],
+      "settings": {
+        "title": "Meet the Co-Founders",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "secondary_background": "none",
+        "border_column": "none",
+        "column_content_alignment": "center",
+        "icon_position": "above",
+        "icon_size": 45,
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_bar_every": 5,
+        "background_color_light": "#FFFFFF",
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "#212529",
+        "color_heading_highlight_light": "#4CA036",
+        "line_border_light": "rgba(0,0,0,0)",
+        "color_icon_light": "#4CA036",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "color_icon_dark": "rgba(0,0,0,0)",
+        "column_layout_desktop": "lg:w-1/2",
+        "section_height_desktop": "md:py-7",
+        "spacing_desktop": 40,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "column_layout_mobile": "w-full",
+        "section_height_mobile": "py-5",
+        "spacing_mobile": 24,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
+      }
+    },
+    "craftsmanship": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_craft": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "HD Subsurface Laser Artistry",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Unlike traditional surface engraving that scratches, wears, or fades over time, our proprietary high-definition laser arrays burn your photographs entirely inside the heart of the crystal glass. This ensures your memories remain permanently protected from dust, elements, and aging, floating forever in crystal-clear definition.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "#212529",
+            "color_heading_highlight_light": "#4CA036",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading_craft"
+      ],
+      "settings": {
+        "show_hero": false,
+        "image": "",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "natural",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "adapt_radius": false,
+        "image_corner_radius": 0,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "#FFFFFF",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 45,
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "right",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 32,
+        "bottom_padding": 32,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 24,
+        "bottom_padding_mobile": 24
+      }
+    },
+    "process_steps": {
+      "type": "multicolumn",
+      "blocks": {
+        "step_1": {
+          "type": "column",
+          "settings": {
+            "icon": "camera",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "1. Mobile Photo Upload",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Simply choose any photograph from your phone's camera roll.</p>"
+          }
+        },
+        "step_2": {
+          "type": "column",
+          "settings": {
+            "icon": "settings",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "2. 3D Model Conversion",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Our expert team of digital artists automatically strips away backgrounds and converts your flat 2D snapshot into a fully dimensional 3D file structure.</p>"
+          }
+        },
+        "step_3": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "3. USA Handcrafted Production",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Every individual crystal block is cut, laser-etched, polished, and packaged by hand right here in the USA before being express-delivered to your door.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "title": "The Creative Process",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "secondary_background": "none",
+        "border_column": "line_vertical",
+        "column_content_alignment": "center",
+        "icon_position": "above",
+        "icon_size": 45,
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_bar_every": 5,
+        "background_color_light": "#FFFFFF",
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "#212529",
+        "color_heading_highlight_light": "#4CA036",
+        "line_border_light": "rgba(0,0,0,0)",
+        "color_icon_light": "#4CA036",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "color_icon_dark": "rgba(0,0,0,0)",
+        "column_layout_desktop": "lg:w-1/3",
+        "section_height_desktop": "md:py-7",
+        "spacing_desktop": 32,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "column_layout_mobile": "w-full",
+        "section_height_mobile": "py-5",
+        "spacing_mobile": 24,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
+      }
+    },
+    "vip_signup": {
+      "type": "contact-form",
+      "blocks": {
+        "name_block": {
+          "type": "name",
+          "settings": {
+            "heading": "Full Name",
+            "mark_as_required": true
+          }
+        },
+        "email_block": {
+          "type": "email",
+          "settings": {
+            "heading": "Email Address"
+          }
+        },
+        "phone_block": {
+          "type": "phone",
+          "settings": {
+            "heading": "Phone Number",
+            "mark_as_required": true
+          }
+        }
+      },
+      "block_order": [
+        "name_block",
+        "email_block",
+        "phone_block"
+      ],
+      "settings": {
+        "heading": "Join the Crystal VIP Club",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "text": "<p>Unlock 10% off your first custom gift order and gain priority access to seasonal product drops.</p>",
+        "background_color_light": "#F4F6F8",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "button_label": "Claim My 10% Off",
+        "button_alignment": "center",
+        "success_message": "Thanks for joining the Crystal VIP Club! Check your inbox for your 10% off code.",
+        "show_content": "none",
+        "form_alignment": "left",
+        "desktop_height": "450px",
+        "mobile_height": "350px",
+        "contact_heading": "",
+        "highlight_type_1": "underline",
+        "heading_tag_2": "h2",
+        "infomation": "",
+        "address": "",
+        "phone_nummber": "",
+        "email_address": "",
+        "contact_text": "",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 24
+      }
+    }
+  },
+  "order": [
+    "hero_founder",
+    "co_founders",
+    "craftsmanship",
+    "process_steps",
+    "vip_signup"
+  ]
+}

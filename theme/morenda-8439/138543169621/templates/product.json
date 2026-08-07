@@ -1,0 +1,1082 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "enable_sticky_image": true,
+        "show_product_name": false,
+        "title_size": 100,
+        "heading_tag": "h1",
+        "show_vendor": true,
+        "link_vendor": false,
+        "make_content_center": false,
+        "desktop_layout": "left",
+        "desktop_media_layout": "thumbnail_slider",
+        "show_arrow_button": true,
+        "mobile_media_size": "full_width",
+        "show_thumnail_mobile": true,
+        "transition_style": "fade",
+        "image_ratio": "square",
+        "thumbnail_position": "horizontal",
+        "enable_thumbnail_overlay": false,
+        "enable_image_zoom": true,
+        "zoom_effect": "enlarge",
+        "enable_video_autoplay": false,
+        "enable_video_loop": false,
+        "show_first_image_avaiable": true,
+        "show_media_with_variant_selected": true,
+        "option_to_classify_variant_media": "",
+        "enable_microdata": true,
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": false,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "#6e4f3a",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "full_width": false,
+        "spacing_col": "default",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      },
+      "blocks": {
+        "vendor_1": {
+          "type": "vendor",
+          "settings": {
+            "link_vendor": false,
+            "select_page": "",
+            "link": "",
+            "open_new_window": false
+          }
+        },
+        "product_name_1": {
+          "type": "product_name",
+          "settings": {
+            "title_size": 100,
+            "heading_tag": "h1",
+            "enable_product_rating": false
+          }
+        },
+        "rating_1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_1": {
+          "type": "price",
+          "settings": {
+            "adapt_custom_price_format": false,
+            "show_tax_and_shipping": false,
+            "text_size_price": 100
+          }
+        },
+        "inventory_status_1": {
+          "type": "inventory_status",
+          "settings": {
+            "incoming": false,
+            "message_incoming": "",
+            "message_backorder": "",
+            "hide_preorder": false
+          }
+        },
+        "quantity_selector_1": {
+          "type": "quantity_selector",
+          "settings": {
+            "style": "adapt"
+          }
+        },
+        "buy_buttons_1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_button_style": "primary",
+            "show_dynamic_checkout": true,
+            "dymanic_checkout_style": "secondary",
+            "show_atc_quantity": false,
+            "show_add_to_cart": true,
+            "show_price": false,
+            "hide_sale_price": true,
+            "show_gift_card_recipient": true,
+            "pickup_availability": true,
+            "hide_when_pre_order": false,
+            "preorder_button_label": "Pre-order",
+            "preorder_message": "<p>This product will be available for sale in 2 weeks, but you can pre-order now to receive 10% discount!</p>",
+            "preorder_show_dynamic_button": false,
+            "show_background": false,
+            "box_type": "adapt",
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "button_light": "#6e4f3a",
+            "button_text_light": "#ffffff",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "button_dark": "rgba(0,0,0,0)",
+            "button_text_dark": "rgba(0,0,0,0)",
+            "button_hover_dark": "rgba(0,0,0,0)",
+            "button_text_hover_dark": "rgba(0,0,0,0)",
+            "secondary_button_dark": "rgba(0,0,0,0)",
+            "secondary_button_text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "estimate_delivery_1": {
+          "type": "estimate_delivery",
+          "settings": {
+            "hide_when_pre_order": false,
+            "box_type": "adapt",
+            "message": "<p>Estimated delivery between <strong>earliest_delivery_date and latest_delivery_date.</strong> Order within <strong>time_to_cut_off.</strong></p>",
+            "tooltip_text": "",
+            "tooltip_icon": "none",
+            "custom_icon": "",
+            "tooltip_icon_position": "left",
+            "tooltip_message": "",
+            "show_background": false,
+            "show_border": false,
+            "background_color_light": "rgba(0,0,0,0)",
+            "message_color_light": "rgba(0,0,0,0)",
+            "border_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "message_color_dark": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)",
+            "bg_tooltip_color_light": "rgba(0,0,0,0)",
+            "tooltip_color_light": "rgba(0,0,0,0)",
+            "bg_tooltip_color_dark": "rgba(0,0,0,0)",
+            "tooltip_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "feature_icon_1": {
+          "type": "feature_icon",
+          "settings": {
+            "applied_collections": [],
+            "heading_size": 100,
+            "icon_size": 24,
+            "border_column": "column",
+            "content_alignment": "center",
+            "background_color_light": "rgba(0,0,0,0)",
+            "heading_light": "#6e4f3a",
+            "text_light": "#6e4f3a",
+            "line_border_light": "rgba(0,0,0,0)",
+            "color_icon_light": "#6e4f3a",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "line_border_dark": "rgba(0,0,0,0)",
+            "color_icon_dark": "rgba(0,0,0,0)",
+            "icon_1": "another_icon",
+            "another_icon_1": "return-exchange",
+            "custom_image_1": "",
+            "custom_icon_1": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.7927 6.66203C12.5143 6.52228 12.1988 6.44873 11.8776 6.44873C11.5564 6.44873 11.2409 6.52228 10.9625 6.66203L7.06674 8.6243C6.78882 8.76485 6.55801 8.96657 6.39738 9.20933C6.23675 9.45208 6.15192 9.72736 6.15137 10.0077V13.9322C6.15189 14.2125 6.2367 14.4878 6.39734 14.7305C6.55797 14.9732 6.7888 15.1749 7.06674 15.3154L10.9628 17.2779C11.2412 17.4176 11.5567 17.4911 11.8779 17.4911C12.199 17.4911 12.5146 17.4176 12.793 17.2779L16.6871 15.3166C16.9648 15.176 17.1955 14.9743 17.356 14.7316C17.5166 14.4889 17.6013 14.2137 17.6019 13.9335V9.44008C17.6019 9.33225 17.5693 9.22632 17.5076 9.13294C17.4458 9.03956 17.3569 8.96202 17.2499 8.90811L12.7927 6.66203ZM11.6664 7.72622C11.7306 7.69387 11.8035 7.67684 11.8776 7.67684C11.9517 7.67684 12.0246 7.69387 12.0888 7.72622L15.4958 9.44303L11.8804 11.2613L8.26341 9.44008L11.6664 7.72622ZM7.77038 14.2514C7.70614 14.2191 7.65279 14.1725 7.61572 14.1164C7.57865 14.0603 7.55916 13.9967 7.55921 13.932V10.503L11.1759 12.325V15.9668L7.77038 14.2514ZM15.9826 14.2529L12.5838 15.9648V12.3262L16.194 10.508V13.9335C16.1939 13.9982 16.1742 14.0617 16.1371 14.1178C16.1 14.1738 16.0467 14.2204 15.9826 14.2529Z\" fill=\"#6E4F3A\"/>\n<path d=\"M5.53809 3.62076C5.53809 3.78368 5.61225 3.93992 5.74426 4.05512C5.87627 4.17032 6.05531 4.23504 6.242 4.23504H12.9304C15.078 4.23706 17.137 4.98247 18.6557 6.30772C20.1743 7.63298 21.0285 9.42983 21.0308 11.304C21.0308 11.4669 21.1049 11.6232 21.237 11.7384C21.369 11.8536 21.548 11.9183 21.7347 11.9183C21.9214 11.9183 22.1004 11.8536 22.2324 11.7384C22.3645 11.6232 22.4386 11.4669 22.4386 11.304C22.4359 9.10411 21.4332 6.99499 19.6507 5.43942C17.8681 3.88385 15.4513 3.00888 12.9304 3.00647H6.242C6.05531 3.00647 5.87627 3.07119 5.74426 3.18639C5.61225 3.30159 5.53809 3.45784 5.53809 3.62076Z\" fill=\"#6E4F3A\"/>\n<path d=\"M1.62013 4.12359L4.9567 6.16523C5.10956 6.25878 5.29875 6.29551 5.48264 6.26733C5.66653 6.23915 5.83006 6.14838 5.93726 6.01498C6.04446 5.88158 6.08654 5.71649 6.05425 5.55601C6.02196 5.39553 5.91795 5.25283 5.76508 5.15928L3.2504 3.62061L5.76508 2.08195C5.84215 2.03613 5.90803 1.97741 5.95887 1.90919C6.00972 1.84098 6.04453 1.76462 6.06128 1.68457C6.07802 1.60451 6.07638 1.52235 6.05643 1.44285C6.03648 1.36336 5.99864 1.28811 5.94509 1.22149C5.89153 1.15487 5.82335 1.09819 5.74449 1.05476C5.66562 1.01133 5.57766 0.982005 5.4857 0.968491C5.39374 0.954976 5.29963 0.957542 5.20881 0.976038C5.118 0.994534 5.0323 1.02859 4.9567 1.07623L1.62013 3.11763C1.52753 3.17429 1.45194 3.24958 1.39975 3.33713C1.34756 3.42469 1.32031 3.52192 1.32031 3.62061C1.32031 3.7193 1.34756 3.81654 1.39975 3.90409C1.45194 3.99164 1.52753 4.06693 1.62013 4.12359Z\" fill=\"#6E4F3A\"/>\n<path d=\"M18.2208 20.3837C18.2208 20.2208 18.1467 20.0646 18.0147 19.9494C17.8827 19.8342 17.7036 19.7694 17.5169 19.7694H10.8286C8.68091 19.7674 6.62188 19.022 5.10326 17.6968C3.58464 16.3715 2.73046 14.5747 2.72815 12.7005C2.72815 12.5375 2.65399 12.3813 2.52198 12.2661C2.38997 12.1509 2.21092 12.0862 2.02423 12.0862C1.83754 12.0862 1.6585 12.1509 1.52649 12.2661C1.39448 12.3813 1.32031 12.5375 1.32031 12.7005C1.32314 14.9004 2.32581 17.0094 4.10834 18.565C5.89087 20.1205 8.30769 20.9955 10.8286 20.998H17.5169C17.7036 20.998 17.8827 20.9333 18.0147 20.8181C18.1467 20.7029 18.2208 20.5466 18.2208 20.3837Z\" fill=\"#6E4F3A\"/>\n<path d=\"M22.14 19.8813L18.8035 17.8396C18.7278 17.7933 18.6424 17.7604 18.5521 17.7429C18.4619 17.7254 18.3686 17.7236 18.2775 17.7375C18.1865 17.7515 18.0995 17.7809 18.0215 17.8242C17.9435 17.8675 17.876 17.9238 17.8229 17.9899C17.7698 18.0559 17.7322 18.1305 17.7121 18.2092C17.692 18.288 17.6899 18.3694 17.7059 18.4488C17.7219 18.5283 17.7557 18.6042 17.8053 18.6723C17.8549 18.7404 17.9194 18.7993 17.9951 18.8456L20.5098 20.3842L17.9951 21.9227C17.9194 21.969 17.8549 22.0279 17.8053 22.0959C17.7557 22.164 17.7219 22.2399 17.7059 22.3194C17.6899 22.3989 17.692 22.4803 17.7121 22.559C17.7322 22.6378 17.7698 22.7123 17.8229 22.7784C17.876 22.8444 17.9435 22.9007 18.0215 22.944C18.0995 22.9873 18.1865 23.0168 18.2775 23.0307C18.3686 23.0447 18.4619 23.0428 18.5521 23.0253C18.6424 23.0078 18.7278 22.9749 18.8035 22.9286L22.14 20.8872C22.2326 20.8306 22.3082 20.7553 22.3604 20.6677C22.4126 20.5802 22.4399 20.4829 22.4399 20.3842C22.4399 20.2856 22.4126 20.1883 22.3604 20.1008C22.3082 20.0132 22.2326 19.9379 22.14 19.8813Z\" fill=\"#6E4F3A\"/>\n</svg>",
+            "title_1": "",
+            "text_1": "<p>14-day return policy</p>",
+            "link_1": "",
+            "open_new_window_1": false,
+            "icon_2": "another_icon",
+            "another_icon_2": "trust",
+            "custom_image_2": "",
+            "custom_icon_2": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M11.3731 9.04767C11.4461 9.07343 11.5235 9.08449 11.6008 9.08024C11.6781 9.07599 11.7538 9.05649 11.8235 9.02288C11.8932 8.98927 11.9556 8.94221 12.0071 8.88439C12.0586 8.82657 12.0982 8.75915 12.1235 8.68599C12.2721 8.25934 12.5239 7.87606 12.8565 7.5703C13.189 7.26453 13.5919 7.04575 14.0295 6.93345C14.467 6.82115 14.9255 6.81881 15.3641 6.92663C15.8028 7.03446 16.2079 7.24911 16.5436 7.55146L14.2716 9.85387L13.6021 9.18459C13.5475 9.12971 13.4825 9.08616 13.411 9.05641C13.3396 9.02667 13.2629 9.01132 13.1855 9.01124C13.108 9.01117 13.0313 9.02637 12.9598 9.05597C12.8882 9.08558 12.8232 9.12901 12.7685 9.18378C12.7137 9.23854 12.6703 9.30358 12.6407 9.37515C12.6111 9.44672 12.5959 9.52343 12.596 9.60088C12.596 9.67834 12.6114 9.75501 12.6411 9.82653C12.6709 9.89804 12.7144 9.96299 12.7693 10.0176L13.8579 11.1061C13.9683 11.2166 14.1181 11.2787 14.2743 11.2787C14.3524 11.2796 14.4299 11.2645 14.502 11.2344C14.574 11.2043 14.6392 11.1597 14.6934 11.1035L17.2353 8.52777C17.4249 8.96863 17.4952 9.45158 17.4394 9.92822C17.3835 10.4049 17.2034 10.8584 16.917 11.2435C16.6307 11.6285 16.2481 11.9315 15.8078 12.1221C15.3675 12.3127 14.8848 12.3841 14.4081 12.3293C14.0877 12.2934 13.776 12.2013 13.4875 12.0573C13.3477 11.9875 13.186 11.9761 13.0379 12.0256C12.8897 12.0751 12.7673 12.1814 12.6976 12.3212C12.6278 12.461 12.6164 12.6227 12.6659 12.7709C12.7154 12.9191 12.8216 13.0415 12.9614 13.1113C13.6749 13.468 14.4802 13.5988 15.2699 13.4864C16.0597 13.374 16.7964 13.0237 17.3822 12.482C17.968 11.9404 18.3749 11.2332 18.5489 10.4545C18.7229 9.67585 18.6556 8.86263 18.3561 8.12312C18.0566 7.38361 17.539 6.75288 16.8723 6.31488C16.2055 5.87688 15.4212 5.65238 14.6237 5.67127C13.8263 5.69015 13.0534 5.95153 12.4082 6.42061C11.7629 6.88968 11.2757 7.54421 11.0115 8.29707C10.986 8.3701 10.9751 8.44745 10.9794 8.5247C10.9838 8.60195 11.0033 8.67758 11.0369 8.74728C11.0705 8.81698 11.1175 8.87938 11.1751 8.93092C11.2328 8.98247 11.3001 9.02214 11.3731 9.04767Z\" fill=\"#6E4F3A\"/>\n<path d=\"M2.57448 22.8H4.14509C4.35931 22.7994 4.5704 22.7485 4.76139 22.6515C4.95239 22.5545 5.11797 22.414 5.24483 22.2413L5.57421 22.4061C6.09248 22.6644 6.66353 22.7993 7.24261 22.8H10.7719C11.2537 22.8005 11.7217 22.6397 12.1015 22.3431C12.4812 22.0466 12.7507 21.6314 12.8671 21.1638L13.6524 18.0214C13.6675 17.9424 13.6782 17.8626 13.6842 17.7823L14.2184 17.9949C14.3775 18.0545 14.5461 18.0851 14.7161 18.0851C14.8926 18.0847 15.0675 18.0525 15.2326 17.9899L16.9209 17.3141C18.7727 16.5796 20.3402 15.2704 21.3931 13.579C22.446 11.8875 22.9289 9.90284 22.7708 7.91657L22.5193 4.65415C22.4925 4.33272 22.3542 4.03078 22.1282 3.80061C21.9023 3.57044 21.6031 3.42654 21.2823 3.39382C20.1946 3.27824 19.1239 3.03784 18.0912 2.67736C17.1654 2.35024 16.2777 1.92395 15.4435 1.40591C15.2266 1.27167 14.9766 1.20036 14.7216 1.19995C14.4665 1.19955 14.2163 1.27006 13.999 1.40361C13.1598 1.92066 12.2683 2.34761 11.3394 2.67736C10.3087 3.03832 9.23969 3.27862 8.1537 3.39344C7.83144 3.42309 7.53024 3.56648 7.30401 3.79796C7.07779 4.02944 6.9413 4.33388 6.91897 4.65682L6.66781 7.91656C6.5604 9.37488 6.79695 10.838 7.35841 12.1882L5.04064 14.8928C4.79318 14.6746 4.47498 14.5536 4.14509 14.5522H2.57448C2.21013 14.5527 1.86084 14.6976 1.6032 14.9553C1.34557 15.213 1.20064 15.5624 1.2002 15.9269V21.4253C1.20064 21.7898 1.34557 22.1392 1.6032 22.3968C1.86084 22.6545 2.21013 22.7995 2.57448 22.8ZM12.5097 17.7356L11.7244 20.8776C11.6715 21.0902 11.549 21.279 11.3763 21.4139C11.2037 21.5487 10.9909 21.6219 10.7719 21.6217H7.24261C6.84638 21.6212 6.45565 21.5289 6.10107 21.3521L5.51938 21.0613V16.1447L9.5479 11.4436C9.61673 11.3625 9.71087 11.3069 9.81515 11.2858C9.91943 11.2647 10.0278 11.2794 10.1227 11.3274C10.225 11.379 10.3053 11.4656 10.3492 11.5715C10.3931 11.6773 10.3976 11.7954 10.362 11.9043L9.08354 15.7405C9.05401 15.829 9.04595 15.9233 9.06001 16.0156C9.07407 16.1079 9.10986 16.1955 9.16442 16.2713C9.21898 16.347 9.29076 16.4087 9.37383 16.4512C9.45691 16.4938 9.5489 16.516 9.64223 16.516H11.5572C11.7064 16.5159 11.8536 16.5499 11.9876 16.6153C12.1217 16.6807 12.2391 16.7758 12.331 16.8933C12.4228 17.0109 12.4866 17.1479 12.5176 17.2938C12.5485 17.4398 12.5458 17.5909 12.5097 17.7356ZM7.84194 8.00707L8.09386 4.73852C8.09767 4.69203 8.11854 4.6486 8.15245 4.61659C8.18637 4.58458 8.23092 4.56626 8.27754 4.56515C9.45468 4.44086 10.6134 4.18035 11.7305 3.78886C12.7393 3.43065 13.7075 2.96693 14.619 2.40542C14.6496 2.387 14.6847 2.37734 14.7204 2.37748C14.7561 2.37762 14.791 2.38755 14.8215 2.4062C15.7287 2.96975 16.6942 3.43347 17.7012 3.78926C18.82 4.18001 19.98 4.44049 21.1584 4.56555C21.2061 4.56858 21.2511 4.58857 21.2854 4.62191C21.3196 4.65525 21.3408 4.69975 21.3451 4.74735L21.5963 8.00632C21.7345 9.7424 21.3124 11.477 20.3922 12.9555C19.4719 14.4339 18.1019 15.5782 16.4834 16.2203L14.8069 16.8915C14.7541 16.9113 14.6962 16.9128 14.6424 16.8957L13.4027 16.4022C13.2281 16.0677 12.9617 15.7899 12.6348 15.6013C12.308 15.4128 11.9341 15.3214 11.5572 15.3377H10.4594L11.4793 12.2767C11.6006 11.9127 11.5916 11.5179 11.454 11.1598C11.3164 10.8017 11.0586 10.5025 10.7248 10.3135C10.3911 10.1245 10.002 10.0573 9.6242 10.1236C9.2464 10.1898 8.90334 10.3852 8.6537 10.6765L8.22846 11.1727C7.89288 10.1532 7.76154 9.07744 7.84194 8.00707ZM2.37815 15.9269C2.37825 15.8748 2.39897 15.8249 2.43577 15.7881C2.47256 15.7513 2.52244 15.7306 2.57448 15.7305H4.14509C4.19713 15.7306 4.24701 15.7513 4.28381 15.7881C4.3206 15.8249 4.34132 15.8748 4.34142 15.9269V21.4253C4.34132 21.4774 4.3206 21.5273 4.28381 21.5641C4.24701 21.6009 4.19713 21.6216 4.14509 21.6217H2.57448C2.52244 21.6216 2.47256 21.6009 2.43577 21.5641C2.39897 21.5273 2.37825 21.4774 2.37815 21.4253V15.9269Z\" fill=\"#6E4F3A\"/>\n</svg>",
+            "title_2": "",
+            "text_2": "<p>Secure payment</p>",
+            "link_2": "",
+            "open_new_window_2": false,
+            "icon_3": "another_icon",
+            "another_icon_3": "online-support",
+            "custom_image_3": "",
+            "custom_icon_3": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 0.959961C9.07299 0.963273 6.26684 2.12748 4.19716 4.19716C2.12748 6.26684 0.963273 9.07299 0.959961 12V13.472C0.959961 13.6672 1.0375 13.8544 1.17553 13.9924C1.31356 14.1304 1.50076 14.208 1.69596 14.208C1.89116 14.208 2.07836 14.1304 2.21639 13.9924C2.35442 13.8544 2.43196 13.6672 2.43196 13.472V12C2.43196 9.46237 3.44002 7.02871 5.23436 5.23436C7.02871 3.44002 9.46237 2.43196 12 2.43196C14.5376 2.43196 16.9712 3.44002 18.7656 5.23436C20.5599 7.02871 21.568 9.46237 21.568 12V17.888C21.5673 18.4734 21.3345 19.0346 20.9205 19.4485C20.5066 19.8625 19.9454 20.0953 19.36 20.096H16.416C16.3727 20.1006 16.33 20.1092 16.2884 20.1217C16.1411 19.6863 15.8614 19.3078 15.4883 19.0392C15.1153 18.7707 14.6676 18.6255 14.208 18.624H11.264C10.6784 18.624 10.1167 18.8566 9.70267 19.2707C9.28859 19.6847 9.05596 20.2464 9.05596 20.832C9.05596 21.4176 9.28859 21.9792 9.70267 22.3933C10.1167 22.8073 10.6784 23.04 11.264 23.04H14.208C14.6676 23.0384 15.1153 22.8932 15.4883 22.6247C15.8614 22.3561 16.1411 21.9776 16.2884 21.5422C16.33 21.5547 16.3727 21.5634 16.416 21.568H19.36C20.3356 21.5668 21.271 21.1787 21.9608 20.4888C22.6507 19.799 23.0388 18.8636 23.04 17.888V12C23.0366 9.07299 21.8724 6.26684 19.8028 4.19716C17.7331 2.12748 14.9269 0.963273 12 0.959961ZM14.208 21.568H11.264C11.0688 21.568 10.8816 21.4904 10.7435 21.3524C10.6055 21.2144 10.528 21.0272 10.528 20.832C10.528 20.6368 10.6055 20.4496 10.7435 20.3115C10.8816 20.1735 11.0688 20.096 11.264 20.096H14.208C14.4032 20.096 14.5904 20.1735 14.7284 20.3115C14.8664 20.4496 14.944 20.6368 14.944 20.832C14.944 21.0272 14.8664 21.2144 14.7284 21.3524C14.5904 21.4904 14.4032 21.568 14.208 21.568ZM7.21596 9.79196H5.74396C5.06102 9.79279 4.40628 10.0645 3.92337 10.5474C3.44045 11.0303 3.16879 11.685 3.16796 12.368V14.576C3.16879 15.2589 3.44045 15.9136 3.92337 16.3966C4.40628 16.8795 5.06102 17.1511 5.74396 17.152H7.21596C7.50866 17.1516 7.78928 17.0352 7.99625 16.8283C8.20322 16.6213 8.31964 16.3407 8.31996 16.048V10.896C8.31964 10.6033 8.20322 10.3226 7.99625 10.1157C7.78928 9.9087 7.50866 9.79228 7.21596 9.79196ZM6.84796 15.68H5.74396C5.45126 15.6796 5.17064 15.5632 4.96367 15.3563C4.7567 15.1493 4.64028 14.8687 4.63996 14.576V12.368C4.64028 12.0753 4.7567 11.7946 4.96367 11.5877C5.17064 11.3807 5.45126 11.2643 5.74396 11.264H6.84796V15.68ZM16.784 17.152H18.256C18.9389 17.1511 19.5936 16.8795 20.0766 16.3966C20.5595 15.9136 20.8311 15.2589 20.832 14.576V12.368C20.8311 11.685 20.5595 11.0303 20.0766 10.5474C19.5936 10.0645 18.9389 9.79279 18.256 9.79196H16.784C16.4913 9.79228 16.2106 9.9087 16.0037 10.1157C15.7967 10.3226 15.6803 10.6033 15.68 10.896V16.048C15.6803 16.3407 15.7967 16.6213 16.0037 16.8283C16.2106 17.0352 16.4913 17.1516 16.784 17.152ZM17.152 11.264H18.256C18.5487 11.2643 18.8293 11.3807 19.0363 11.5877C19.2432 11.7946 19.3596 12.0753 19.36 12.368V14.576C19.3596 14.8687 19.2432 15.1493 19.0363 15.3563C18.8293 15.5632 18.5487 15.6796 18.256 15.68H17.152V11.264Z\" fill=\"#6E4F3A\"/>\n</svg>",
+            "title_3": "",
+            "text_3": "<p>Email support</p>",
+            "link_3": "",
+            "open_new_window_3": false,
+            "icon_4": "none",
+            "another_icon_4": "",
+            "custom_image_4": "",
+            "custom_icon_4": "",
+            "title_4": "",
+            "text_4": "",
+            "link_4": "",
+            "open_new_window_4": false,
+            "icon_5": "none",
+            "another_icon_5": "",
+            "custom_image_5": "",
+            "custom_icon_5": "",
+            "title_5": "",
+            "text_5": "",
+            "link_5": "",
+            "open_new_window_5": false,
+            "icon_6": "none",
+            "another_icon_6": "",
+            "custom_image_6": "",
+            "custom_icon_6": "",
+            "title_6": "",
+            "text_6": "",
+            "link_6": "",
+            "open_new_window_6": false
+          }
+        },
+        "icon_text_1": {
+          "type": "icon_text",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "free-shipping",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M2.28698 2V6.56923H3.57269V4.85612H4.21303V3.71325H3.57269V3.14406H4.85338V2C4.00545 2 3.05786 2 2.28698 2ZM6.78572 2C6.4302 1.99886 6.14107 2.25437 6.14035 2.57038V6.56923H7.42606V4.85612H8.71178V6.56923H9.99749V4.28244C9.99607 3.96861 9.71021 3.7145 9.35714 3.71325V2.57038C9.35644 2.25437 9.06729 1.99879 8.71178 2H6.78572ZM11.2845 2V6.56923C12.1416 6.56923 12.9987 6.56923 13.8559 6.56923V5.42531H12.5702V4.85612H13.2155V3.71325H12.5702V3.14406H13.8559V2C12.9987 2 12.1416 2 11.2845 2ZM15.1416 2V6.56923C15.9992 6.56923 16.8567 6.56923 17.7143 6.56923V5.42531H16.4286V4.85612H17.0689V3.71325H16.4286V3.14406H17.7143V2C16.8567 2 15.9992 2 15.1416 2ZM7.42606 3.14406H8.07143V3.71325H7.42606V3.14406ZM1 7.1429V16.2835C0.998656 16.599 1.28533 16.8559 1.64035 16.8571H3.69197C3.96015 17.5185 4.66793 18 5.49875 18C6.32956 18 7.03734 17.5185 7.30553 16.8571C9.31529 16.8571 11.3251 16.8571 13.3348 16.8571C13.603 17.5185 14.3108 18 15.1416 18C15.9724 18 16.6815 17.5185 16.9496 16.8571H18.3546C18.7116 16.8583 19.0014 16.6008 19 16.2835V12.2846C18.9989 12.1701 18.9591 12.0585 18.8857 11.9643L16.2616 8.53464C16.1417 8.37871 15.9429 8.28564 15.7305 8.28577H12.5702V7.1429H11.2845V15.7143H7.30677C7.03973 15.0521 6.33106 14.5714 5.49874 14.5714C4.66641 14.5714 3.95775 15.0521 3.6907 15.7143H2.28697V7.1429H1ZM12.5702 9.42864H15.394L17.7143 12.462V15.7143H16.9509C16.6838 15.0521 15.9739 14.5714 15.1416 14.5714C14.3093 14.5714 13.6006 15.0521 13.3336 15.7143H12.5702V9.42864ZM5.49875 15.7143C5.8614 15.7143 6.14035 15.9611 6.14035 16.2835C6.14035 16.6058 5.8614 16.8571 5.49875 16.8571C5.13609 16.8571 4.85338 16.6058 4.85338 16.2835C4.85338 15.9611 5.13609 15.7143 5.49875 15.7143ZM15.1416 15.7143C15.5043 15.7143 15.7832 15.9611 15.7832 16.2835C15.7832 16.6058 15.5043 16.8571 15.1416 16.8571C14.7789 16.8571 14.4962 16.6058 14.4962 16.2835C14.4962 15.9611 14.7789 15.7143 15.1416 15.7143Z\" fill=\"#6E4F3A\"/>\n</svg>",
+            "icon_size": 20,
+            "text": "<p>Free standard delivery within the UK &amp; AU</p>",
+            "additional_text": "",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_light": "#6e4f3a",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "frequently_bought_1": {
+          "type": "frequently_bought",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "shopping-bag",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 1.66663L2.5 4.99996V16.6666C2.5 17.1087 2.67559 17.5326 2.98816 17.8451C3.30072 18.1577 3.72464 18.3333 4.16667 18.3333H15.8333C16.2754 18.3333 16.6993 18.1577 17.0118 17.8451C17.3244 17.5326 17.5 17.1087 17.5 16.6666V4.99996L15 1.66663H5Z\" stroke=\"#6E4F3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M2.5 5H17.5\" stroke=\"#6E4F3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M13.3337 8.33337C13.3337 9.21743 12.9825 10.0653 12.3573 10.6904C11.7322 11.3155 10.8844 11.6667 10.0003 11.6667C9.11627 11.6667 8.26842 11.3155 7.6433 10.6904C7.01818 10.0653 6.66699 9.21743 6.66699 8.33337\" stroke=\"#6E4F3A\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "text": "Frequently Bought Together",
+            "show_background": false,
+            "show_border": true,
+            "list_products": [],
+            "show_vendor": false,
+            "show_rating": false,
+            "show_highlighted_features": false,
+            "variant_type": "adapt",
+            "border_color_light": "rgba(0,0,0,0)",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "collapsible_tab_1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": true,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Description",
+            "tab_content": "<p>Encourage a lifelong love of reading with the MORENDA Kids Bookshelf. Inspired by Montessori principles, its front-facing design allows children to easily see, choose and return their favourite books independently, helping build confidence while making reading a natural part of everyday life.</p><p>The double-sided design provides generous storage without taking up unnecessary floor space, keeping books beautifully organised and always within easy reach. Crafted from premium solid wood with smooth rounded edges, it is designed to be both durable and safe for growing families.</p><p>Whether placed in a nursery, bedroom or playroom, the MORENDA Kids Bookshelf blends seamlessly into modern interiors while creating a calm, inviting reading corner. More than just a storage solution, it is a thoughtfully designed piece that encourages curiosity, independence and a lasting love of books.</p>"
+          }
+        },
+        "collapsible_tab_2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Features",
+            "tab_content": ""
+          }
+        },
+        "collapsible_tab_3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Dimensions",
+            "tab_content": ""
+          }
+        },
+        "collapsible_tab_4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "open_by_default": false,
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "use_secondary_background": false,
+            "heading": "Warranty & Returns",
+            "tab_content": ""
+          }
+        },
+        "payment_methods_1": {
+          "type": "payment_methods",
+          "settings": {
+            "heading": "Pay with",
+            "text": "Your transaction is protected with advanced security measures to keep your information confidential",
+            "custom_payment": "",
+            "show_secondary_background": false,
+            "show_border": false,
+            "background_color_light": "transparent",
+            "heading_color_light": "#6e4f3a",
+            "text_color_light": "#6e4f3a",
+            "border_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "transparent",
+            "heading_color_dark": "transparent",
+            "text_color_dark": "transparent",
+            "border_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "social_sharing_1": {
+          "type": "social_sharing",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_1",
+        "product_name_1",
+        "rating_1",
+        "price_1",
+        "inventory_status_1",
+        "quantity_selector_1",
+        "buy_buttons_1",
+        "estimate_delivery_1",
+        "feature_icon_1",
+        "icon_text_1",
+        "frequently_bought_1",
+        "collapsible_tab_1",
+        "collapsible_tab_2",
+        "collapsible_tab_3",
+        "collapsible_tab_4",
+        "payment_methods_1",
+        "social_sharing_1"
+      ]
+    },
+    "scrolling_banner_pp1": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_1": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping on all UK orders",
+            "highlight_type": "underline",
+            "text_size": 100,
+            "text_color": "primary",
+            "spacing_left": 0,
+            "spacing_right": 30,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 30
+          }
+        },
+        "text_2": {
+          "type": "text",
+          "settings": {
+            "text": "Make Every Book Easy to Find",
+            "highlight_type": "underline",
+            "text_size": 100,
+            "text_color": "secondary",
+            "spacing_left": 0,
+            "spacing_right": 30,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 30
+          }
+        },
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image 311.png",
+            "spacing_left": 0,
+            "spacing_right": 30,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 30,
+            "height_image": 40,
+            "image_style": "square",
+            "image_ratio": "natural",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "text_3": {
+          "type": "text",
+          "settings": {
+            "text": "Create Calm Spaces",
+            "highlight_type": "underline",
+            "text_size": 100,
+            "text_color": "secondary",
+            "spacing_left": 0,
+            "spacing_right": 30,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 30
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image 312.png",
+            "spacing_left": 0,
+            "spacing_right": 30,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 30,
+            "height_image": 40,
+            "image_style": "square",
+            "image_ratio": "natural",
+            "image_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "text_1",
+        "text_2",
+        "image_1",
+        "text_3",
+        "image_2"
+      ],
+      "settings": {
+        "show_border": false,
+        "speed": 20,
+        "direction": "right",
+        "pause_hover": true,
+        "enable_rotating_effect": false,
+        "image": "",
+        "overlay_opacity": 0,
+        "bg_light": "",
+        "color_text_light": "#dedecf",
+        "color_text_light_2": "#6e4f3a",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "bg_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_text_dark_2": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "space_block": 30,
+        "desktop_height": "natural",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "space_block_mobile": 30,
+        "mobile_height": "natural",
+        "padding_top_mobile": 12,
+        "padding_bottom_mobile": 12
+      }
+    },
+    "buy_your_own_bundle_pp1": {
+      "type": "buy-your-own-bundle",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "step_title": "",
+            "icon": "none",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "",
+            "collection": "",
+            "product_to_show": 2,
+            "products": [],
+            "show_max_product": 12,
+            "show_highlighted_features": false,
+            "each_product_can_added_to_bundle_once": true,
+            "show_qty": false,
+            "min_required": 2,
+            "max_required": 2,
+            "enable_promotion_highlight": false,
+            "subheading": "",
+            "heading": "Promotion block",
+            "highlight_type": "underline",
+            "title_size": 80,
+            "content": "<p>Describe a promotion, make announcements, or welcome customers to your store.</p>",
+            "text_size": 100,
+            "image": "",
+            "image_mobile": "",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "image_overlay_opacity": 10,
+            "position": 1,
+            "button_label": "",
+            "button_link": "",
+            "open_new_window": false,
+            "show_button_style": "primary",
+            "alignment": "center",
+            "content_position": "center",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_color_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "number_of_columns": 2,
+            "number_of_row": 1,
+            "number_of_columns_mobile": "1",
+            "number_of_row_mobile": "1"
+          }
+        }
+      },
+      "block_order": [
+        "step_1"
+      ],
+      "settings": {
+        "heading": "Complete the Room",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "<p>Add one bookshelf and one stuffed animal organizer together to get 10% off.</p>",
+        "button_atb_label": "Add to bundle",
+        "step_icon_size": 32,
+        "picker_type": "adapt",
+        "max_swatch": 20,
+        "enable_desktop_slider": false,
+        "enable_arrow": true,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "change_slides_speed": 0,
+        "summary_layout": "vertical",
+        "pre_goal_msg": "Your bundle is empty.",
+        "goal_1": "2",
+        "goal_1_label": "Add 2 items to unlock your discount",
+        "discount_type_1": "percentage",
+        "discount_value_1": "10",
+        "apply_discount_once_per_order_1": true,
+        "reach_goal_msg": "Bundle & Save",
+        "spacing": 28,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "1",
+        "spacing_mobile": 16,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "image_with_text_pp1": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/Image.png",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "natural",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "video": "",
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "#6e4f3a",
+        "text_color_light": "#6e4f3a",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 60,
+        "bottom_padding": 60,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 28,
+        "bottom_padding_mobile": 28
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Growing Little Readers",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>A playful Montessori-inspired space that encourages independent reading.</p><ul><li><strong>Easy Book Access</strong> — Keeps favourite books within little hands' reach, encouraging independent reading.</li><li><strong>Montessori-Inspired Design</strong> — Promotes independence by allowing children to easily choose and return their own books.</li><li><strong>Kid-Friendly Storage</strong> — Front-facing shelves make books easy to see, access and organise.</li><li><strong>Sturdy Wooden Build</strong> — Designed for everyday use while adding a warm, natural touch to children's spaces.</li></ul>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "#6e4f3a",
+            "text_light": "#6e4f3a",
+            "color_heading_highlight_light": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ]
+    },
+    "image_with_text_pp2": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/Image.png",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "natural",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "video": "",
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "#6e4f3a",
+        "text_color_light": "#6e4f3a",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "image_alignment": "right",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 60,
+        "bottom_padding": 60,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 28,
+        "bottom_padding_mobile": 28
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "Kids Bookshelf for Every Room",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Designed to fit beautifully into bedrooms, playrooms and cosy reading corners. The MORENDA Kids Bookshelf keeps favourite books within easy reach while adding a playful, natural touch to any space.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "#6e4f3a",
+            "text_light": "#6e4f3a",
+            "color_heading_highlight_light": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ]
+    },
+    "image_with_text_pp3": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/Media.png",
+        "image_second": "",
+        "desktop_height": "550px",
+        "mobile_height": "natural",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "video": "",
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "none",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "#6e4f3a",
+        "text_color_light": "#6e4f3a",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 60,
+        "bottom_padding": 60,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 28,
+        "bottom_padding_mobile": 28
+      },
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "subheading": "",
+            "heading": "How to Buid a MORENDA Kids Bookshelf",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>See how easy it is to build your MORENDA Kids Bookshelf. Our simple assembly guide takes you through each step, so your little one can enjoy their new reading space in no time.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "#6e4f3a",
+            "text_light": "#6e4f3a",
+            "color_heading_highlight_light": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ]
+    },
+    "faq_pp": {
+      "type": "faq",
+      "blocks": {
+        "faq_1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "How should I care for my products?",
+            "row_content": "<p>To keep your product looking its best, wipe surfaces with a soft cloth lightly dampened with water.</p><p>Keep products away from alcohol-based products, harsh chemicals, and abrasive cleaning agents.</p>",
+            "open_by_default": true
+          }
+        },
+        "faq_2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Are our products safe to use?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "faq_3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Can I cancel a pre-order?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "faq_4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "What materials are used in your products?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        },
+        "faq_5": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "Could I buy spare parts?",
+            "row_content": "",
+            "open_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "show_border": true,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image": "",
+        "enable_microdata_schema": true,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "featured_collection_you_may_also_like": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_description": false,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": false,
+            "show_highlighted_attributes": false,
+            "show_quickview": true,
+            "show_promotion": false,
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "image": "",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "video": "",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_1"
+      ],
+      "settings": {
+        "title": "You May Also Like",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "",
+        "show_view_all": false,
+        "view_all_position": "bottom",
+        "view_all_button_style": "text-link",
+        "title_size": 100,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "color_background": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "columns_desktop": 2,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "product_comparison_table_shared": {
+      "type": "product-comparison-table",
+      "settings": {
+        "title": "Product Comparison Table",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_alignment": "left",
+        "text": "<p>Looking for products that meet the needs of parents and the whole family?</p>",
+        "view_all": "View Detail",
+        "link_view_all": "",
+        "compare_products": [],
+        "auto_product_recommendation": false,
+        "text_to_use_for_empty_fields": "-",
+        "product_image_ratio": "square",
+        "background_color_light": "rgba(0,0,0,0)",
+        "criteria_light": "rgba(0,0,0,0)",
+        "heading_light": "#6e4f3a",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "text_light": "#6e4f3a",
+        "line_border_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "criteria_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "block_order": []
+    },
+    "newsletter_shared": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The [Morenda Family]",
+            "highlight_type": "font_highlight",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": 100
+          }
+        },
+        "paragraph_1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Get parenting tips, Montessori inspiration and early access to new collections.</p>"
+          }
+        },
+        "email_form_1": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Join Us",
+            "background_color_light": "",
+            "background_color_dark": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_1",
+        "paragraph_1",
+        "email_form_1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Email signup.png",
+        "image_mobile": "shopify://shop_images/Email signup.png",
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "#6e4f3a",
+        "color_heading_highlight_light": "#686536",
+        "text_light": "#6e4f3a",
+        "button_light": "#6e4f3a",
+        "button_text_light": "#ffffff",
+        "button_hover_light": "rgba(0,0,0,0)",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "#8d8b61",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "button_dark": "rgba(0,0,0,0)",
+        "button_text_dark": "rgba(0,0,0,0)",
+        "button_hover_dark": "rgba(0,0,0,0)",
+        "button_text_hover_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "desktop_height": "natural",
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "mobile_height": "natural",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "scrolling_banner_pp1",
+    "buy_your_own_bundle_pp1",
+    "image_with_text_pp1",
+    "image_with_text_pp2",
+    "image_with_text_pp3",
+    "faq_pp",
+    "product_comparison_table_shared",
+    "featured_collection_you_may_also_like",
+    "newsletter_shared"
+  ]
+}

@@ -1,0 +1,787 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "settings": {},
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Slider.png",
+            "content_alignment": "bottom-left",
+            "heading": "",
+            "button_label_1": "",
+            "button_label_2": "",
+            "text_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_1"
+      ]
+    },
+    "scrolling_promo_home": {
+      "type": "scrolling-banner",
+      "settings": {
+        "show_border": true,
+        "speed": 20,
+        "direction": "right",
+        "pause_hover": true,
+        "enable_rotating_effect": false,
+        "overlay_opacity": 0,
+        "bg_light": "#e5212c",
+        "color_text_light": "#ffffff",
+        "color_text_light_2": "#ffffff",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "space_block": 40,
+        "desktop_height": "750px",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "space_block_mobile": 40,
+        "mobile_height": "500px",
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "text_FragFuel1": {
+          "type": "text",
+          "settings": {
+            "text": "FragFuel",
+            "highlight_type": "underline",
+            "text_size": 100,
+            "text_color": "primary",
+            "spacing_left": 0,
+            "spacing_right": 0,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 0
+          }
+        },
+        "icon_616494a1": {
+          "type": "icon",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_26027_22238)\">\n<path d=\"M10.1283 23.8742L19.3856 7.93461C19.5952 7.57372 19.2979 7.12963 18.8844 7.18588L12.7267 8.02283L14.198 0.298675C14.2476 0.0382844 13.9119 -0.110919 13.7518 0.100347L4.64993 12.1149C4.3848 12.4648 4.66554 12.9624 5.10213 12.9164L11.8909 12.2018L9.66536 23.7006C9.61169 23.978 9.98646 24.1185 10.1283 23.8742Z\" fill=\"#FFDC64\"/>\n<path d=\"M7.49627 11.2634C7.32625 11.277 7.21333 11.0912 7.30371 10.9466L14.109 0.0581646C14.0077 -0.0219447 13.8483 -0.027101 13.7518 0.100305L4.64993 12.1148C4.3848 12.4648 4.66554 12.9623 5.10213 12.9164L11.8909 12.2018L9.66536 23.7006C9.63536 23.8557 9.73999 23.9648 9.86228 23.9909L13.676 11.9231C13.8548 11.3575 13.4037 10.7908 12.8124 10.8382L7.49627 11.2634Z\" fill=\"#FFC850\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_26027_22238\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n\n",
+            "height_icon": 35,
+            "spacing_left": 0,
+            "spacing_right": 0,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 0
+          }
+        },
+        "text_MysteryBox1": {
+          "type": "text",
+          "settings": {
+            "text": "Mystery Box",
+            "highlight_type": "underline",
+            "text_size": 100,
+            "text_color": "primary",
+            "spacing_left": 0,
+            "spacing_right": 0,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 0
+          }
+        },
+        "icon_616494a2": {
+          "type": "icon",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_26027_22242)\">\n<path d=\"M10.1283 23.8742L19.3856 7.93461C19.5952 7.57372 19.2979 7.12963 18.8844 7.18588L12.7267 8.02283L14.198 0.298675C14.2476 0.0382844 13.9119 -0.110919 13.7518 0.100347L4.64993 12.1149C4.3848 12.4648 4.66554 12.9624 5.10213 12.9164L11.8909 12.2018L9.66536 23.7006C9.61169 23.978 9.98646 24.1185 10.1283 23.8742Z\" fill=\"#FFDC64\"/>\n<path d=\"M7.49627 11.2634C7.32625 11.277 7.21333 11.0912 7.30371 10.9466L14.109 0.0581646C14.0077 -0.0219447 13.8483 -0.027101 13.7518 0.100305L4.64993 12.1148C4.3848 12.4648 4.66554 12.9623 5.10213 12.9164L11.8909 12.2018L9.66536 23.7006C9.63536 23.8557 9.73999 23.9648 9.86228 23.9909L13.676 11.9231C13.8548 11.3575 13.4037 10.7908 12.8124 10.8382L7.49627 11.2634Z\" fill=\"#FFC850\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_26027_22242\">\n<rect width=\"24\" height=\"24\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n\n",
+            "height_icon": 35,
+            "spacing_left": 0,
+            "spacing_right": 0,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 0
+          }
+        },
+        "text_CustomerRating1": {
+          "type": "text",
+          "settings": {
+            "text": "4.6 Customer Rating",
+            "highlight_type": "underline",
+            "text_size": 100,
+            "text_color": "primary",
+            "spacing_left": 0,
+            "spacing_right": 0,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 0
+          }
+        },
+        "text_ProductionTime1": {
+          "type": "text",
+          "settings": {
+            "text": "48h Production Time",
+            "highlight_type": "underline",
+            "text_size": 100,
+            "text_color": "primary",
+            "spacing_left": 0,
+            "spacing_right": 0,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 0
+          }
+        },
+        "icon_freedelivery1": {
+          "type": "icon",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.01562 8.25C3.01562 7.97386 3.23948 7.75 3.51562 7.75H5.0355C5.31164 7.75 5.5355 7.97386 5.5355 8.25C5.5355 8.52614 5.31164 8.75 5.0355 8.75H4.01562V12C4.01562 12.2761 3.79177 12.5 3.51562 12.5C3.23948 12.5 3.01562 12.2761 3.01562 12V8.25Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.01562 10.0895C3.01562 9.81334 3.23948 9.58948 3.51562 9.58948H4.9148C5.19094 9.58948 5.4148 9.81334 5.4148 10.0895C5.4148 10.3656 5.19094 10.5895 4.9148 10.5895H3.51562C3.23948 10.5895 3.01562 10.3656 3.01562 10.0895Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.8418 8.25C10.8418 7.97386 11.0657 7.75 11.3418 7.75H12.9219C13.198 7.75 13.4219 7.97386 13.4219 8.25C13.4219 8.52614 13.198 8.75 12.9219 8.75H11.8418V11.5H12.9219C13.198 11.5 13.4219 11.7239 13.4219 12C13.4219 12.2761 13.198 12.5 12.9219 12.5H11.3418C11.0657 12.5 10.8418 12.2761 10.8418 12V8.25Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.8418 10.125C10.8418 9.84886 11.0657 9.625 11.3418 9.625H12.8054C13.0816 9.625 13.3054 9.84886 13.3054 10.125C13.3054 10.4011 13.0816 10.625 12.8054 10.625H11.3418C11.0657 10.625 10.8418 10.4011 10.8418 10.125Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14.5605 8.25C14.5605 7.97386 14.7844 7.75 15.0605 7.75H16.6407C16.9168 7.75 17.1407 7.97386 17.1407 8.25C17.1407 8.52614 16.9168 8.75 16.6407 8.75H15.5605V11.5H16.6407C16.9168 11.5 17.1407 11.7239 17.1407 12C17.1407 12.2761 16.9168 12.5 16.6407 12.5H15.0605C14.7844 12.5 14.5605 12.2761 14.5605 12V8.25Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14.5605 10.125C14.5605 9.84886 14.7844 9.625 15.0605 9.625H16.5242C16.8003 9.625 17.0242 9.84886 17.0242 10.125C17.0242 10.4011 16.8003 10.625 16.5242 10.625H15.0605C14.7844 10.625 14.5605 10.4011 14.5605 10.125Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.29662 9.83488C7.50391 9.65244 7.81985 9.67258 8.00229 9.87987L9.57753 11.6697C9.75997 11.8769 9.73983 12.1929 9.53253 12.3753C9.32524 12.5578 9.0093 12.5376 8.82686 12.3303L7.25163 10.5406C7.06918 10.3333 7.08933 10.0173 7.29662 9.83488Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.17383 7.75C7.44997 7.75 7.67383 7.97386 7.67383 8.25V12C7.67383 12.2761 7.44997 12.5 7.17383 12.5C6.89769 12.5 6.67383 12.2761 6.67383 12V8.25C6.67383 7.97386 6.89769 7.75 7.17383 7.75Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.17578 7.75H8.1723C8.9764 7.75 9.702 8.38133 9.702 9.22458C9.702 10.0679 8.97637 10.6992 8.17225 10.6992C8.03543 10.6992 7.78932 10.7002 7.57627 10.7013L7.1862 10.7035L7.1857 10.7035C7.05288 10.7043 6.92519 10.6522 6.83082 10.5587C6.73644 10.4652 6.68314 10.3381 6.68268 10.2052L6.67578 8.25176C6.67532 8.11885 6.72779 7.99122 6.8216 7.89707C6.91542 7.80292 7.04287 7.75 7.17578 7.75ZM7.6809 9.70078C7.8644 9.69991 8.05598 9.69916 8.17225 9.69916C8.48375 9.69916 8.702 9.45778 8.702 9.22458C8.702 8.99139 8.48372 8.75 8.1723 8.75H7.67755L7.6809 9.70078Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.29688 17.625C6.29688 17.3489 6.52073 17.125 6.79688 17.125H17.2031C17.4793 17.125 17.7031 17.3489 17.7031 17.625C17.7031 17.9011 17.4793 18.125 17.2031 18.125H6.79688C6.52073 18.125 6.29688 17.9011 6.29688 17.625Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0.203125 5.90625C0.203125 4.85344 1.05656 4 2.10938 4H18.0469C19.0997 4 19.9531 4.85344 19.9531 5.90625V9.63692L23.0163 11.8782C23.5069 12.2373 23.7969 12.8087 23.7969 13.4167V16.2188C23.7969 17.2716 22.9434 18.125 21.8906 18.125H20.9531C20.677 18.125 20.4531 17.9011 20.4531 17.625C20.4531 17.3489 20.677 17.125 20.9531 17.125H21.8906C22.3912 17.125 22.7969 16.7193 22.7969 16.2188V13.4167C22.7969 13.1276 22.659 12.856 22.4258 12.6853L22.7037 12.3054L22.4258 12.6853L19.1579 10.2941C19.0292 10.2 18.9531 10.0501 18.9531 9.89062V5.90625C18.9531 5.40572 18.5474 5 18.0469 5H2.10938C1.60885 5 1.20312 5.40572 1.20312 5.90625V16.2188C1.20312 16.7193 1.60885 17.125 2.10938 17.125H3.04688C3.32302 17.125 3.54688 17.3489 3.54688 17.625C3.54688 17.9011 3.32302 18.125 3.04688 18.125H2.10938C1.05656 18.125 0.203125 17.2716 0.203125 16.2188V5.90625Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M19.0781 16.25C18.3187 16.25 17.7031 16.8656 17.7031 17.625C17.7031 18.3844 18.3187 19 19.0781 19C19.8375 19 20.4531 18.3844 20.4531 17.625C20.4531 16.8656 19.8375 16.25 19.0781 16.25ZM16.7031 17.625C16.7031 16.3133 17.7664 15.25 19.0781 15.25C20.3898 15.25 21.4531 16.3133 21.4531 17.625C21.4531 18.9367 20.3898 20 19.0781 20C17.7664 20 16.7031 18.9367 16.7031 17.625Z\" fill=\"white\"/>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.92188 16.25C4.16248 16.25 3.54688 16.8656 3.54688 17.625C3.54688 18.3844 4.16248 19 4.92188 19C5.68127 19 6.29688 18.3844 6.29688 17.625C6.29688 16.8656 5.68127 16.25 4.92188 16.25ZM2.54688 17.625C2.54688 16.3133 3.6102 15.25 4.92188 15.25C6.23355 15.25 7.29688 16.3133 7.29688 17.625C7.29688 18.9367 6.23355 20 4.92188 20C3.6102 20 2.54688 18.9367 2.54688 17.625Z\" fill=\"white\"/>\n</svg>\n\n",
+            "height_icon": 35,
+            "spacing_left": 0,
+            "spacing_right": 0,
+            "spacing_left_mobile": 0,
+            "spacing_right_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "text_FragFuel1",
+        "icon_616494a1",
+        "text_MysteryBox1",
+        "icon_616494a2",
+        "text_CustomerRating1",
+        "text_ProductionTime1",
+        "icon_freedelivery1"
+      ]
+    },
+    "text_column_icon": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "background_color_light": "#fff1f2",
+        "column_content_alignment": "start",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "full_width": false,
+        "full_width_mobile": true,
+        "show_section_divider": false,
+        "show_section_divider_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 16,
+        "spacing_mobile": 16
+      },
+      "blocks": {
+        "free_shipping": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_26027_22286)\">\n<path d=\"M8.66732 25.3333H6.00065C5.63265 25.3333 5.33398 25.0347 5.33398 24.6667C5.33398 24.2987 5.63265 24 6.00065 24H8.66732C9.03532 24 9.33398 24.2987 9.33398 24.6667C9.33398 25.0347 9.03532 25.3333 8.66732 25.3333Z\" fill=\"#E5212C\"/>\n<path d=\"M30.3341 25.3333H28.6674C28.2994 25.3333 28.0007 25.0346 28.0007 24.6666C28.0007 24.2986 28.2994 24 28.6674 24H29.7807L30.6794 19.2106C30.6674 16.76 28.5741 14.6666 26.0007 14.6666H21.6234L19.5021 24H23.3341C23.7021 24 24.0007 24.2986 24.0007 24.6666C24.0007 25.0346 23.7021 25.3333 23.3341 25.3333H18.6674C18.4647 25.3333 18.2727 25.2413 18.1461 25.0826C18.0194 24.9253 17.9714 24.7173 18.0167 24.52L20.4407 13.8533C20.5101 13.548 20.7794 13.3333 21.0914 13.3333H26.0007C29.3087 13.3333 32.0007 16.0253 32.0007 19.3333L30.9887 24.7893C30.9301 25.1053 30.6554 25.3333 30.3341 25.3333Z\" fill=\"#E5212C\"/>\n<path d=\"M25.9993 28C24.162 28 22.666 26.5053 22.666 24.6666C22.666 22.828 24.162 21.3333 25.9993 21.3333C27.8367 21.3333 29.3327 22.828 29.3327 24.6666C29.3327 26.5053 27.8367 28 25.9993 28ZM25.9993 22.6666C24.8967 22.6666 23.9993 23.564 23.9993 24.6666C23.9993 25.7693 24.8967 26.6666 25.9993 26.6666C27.102 26.6666 27.9993 25.7693 27.9993 24.6666C27.9993 23.564 27.102 22.6666 25.9993 22.6666Z\" fill=\"#E5212C\"/>\n<path d=\"M11.3333 28C9.496 28 8 26.5053 8 24.6666C8 22.828 9.496 21.3333 11.3333 21.3333C13.1707 21.3333 14.6667 22.828 14.6667 24.6666C14.6667 26.5053 13.1707 28 11.3333 28ZM11.3333 22.6666C10.2307 22.6666 9.33333 23.564 9.33333 24.6666C9.33333 25.7693 10.2307 26.6666 11.3333 26.6666C12.436 26.6666 13.3333 25.7693 13.3333 24.6666C13.3333 23.564 12.436 22.6666 11.3333 22.6666Z\" fill=\"#E5212C\"/>\n<path d=\"M8.66602 13.3333H3.33268C2.96468 13.3333 2.66602 13.0347 2.66602 12.6667C2.66602 12.2987 2.96468 12 3.33268 12H8.66602C9.03402 12 9.33268 12.2987 9.33268 12.6667C9.33268 13.0347 9.03402 13.3333 8.66602 13.3333Z\" fill=\"#E5212C\"/>\n<path d=\"M8.66732 17.3333H2.00065C1.63265 17.3333 1.33398 17.0347 1.33398 16.6667C1.33398 16.2987 1.63265 16 2.00065 16H8.66732C9.03532 16 9.33398 16.2987 9.33398 16.6667C9.33398 17.0347 9.03532 17.3333 8.66732 17.3333Z\" fill=\"#E5212C\"/>\n<path d=\"M8.66667 21.3333H0.666667C0.298667 21.3333 0 21.0347 0 20.6667C0 20.2987 0.298667 20 0.666667 20H8.66667C9.03467 20 9.33333 20.2987 9.33333 20.6667C9.33333 21.0347 9.03467 21.3333 8.66667 21.3333Z\" fill=\"#E5212C\"/>\n<path d=\"M18.6673 25.3333H14.0007C13.6327 25.3333 13.334 25.0346 13.334 24.6666C13.334 24.2986 13.6327 24 14.0007 24H18.1353L21.1647 10.6666H6.00065C5.63265 10.6666 5.33398 10.368 5.33398 9.99998C5.33398 9.63198 5.63265 9.33331 6.00065 9.33331H22.0007C22.2033 9.33331 22.3953 9.42531 22.522 9.58398C22.6487 9.74131 22.6967 9.94931 22.6513 10.1466L19.318 24.8133C19.2487 25.1186 18.978 25.3333 18.6673 25.3333Z\" fill=\"#E5212C\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_26027_22286\">\n<rect width=\"32\" height=\"32\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n\n",
+            "title": "Portes de envio grátis!",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>A partir de 75€ em compras!</p>"
+          }
+        },
+        "delivery_24h": {
+          "type": "column",
+          "settings": {
+            "icon": "another_icon",
+            "another_icon": "",
+            "custom_image": "",
+            "custom_icon": "<svg style=\"fill: none;\" width=\"100%\" height=\"100%\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_26027_22299)\">\n<path d=\"M31.9173 18.3394L30.2976 15.8611C29.5823 14.766 28.3671 14.112 27.0461 14.112H22.8571V11.7014C22.8571 10.2296 21.6602 9.03272 20.1884 9.03272H12.3465C11.9065 6.7346 9.88363 4.99103 7.45908 4.99103C4.71366 4.99103 2.48035 7.22462 2.48035 9.96975C2.48035 11.6959 3.3642 13.2186 4.70232 14.112H0.508045C0.227283 14.112 0 14.3393 0 14.6201C0 14.9008 0.227283 15.1281 0.508045 15.1281H5.58733V16.1439H3.55544C3.27497 16.1439 3.04769 16.3712 3.04769 16.6519C3.04769 16.9327 3.27497 17.1597 3.55544 17.1597H5.58733V18.1755H0.508045C0.227283 18.1755 0 18.4028 0 18.6835C0 18.9643 0.227283 19.1916 0.508045 19.1916H5.58733V21.4412C4.69186 21.8362 4.06349 22.7296 4.06349 23.7695V24.2709C4.06349 24.5516 4.29106 24.7789 4.57153 24.7789H9.07651C9.36541 26.0217 10.4797 26.9518 11.8094 26.9518C13.1394 26.9518 14.2535 26.0217 14.5424 24.7789H24.3147C24.6039 26.0217 25.7182 26.9518 27.0476 26.9518C28.377 26.9518 29.4916 26.0217 29.7805 24.7789H31.4921C31.7729 24.7789 31.9999 24.5516 31.9999 24.2709V18.6173C31.9999 18.5185 31.9711 18.4217 31.9173 18.3394ZM3.49615 9.96975C3.49615 7.78469 5.27402 6.00683 7.45908 6.00683C9.64443 6.00683 11.422 7.78469 11.422 9.96975C11.422 12.1548 9.64443 13.9327 7.45908 13.9327C5.27402 13.9327 3.49615 12.1548 3.49615 9.96975ZM6.60313 19.1916H7.61893C7.89969 19.1916 8.12698 18.9643 8.12698 18.6835C8.12698 18.4028 7.89969 18.1755 7.61893 18.1755H6.60313V17.1597H10.1589C10.4393 17.1597 10.6666 16.9327 10.6666 16.6519C10.6666 16.3712 10.4393 16.1439 10.1589 16.1439H6.60313V15.1281H13.2063C13.4867 15.1281 13.7143 14.9008 13.7143 14.6201C13.7143 14.3393 13.4867 14.112 13.2063 14.112H10.2158C11.5333 13.2322 12.4073 11.7418 12.434 10.0485H20.1887C21.0999 10.0485 21.8413 10.7902 21.8413 11.7014V21.2232H6.60953C6.60749 21.2232 6.60546 21.2238 6.60313 21.2238V19.1916ZM21.8413 23.7628H14.5886C14.5086 23.1786 14.2494 22.652 13.8666 22.239H21.8413V23.7628ZM6.60953 22.239H9.75226C9.36977 22.652 9.11022 23.1786 9.03059 23.7628H5.07929C5.08278 22.9223 5.76811 22.239 6.60953 22.239ZM11.8094 25.936C10.8215 25.936 10.0173 25.132 10.0173 24.1439C10.0173 23.156 10.8215 22.3518 11.8094 22.3518C12.7976 22.3518 13.6015 23.156 13.6015 24.1439C13.6015 25.132 12.7976 25.936 11.8094 25.936ZM27.0476 25.936C26.0597 25.936 25.2555 25.132 25.2555 24.1439C25.2555 23.156 26.0597 22.3518 27.0476 22.3518C28.0358 22.3518 28.8397 23.156 28.8397 24.1439C28.8397 25.132 28.0358 25.936 27.0476 25.936ZM30.9841 23.7628H29.8267C29.6398 22.3948 28.4662 21.336 27.0476 21.336C25.629 21.336 24.4556 22.3948 24.2684 23.7628H22.8571V15.1281H27.0461C28.0224 15.1281 28.9202 15.6097 29.4474 16.4165L30.9841 18.7684V23.7628Z\" fill=\"#E5212C\"/>\n<path d=\"M27.8787 24.1438C27.8787 24.6027 27.5067 24.9748 27.0477 24.9748C26.5888 24.9748 26.2168 24.6027 26.2168 24.1438C26.2168 23.6849 26.5888 23.3129 27.0477 23.3129C27.5067 23.3129 27.8787 23.6849 27.8787 24.1438Z\" fill=\"#E5212C\"/>\n<path d=\"M12.6401 24.1438C12.6401 24.6027 12.2681 24.9748 11.8092 24.9748C11.3505 24.9748 10.9785 24.6027 10.9785 24.1438C10.9785 23.6849 11.3505 23.3129 11.8092 23.3129C12.2681 23.3129 12.6401 23.6849 12.6401 24.1438Z\" fill=\"#E5212C\"/>\n<path d=\"M8.12674 9.9697V7.74744C8.12674 7.46668 7.89946 7.23969 7.6187 7.23969C7.33822 7.23969 7.11094 7.46668 7.11094 7.74744V9.80403L6.07422 11.2262C5.90884 11.4529 5.95854 11.7702 6.18524 11.9353C6.27592 12.0016 6.38055 12.0333 6.48431 12.0333C6.64097 12.0333 6.79559 11.9609 6.89499 11.8243L8.02937 10.2688C8.09244 10.1822 8.12674 10.0775 8.12674 9.9697Z\" fill=\"#E5212C\"/>\n<path d=\"M26.8762 15.6358H25.9045C25.6238 15.6358 25.3965 15.8631 25.3965 16.1438V19.6993C25.3965 19.9801 25.6238 20.2073 25.9045 20.2073H29.3231C29.6416 20.2073 29.9267 20.0425 30.0866 19.7673C30.2465 19.4921 30.2467 19.1625 30.0892 18.8878L28.9031 16.8117C28.4889 16.0869 27.712 15.6358 26.8762 15.6358ZM26.4126 19.1915V16.6519H26.8762C27.3484 16.6519 27.787 16.9062 28.021 17.316L29.0926 19.1915H26.4126Z\" fill=\"#E5212C\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_26027_22299\">\n<rect width=\"32\" height=\"32\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>\n\n",
+            "title": "Entregas em 24h em Portugal Continental",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Consulta a nossa Política de Envios</p>"
+          }
+        }
+      },
+      "block_order": [
+        "free_shipping",
+        "delivery_24h"
+      ]
+    },
+    "featured_collection_1": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "[NOVIDADES] EXPLOSIVAS",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "Chegou agora. Pode não durar.",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "novidades_col_1": {
+          "type": "collection",
+          "settings": {
+            "collection": "novo",
+            "background_color": "#fff1f2",
+            "color_button": "#e5212c",
+            "color_text_button": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "novidades_col_1"
+      ]
+    },
+    "promotion_banner": {
+      "type": "promotion-banner",
+      "settings": {
+        "heading": "Drop de Verão",
+        "image": "shopify://shop_images/Promotion banner.png",
+        "image_overlay_opacity": 30,
+        "content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "full_width_mobile": true,
+        "mobile_height": "300px",
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "image_banner_1": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "DROP DE VERÃO",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "text": "Stock limitado. Quando acabar, acabou.",
+            "text_size": 130
+          }
+        },
+        "buttons_1": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Compre agora",
+            "button_link": "#",
+            "show_button_style_1": "secondary",
+            "color_text_button": "#ffffff",
+            "color_button_secondary": "#ffffff",
+            "secondary_button_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_1",
+        "buttons_1"
+      ]
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "settings": {
+        "content_alignment": "center",
+        "content_alignment_mobile": "center"
+      },
+      "blocks": {
+        "media_1": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/7874691 1.png"
+          }
+        },
+        "heading_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "rare imported flavors you can't find anywhere else",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "media_1",
+        "heading_1"
+      ]
+    },
+    "featured_collection_2": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "ESCOLHE A TUA [MYSTERY BOX]",
+        "highlight_type": "font_highlight",
+        "heading_alignment": "center",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "mystery_box_collection": {
+          "type": "collection",
+          "settings": {
+            "collection": "mystery-box",
+            "background_color": "#fff1f2",
+            "color_text": "#0b0700",
+            "color_button": "#e5212c",
+            "color_text_button": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "mystery_box_collection"
+      ]
+    },
+    "featured_collection_3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "FAVORITOS DA FRAGFUEL 🛒",
+        "highlight_type": "underline",
+        "heading_alignment": "center",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "columns_mobile": "2",
+        "spacing_mobile": 12,
+        "swiper_on_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      },
+      "blocks": {
+        "collection_mF7dQ2": {
+          "type": "collection",
+          "settings": {
+            "collection": "mais-vendidos",
+            "background_color": "#fff1f2",
+            "color_text": "#0b0700",
+            "color_button": "#e5212c",
+            "color_text_button": "#ffffff",
+            "colors_text_link": "#e5212c"
+          }
+        }
+      },
+      "block_order": [
+        "collection_mF7dQ2"
+      ]
+    },
+    "collection_list_home": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Estás Pronto para Isto? 😈",
+        "heading_alignment": "center",
+        "columns_mobile": "2",
+        "swiper_on_mobile": false,
+        "spacing_mobile": 12,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      },
+      "blocks": {
+        "block_1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bebidas-energeticas"
+          }
+        },
+        "block_2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bebidas"
+          }
+        },
+        "block_3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "snacks"
+          }
+        },
+        "block_4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "chocolates"
+          }
+        },
+        "block_5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "candy"
+          }
+        },
+        "block_6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sabores-asia"
+          }
+        },
+        "block_7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "usa"
+          }
+        },
+        "block_8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "produtos-tiktok"
+          }
+        },
+        "block_9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "edicoes-sazonais"
+          }
+        },
+        "block_10": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "promocoes-exclusivas"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4",
+        "block_5",
+        "block_6",
+        "block_7",
+        "block_8",
+        "block_9",
+        "block_10"
+      ]
+    },
+    "featured_collection_4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "[PAIN LEVEL: MAX] 🌶️🔥 ISTO NÃO É PARA TODOS 💀",
+        "highlight_type": "font_highlight",
+        "heading_alignment": "center",
+        "text": "<p>Só para quem aguenta o verdadeiro picante. Entra por tua conta e risco.</p>",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "columns_mobile": "2",
+        "swiper_on_mobile": true
+      },
+      "blocks": {
+        "collection-picante": {
+          "type": "collection",
+          "settings": {
+            "collection": "picante",
+            "color_button": "#e5212c"
+          }
+        }
+      },
+      "block_order": [
+        "collection-picante"
+      ]
+    },
+    "featured_collection_5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "[ACID MODE ONLY] ⚡🍋 VAI DOER 🍋💀",
+        "heading_alignment": "center",
+        "text": "<p>Só os mais fortes conseguem não fazer cara feia. O nível máximo de ácido.</p>",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "color_text": "#0b0700",
+        "swiper_on_mobile": true,
+        "columns_mobile": "2",
+        "highlight_type": "font_highlight"
+      },
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "acid-mode-only-⚡-sour",
+            "color_button": "#e5212c"
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ]
+    },
+    "video_shopping": {
+      "type": "video-shopping",
+      "settings": {
+        "heading": "FragFuel em Ação",
+        "heading_alignment": "center",
+        "video_layout": "aspect-[2/3]",
+        "product_card_position": "bottom",
+        "enable_hotspots": false,
+        "swiper_on_mobile": true,
+        "heading_light": "#0b0700",
+        "spacing_mobile": 8,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 0
+      },
+      "blocks": {
+        "video_1": {
+          "type": "shoppable_video",
+          "settings": {
+            "integrated_social_media": "icon-instagram"
+          }
+        },
+        "video_2": {
+          "type": "shoppable_video",
+          "settings": {
+            "integrated_social_media": "icon-instagram"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2"
+      ]
+    },
+    "testimonials_home": {
+      "type": "testimonials-with-card",
+      "settings": {
+        "heading": "Os clientes [adoram-nos]",
+        "highlight_type": "font_highlight",
+        "heading_alignment": "center",
+        "item_border_color_light": "#e8e8e8",
+        "heading_and_title_light": "#1a1a1a",
+        "item_text_color_light": "#1a1a1a",
+        "top_padding_mobile": 48,
+        "bottom_padding_mobile": 48
+      },
+      "blocks": {
+        "testimonial_EmR9x2": {
+          "type": "testimonial",
+          "settings": {
+            "icon_star": "quote",
+            "text": "<p>Conteúdo de demonstração — será substituído por avaliações reais de clientes.</p>",
+            "show_author_image": false,
+            "author": "Emily R."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_EmR9x2"
+      ]
+    },
+    "media_with_text": {
+      "type": "image-with-text",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/Frame 1000004763.png",
+        "content_layout": "no-overlap",
+        "text_position": "center",
+        "text_alignment": "center",
+        "full_width": true,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "full_width_mobile": true,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 0,
+        "background_color_light": "#f4f3f1"
+      },
+      "blocks": {
+        "heading_1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Na FragFuel, somos obcecados por sabor e exclusividade. Trazemos-te os snacks e bebidas mais épicos do planeta — e prometemos surpreender-te em cada encomenda.</p>"
+          }
+        },
+        "button_1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sobre Nós",
+            "button_link": "#",
+            "show_button_style": "primary",
+            "button_light": "#e5212c"
+          }
+        }
+      },
+      "block_order": [
+        "heading_1",
+        "button_1"
+      ]
+    },
+    "multiple_stores": {
+      "type": "multiple-stores",
+      "settings": {
+        "heading": "Onde a Magia Acontece ✨",
+        "store_list_style": "scroll",
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      },
+      "blocks": {
+        "store_porto": {
+          "type": "item",
+          "settings": {
+            "item_image": "shopify://shop_images/Image Ratio.png",
+            "heading": "FragFuel - Porto",
+            "address": "R. da Boavista 881, 4050-111 Porto",
+            "address_detail": "<p>Seg–Sáb: 10:00–20:00 · Dom: 10:00–20:00</p>",
+            "button_label": "Ver detalhes"
+          }
+        },
+        "store_vila_real": {
+          "type": "item",
+          "settings": {
+            "heading": "FragFuel - Vila Real",
+            "address": "Praça da Nossa Sra. da Conceição, Lote 4, Loja 1",
+            "address_detail": "<p>Seg–Sáb: 14:00–19:00 · Dom: Fechado</p>",
+            "button_label": "Ver detalhes"
+          }
+        }
+      },
+      "block_order": [
+        "store_porto",
+        "store_vila_real"
+      ]
+    },
+    "blog": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Notícias!",
+        "heading_alignment": "center",
+        "post_limit": 2,
+        "columns_desktop": 2,
+        "show_view_all": true,
+        "view_all_position": "top",
+        "show_excerpt": true,
+        "show_read_more": true,
+        "button_read_more_label": "Leia agora",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "columns_mobile": "1",
+        "spacing_mobile": 28,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 48
+      },
+      "block_order": []
+    },
+    "product_bundle_home": {
+      "type": "buy-your-own-bundle",
+      "settings": {
+        "heading": "COMPLETA O TEU DROP",
+        "text": "<p>Prefere escolher tu mesmo? Monta a tua caixa.</p>",
+        "button_atb_label": "Adicionar",
+        "bundler_heading": "Conteúdo do pacote",
+        "pre_goal_msg": "Adicione [x] ou mais produtos à sua caixa e poupe [goal_label]",
+        "goal_1": "3",
+        "goal_1_label": "20% off",
+        "discount_type_1": "percentage",
+        "discount_value_1": "20",
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48,
+        "background_color_light": "#fff1f2"
+      },
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "collection": "",
+            "min_required": 3
+          }
+        }
+      },
+      "block_order": [
+        "step_1"
+      ]
+    },
+    "social_feed": {
+      "type": "social-feeds",
+      "settings": {
+        "heading": "Encontre-nos no [@fragfuel.pt]",
+        "highlight_type": "font_highlight",
+        "heading_alignment": "center",
+        "button_label": "Siga-nos",
+        "button_link": "#",
+        "show_button_style": "secondary",
+        "integrated_social_media": "instagram",
+        "columns_mobile": "1",
+        "swiper_on_mobile": true
+      },
+      "blocks": {
+        "social_post_1": {
+          "type": "social-post",
+          "settings": {
+            "social_post_image": "shopify://shop_images/Social image 2.png",
+            "social_post_link": "#",
+            "integrated_social_media": "instagram",
+            "account_username": "fragfuel.pt"
+          }
+        }
+      },
+      "block_order": [
+        "social_post_1"
+      ]
+    },
+    "email_signup": {
+      "type": "newsletter",
+      "settings": {
+        "background_color_light": "#0b0700",
+        "heading_light": "#ffffff",
+        "text_light": "#c7c7c7",
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      },
+      "blocks": {
+        "heading_1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Entra para a Lista VIP",
+            "text": "<p>Sabe primeiro quando cai um drop novo.</p>"
+          }
+        },
+        "email_form_1": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Quero saber"
+          }
+        }
+      },
+      "block_order": [
+        "heading_1",
+        "email_form_1"
+      ]
+    }
+  },
+  "order": [
+    "slideshow",
+    "scrolling_promo_home",
+    "text_column_icon",
+    "featured_collection_1",
+    "promotion_banner",
+    "rich_text",
+    "featured_collection_2",
+    "product_bundle_home",
+    "featured_collection_3",
+    "collection_list_home",
+    "featured_collection_4",
+    "featured_collection_5",
+    "video_shopping",
+    "testimonials_home",
+    "media_with_text",
+    "multiple_stores",
+    "blog",
+    "social_feed",
+    "email_signup"
+  ]
+}

@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": false,
+        "image_overlay_opacity": 20,
+        "show_collection_name": true,
+        "show_breadcrumb_below_title": true,
+        "title_position": "text-center",
+        "size_title": 170,
+        "heading_tag": "h1",
+        "full_width_title": false,
+        "desktop_height": "450px",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_height": "auto",
+        "full_width_mobile": true,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 32
+      },
+      "block_order": []
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "default_hide_filtering": false,
+        "expand_filter": false,
+        "sticky_filtering": false,
+        "filter_edge_style": "adapt",
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_page": "",
+        "products_per_row_on_desktop": 4,
+        "products_per_row_on_mobile": "2",
+        "pagination": "pagination"
+      },
+      "block_order": []
+    },
+    "related_collections_cp": {
+      "type": "related-collections",
+      "settings": {
+        "heading": "MORE COLLECTIONS",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image_ratio": "square",
+        "title_size": 80,
+        "show_text_overlay": true,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "image_overlay_opacity": 5,
+        "title_color": "#f8f6f2",
+        "text_light": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "show_item_count": false,
+        "max_collections": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "spacing_mobile": 4,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 32
+      },
+      "block_order": []
+    },
+    "email_signup_cp": {
+      "type": "newsletter",
+      "settings": {
+        "image": "",
+        "image_mobile": "",
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "vertical",
+        "background_color_light": "#eeebe6",
+        "heading_light": "#2b2b2b",
+        "color_heading_highlight_light": "",
+        "text_light": "#424141",
+        "button_light": "",
+        "button_text_light": "",
+        "button_hover_light": "",
+        "button_text_hover_light": "",
+        "line_border": "",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52
+      },
+      "blocks": {
+        "heading_block": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP YOUR EMAIL",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": 100
+          }
+        },
+        "paragraph_block": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our email list for sales, recipes, buying guides, and more.</p>"
+          }
+        },
+        "email_form_block": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Subscribe",
+            "background_color_light": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_block",
+        "paragraph_block",
+        "email_form_block"
+      ]
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "related_collections_cp",
+    "email_signup_cp"
+  ]
+}
